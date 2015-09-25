@@ -19,7 +19,7 @@
 * https://twitter.com/NERDDISCO visible all the time :D
 
 
-### What?
+### What? (100vw?)
 
 NERD DISCO is the connection between the browser, music visualizations and real world hardware. 
 
@@ -27,6 +27,9 @@ TODO: Add more stuff about what NERD DISCO is and how it works.
 
 
 ### Code
+
+* https://github.com/NERDDISCO
+* Live demo using an embeded CodePen
 
 TODO: Add CodePen to see the visualization live + MIDI
 
