@@ -23,6 +23,8 @@
 
 NERD DISCO is the connection between the browser, music visualizations and real world hardware. 
 
+TODO: Add more stuff about what NERD DISCO is and how it works. 
+
 
 ### Code
 
