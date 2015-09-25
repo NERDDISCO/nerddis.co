@@ -15,22 +15,34 @@
 
 ### Head
 
-Video that shows NERD DISCO in action (maybe 100vh) + Logo (fixed?) + navigation (to jump to specific parts on the page)
+* Video that shows NERD DISCO in action (maybe 100vh) + Logo (fixed?) + navigation (to jump to specific parts on the page)
+* https://twitter.com/NERDDISCO visible all the time :D
+
 
 ### What?
 
+NERD DISCO is the connection between the browser, music visualizations and real world hardware. 
+
+
 ### Code
+
+TODO: Add CodePen to see the visualization live + MIDI
 
 
 ### Live
 
+Want to see NERD DISCO live? Just come to one of the upcoming shows. 
+
+Want to have NERD DISCO at your event / meetup / conf? live@nerddis.co
+
 #### Upcoming
 
-JSConf Colombia October 2015
+* JSConf Colombia October 2015
 
 #### Past shows
 
-* DarmstadtJS September 2015
-* JSConf China July 2015
-* KarlsruheJS June 2015
-* Front Trends May 2015
+* DarmstadtJS September 2015 - Talk
+* OTSConf August 2015 - Live Show
+* JSConf China July 2015 - Talk
+* KarlsruheJS June 2015 - Talk
+* Front Trends May 2015 - Talk
