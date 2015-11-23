@@ -1,0 +1,28 @@
+link(rel='stylesheet', href='stylesheets/style.css')
+
+
+
+div.meta
+  h2 AKAI LPK25
+
+  ul
+    li Connect your AKAI LPK25 via USB
+    li Grant permission for Web MIDI usage
+    li Record your music by using the "record" button
+
+  br
+
+  button(onclick="toggleRecording(this);") record
+
+  ul#recordingslist
+
+
+
+div.nerddisco
+  canvas(id='c')
+
+
+
+script(type='text/javascript' src='javascripts/recorder.js')
+script(type='text/javascript' src='javascripts/mediarecorder_demo.js')
+script(type='text/javascript' src='javascripts/nd_AKAI_LPK25.js')

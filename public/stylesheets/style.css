@@ -1,12 +1,94 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: #15171e; }
+  font: 1em sans-serif;
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+}
 
 h1 {
-  text-align: center; }
+  text-align: center;
+}
 
+h2 {
+  font: 4em sans-serif;
+  margin: 0;
+
+}
+
+h3 {
+  font: 2em sans-serif;
+  margin-bottom: .5em;
+}
+
+a {
+  text-decoration: none;
+  margin: 0 0 0 1em;
+  padding: .5em;
+  background: transparent;
+  color: #ddd;
+  font: 1em sans-serif;
+  cursor: pointer;
+  vertical-align: super;
+  border: .125em solid #ddd;
+}
+  
 .logo {
-  width: 60%; }
+  width: 60%
+}
 
-/*# sourceMappingURL=style.css.map */
+.meta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding: 1em 1em 1em 1em;
+}
+
+
+ul > li {
+  margin: .5em 0;
+}
+
+ul#recordingslist {
+  list-style: none;
+  padding: 0;
+}
+
+ul#recordingslist > li > audio::-webkit-media-controls-panel {
+  padding: 0;
+  background: transparent;
+  /*border: .125em solid #ddd;*/
+  border-radius: 0;
+  color: #ddd;
+  font: 1.25em sans-serif;
+}
+
+
+
+.nerddisco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#c {
+  background: #000;
+}
+
+button {
+  margin: 0 .5em 0 0;
+  padding: .5em;
+  background: transparent;
+  border: .125em solid #ddd;
+  color: #ddd;
+  font: 1.25em sans-serif;
+  cursor: pointer;
+}
+
+button.recording {
+  border-color: transparent;
+  background: #c00;
+}
