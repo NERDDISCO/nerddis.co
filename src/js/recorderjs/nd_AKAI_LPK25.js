@@ -1,8 +1,13 @@
 // Import ndMidi
 var ndMidi = require('./ndMidi.js');
 
+// Import ndDot
+var ndDot = require('./ndDot.js');
+
 // Import Recorder
 var Recorder = require('./recorder.js');
+
+
 
 
 
@@ -29,7 +34,7 @@ var analyserData = new Uint8Array(analyser.frequencyBinCount);
 // Control the volume
 var gain = audioContext.createGain();
 // Set the volume to 25%
-gain.gain.value = .05;
+gain.gain.value = .25;
 
 // Connect the gain to the analyser
 gain.connect(analyser);
@@ -118,10 +123,54 @@ function tone(frequency, type, detune) {
 var active_keys = [];
 
 
+
+
+
+
+
+
+resize();
+
+
+
+
+var width = canvas.width;
+var height = canvas.height;
+
+
+
+// Generate the active_keys
+for (var i = 0; i < 25; i++) {
+
+  var myDot = new ndDot({
+    ctx: ctx,
+    x: width / 2,
+    y: height / 2,
+    r: 150,
+    ttl: 60,
+    color: 120 / 25 * i
+  });
+
+  active_keys.push({
+    pressed : false,
+    dot : myDot
+  });
+}
+
+
+
+
+
+
 /**
  * Listen to "ndMidi" events
  */
 window.addEventListener('ndMidi', function (e) {
+
+  // The ID of the pressed key
+  var key = (e.detail.note + 2) % 25;
+
+
 
   // Start
   if (NERDDISCO_midi.inputElements[e.detail.note].noteOn && NERDDISCO_midi.inputElements[e.detail.note].pressed) {
@@ -133,8 +182,8 @@ window.addEventListener('ndMidi', function (e) {
     NERDDISCO_midi.inputElements[e.detail.note].oscillator3 = tone(Math.pow(1.0594630943593, note - 49 - 14) * 440, 'sawtooth', 0);
     NERDDISCO_midi.inputElements[e.detail.note].oscillator4 = tone(Math.pow(1.0594630943593, note - 49 - 21) * 440, 'sawtooth', 0);
 
-    // The key is pressed
-    active_keys[(e.detail.note + 2) % 25] = 'on';
+    // Key is pressed
+    active_keys[key].pressed = true;
 
     // Stop
   } else if (NERDDISCO_midi.inputElements[e.detail.note].noteOff) {
@@ -159,7 +208,7 @@ window.addEventListener('ndMidi', function (e) {
       NERDDISCO_midi.inputElements[e.detail.note].oscillator4.stop(stop);
 
       // The key is released
-      active_keys[(e.detail.note + 2) % 25] = 'off';
+      active_keys[key].pressed = false;
     }
 });
 
@@ -178,43 +227,50 @@ window.addEventListener('resize', function (event) {
   resize();
 }, false); // / window.addEventListener('resize')
 
+
+
+
+
+
+
+
+
+
+
+
+
 var key_width = 2;
 
 // Draw on canvas
 function draw() {
   var width = canvas.width;
   var height = canvas.height;
-  //var elements = analyser.frequencyBinCount;
   var elements = 360;
 
-  // Get current frequency data
-  //analyser.getByteFrequencyData(analyserData);
-  //analyser.getByteTimeDomainData(analyserData);
-
   // Clear the canvas
-  ctx.clearRect(0, 0, width, height);
+  // ctx.clearRect(0, 0, width, height);
 
-  var shit = [];
+  ctx.fillStyle = "rgba(0, 0, 0, .3)";
+  ctx.fillRect(0, 0, width, height);
 
   // Iterate over all elements of analyserData
   for (var i = 0; i < elements; i++) {
 
-    //console.log(25 / elements * i);
-
     var j = Math.floor(25 / elements * i);
 
-    if (typeof active_keys[j] !== undefined && active_keys[j] === 'on') {
-
+    // Key is pressed
+    if (active_keys[j].pressed === true) {
       var _height = i % 10;
 
       _height = _height % 6;
       _height = height / 2 - _height * 2;
-      //shit.push({i : _height});
 
       var _y = _height * 2;
 
       ctx.fillStyle = 'hsla(' + elements / 360 * i + ', 100%, 50%, ' + (i + 1) % 15 / 10 + ')';
       ctx.fillRect(i * (width / elements), height / 2 - _height, key_width, _y);
+
+    // Key is not pressed
     } else {
 
       ctx.fillStyle = 'hsla(' + elements / 360 * i + ', 100%, 30%, .65)';
@@ -222,17 +278,55 @@ function draw() {
     }
   }
 
-  if (shit.length > 0) {
-    console.log(shit);
-  }
 }
 
-draw();
+
+
+
+/**
+ * Draw some funky stuff >:D
+ * 
+ */
+function funkyDraw() {
+
+
+  // Iterate over all keys
+  for (var i = 0; i < active_keys.length; i++) {
+
+    // Key is pressed
+    if (active_keys[i].pressed) {
+
+      active_keys[i].dot.active = true;
+
+      // Reset dot
+      active_keys[i].dot.reset();
+
+    // Key is released
+    } else {
+
+    }
+
+    // Draw dot
+    active_keys[i].dot.draw();
+
+
+  } // / Iterate over all keys
+
+} // / funkyDraw
+
+
+
+
+
+
+
 
 // Update everything
 function update() {
   // Draw on canvas
   draw();
+
+  funkyDraw();
 
   // Call update() again
   //setTimeout(function() {

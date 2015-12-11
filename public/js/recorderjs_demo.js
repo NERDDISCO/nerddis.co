@@ -5,6 +5,105 @@ var _createClass = (function () { function defineProperties(target, props) { for
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+var ndDot = (function () {
+  function ndDot(args) {
+    _classCallCheck(this, ndDot);
+
+    // Canvas context
+    this.ctx = args.ctx || undefined;
+
+    // Is the element active
+    this.active = args.active || false;
+
+    // Radius
+    this.r = args.r || 0;
+    this._r = this.r;
+
+    // Position
+    this.x = args.x || 0;
+    this._x = this.x;
+
+    this.y = args.y || 0;
+    this._y = this.y;
+
+    // Time to life
+    this.ttl = args.ttl || 0;
+    // The amount of time I'm alive
+    this._ttl = this.ttl;
+
+    // Color
+    this.color = args.color || 0;
+    this._color = this.color;
+  }
+
+  _createClass(ndDot, [{
+    key: "draw",
+    value: function draw() {
+
+      // Canvas context does not exist
+      if (this.ctx === undefined) {
+        return;
+      }
+
+      if (!this.active) {
+        return;
+      }
+
+      // The element is still alive
+      if (this._ttl-- > 0) {
+
+        // Save the canvas state
+        this.ctx.save();
+
+        // Start to draw a path
+        this.ctx.beginPath();
+
+        // Decrease the radius   
+        this._r = this._r - this.r / this.ttl;
+
+        // Change the positon
+        // this._x = this._x - (this.r / this.ttl);
+        // this._y = this._y - (this.r / this.ttl);
+
+        // Set the color
+        this.ctx.fillStyle = "hsla(" + this._color + ", 100%, 60%, .45)";
+
+        // Draw the dot
+        this.ctx.arc(this.x, this.y, this._r, 0, 2 * Math.PI);
+
+        // Fill the dot with color
+        this.ctx.fill();
+
+        // Restore the canvas state
+        this.ctx.restore();
+      }
+    }
+
+    /**
+     * Reset the initial state of the dot.
+     * 
+     */
+
+  }, {
+    key: "reset",
+    value: function reset() {
+      this._ttl = this.ttl;
+      this._r = this.r;
+    }
+  }]);
+
+  return ndDot;
+})(); // / ndDot
+
+module.exports = ndDot;
+
+},{}],2:[function(require,module,exports){
+'use strict';
+
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 var ndMidi = (function () {
   function ndMidi(args) {
     _classCallCheck(this, ndMidi);
@@ -341,13 +440,14 @@ var ndMidi = (function () {
 
 module.exports = ndMidi;
 
-},{}],2:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 'use strict';
-
-function _typeof(obj) { return obj && typeof Symbol !== "undefined" && obj.constructor === Symbol ? "symbol" : typeof obj; }
 
 // Import ndMidi
 var ndMidi = require('./ndMidi.js');
+
+// Import ndDot
+var ndDot = require('./ndDot.js');
 
 // Import Recorder
 var Recorder = require('./recorder.js');
@@ -375,7 +475,7 @@ var analyserData = new Uint8Array(analyser.frequencyBinCount);
 // Control the volume
 var gain = audioContext.createGain();
 // Set the volume to 25%
-gain.gain.value = .05;
+gain.gain.value = .25;
 
 // Connect the gain to the analyser
 gain.connect(analyser);
@@ -454,10 +554,36 @@ function tone(frequency, type, detune) {
 // Currently active keys from AKAI LPK25
 var active_keys = [];
 
+resize();
+
+var width = canvas.width;
+var height = canvas.height;
+
+// Generate the active_keys
+for (var i = 0; i < 25; i++) {
+
+  var myDot = new ndDot({
+    ctx: ctx,
+    x: width / 2,
+    y: height / 2,
+    r: 150,
+    ttl: 60,
+    color: 120 / 25 * i
+  });
+
+  active_keys.push({
+    pressed: false,
+    dot: myDot
+  });
+}
+
 /**
  * Listen to "ndMidi" events
  */
 window.addEventListener('ndMidi', function (e) {
+
+  // The ID of the pressed key
+  var key = (e.detail.note + 2) % 25;
 
   // Start
   if (NERDDISCO_midi.inputElements[e.detail.note].noteOn && NERDDISCO_midi.inputElements[e.detail.note].pressed) {
@@ -469,8 +595,8 @@ window.addEventListener('ndMidi', function (e) {
     NERDDISCO_midi.inputElements[e.detail.note].oscillator3 = tone(Math.pow(1.0594630943593, note - 49 - 14) * 440, 'sawtooth', 0);
     NERDDISCO_midi.inputElements[e.detail.note].oscillator4 = tone(Math.pow(1.0594630943593, note - 49 - 21) * 440, 'sawtooth', 0);
 
-    // The key is pressed
-    active_keys[(e.detail.note + 2) % 25] = 'on';
+    // Key is pressed
+    active_keys[key].pressed = true;
 
     // Stop
   } else if (NERDDISCO_midi.inputElements[e.detail.note].noteOff) {
@@ -495,7 +621,7 @@ window.addEventListener('ndMidi', function (e) {
       NERDDISCO_midi.inputElements[e.detail.note].oscillator4.stop(stop);
 
       // The key is released
-      active_keys[(e.detail.note + 2) % 25] = 'off';
+      active_keys[key].pressed = false;
     }
 });
 
@@ -520,55 +646,71 @@ var key_width = 2;
 function draw() {
   var width = canvas.width;
   var height = canvas.height;
-  //var elements = analyser.frequencyBinCount;
   var elements = 360;
 
-  // Get current frequency data
-  //analyser.getByteFrequencyData(analyserData);
-  //analyser.getByteTimeDomainData(analyserData);
-
   // Clear the canvas
-  ctx.clearRect(0, 0, width, height);
+  // ctx.clearRect(0, 0, width, height);
 
-  var shit = [];
+  ctx.fillStyle = "rgba(0, 0, 0, .3)";
+  ctx.fillRect(0, 0, width, height);
 
   // Iterate over all elements of analyserData
   for (var i = 0; i < elements; i++) {
 
-    //console.log(25 / elements * i);
-
     var j = Math.floor(25 / elements * i);
 
-    if (_typeof(active_keys[j]) !== undefined && active_keys[j] === 'on') {
-
+    // Key is pressed
+    if (active_keys[j].pressed === true) {
       var _height = i % 10;
 
       _height = _height % 6;
       _height = height / 2 - _height * 2;
-      //shit.push({i : _height});
 
       var _y = _height * 2;
 
       ctx.fillStyle = 'hsla(' + elements / 360 * i + ', 100%, 50%, ' + (i + 1) % 15 / 10 + ')';
       ctx.fillRect(i * (width / elements), height / 2 - _height, key_width, _y);
+
+      // Key is not pressed
     } else {
 
-      ctx.fillStyle = 'hsla(' + elements / 360 * i + ', 100%, 30%, .65)';
-      ctx.fillRect(i * (width / elements), height / 2, key_width, 10);
-    }
-  }
-
-  if (shit.length > 0) {
-    console.log(shit);
+        ctx.fillStyle = 'hsla(' + elements / 360 * i + ', 100%, 30%, .65)';
+        ctx.fillRect(i * (width / elements), height / 2, key_width, 10);
+      }
   }
 }
 
-draw();
+/**
+ * Draw some funky stuff >:D
+ * 
+ */
+function funkyDraw() {
+
+  // Iterate over all keys
+  for (var i = 0; i < active_keys.length; i++) {
+
+    // Key is pressed
+    if (active_keys[i].pressed) {
+
+      active_keys[i].dot.active = true;
+
+      // Reset dot
+      active_keys[i].dot.reset();
+
+      // Key is released
+    } else {}
+
+    // Draw dot
+    active_keys[i].dot.draw();
+  } // / Iterate over all keys
+} // / funkyDraw
 
 // Update everything
 function update() {
   // Draw on canvas
   draw();
+
+  funkyDraw();
 
   // Call update() again
   //setTimeout(function() {
@@ -648,7 +790,7 @@ function createDownloadLink() {
   });
 }
 
-},{"./ndMidi.js":1,"./recorder.js":3}],3:[function(require,module,exports){
+},{"./ndDot.js":1,"./ndMidi.js":2,"./recorder.js":4}],4:[function(require,module,exports){
 'use strict';
 
 var WORKER_PATH = 'js/recorderWorker.js';
@@ -738,4 +880,4 @@ Recorder.forceDownload = function (blob, filename) {
 
 module.exports = Recorder;
 
-},{}]},{},[2]);
+},{}]},{},[3]);
