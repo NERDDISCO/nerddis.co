@@ -9,10 +9,10 @@ h1 {
   text-align: center;
 }
 
+
 h2 {
   font: 4em sans-serif;
   margin: 0;
-
 }
 
 h3 {
@@ -22,14 +22,9 @@ h3 {
 
 a {
   text-decoration: none;
-  margin: 0 0 0 1em;
-  padding: .5em;
-  background: transparent;
   color: #ddd;
-  font: 1em sans-serif;
   cursor: pointer;
-  vertical-align: super;
-  border: .125em solid #ddd;
+  border-bottom: .125em solid #ddd;
 }
   
 .logo {
@@ -91,4 +86,16 @@ button {
 button.recording {
   border-color: transparent;
   background: #c00;
+}
+
+.button {
+  text-decoration: none;
+  margin: 0 0 0 1em;
+  padding: .5em;
+  background: transparent;
+  color: #ddd;
+  font: 1em sans-serif;
+  cursor: pointer;
+  vertical-align: super;
+  border: .125em solid #ddd;
 }

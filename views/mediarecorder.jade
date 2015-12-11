@@ -1,4 +1,4 @@
-link(rel='stylesheet', href='stylesheets/style.css')
+link(rel='stylesheet', href='css/recorderjs_demo.css')
 
 
 
@@ -6,13 +6,13 @@ div.meta
   h2 AKAI LPK25
 
   ul
-    li Connect your AKAI LPK25 via USB
-    li Grant permission for Web MIDI usage
-    li Record your music by using the "record" button
+    li Connect a #[a(href='http://www.akaipro.com/product/lpk25') AKAI LPK25] via USB to your computer
+    li Grant permission for #[a(href='http://www.w3.org/TR/webmidi/') Web MIDI] usage
+    li Record music by using the #[b record] button
 
   br
 
-  button(onclick="toggleRecording(this);") record
+  button#record record
 
   ul#recordingslist
 
@@ -23,6 +23,4 @@ div.nerddisco
 
 
 
-script(type='text/javascript' src='javascripts/recorder.js')
-script(type='text/javascript' src='javascripts/mediarecorder_demo.js')
-script(type='text/javascript' src='javascripts/nd_AKAI_LPK25.js')
+script(type='text/javascript' src='js/recorderjs_demo.js')
