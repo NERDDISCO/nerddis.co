@@ -165,16 +165,8 @@ var ndMidi = (function () {
       // Get the inputs for connected MIDI devices
       this.inputMap = this.access.inputs;
 
-      if (this.debug) {
-        console.log('MIDI input ports:', this.inputMap.size);
-      }
-
       // Get the outputs for connected MIDI devices
       this.outputMap = this.access.outputs;
-
-      if (this.debug) {
-        console.log('MIDI output ports:', this.outputMap.size);
-      }
 
       // Iterate over all input ports
       var _iteratorNormalCompletion = true;
@@ -219,37 +211,13 @@ var ndMidi = (function () {
 
       // TODO: Handle output messages
 
-      // A new MIDI device was added or an existing MIDI device changes state
-      this.access.onstatechange = (function (MIDIConnectionEvent) {
-        console.log('MIDIAccess state change:', MIDIConnectionEvent);
-
-        var _iteratorNormalCompletion2 = true;
-        var _didIteratorError2 = false;
-        var _iteratorError2 = undefined;
-
-        try {
-          for (var _iterator2 = this.access.inputs[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-            var entry = _step2.value;
-
-            var input = entry[1];
-            console.log("Input port [type:'" + input.type + "'] id:'" + input.id + "' manufacturer:'" + input.manufacturer + "' name:'" + input.name + "' version:'" + input.version + "'");
-          }
-        } catch (err) {
-          _didIteratorError2 = true;
-          _iteratorError2 = err;
-        } finally {
-          try {
-            if (!_iteratorNormalCompletion2 && _iterator2.return) {
-              _iterator2.return();
-            }
-          } finally {
-            if (_didIteratorError2) {
-              throw _iteratorError2;
-            }
-          }
-        }
-      }).bind(this); // / this.access.onstatechange
+      // Listen to stateChange events
+      this.access.addEventListener('statechange', this.stateChange.bind(this));
     } // / ndMidi.connectSuccess
+
+    /**
+     * It's not possible to use the Web MIDI API.
+     */
 
   }, {
     key: 'connectFailure',
@@ -257,6 +225,48 @@ var ndMidi = (function () {
 
       console.error(message);
     } // / ndMidi.connectFailure
+
+    /**
+     * State of a MIDI devices changed: connected / disconnected
+     * 
+     * @param  MIDIConnectionEvent e
+     */
+
+  }, {
+    key: 'stateChange',
+    value: function stateChange(e) {
+      console.log('MIDIAccess state change:', e);
+
+      var _iteratorNormalCompletion2 = true;
+      var _didIteratorError2 = false;
+      var _iteratorError2 = undefined;
+
+      try {
+        for (var _iterator2 = this.access.inputs[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+          var entry = _step2.value;
+
+          var input = entry[1];
+          console.log("Input port [type:'" + input.type + "'] id:'" + input.id + "' manufacturer:'" + input.manufacturer + "' name:'" + input.name + "' version:'" + input.version + "'");
+        }
+      } catch (err) {
+        _didIteratorError2 = true;
+        _iteratorError2 = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion2 && _iterator2.return) {
+            _iterator2.return();
+          }
+        } finally {
+          if (_didIteratorError2) {
+            throw _iteratorError2;
+          }
+        }
+      }
+    } // / ndMidi.stageChange
+
+  }, {
+    key: 'handleInputs',
+    value: function handleInputs() {} // / ndMidi.handleInputs
 
     /**
      * Handle MIDIMessageEvent's that are send from the MIDI device to the PC.
@@ -267,6 +277,19 @@ var ndMidi = (function () {
   }, {
     key: 'inputMessage',
     value: function inputMessage(message) {
+
+      /**
+       * @TODO: WTF?
+       * 
+       * Reproduce
+       * - Connect a MIDI device
+       * - Detach MIDI device
+       * - Connect MIDI device 
+       * ---> The "midimessage" event is fired
+       */
+      if (message.data.length == 1) {
+        return;
+      }
 
       // Input
       var data = message.data;
@@ -338,14 +361,10 @@ var ndMidi = (function () {
 
       } // / switch(type)
 
-      /*if (this.mappingMode && channel_command !== '9') {
-        console.log(note);
-      }*/
+      if (this.debug) {
+        //console.log(message.target.name, '|', 'channel_command', channel_command, 'channel', channel, 'type', type, 'note', note, 'velocitiy', velocity);
+      }
 
-      if (this.debug) {}
-      //console.log(message.target.name, '|', 'channel_command', channel_command, 'channel', channel, 'type', type, 'note', note, 'velocitiy', velocity);
-
-      //this.ndMidiEvent = new CustomEvent('ndMidiChange', { 'midi': elem.dataset.time });
       var event = new CustomEvent('ndMidi', { 'detail': this.inputElements[note] });
       window.dispatchEvent(event);
     } // / ndMidi.inputMessage

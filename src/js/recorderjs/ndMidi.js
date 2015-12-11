@@ -66,17 +66,10 @@ class ndMidi {
     // Get the inputs for connected MIDI devices
     this.inputMap = this.access.inputs;
 
-    if (this.debug) {
-      console.log('MIDI input ports:', this.inputMap.size);
-    }
-
     // Get the outputs for connected MIDI devices
     this.outputMap = this.access.outputs;
 
 
-    if (this.debug) {
-      console.log('MIDI output ports:', this.outputMap.size);
-    }
 
     // Iterate over all input ports
     for (let input of this.inputMap.values()) {
@@ -99,23 +92,16 @@ class ndMidi {
 
     // TODO: Handle output messages
 
-    // A new MIDI device was added or an existing MIDI device changes state
-    this.access.onstatechange = function(MIDIConnectionEvent) {
-      console.log('MIDIAccess state change:', MIDIConnectionEvent);
-
-      for (var entry of this.access.inputs) {
-        var input = entry[1];
-        console.log( "Input port [type:'" + input.type + "'] id:'" + input.id +
-          "' manufacturer:'" + input.manufacturer + "' name:'" + input.name +
-          "' version:'" + input.version + "'" );
-      }
-      
-    }.bind(this); // / this.access.onstatechange
+    // Listen to stateChange events
+    this.access.addEventListener('statechange', this.stateChange.bind(this));
 
   } // / ndMidi.connectSuccess
 
 
 
+  /**
+   * It's not possible to use the Web MIDI API.
+   */
   connectFailure(message) {
 
     console.error(message);
@@ -123,6 +109,28 @@ class ndMidi {
   } // / ndMidi.connectFailure
 
 
+
+  /**
+   * State of a MIDI devices changed: connected / disconnected
+   * 
+   * @param  MIDIConnectionEvent e
+   */
+  stateChange(e) {
+      console.log('MIDIAccess state change:', e);
+
+      for (var entry of this.access.inputs) {
+        var input = entry[1];
+        console.log( "Input port [type:'" + input.type + "'] id:'" + input.id +
+          "' manufacturer:'" + input.manufacturer + "' name:'" + input.name +
+          "' version:'" + input.version + "'" );
+      }
+  } // / ndMidi.stageChange
+
+
+
+  handleInputs() {
+
+  } // / ndMidi.handleInputs
 
 
 
@@ -132,6 +140,21 @@ class ndMidi {
    * @param  {MIDIMessageEvent} message
    */
   inputMessage(message) {
+
+    /**
+     * @TODO: WTF?
+     * 
+     * Reproduce
+     * - Connect a MIDI device
+     * - Detach MIDI device
+     * - Connect MIDI device 
+     * ---> The "midimessage" event is fired
+     */
+    if (message.data.length == 1) {
+      return;
+    }
+
+
 
     // Input
     var data = message.data;
@@ -206,15 +229,13 @@ class ndMidi {
     } // / switch(type)
 
 
-    /*if (this.mappingMode && channel_command !== '9') {
-      console.log(note);
-    }*/
 
     if (this.debug) {
       //console.log(message.target.name, '|', 'channel_command', channel_command, 'channel', channel, 'type', type, 'note', note, 'velocitiy', velocity);
     }
+
+
     
-    //this.ndMidiEvent = new CustomEvent('ndMidiChange', { 'midi': elem.dataset.time });
     var event = new CustomEvent('ndMidi', { 'detail': this.inputElements[note] });
     window.dispatchEvent(event);
     
@@ -242,7 +263,6 @@ class ndMidi {
 
 
 
-
   /**
    * Note (for example a button on a drumpad) on MIDI device was activated (for example pressed).
    * 
@@ -260,13 +280,11 @@ class ndMidi {
 
 
 
-
   pitchBend(args) {
     if (this.debug) {
       console.log('pitch bend', args);
     }
   }
-
 
 
 
@@ -280,14 +298,11 @@ class ndMidi {
 
 
 
-
   patchChange(args) {
     if (this.debug) {
       console.log('patch Change', args);
     }
   } // / ndMidi.patchChange
-
-
 
 
 
@@ -299,15 +314,11 @@ class ndMidi {
 
 
 
-
-
   channelPressure(args) {
     if (this.debug) {
       console.log('channel pressure', args);
     }
   } // / ndMidi.channelPressure
-
-
 
 
 
@@ -322,6 +333,7 @@ class ndMidi {
 
 
 } // / ndMidi
+
 
 
 module.exports = ndMidi;
