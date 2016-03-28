@@ -11,12 +11,20 @@
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",
-    "compression": "^1.6.0"
+    "compression": "^1.6.0",
+    "socket.io": "latest",
+    "socket.io-client": "latest",
+    "rx": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-chartjs": "latest",
+    "react-localstorage": "latest"
   },
 
   "devDependencies": {
     "babel-cli": "latest",
     "babel-preset-es2015": "latest",
+    "babel-preset-react": "latest",
     "babelify": "latest",
     "browserify": "latest",
     "node-sass": "latest",
@@ -28,11 +36,17 @@
   
   "scripts": {
     "//" : "Start the server",
-    "start": "parallelshell 'node ./bin/www' 'npm run watch:css' 'npm run watch:js:mediarecorder'",
+    "start": "parallelshell 'nodemon ./bin/www' 'npm run watch:css' 'npm run watch:js:mediarecorder' 'npm run watch:js:microphonerecorder' 'npm run watch:js:live'",
 
     "//" : "MediaRecorder Demo",
     "//": "-o 'uglifyjs > public/js/recorderjs_demo.js'",
     "watch:js:mediarecorder" : "watchify src/js/recorderjs/nd_AKAI_LPK25.js -o public/js/recorderjs_demo.js -t [ babelify --presets [ es2015 ] ]",
+
+    "//" : "Microphone Recorder",
+    "watch:js:microphonerecorder" : "watchify src/js/microphone-recorder/nd_MicrophoneRecorder.js -o public/js/nd_MicrophoneRecorder.js -t [ babelify --presets [ es2015 ] ]",
+
+    "//" : "live",
+    "watch:js:live" : "watchify src/js/live/index.js -o public/js/mrturtle.js -t [ babelify --presets [ es2015 react ] ]",
 
     "//" : "Watch for SCSS changes",
     "watch:css": "node-sass -w src/scss/ -o public/css/"

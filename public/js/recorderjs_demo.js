@@ -114,23 +114,47 @@ var ndMidi = (function () {
     // @see MIDIAccess
     this.access = args.access || null;
 
-    // @see MIDIInputMap
-    this.inputMap = args.inputMap || null;
-
     // @see MIDIOutputMap
     this.outputMap = args.outputMap || null;
 
     // Show debugging logs?
     this.debug = args.debug || false;
 
-    // Input mapping mode activated?
-    this.mappingMode = args.mappingMode || false;
+    // A list of devices
+    this.devices = args.devices || null;
 
-    // The active input elements
-    this.inputElements = args.inputElements || [];
+    // Internal representation of the devices
+    this._devices = new Map();
 
-    // Mapping of input elements
-    this.inputMapping = args.inputMapping || null;
+    // Iterate over all devices to find the current input
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = this.devices[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var device = _step.value;
+
+        // The mapping of input elements
+        device.inputMapping = new Map();
+
+        // Add the device to the Map of devices
+        this._devices.set(device.id, device);
+      }
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator.return) {
+          _iterator.return();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
   } // / constructor
 
   /**
@@ -162,58 +186,83 @@ var ndMidi = (function () {
       // Save a reference to MIDIAccess
       this.access = access;
 
-      // Get the inputs for connected MIDI devices
-      this.inputMap = this.access.inputs;
-
       // Get the outputs for connected MIDI devices
       this.outputMap = this.access.outputs;
 
-      // Iterate over all input ports
-      var _iteratorNormalCompletion = true;
-      var _didIteratorError = false;
-      var _iteratorError = undefined;
+      // Handle all inputs
+      this.handleInputs();
 
-      try {
-        for (var _iterator = this.inputMap.values()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-          var input = _step.value;
-
-          // Listen to MIDIMessageEvent for this input port
-          input.onmidimessage = this.inputMessage.bind(this);
-        }
-
-        // Input mapping exists
-      } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
-      } finally {
-        try {
-          if (!_iteratorNormalCompletion && _iterator.return) {
-            _iterator.return();
-          }
-        } finally {
-          if (_didIteratorError) {
-            throw _iteratorError;
-          }
-        }
-      }
-
-      if (this.inputMapping !== null) {
-
-        // Iterate over all input element mappings
-        for (var key in this.inputMapping) {
-          var note = this.inputMapping[key];
-
-          this.inputElements[note] = {};
-          this.inputElements[note].pressed = false;
-          this.inputElements[note].velocity = 0;
-        }
-      }
-
-      // TODO: Handle output messages
+      // TODO: Handle outputs
 
       // Listen to stateChange events
       this.access.addEventListener('statechange', this.stateChange.bind(this));
     } // / ndMidi.connectSuccess
+
+    /**
+     * Handle all input ports
+     * 
+     */
+
+  }, {
+    key: 'handleInputs',
+    value: function handleInputs() {
+
+      // Iterate over all input ports
+      var _iteratorNormalCompletion2 = true;
+      var _didIteratorError2 = false;
+      var _iteratorError2 = undefined;
+
+      try {
+        for (var _iterator2 = this.access.inputs.values()[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+          var input = _step2.value;
+
+          // Listen to MIDIMessageEvent for this input port
+          input.onmidimessage = this.inputMessage.bind(this);
+
+          // Show input information
+          if (this.debug) {
+            console.log("type:", input.type, "| id:", input.id, "| manufacturer", input.manufacturer, "| name:", input.name, "| version:", input.version);
+          }
+
+          // The input is a defined device
+          if (this._devices.has(input.id)) {
+
+            // Get the single device
+            var device = this._devices.get(input.id);
+
+            // Mapping for the current device exists
+            if (device.mapping) {
+
+              // Iterate over all input element mappings
+              for (var key in device.mapping) {
+
+                // Get the note for the current
+                var note = device.mapping[key];
+
+                // Add the note to the inputMapping of the device
+                device.inputMapping.set(note, {
+                  pressed: false,
+                  velocity: 0
+                });
+              } // / Iterate over all input element mappings
+            } // / Mapping for the current input exists
+          } // / The input is a defined device
+        } // / Iterate over all input ports
+      } catch (err) {
+        _didIteratorError2 = true;
+        _iteratorError2 = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion2 && _iterator2.return) {
+            _iterator2.return();
+          }
+        } finally {
+          if (_didIteratorError2) {
+            throw _iteratorError2;
+          }
+        }
+      }
+    } // / ndMidi.handleInputs
 
     /**
      * It's not possible to use the Web MIDI API.
@@ -235,38 +284,15 @@ var ndMidi = (function () {
   }, {
     key: 'stateChange',
     value: function stateChange(e) {
-      console.log('MIDIAccess state change:', e);
 
-      var _iteratorNormalCompletion2 = true;
-      var _didIteratorError2 = false;
-      var _iteratorError2 = undefined;
+      if (this.debug) {
+        console.log(e, e.port.type);
+      }
 
-      try {
-        for (var _iterator2 = this.access.inputs[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-          var entry = _step2.value;
-
-          var input = entry[1];
-          console.log("Input port [type:'" + input.type + "'] id:'" + input.id + "' manufacturer:'" + input.manufacturer + "' name:'" + input.name + "' version:'" + input.version + "'");
-        }
-      } catch (err) {
-        _didIteratorError2 = true;
-        _iteratorError2 = err;
-      } finally {
-        try {
-          if (!_iteratorNormalCompletion2 && _iterator2.return) {
-            _iterator2.return();
-          }
-        } finally {
-          if (_didIteratorError2) {
-            throw _iteratorError2;
-          }
-        }
+      if (e.port.type == "input") {
+        this.handleInputs();
       }
     } // / ndMidi.stageChange
-
-  }, {
-    key: 'handleInputs',
-    value: function handleInputs() {} // / ndMidi.handleInputs
 
     /**
      * Handle MIDIMessageEvent's that are send from the MIDI device to the PC.
@@ -288,6 +314,14 @@ var ndMidi = (function () {
        * ---> The "midimessage" event is fired
        */
       if (message.data.length == 1) {
+        return;
+      }
+
+      // The device that was used
+      var device = this._devices.get(message.target.id);
+
+      // The device for the current message does not exist
+      if (device == undefined) {
         return;
       }
 
@@ -318,42 +352,42 @@ var ndMidi = (function () {
 
         // Note Off
         case '8':
-          this.noteOff({ note: note, velocity: velocity, channel: channel });
+          this.noteOff({ device: device, note: note, velocity: velocity, channel: channel });
           break;
 
         // Note On
         case '9':
-          this.noteOn({ note: note, velocity: velocity, channel: channel });
+          this.noteOn({ device: device, note: note, velocity: velocity, channel: channel });
           break;
 
         // Aftertouch
         case 'a':
-          this.aftertouch({ note: note, velocity: velocity, channel: channel });
+          this.aftertouch({ device: device, note: note, velocity: velocity, channel: channel });
           break;
 
         // Continuous controller
         case 'b':
-          this.continuousController({ note: note, velocity: velocity, channel: channel });
+          this.continuousController({ device: device, note: note, velocity: velocity, channel: channel });
           break;
 
         // Patch change
         case 'c':
-          this.patchChange({ note: note, velocity: velocity, channel: channel });
+          this.patchChange({ device: device, note: note, velocity: velocity, channel: channel });
           break;
 
         // Channel Pressure
         case 'd':
-          this.channelPressure({ note: note, velocity: velocity, channel: channel });
+          this.channelPressure({ device: device, note: note, velocity: velocity, channel: channel });
           break;
 
         // Pitch bend
         case 'e':
-          this.pitchBend({ note: note, velocity: velocity, channel: channel });
+          this.pitchBend({ device: device, note: note, velocity: velocity, channel: channel });
           break;
 
         // (non-musical commands)
         case 'f':
-          this.nonMusicalCommand({ note: note, velocity: velocity, type: type });
+          this.nonMusicalCommand({ device: device, note: note, velocity: velocity, type: type });
           break;
 
         default:
@@ -361,13 +395,15 @@ var ndMidi = (function () {
 
       } // / switch(type)
 
-      if (this.debug) {
-        //console.log(message.target.name, '|', 'channel_command', channel_command, 'channel', channel, 'type', type, 'note', note, 'velocitiy', velocity);
-      }
-
-      var event = new CustomEvent('ndMidi', { 'detail': this.inputElements[note] });
-      window.dispatchEvent(event);
+      // Send a custom event
+      window.dispatchEvent(new CustomEvent('ndMidi', { 'detail': { 'id': device.id, 'note': device.inputMapping.get(note) } }));
     } // / ndMidi.inputMessage
+
+  }, {
+    key: 'getCommand',
+    value: function getCommand(args) {
+      return this._devices.get(args.id).inputMapping.get(args.note.note);
+    }
 
     /**
      * Note (for example a button on a drumpad) on MIDI device was activated (for example pressed).
@@ -379,12 +415,21 @@ var ndMidi = (function () {
     value: function noteOn(args) {
       if (this.debug) {
         console.log('note on', args);
-      } else {
-        this.inputElements[args.note] = Object.assign(this.inputElements[args.note], args);
-        this.inputElements[args.note].pressed = true;
-        this.inputElements[args.note].noteOn = true;
-        this.inputElements[args.note].noteOff = false;
       }
+
+      // Get the current command
+      var command = args.device.inputMapping.get(args.note);
+
+      // Merge the values
+      command = Object.assign(command, args);
+
+      // Set values
+      command.pressed = true;
+      command.noteOn = true;
+      command.noteOff = false;
+
+      // Update the command
+      args.device.inputMapping.set(args.note, command);
     }
 
     /**
@@ -397,12 +442,21 @@ var ndMidi = (function () {
     value: function noteOff(args) {
       if (this.debug) {
         console.log('note off', args);
-      } else {
-        this.inputElements[args.note] = Object.assign(this.inputElements[args.note], args);
-        this.inputElements[args.note].pressed = false;
-        this.inputElements[args.note].noteOn = false;
-        this.inputElements[args.note].noteOff = true;
       }
+
+      // Get the current command
+      var command = args.device.inputMapping.get(args.note);
+
+      // Merge the values
+      command = Object.assign(command, args);
+
+      // Set values
+      command.pressed = false;
+      command.noteOn = false;
+      command.noteOff = true;
+
+      // Update the command
+      args.device.inputMapping.set(args.note, command);
     }
   }, {
     key: 'pitchBend',
@@ -417,7 +471,7 @@ var ndMidi = (function () {
       if (this.debug) {
         console.log('continuous controller', args);
       } else {
-        this.inputElements[args.note] = Object.assign(this.inputElements[args.note], args);
+        args.device.inputMapping[args.note] = Object.assign(args.device.inputMapping[args.note], args);
       }
     }
   }, {
@@ -539,8 +593,12 @@ var mapping_akai_lpk25 = {
  */
 var NERDDISCO_midi = new ndMidi({
   debug: false,
-  inputMapping: mapping_akai_lpk25,
-  sysex: true
+  sysex: true,
+
+  devices: [{
+    id: "AB901AF661BD9DFDD4CAF1A1177C751AFB6FF92FC2BBCD4B4546E3860C158F09",
+    mapping: mapping_akai_lpk25
+  }]
 });
 
 // Connect to the Web MIDI API and the attached MIDI devices
@@ -601,8 +659,17 @@ for (var i = 0; i < 25; i++) {
  */
 window.addEventListener('ndMidi', function (e) {
 
+  if (e.detail.id !== "AB901AF661BD9DFDD4CAF1A1177C751AFB6FF92FC2BBCD4B4546E3860C158F09") {
+    return;
+  }
+
   // The ID of the pressed key
   var key = (e.detail.note + 2) % 25;
+
+  // TODO
+  console.err("NOT WORKING! PLEASE IMPLEMENT");
+  return;
+  console.log(NERDDISCO_midi.getCommand(e.detail));
 
   // Start
   if (NERDDISCO_midi.inputElements[e.detail.note].noteOn && NERDDISCO_midi.inputElements[e.detail.note].pressed) {

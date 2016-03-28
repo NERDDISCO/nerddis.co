@@ -80,8 +80,14 @@ var mapping_akai_lpk25 = {
  */
 var NERDDISCO_midi = new ndMidi({
   debug: false,
-  inputMapping: mapping_akai_lpk25,
-  sysex: true
+  sysex: true,
+
+  devices : [
+    {
+      id : "AB901AF661BD9DFDD4CAF1A1177C751AFB6FF92FC2BBCD4B4546E3860C158F09",
+      mapping : mapping_akai_lpk25
+    }
+  ]
 });
 
 // Connect to the Web MIDI API and the attached MIDI devices
@@ -167,8 +173,19 @@ for (var i = 0; i < 25; i++) {
  */
 window.addEventListener('ndMidi', function (e) {
 
+  if (e.detail.id !== "AB901AF661BD9DFDD4CAF1A1177C751AFB6FF92FC2BBCD4B4546E3860C158F09") {
+    return;
+  }
+
   // The ID of the pressed key
   var key = (e.detail.note + 2) % 25;
+
+
+
+  // TODO
+  console.err("NOT WORKING! PLEASE IMPLEMENT");
+  return;
+  console.log(NERDDISCO_midi.getCommand(e.detail));
 
 
 

@@ -3,14 +3,11 @@ body {
   color: #ddd;
   margin: 0;
   padding: 0;
-  background: #15171E;
-}
+  background: #15171E; }
 
 h1 {
-  text-align: center;
-}
-  
+  text-align: center; }
+
 .logo {
   width: 50%;
-  width: 50vw;
-}
+  width: 50vw; }

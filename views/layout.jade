@@ -1,10 +1,17 @@
 doctype html
-html(lang="en")
+html(itemscope itemtype="http://schema.org/WebPage")
   head
     title= title
-    link(rel='stylesheet', href='stylesheets/style.css')
+    meta(charset="utf-8")
+    meta(name="theme-color", content="#003f4b")
+    meta(name="viewport", content="width=device-width")
+    link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+
+    block head
     
   body
     block content
+
+  block bodyend
 
   include ./footer.jade
