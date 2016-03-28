@@ -31752,7 +31752,7 @@ var MrTurtle = (function () {
     value: function connect() {
 
       // Connect to socket.io server
-      this.socket = io.connect('http://192.168.178.132:2000');
+      this.socket = io.connect('http://nerddis.co:2000');
 
       // Subscribe to different messages from the server
       this.subscribe();
