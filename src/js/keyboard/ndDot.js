@@ -60,7 +60,7 @@ class ndDot {
       // this._y = this._y - (this.r / this.ttl);
 
       // Set the color
-      this.ctx.fillStyle = "hsla(" + this._color + ", 100%, 60%, .45)";
+      this.ctx.fillStyle = "hsla(" + this._color + ", 100%, 50%, .45)";
 
       // Draw the dot
       this.ctx.arc(this.x, this.y, this._r, 0, 2 * Math.PI);

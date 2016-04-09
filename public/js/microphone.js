@@ -1,105 +1,6 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var ndDot = (function () {
-  function ndDot(args) {
-    _classCallCheck(this, ndDot);
-
-    // Canvas context
-    this.ctx = args.ctx || undefined;
-
-    // Is the element active
-    this.active = args.active || false;
-
-    // Radius
-    this.r = args.r || 0;
-    this._r = this.r;
-
-    // Position
-    this.x = args.x || 0;
-    this._x = this.x;
-
-    this.y = args.y || 0;
-    this._y = this.y;
-
-    // Time to life
-    this.ttl = args.ttl || 0;
-    // The amount of time I'm alive
-    this._ttl = this.ttl;
-
-    // Color
-    this.color = args.color || 0;
-    this._color = this.color;
-  }
-
-  _createClass(ndDot, [{
-    key: "draw",
-    value: function draw() {
-
-      // Canvas context does not exist
-      if (this.ctx === undefined) {
-        return;
-      }
-
-      if (!this.active) {
-        return;
-      }
-
-      // The element is still alive
-      if (this._ttl-- > 0) {
-
-        // Save the canvas state
-        this.ctx.save();
-
-        // Start to draw a path
-        this.ctx.beginPath();
-
-        // Decrease the radius   
-        this._r = this._r - this.r / this.ttl;
-
-        // Change the positon
-        // this._x = this._x - (this.r / this.ttl);
-        // this._y = this._y - (this.r / this.ttl);
-
-        // Set the color
-        this.ctx.fillStyle = "hsla(" + this._color + ", 100%, 60%, .45)";
-
-        // Draw the dot
-        this.ctx.arc(this.x, this.y, this._r, 0, 2 * Math.PI);
-
-        // Fill the dot with color
-        this.ctx.fill();
-
-        // Restore the canvas state
-        this.ctx.restore();
-      }
-    }
-
-    /**
-     * Reset the initial state of the dot.
-     * 
-     */
-
-  }, {
-    key: "reset",
-    value: function reset() {
-      this._ttl = this.ttl;
-      this._r = this.r;
-    }
-  }]);
-
-  return ndDot;
-})(); // / ndDot
-
-module.exports = ndDot;
-
-},{}],2:[function(require,module,exports){
-'use strict';
-
 // Import ndDot
 var ndDot = require('./ndDot.js');
 
@@ -328,7 +229,106 @@ function createDownloadLink() {
   });
 }
 
-},{"./ndDot.js":1,"./recorder.js":3}],3:[function(require,module,exports){
+},{"./ndDot.js":2,"./recorder.js":3}],2:[function(require,module,exports){
+'use strict';
+
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ndDot = (function () {
+  function ndDot(args) {
+    _classCallCheck(this, ndDot);
+
+    // Canvas context
+    this.ctx = args.ctx || undefined;
+
+    // Is the element active
+    this.active = args.active || false;
+
+    // Radius
+    this.r = args.r || 0;
+    this._r = this.r;
+
+    // Position
+    this.x = args.x || 0;
+    this._x = this.x;
+
+    this.y = args.y || 0;
+    this._y = this.y;
+
+    // Time to life
+    this.ttl = args.ttl || 0;
+    // The amount of time I'm alive
+    this._ttl = this.ttl;
+
+    // Color
+    this.color = args.color || 0;
+    this._color = this.color;
+  }
+
+  _createClass(ndDot, [{
+    key: "draw",
+    value: function draw() {
+
+      // Canvas context does not exist
+      if (this.ctx === undefined) {
+        return;
+      }
+
+      if (!this.active) {
+        return;
+      }
+
+      // The element is still alive
+      if (this._ttl-- > 0) {
+
+        // Save the canvas state
+        this.ctx.save();
+
+        // Start to draw a path
+        this.ctx.beginPath();
+
+        // Decrease the radius   
+        this._r = this._r - this.r / this.ttl;
+
+        // Change the positon
+        // this._x = this._x - (this.r / this.ttl);
+        // this._y = this._y - (this.r / this.ttl);
+
+        // Set the color
+        this.ctx.fillStyle = "hsla(" + this._color + ", 100%, 60%, .45)";
+
+        // Draw the dot
+        this.ctx.arc(this.x, this.y, this._r, 0, 2 * Math.PI);
+
+        // Fill the dot with color
+        this.ctx.fill();
+
+        // Restore the canvas state
+        this.ctx.restore();
+      }
+    }
+
+    /**
+     * Reset the initial state of the dot.
+     * 
+     */
+
+  }, {
+    key: "reset",
+    value: function reset() {
+      this._ttl = this.ttl;
+      this._r = this.r;
+    }
+  }]);
+
+  return ndDot;
+})(); // / ndDot
+
+module.exports = ndDot;
+
+},{}],3:[function(require,module,exports){
 'use strict';
 
 var WORKER_PATH = 'js/recorderWorker.js';
@@ -418,4 +418,4 @@ Recorder.forceDownload = function (blob, filename) {
 
 module.exports = Recorder;
 
-},{}]},{},[2]);
+},{}]},{},[1]);

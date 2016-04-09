@@ -17,6 +17,22 @@ h1 {
   width: 50vw; }
 
 h2 {
+  font: bold 3.65em sans-serif;
+  line-height: 1.5em;
+  margin: .25em 0 1em 0;
+  text-align: center; }
+  @media only screen and (max-width: 59.9375em) {
+    h2 {
+      font-size: 2.25em; } }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 75em; }
+
+#mrturtle {
+  padding: 1em; }
+
+h2 {
   font: 2.65em sans-serif;
   line-height: 1.5em;
   margin: .25em 0 1em 0;
@@ -25,13 +41,6 @@ h2 {
     h2 {
       font-size: 1.75em;
       margin: .25em 0 0 0; } }
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 75em; }
-
-#mrturtle {
-  padding: 1em; }
 
 .show-artist,
 .show-title {

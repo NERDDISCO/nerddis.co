@@ -1,34 +1,20 @@
-@import "lib/breakpoints";
-
-
-
-
+@import "style";
 
 $color-pink: #D7598B;
 $color-brown: #855C52;
 $color-green: #1B5E20;
 
 
-
-
-
-* {
-  box-sizing: border-box;
+#mrturtle {
+  padding: 1em;
 }
 
-body {
-  font: 1em sans-serif;
-  color: #fff;
-  background: #15171E;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
 
 h2 {
   font: 2.65em sans-serif;
   line-height: 1.5em;
   margin: .25em 0 1em 0;
+  text-align: center;
 
   @include breakpoint("medium", "and down") {
     font-size: 1.75em;
@@ -36,14 +22,6 @@ h2 {
   }
 }
 
-.wrapper {
-  margin: 0 auto;
-  max-width: 70em;
-}
-
-#mrturtle {
-  padding: 1em;
-}
 
 .show-artist,
 .show-title {

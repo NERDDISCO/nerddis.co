@@ -62,7 +62,7 @@ var Show = React.createClass({
   render() {
     return (
       <div>
-        <h2>Do you enjoy <span className="show-artist">{this.state.artist}</span> @ <span className="show-title">{this.state.title}</span>?</h2>
+        <h2><span className="show-artist">{this.state.artist}</span> @ <span className="show-title">{this.state.title}</span></h2>
         { 
           !this.state.voted
           ? <Vote />

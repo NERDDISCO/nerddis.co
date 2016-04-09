@@ -28,7 +28,7 @@ class ndMidi {
       device.inputMapping = new Map();
 
       // Add the device to the Map of devices
-      this._devices.set(device.id, device);
+      this._devices.set(device.name, device);
     }
 
   } // / constructor
@@ -95,15 +95,15 @@ class ndMidi {
 
       // Show input information
       if (this.debug) {
-        console.log("type:", input.type, "| id:", input.id, "| manufacturer", input.manufacturer, "| name:", input.name, "| version:", input.version);
+        console.log("type:", input.type, "| id:", input.id, "| manufacturer:", input.manufacturer, "| name:", input.name, "| version:", input.version);
       }
 
 
       // The input is a defined device
-      if (this._devices.has(input.id)) {
+      if (this._devices.has(input.name)) {
 
         // Get the single device
-        let device = this._devices.get(input.id);
+        let device = this._devices.get(input.name);
 
         // Mapping for the current device exists
         if (device.mapping) {
@@ -170,7 +170,7 @@ class ndMidi {
   inputMessage(message) {
 
     /**
-     * @TODO: WTF?
+     * @TODO: HANDLE WTF-ERROR CORRECTLY AND NOT LIKE THIS
      * 
      * Reproduce
      * - Connect a MIDI device
@@ -185,7 +185,7 @@ class ndMidi {
 
 
     // The device that was used
-    let device = this._devices.get(message.target.id);
+    let device = this._devices.get(message.target.name);
 
     // The device for the current message does not exist
     if (device == undefined) {
@@ -269,7 +269,7 @@ class ndMidi {
 
 
     // Send a custom event
-    window.dispatchEvent(new CustomEvent('ndMidi', { 'detail' : { 'id': device.id, 'note': device.inputMapping.get(note) } }));
+    window.dispatchEvent(new CustomEvent('ndMidi', { 'detail' : { 'id': device.id, 'name': device.name, 'note': device.inputMapping.get(note) } }));
     
   } // / ndMidi.inputMessage
 
@@ -278,7 +278,7 @@ class ndMidi {
 
 
   getCommand(args) {
-  	return this._devices.get(args.id).inputMapping.get(args.note.note);
+  	return this._devices.get(args.name).inputMapping.get(args.note.note);
   }
 
 

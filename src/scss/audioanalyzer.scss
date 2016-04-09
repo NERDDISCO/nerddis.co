@@ -1,0 +1,27 @@
+@import "style";
+
+#player {
+  width: 100%;
+  margin: 0 0 3em 0;
+}
+
+ul {
+   list-style-type: none;
+   display: flex;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+
+   > li {
+     flex: 1;
+     text-align: center;
+
+     > .title {
+       color: #5b647c;
+     }
+
+     > .freq {
+       font-size: 2em;
+     }
+   }
+}

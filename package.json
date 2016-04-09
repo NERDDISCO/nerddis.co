@@ -36,14 +36,17 @@
   
   "scripts": {
     "//" : "Start the server",
-    "start": "parallelshell 'nodemon ./bin/www' 'npm run watch:css' 'npm run watch:js:mediarecorder' 'npm run watch:js:microphonerecorder' 'npm run watch:js:live'",
+    "start": "parallelshell 'nodemon ./bin/www' 'npm run watch:css' 'npm run watch:js:audioanalyzer' 'npm run watch:js:keyboard' 'npm run watch:js:microphone' 'npm run watch:js:live'",
 
-    "//" : "MediaRecorder Demo",
-    "//": "-o 'uglifyjs > public/js/recorderjs_demo.js'",
-    "watch:js:mediarecorder" : "watchify src/js/recorderjs/nd_AKAI_LPK25.js -o public/js/recorderjs_demo.js -t [ babelify --presets [ es2015 ] ]",
+    "//" : "Audio Analyzer",
+    "watch:js:audioanalyzer" : "watchify src/js/audioanalyzer/index.js -o public/js/audioanalyzer.js -t [ babelify --presets [ es2015 react ] ]",
 
-    "//" : "Microphone Recorder",
-    "watch:js:microphonerecorder" : "watchify src/js/microphone-recorder/nd_MicrophoneRecorder.js -o public/js/nd_MicrophoneRecorder.js -t [ babelify --presets [ es2015 ] ]",
+    "//" : "keyboard",
+    "//": "-o 'uglifyjs > public/js/keyboard.js'",
+    "watch:js:keyboard" : "watchify src/js/keyboard/index.js -o public/js/keyboard.js -t [ babelify --presets [ es2015 ] ]",
+
+    "//" : "microphone",
+    "watch:js:microphone" : "watchify src/js/microphone/index.js -o public/js/microphone.js -t [ babelify --presets [ es2015 ] ]",
 
     "//" : "live",
     "watch:js:live" : "watchify src/js/live/index.js -o public/js/mrturtle.js -t [ babelify --presets [ es2015 react ] ]",

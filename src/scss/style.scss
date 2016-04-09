@@ -1,9 +1,17 @@
+@import "lib/breakpoints";
+
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font: 1em sans-serif;
-  color: #ddd;
+  color: #fff;
   margin: 0;
   padding: 0;
   background: #15171E;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -13,4 +21,27 @@ h1 {
 .logo {
   width: 50%;
   width: 50vw;
+}
+
+
+
+
+h2 {
+  font: bold 3.65em sans-serif;
+  line-height: 1.5em;
+  margin: .25em 0 1em 0;
+  text-align: center;
+
+  @include breakpoint("medium", "and down") {
+    font-size: 2.25em;
+  }
+}
+
+
+
+
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 75em;
 }

@@ -104,6 +104,8 @@ io.on('connection', function (socket) {
       mrturtle_data.votes.no += 1;
     }
 
+    console.log(mrturtle_data);
+
     // Send update to all clients
     io.emit('hello', mrturtle_data);
 

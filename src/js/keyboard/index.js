@@ -79,12 +79,12 @@ var mapping_akai_lpk25 = {
  * MIDI
  */
 var NERDDISCO_midi = new ndMidi({
-  debug: false,
+  debug: true,
   sysex: true,
 
   devices : [
     {
-      id : "AB901AF661BD9DFDD4CAF1A1177C751AFB6FF92FC2BBCD4B4546E3860C158F09",
+      name : "LPK25 MIDI 1",
       mapping : mapping_akai_lpk25
     }
   ]
@@ -125,46 +125,6 @@ function tone(frequency, type, detune) {
 }
 
 
-// Currently active keys from AKAI LPK25
-var active_keys = [];
-
-
-
-
-
-
-
-
-resize();
-
-
-
-
-var width = canvas.width;
-var height = canvas.height;
-
-
-
-// Generate the active_keys
-for (var i = 0; i < 25; i++) {
-
-  var myDot = new ndDot({
-    ctx: ctx,
-    x: width / 2,
-    y: height / 2,
-    r: 150,
-    ttl: 60,
-    color: 120 / 25 * i
-  });
-
-  active_keys.push({
-    pressed : false,
-    dot : myDot
-  });
-}
-
-
-
 
 
 
@@ -173,61 +133,67 @@ for (var i = 0; i < 25; i++) {
  */
 window.addEventListener('ndMidi', function (e) {
 
-  if (e.detail.id !== "AB901AF661BD9DFDD4CAF1A1177C751AFB6FF92FC2BBCD4B4546E3860C158F09") {
+  if (e.detail.name.indexOf('LPK25 MIDI') === -1) {
     return;
   }
 
+
+  var command = NERDDISCO_midi.getCommand(e.detail);
+
   // The ID of the pressed key
-  var key = (e.detail.note + 2) % 25;
-
-
-
-  // TODO
-  console.err("NOT WORKING! PLEASE IMPLEMENT");
-  return;
-  console.log(NERDDISCO_midi.getCommand(e.detail));
-
+  var key = (command.note + 2) % 25;
 
 
   // Start
-  if (NERDDISCO_midi.inputElements[e.detail.note].noteOn && NERDDISCO_midi.inputElements[e.detail.note].pressed) {
-    NERDDISCO_midi.inputElements[e.detail.note].pressed = false;
-    var note = e.detail.note - 1;
+  if (command.noteOn && command.pressed) {
+    command.pressed = false;
+    var note = command.note - 1;
 
-    NERDDISCO_midi.inputElements[e.detail.note].oscillator1 = tone(Math.pow(1.0594630943593, note - 49) * 440, 'sawtooth', 0);
-    NERDDISCO_midi.inputElements[e.detail.note].oscillator2 = tone(Math.pow(1.0594630943593, note - 49 - 7) * 440, 'triangle', 0);
-    NERDDISCO_midi.inputElements[e.detail.note].oscillator3 = tone(Math.pow(1.0594630943593, note - 49 - 14) * 440, 'sawtooth', 0);
-    NERDDISCO_midi.inputElements[e.detail.note].oscillator4 = tone(Math.pow(1.0594630943593, note - 49 - 21) * 440, 'sawtooth', 0);
+    command.oscillator1 = tone(Math.pow(1.0594630943593, note - 49) * 440, 'sawtooth', 0);
+    command.oscillator2 = tone(Math.pow(1.0594630943593, note - 49 - 7) * 440, 'triangle', 0);
+    // command.oscillator3 = tone(Math.pow(1.0594630943593, note - 49 - 14) * 440, 'sawtooth', 0);
+    // command.oscillator4 = tone(Math.pow(1.0594630943593, note - 49 - 21) * 440, 'sawtooth', 0);
 
     // Key is pressed
     active_keys[key].pressed = true;
 
     // Stop
-  } else if (NERDDISCO_midi.inputElements[e.detail.note].noteOff) {
-      NERDDISCO_midi.inputElements[e.detail.note].noteOff = false;
+  } else if (command.noteOff) {
+      command.noteOff = false;
 
       var duration = 0.1;
-      var _duration = 0.05;
+      var _duration = 0.15;
       var increaseBy = -10;
       var stop = audioContext.currentTime + duration;
       var _stop = audioContext.currentTime;
 
-      //NERDDISCO_midi.inputElements[e.detail.note].oscillator1.frequency.setTargetAtTime(NERDDISCO_midi.inputElements[e.detail.note].oscillator1.frequency.value + increaseBy, _stop, _duration);
-      NERDDISCO_midi.inputElements[e.detail.note].oscillator1.stop(stop);
+      // command.oscillator1.frequency.setTargetAtTime(command.oscillator1.frequency.value + increaseBy, _stop, _duration);
+      command.oscillator1.stop(stop);
 
-      //NERDDISCO_midi.inputElements[e.detail.note].oscillator2.frequency.setTargetAtTime(NERDDISCO_midi.inputElements[e.detail.note].oscillator2.frequency.value + increaseBy, _stop, _duration);
-      NERDDISCO_midi.inputElements[e.detail.note].oscillator2.stop(stop);
+      // command.oscillator2.frequency.setTargetAtTime(command.oscillator2.frequency.value + increaseBy, _stop, _duration);
+      command.oscillator2.stop(stop);
 
-      //NERDDISCO_midi.inputElements[e.detail.note].oscillator3.frequency.setTargetAtTime(NERDDISCO_midi.inputElements[e.detail.note].oscillator3.frequency.value + increaseBy, _stop, _duration);
-      NERDDISCO_midi.inputElements[e.detail.note].oscillator3.stop(stop);
+      // command.oscillator3.frequency.setTargetAtTime(command.oscillator3.frequency.value + increaseBy, _stop, _duration);
+      // command.oscillator3.stop(stop);
 
-      //NERDDISCO_midi.inputElements[e.detail.note].oscillator4.frequency.setTargetAtTime(NERDDISCO_midi.inputElements[e.detail.note].oscillator4.frequency.value + increaseBy, _stop, _duration);
-      NERDDISCO_midi.inputElements[e.detail.note].oscillator4.stop(stop);
+      // // command.oscillator4.frequency.setTargetAtTime(command.oscillator4.frequency.value + increaseBy, _stop, _duration);
+      // command.oscillator4.stop(stop);
 
       // The key is released
       active_keys[key].pressed = false;
     }
 });
+
+
+
+
+
+
+
+
+
+
+
 
 // Resize the canvas on "resize" events
 function resize() {
@@ -245,16 +211,34 @@ window.addEventListener('resize', function (event) {
 }, false); // / window.addEventListener('resize')
 
 
+// Currently active keys from AKAI LPK25
+var active_keys = [];
+
+resize();
+
+var width = canvas.width;
+var height = canvas.height;
 
 
 
+// Generate the active_keys
+for (var i = 0; i < 25; i++) {
 
+  var myDot = new ndDot({
+    ctx: ctx,
+    x: width / 2,
+    y: height / 2,
+    r: 150,
+    ttl: 60,
+    // color: 120 / 25 * i
+    color: 360 / 25 * i
+  });
 
-
-
-
-
-
+  active_keys.push({
+    pressed : false,
+    dot : myDot
+  });
+}
 
 var key_width = 2;
 
@@ -332,6 +316,38 @@ function funkyDraw() {
 } // / funkyDraw
 
 
+// Visualize active?
+var isVisualizing = false;
+
+// The button to trigger recording / stop
+var visualizeButton = document.querySelector('#Visualize');
+
+visualizeButton.addEventListener('click', function(e) {
+  toggleVisualizing(this);
+});
+
+
+function toggleVisualizing(button) {
+  // Start to visualize
+  if (!isVisualizing) {
+    isVisualizing = true;
+
+    // Change the text to indicate "stop visualize"
+    button.innerText = 'visualize: on';
+    // Add a class
+    button.classList.add('recording');
+    
+  // Stop to visualize
+  } else {
+    isVisualizing = false;
+
+    // Change the text to indicate "start visualize"
+    button.innerText = 'visualize: off';
+    // Remove the class
+    button.classList.remove('recording');
+  }
+
+} // / toggleRecording
 
 
 
@@ -340,10 +356,16 @@ function funkyDraw() {
 
 // Update everything
 function update() {
-  // Draw on canvas
-  draw();
 
-  funkyDraw();
+  if (isVisualizing) {
+    // Draw on canvas
+    draw();
+
+    funkyDraw();
+  } else {
+    ctx.clearRect(0, 0, width, height);
+  }
+
 
   // Call update() again
   //setTimeout(function() {
@@ -398,7 +420,7 @@ function toggleRecording(button) {
     isRecording = true;
 
     // Change the text to indicate "stop recording"
-    button.innerText = 'stop';
+    button.innerText = 'record: on';
     // Add a class
     button.classList.add('recording');
     
@@ -410,7 +432,7 @@ function toggleRecording(button) {
     isRecording = false;
 
     // Change the text to indicate "start recording"
-    button.innerText = 'record';
+    button.innerText = 'record: off';
     // Remove the class
     button.classList.remove('recording');
 
