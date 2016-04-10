@@ -20636,6 +20636,10 @@ var Rx = require('../rx/dist/rx.all.js');
 var Frequency = React.createClass({
   displayName: 'Frequency',
   getInitialState: function getInitialState() {
+    this.colors = ['#F44336', '#E91E63', '#9C27B0', '#673AB7', '#3F51B5', '#2196F3', '#03A9F4', '#00BCD4', '#4CAF50', '#CDDC39', '#FFEB3B'];
+
+    this.colors.reverse();
+
     return {
       frequency: 0
     };
@@ -20656,8 +20660,12 @@ var Frequency = React.createClass({
   },
   render: function render() {
     var freqStyle = {
-      color: this.props.color
+      color: '#fff'
     };
+
+    if (this.state.frequency > 0) {
+      freqStyle.color = this.colors[Math.ceil(this.colors.length / 255 * this.state.frequency) - 1];
+    }
 
     return React.createElement(
       'li',
@@ -20685,29 +20693,19 @@ module.exports = Frequency;
 var React = require('react');
 var Frequency = require('./Frequency.js');
 
-/*
-     *  1. Sub Lows 20-100
-     *  2. Lows 100-250
-     *  3. Low Mids 250 - 500
-     *  4. Mids 500 - 1k
-     *  5. High Mids 1k - 5k
-     *  6. Highs 5k-10k
-     *  7. Super Highs 10k-20k and above
- */
-
 var FrequencyGroup = React.createClass({
   displayName: 'FrequencyGroup',
   render: function render() {
     return React.createElement(
       'ul',
       null,
-      React.createElement(Frequency, { type: 'sublow', title: '< 100', color: '#F44336' }),
-      React.createElement(Frequency, { type: 'low', title: '100-250', color: '#E91E63' }),
-      React.createElement(Frequency, { type: 'lowmid', title: '250-500', color: '#9C27B0' }),
-      React.createElement(Frequency, { type: 'mid', title: '500-1k', color: '#673AB7' }),
-      React.createElement(Frequency, { type: 'highmid', title: '1k-5k', color: '#3F51B5' }),
-      React.createElement(Frequency, { type: 'high', title: '5k-10k', color: '#2196F3' }),
-      React.createElement(Frequency, { type: 'superhigh', title: '> 10k', color: '#03A9F4' })
+      React.createElement(Frequency, { type: 'sublow', title: '< 100' }),
+      React.createElement(Frequency, { type: 'low', title: '100-250' }),
+      React.createElement(Frequency, { type: 'lowmid', title: '250-500' }),
+      React.createElement(Frequency, { type: 'mid', title: '500-1k' }),
+      React.createElement(Frequency, { type: 'highmid', title: '1k-5k' }),
+      React.createElement(Frequency, { type: 'high', title: '5k-10k' }),
+      React.createElement(Frequency, { type: 'superhigh', title: '> 10k' })
     );
   }
 });
@@ -20746,7 +20744,7 @@ NERDDISCO_soundcloud.loadTrack();
 /**
  * Update everything:
  */
-var fps = 24;
+var fps = 60;
 var audioEvent = new CustomEvent("ndAudioEvent", { data: {} });
 
 function update() {

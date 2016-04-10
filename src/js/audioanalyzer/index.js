@@ -35,7 +35,7 @@ NERDDISCO_soundcloud.loadTrack();
 /**
  * Update everything:
  */
-var fps = 24;
+var fps = 60;
 var audioEvent = new CustomEvent("ndAudioEvent", { data: {} });
 
 function update() {
