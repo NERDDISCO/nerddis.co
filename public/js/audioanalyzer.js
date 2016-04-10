@@ -20655,6 +20655,10 @@ var Frequency = React.createClass({
     });
   },
   render: function render() {
+    var freqStyle = {
+      color: this.props.color
+    };
+
     return React.createElement(
       'li',
       null,
@@ -20666,7 +20670,7 @@ var Frequency = React.createClass({
       React.createElement('br', null),
       React.createElement(
         'span',
-        { className: 'freq' },
+        { className: 'freq', style: freqStyle },
         this.state.frequency
       )
     );
@@ -20697,13 +20701,13 @@ var FrequencyGroup = React.createClass({
     return React.createElement(
       'ul',
       null,
-      React.createElement(Frequency, { type: 'sublow', title: '< 100' }),
-      React.createElement(Frequency, { type: 'low', title: '100-250' }),
-      React.createElement(Frequency, { type: 'lowmid', title: '250-500' }),
-      React.createElement(Frequency, { type: 'mid', title: '500-1k' }),
-      React.createElement(Frequency, { type: 'highmid', title: '1k-5k' }),
-      React.createElement(Frequency, { type: 'high', title: '5k-10k' }),
-      React.createElement(Frequency, { type: 'superhigh', title: '> 10k' })
+      React.createElement(Frequency, { type: 'sublow', title: '< 100', color: '#F44336' }),
+      React.createElement(Frequency, { type: 'low', title: '100-250', color: '#E91E63' }),
+      React.createElement(Frequency, { type: 'lowmid', title: '250-500', color: '#9C27B0' }),
+      React.createElement(Frequency, { type: 'mid', title: '500-1k', color: '#673AB7' }),
+      React.createElement(Frequency, { type: 'highmid', title: '1k-5k', color: '#3F51B5' }),
+      React.createElement(Frequency, { type: 'high', title: '5k-10k', color: '#2196F3' }),
+      React.createElement(Frequency, { type: 'superhigh', title: '> 10k', color: '#03A9F4' })
     );
   }
 });

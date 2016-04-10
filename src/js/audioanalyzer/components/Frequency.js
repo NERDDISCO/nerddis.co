@@ -32,8 +32,12 @@ var Frequency = React.createClass({
 
 
   render() {
+    var freqStyle = {
+      color: this.props.color
+    };
+
     return (
-      <li><span className="title">{this.props.title}</span><br /><span className="freq">{this.state.frequency}</span></li>
+      <li><span className="title">{this.props.title}</span><br /><span className="freq" style={freqStyle}>{this.state.frequency}</span></li>
     );
   }
 });
