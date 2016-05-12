@@ -11,8 +11,8 @@ router.get('/audioanalyzer', function(req, res, next) {
 });
 
 
-router.get('/keyboard', function(req, res, next) {
-  res.render('keyboard', { title: 'NERD DISCO - Keyboard' });
+router.get('/synthesizer', function(req, res, next) {
+  res.render('keyboard', { title: 'NERD DISCO - Synthesizer' });
 });
 
 router.get('/microphone', function(req, res, next) {

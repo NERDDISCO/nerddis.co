@@ -22,7 +22,7 @@ var ctx = canvas.getContext('2d');
 // Analyser
 var analyser = audioContext.createAnalyser();
 // Set FFT size
-analyser.fftSize = 256;
+analyser.fftSize = 512;
 
 // AnalyserData
 var analyserData = new Uint8Array(analyser.frequencyBinCount);
@@ -195,7 +195,7 @@ function toggleAudioOutput(button) {
     analyser.connect(audioContext.destination);
 
     // Change the text to indicate "stop recording"
-    button.innerText = 'Audio: enabled';
+    button.innerText = 'output: on';
 
     // Stop output
   } else {
@@ -205,7 +205,7 @@ function toggleAudioOutput(button) {
       analyser.disconnect(audioContext.destination);
 
       // Change the text to indicate "start recording"
-      button.innerText = 'Audio: disabled';
+      button.innerText = 'output: off';
     }
 } // / toggleAudioOutput
 
@@ -216,15 +216,27 @@ function createDownloadLink() {
     var li = document.createElement('li');
     var au = document.createElement('audio');
     var hf = document.createElement('a');
+    var rename = document.createElement('input');
 
     au.controls = true;
     au.src = url;
+
     hf.href = url;
     hf.download = new Date().toISOString() + '.wav';
     hf.innerHTML = 'Download';
     hf.classList.add('button');
+
     li.appendChild(au);
     li.appendChild(hf);
+    li.appendChild(rename);
+
+    // Listen for clicks on download button
+    hf.addEventListener('click', function (e) {
+      if (rename.value !== '') {
+        hf.download = rename.value + '.wav';
+      }
+    });
+
     recordingslist.appendChild(li);
   });
 }

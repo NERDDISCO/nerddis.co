@@ -26,7 +26,7 @@ a {
   cursor: pointer;
   border-bottom: .125em solid #ddd;
 }
-  
+
 .logo {
   width: 60%
 }
@@ -98,4 +98,15 @@ button.recording {
   cursor: pointer;
   vertical-align: super;
   border: .125em solid #ddd;
+}
+
+input {
+  text-decoration: none;
+  margin: 0 0 0 1em;
+  padding: .5em;
+  background: white;
+  color: #000;
+  font: 1em sans-serif;
+  vertical-align: super;
+  border: .125em solid transparent;
 }

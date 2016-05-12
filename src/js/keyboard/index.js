@@ -286,7 +286,7 @@ function draw() {
 
 /**
  * Draw some funky stuff >:D
- * 
+ *
  */
 function funkyDraw() {
 
@@ -336,7 +336,7 @@ function toggleVisualizing(button) {
     button.innerText = 'visualize: on';
     // Add a class
     button.classList.add('recording');
-    
+
   // Stop to visualize
   } else {
     isVisualizing = false;
@@ -420,10 +420,10 @@ function toggleRecording(button) {
     isRecording = true;
 
     // Change the text to indicate "stop recording"
-    button.innerText = 'record: on';
+    button.innerText = 'stop';
     // Add a class
     button.classList.add('recording');
-    
+
     // Start recording
     recorder.record();
 
@@ -432,7 +432,7 @@ function toggleRecording(button) {
     isRecording = false;
 
     // Change the text to indicate "start recording"
-    button.innerText = 'record: off';
+    button.innerText = 'record';
     // Remove the class
     button.classList.remove('recording');
 
@@ -459,15 +459,27 @@ function createDownloadLink() {
     var li = document.createElement('li');
     var au = document.createElement('audio');
     var hf = document.createElement('a');
-    
+    var rename = document.createElement('input');
+
     au.controls = true;
     au.src = url;
+
     hf.href = url;
     hf.download = new Date().toISOString() + '.wav';
     hf.innerHTML = 'Download';
     hf.classList.add('button');
+
     li.appendChild(au);
     li.appendChild(hf);
+    li.appendChild(rename);
+
+    // Listen for clicks on download button
+    hf.addEventListener('click', function(e) {
+      if (rename.value !== '') {
+        hf.download = rename.value + '.wav';
+      }
+    });
+
     recordingslist.appendChild(li);
   });
 
