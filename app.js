@@ -70,7 +70,7 @@ app.use(function(err, req, res, next) {
 
 var mrturtle_data = {
   artist: 'Tim Pietrusky',
-  title: 'JSConf Uruguay 2016',
+  title: 'EmpireJS 2016',
   votes : {
     yes : 0,
     no: 0
@@ -82,12 +82,12 @@ var mrturtle_data = {
 
 /**
  * socket.io
- * 
+ *
  */
 io.on('connection', function (socket) {
 
   // console.log('sessionID ' + socket.id);
-  
+
   // Send init event to socket
   socket.emit('hello', mrturtle_data);
 

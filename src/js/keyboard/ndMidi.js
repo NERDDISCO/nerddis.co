@@ -1,7 +1,7 @@
 'use strict';
 
 class ndMidi {
-  
+
   constructor(args) {
 
     // System Exclusive Support?
@@ -57,8 +57,8 @@ class ndMidi {
 
 
   /**
-   * Got permission to use MIDI devices. 
-   * 
+   * Got permission to use MIDI devices.
+   *
    * @param MIDIAccess access
    */
   connectSuccess(access) {
@@ -83,10 +83,10 @@ class ndMidi {
 
   /**
    * Handle all input ports
-   * 
+   *
    */
   handleInputs() {
-    
+
     // Iterate over all input ports
     for (let input of this.access.inputs.values()) {
 
@@ -145,7 +145,7 @@ class ndMidi {
 
   /**
    * State of a MIDI devices changed: connected / disconnected
-   * 
+   *
    * @param  MIDIConnectionEvent e
    */
   stateChange(e) {
@@ -164,18 +164,18 @@ class ndMidi {
 
   /**
    * Handle MIDIMessageEvent's that are send from the MIDI device to the PC.
-   * 
+   *
    * @param  {MIDIMessageEvent} message
    */
   inputMessage(message) {
 
     /**
      * @TODO: HANDLE WTF-ERROR CORRECTLY AND NOT LIKE THIS
-     * 
+     *
      * Reproduce
      * - Connect a MIDI device
      * - Detach MIDI device
-     * - Connect MIDI device 
+     * - Connect MIDI device
      * ---> The "midimessage" event is fired
      */
     if (message.data.length == 1) {
@@ -270,7 +270,7 @@ class ndMidi {
 
     // Send a custom event
     window.dispatchEvent(new CustomEvent('ndMidi', { 'detail' : { 'id': device.id, 'name': device.name, 'note': device.inputMapping.get(note) } }));
-    
+
   } // / ndMidi.inputMessage
 
 
@@ -286,11 +286,11 @@ class ndMidi {
 
   /**
    * Note (for example a button on a drumpad) on MIDI device was activated (for example pressed).
-   * 
+   *
    */
   noteOn(args) {
     if (this.debug) {
-      console.log('note on', args);
+      console.log('note on', args.note);
     }
 
     // Get the current command
@@ -312,11 +312,11 @@ class ndMidi {
 
   /**
    * Note (for example a button on a drumpad) on MIDI device was activated (for example pressed).
-   * 
+   *
    */
   noteOff(args) {
     if (this.debug) {
-      console.log('note off', args);
+      console.log('note off', args.note);
     }
 
     // Get the current command

@@ -583,8 +583,8 @@ var ndMidi = (function () {
     } // / ndMidi.connect
 
     /**
-     * Got permission to use MIDI devices. 
-     * 
+     * Got permission to use MIDI devices.
+     *
      * @param MIDIAccess access
      */
 
@@ -609,7 +609,7 @@ var ndMidi = (function () {
 
     /**
      * Handle all input ports
-     * 
+     *
      */
 
   }, {
@@ -686,7 +686,7 @@ var ndMidi = (function () {
 
     /**
      * State of a MIDI devices changed: connected / disconnected
-     * 
+     *
      * @param  MIDIConnectionEvent e
      */
 
@@ -705,7 +705,7 @@ var ndMidi = (function () {
 
     /**
      * Handle MIDIMessageEvent's that are send from the MIDI device to the PC.
-     * 
+     *
      * @param  {MIDIMessageEvent} message
      */
 
@@ -715,11 +715,11 @@ var ndMidi = (function () {
 
       /**
        * @TODO: HANDLE WTF-ERROR CORRECTLY AND NOT LIKE THIS
-       * 
+       *
        * Reproduce
        * - Connect a MIDI device
        * - Detach MIDI device
-       * - Connect MIDI device 
+       * - Connect MIDI device
        * ---> The "midimessage" event is fired
        */
       if (message.data.length == 1) {
@@ -816,14 +816,14 @@ var ndMidi = (function () {
 
     /**
      * Note (for example a button on a drumpad) on MIDI device was activated (for example pressed).
-     * 
+     *
      */
 
   }, {
     key: 'noteOn',
     value: function noteOn(args) {
       if (this.debug) {
-        console.log('note on', args);
+        console.log('note on', args.note);
       }
 
       // Get the current command
@@ -843,14 +843,14 @@ var ndMidi = (function () {
 
     /**
      * Note (for example a button on a drumpad) on MIDI device was activated (for example pressed).
-     * 
+     *
      */
 
   }, {
     key: 'noteOff',
     value: function noteOff(args) {
       if (this.debug) {
-        console.log('note off', args);
+        console.log('note off', args.note);
       }
 
       // Get the current command
