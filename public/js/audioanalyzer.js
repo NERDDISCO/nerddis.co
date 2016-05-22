@@ -20736,7 +20736,7 @@ var NERDDISCO_audio = new ndAudio({
 var NERDDISCO_soundcloud = new ndSoundcloud({
   ndAudio: NERDDISCO_audio,
   clientID: 'dce5652caa1b66331903493735ddd64d',
-  trackURL: 'https://soundcloud.com/loud-abovt-us/eptic-spellbound-loud-bovt-us-boot'
+  trackURL: 'https://soundcloud.com/apparat/nr-22'
 });
 
 NERDDISCO_soundcloud.loadTrack();
