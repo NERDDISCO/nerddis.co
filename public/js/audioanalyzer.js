@@ -33922,41 +33922,23 @@ var Frequency = React.createClass({
       freqStyle.color = this.colors[Math.ceil(this.colors.length / 255 * this.state.frequency) - 1];
     }
 
-    return (
-      // @formatter:offf
+    return React.createElement(
+      'li',
+      null,
       React.createElement(
-        'li',
-        null,
-        ' ',
-        React.createElement(
-          'span',
-          { className: 'title' },
-          ' ',
-          this.props.title,
-          ' '
-        ),
-        React.createElement('br', null),
-        ' ',
-        React.createElement(
-          'span',
-          { className: 'freq',
-            style: freqStyle },
-          ' ',
-          this.state.frequency,
-          ' '
-        )
+        'span',
+        { className: 'title' },
+        this.props.title
+      ),
+      React.createElement('br', null),
+      React.createElement(
+        'span',
+        { className: 'freq', style: freqStyle },
+        this.state.frequency
       )
     );
   }
 });
-
-module.exports = Frequency;
-
-module.exports = Frequency;
-ency;
-
-module.exports = Frequency;
-ency;
 
 module.exports = Frequency;
 
@@ -33972,20 +33954,13 @@ var FrequencyGroup = React.createClass({
     return React.createElement(
       'ul',
       null,
-      React.createElement(Frequency, { type: 'sublow',
-        title: '< 100' }),
-      React.createElement(Frequency, { type: 'low',
-        title: '100-250' }),
-      React.createElement(Frequency, { type: 'lowmid',
-        title: '250-500' }),
-      React.createElement(Frequency, { type: 'mid',
-        title: '500-1k' }),
-      React.createElement(Frequency, { type: 'highmid',
-        title: '1k-5k' }),
-      React.createElement(Frequency, { type: 'high',
-        title: '5k-10k' }),
-      React.createElement(Frequency, { type: 'superhigh',
-        title: '> 10k' })
+      React.createElement(Frequency, { type: 'sublow', title: '< 100' }),
+      React.createElement(Frequency, { type: 'low', title: '100-250' }),
+      React.createElement(Frequency, { type: 'lowmid', title: '250-500' }),
+      React.createElement(Frequency, { type: 'mid', title: '500-1k' }),
+      React.createElement(Frequency, { type: 'highmid', title: '1k-5k' }),
+      React.createElement(Frequency, { type: 'high', title: '5k-10k' }),
+      React.createElement(Frequency, { type: 'superhigh', title: '> 10k' })
     );
   }
 });
