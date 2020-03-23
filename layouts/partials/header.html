@@ -1,0 +1,40 @@
+<section id="intro">
+	<!-- Header -->
+	<div class="intro-header">
+
+		<div class="grid">
+
+      <div class="column">
+
+      </div>
+
+
+      <div class="column center">
+        <div>
+          <div class="logo">
+            {{ printf "static/img/nerddisco.svg" | readFile | safeHTML }}
+          </div>
+        
+          <h2>
+            Live visuals + lights.
+          </h2>
+        </div>
+      </div>
+
+
+
+
+      <div class="column bottom">
+        <p>
+        </p>
+
+        {{ if isset .Site.Params "social" }}
+        <ul class="list-inline intro-social-buttons">
+          {{ partial "social.html" . }}
+        </ul>
+        {{ end }}
+      </div>
+
+		</div>
+	</div>
+</section>

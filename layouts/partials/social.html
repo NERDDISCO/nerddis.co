@@ -1,0 +1,11 @@
+{{ range .Site.Params.social }}
+<li>
+	<a href="{{ .url }}" class="btn btn-default {{ .icon }}" target="_blank" aria-label="{{ .icon }}">
+
+    <span class="icon">
+      {{ printf "static/social/%s.svg" .icon | readFile | safeHTML }}
+    </span>
+    
+	</a>
+</li>
+{{ end }}

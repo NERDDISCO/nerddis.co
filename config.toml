@@ -1,0 +1,25 @@
+baseURL = "https://nerddis.co/"
+languageCode = "en-us"
+title = "NERDDISCO"
+theme = "landing-page"
+
+[[params.social]]
+	title = "youtube"
+	icon = "youtube"
+	url = "https://www.youtube.com/channel/UCjEh7ggQuxsI3JjqRUJfeAQ"
+[[params.social]]
+	title = "twitter"
+	icon = "twitter"
+	url = "https://www.twitter.com/NERDDISCO"
+[[params.social]]
+	title = "instagram"
+	icon = "instagram"
+	url = "https://www.instagram.com/TimPietrusky"
+[[params.social]]
+	title = "facebook"
+	icon = "facebook"
+	url = "https://facebook.com/TimPietrusky"
+[[params.social]]
+	title = "github"
+	icon = "github"
+	url = "https://github.com/NERDDISCO/nerddis.co"
