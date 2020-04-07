@@ -1,40 +1,63 @@
-<section id="intro">
+<section class="intro">
 	<!-- Header -->
-	<div class="intro-header">
-
-		<div class="grid">
+	<div class="intro-header center">
 
       <div class="column">
-
-      </div>
-
-
-      <div class="column center">
         <div>
           <div class="logo">
             {{ printf "static/img/nerddisco.svg" | readFile | safeHTML }}
           </div>
         
-          <h2>
-            Live visuals + lights.
-          </h2>
+          <h1 class="slogan">
+            visual spectacular
+          </h1>
         </div>
       </div>
 
+	</div>
+</section>
 
+<section>
+  <div class="column bottom">
 
+    <div class="columns columns--11 space-around">
 
-      <div class="column bottom">
+      <div class="column">
+        <h2 class="slogan">The Artist</h2>
+
         <p>
+          During the time when <a href="http://timpietrusky.com/">Tim Pietrusky</a> studied information science he really got into electronic music.
         </p>
 
-        {{ if isset .Site.Params "social" }}
-        <ul class="list-inline intro-social-buttons">
-          {{ partial "social.html" . }}
-        </ul>
-        {{ end }}
+        <p>
+          After 5 years blinded by the light, he started to work on web apps that can be used to run "live visual spectacular"-shows and interact
+          with other awesome projects like <a href="https://github.com/beyondscreen/fivetwelve">fivetwelve</a> and <a href="https://modv.js.org">modV</a>.
+        </p>
+
+          <p>Tim collaborates with various artists as either 
+            <a href="https://nerddis.co">NERDDISCO</a> or as digital artist of <a href="https://livejs.network">LiveJS</a> 
+            or as the visual half of <a href="https://schickmalzwo.de">schickmalzwo</a>. 
+          </p>
       </div>
 
-		</div>
-	</div>
+      <div class="column">
+        <h2 class="slogan">The Organisation</h2>
+
+        <p>
+          At <a href="https://github.com/NERDDISCO">NERDDISCO</a> we want to empower everyone to run their own
+          "live visual spectacular"-shows by using our open source projects like:
+        </p>
+        <ul class="stuff">
+          <li data-emoji="⚡️"><a href="https://github.com/NERDDISCO/luminave">luminave</a> & <a href="https://github.com/NERDDISCO/luminave-thorium">luminave-thorium</a></li>
+          <li data-emoji="💡"><a href="https://github.com/NERDDISCO/Webusb-dmx512-controller">WebUSB DMX512 Controller</a></li>
+          <li data-emoji="🥁"><a href="https://github.com/NERDDISCO/NerdDrum">NerdDrum</a></li>
+        </ul>
+
+        <p>We also have a <a href="https://visualandlightworkshop.com">"Visual and Light"-workshop</a> for any skill level, even remote!</p>
+      </div>
+
+    </div>
+
+
+  </div>
 </section>

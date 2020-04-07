@@ -24,15 +24,13 @@
 
     <title>{{ .Title }}</title>
 
-    {{ $style := resources.Get "css/landing-page.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ $options := dict "inlineImports" true }}
+    {{ $styles := resources.Get "css/nerddisco.css" | resources.PostCSS $options | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}">
 
     <!-- Local CSS -->
     {{ range .Site.Params.custom_css }}
         <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
     {{ end }}
-
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
-    
 </head>
 <body>

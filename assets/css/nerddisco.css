@@ -1,9 +1,19 @@
-::root {
+@import 'grid.css';
+
+
+:root {
   --color: #2d2f2c;
+  --color-white: #f8f8f8;
+  --color-black: #000;
+
+  --space-around: 2.5rem; 
 }
 
-body,
 html {
+  font-size: 1.5em;
+}
+
+body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -14,12 +24,26 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Raleway', sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
+}
+
+body {
+  background: var(--color-black);
+  color: var(--color-white);
 }
 
 a {
   text-decoration: none;
+  color: var(--color-black);
+  background: var(--color-white);
+  padding: .15em;
+  transition: filter .25s ease-in-out;
+  filter: grayscale(100%) invert(100%);
+}
+
+a:hover {
+  filter: grayscale(0%) invert(0%);
 }
 
 b {
@@ -28,124 +52,52 @@ b {
 
 p {
   margin: 0;
-  line-height: 1.45em;
+  line-height: 1.75em;
+}
+
+.intro {
+  height: 100vh;
 }
 
 .intro-header {
-  text-align: center;
-  color: #f8f8f8;
-  background: #000  no-repeat center center;
-  /*  background: #000 url(../img/background.jpg) no-repeat center center;*/
-  background-size: cover;
+  /*  background: #000 url(../img/background.jpg) no-repeat center center;
+  background-size: cover;*/
   height: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.grid {
-  display: grid;
-  height: 100vh;
-  grid-template-rows: 2fr 1fr 1fr 1fr;
-}
-
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-
-.bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: flex-end;
-  justify-content: flex-end;
 }
 
 
 h1 {
-  margin: 0 0 .35em 0;
-  display: inline-block;
-  padding: .15em .5em;
-  font-size: 4.5em;
-  text-transform: lowercase;
-
-  background: #000;
-  color: #fff;
+  font-size: 2.75em;
 }
 
-.logo {
-  width: 18em;
+h2 {
+  font-size: 1.5em;
   margin: 0 0 1em 0;
-  font-size: 1.5rem;
+}
+
+h2.huge {
+  font-size: 7.5rem;
+  margin: 1em 0 0 0;
+}
+
+
+.logo {
+  width: 90vw;
+  margin: 1em 0 1em 0;
+  font-size: 1rem;
   text-align: center;
   display: inline-block;
 }
 
-h2 {
-  font-size: 1.375em;
-  margin: 0;
+.slogan {
+  text-align: center;
 }
 
-.play {
-  background: #fff;
-  padding: 0;
-  border-radius: 50%;
-  display: flex;
-  transition: transform .25s;
-  border-color: var(--color);
-}
-
-.play:hover {
-  transform: scale(1.25);
-}
-
-.play-icon {
-  width: 3.5em;
-  height: 3.5em;
-}
-
-.intro-social-buttons .icon {
+.icon {
   width: 1.5em;
   height: 1.5em;
 }
 
-@media(max-width:767px) {
-  .grid {
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-  }
-
-  .play-icon {
-    width: 3.5em;
-    height: 3.5em;
-  }
-
-  .logo {
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.075em;
-  }
-
-
-  ul.intro-social-buttons>li {
-    margin: 0 .5em .75em 0;
-    padding: 0;
-  }
-}
-
-@media(max-width:1199px) {}
-
-/* Borrow from Bootstrap */
 .list-inline {
   padding-left: 0;
   list-style: none
@@ -155,6 +107,116 @@ h2 {
   display: inline-block;
   margin: 0 .25em;
 }
+
+.stuff {
+  list-style-type: none;
+  padding: 0;
+}
+
+.stuff > li {
+  margin: 1.25em 0;
+}
+
+.stuff > li:before {
+  content: attr(data-emoji);
+  margin: 0 .25em 0 0;
+}
+
+.show {
+  padding: var(--space-around);
+}
+    
+.show a {
+  padding: 0;
+  display: block;
+}
+
+.show__head {
+  padding: 1rem;
+  color: #000;
+}
+
+.show__image {
+  width: 100%;
+  vertical-align: top;
+}
+
+.show__title {
+  font-size: 3.5rem;
+  margin: 0 0 1rem 0;
+}
+
+.show__date {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+
+@media(max-width:1024px) {
+  :root {
+    --space-around: 3.5rem; 
+  }
+
+  html {
+    font-size: .85em;
+  }
+
+  .intro {
+    height: auto;
+  }
+
+  /* .rows--21 {
+    grid-template-rows: 1fr 1fr;
+  } */
+
+  /* .columns {
+    grid-template-columns: 1fr;
+  } */
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.075em;
+  }
+
+  ul.intro-social-buttons>li {
+    margin: 0 .5em .75em 0;
+    padding: 0;
+  }
+}
+
+@media(max-width:560px) {
+  :root {
+    --space-around: 1.5rem; 
+  }
+
+  html {
+    font-size: .65em;
+  }
+
+  .rows--21 {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* 
+
+
+
+
+Please replace ALL of this .btn shit!!! 
+
+
+
+*/
 
 .btn {
   display: flex;

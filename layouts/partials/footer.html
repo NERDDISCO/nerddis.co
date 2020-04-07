@@ -1,13 +1,19 @@
-<!-- Footer -->
 <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <p class="copyright text-muted small">Copyright &copy; {{ .Title }}</p>
-            </div>
-        </div>
+
+  <div class="rows">
+    <div class="column bottom">
+
+      <div class="column">
+        {{ if isset .Site.Params "social" }}
+        <ul class="list-inline intro-social-buttons">
+          {{ partial "social.html" . }}
+        </ul>
+        {{ end }}
+      </div>
+
     </div>
+  </div>
+
 </footer>
-{{ partial "js.html" . }}
 </body>
 </html>
