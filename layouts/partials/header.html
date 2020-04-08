@@ -9,9 +9,13 @@
         </div>
       
         <h1 class="slogan">
-          visual spectacular
+          {{ if $.Site.Params.isLive }}
+            {{ $.Site.Params.liveText | safeHTML }}
+          {{ else }}
+            visual spectacular
+          {{ end }}
         </h1>
-        
+
       </div>
 
 	</div>

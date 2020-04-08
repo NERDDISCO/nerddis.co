@@ -3,6 +3,10 @@ languageCode = "en-us"
 title = "NERDDISCO"
 theme = "landing-page"
 
+[params]
+  isLive = false
+  liveText = 'is <span class="live">live</span> on <a href="https://twitch.com/NERDDISCO">Twitch</a>'
+
 [[params.social]]
 	title = "youtube"
 	icon = "youtube"
@@ -46,6 +50,11 @@ theme = "landing-page"
 	title = "schickmalzwo @ Hybris - Peng, Mainz (Germany)"
 	img = "20200221_schickmalzwo_Hybris_Peng"
 	url = "https://youtu.be/0-mclBorQwo"
+[[params.shows]]
+  date = "2019/06/15"
+	title = "DESTROY WITH SCIENCE & NERDDISCO @ JSConf Asia - LASALLE College of the Arts, Singapore"
+	img = "20190615_DESTROY_WITH_SCIENCE_NERDDISCO_JSConfAsia"
+	url = "https://youtu.be/yMbfu5QiS7c"
 [[params.shows]]
   date = "2016/06/02"
 	title = "Ruth John & Tim Pietrusky - Live audio and visual spectacular @ ScotlandJS - Dynamic Earth, Edinburgh (Scotland)"

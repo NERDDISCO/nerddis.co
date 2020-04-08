@@ -5,7 +5,7 @@
   --color: #2d2f2c;
   --color-white: #f8f8f8;
   --color-black: #000;
-  --color-dark: #101010;
+  --color-dark: #1b1b1b;
 
   --space-around: 2.5rem; 
 }
@@ -92,6 +92,11 @@ h2.huge {
 
 .slogan {
   text-align: center;
+}
+
+.live {
+  background: #f00;
+  padding: .15em;
 }
 
 .icon {
