@@ -5,6 +5,7 @@
   --color: #2d2f2c;
   --color-white: #f8f8f8;
   --color-black: #000;
+  --color-dark: #101010;
 
   --space-around: 2.5rem; 
 }
@@ -29,7 +30,7 @@ h4 {
 }
 
 body {
-  background: var(--color-black);
+  background: var(--color-dark);
   color: var(--color-white);
 }
 
@@ -82,7 +83,7 @@ h2.huge {
 
 
 .logo {
-  width: 90vw;
+  width: 80vw;
   margin: 1em 0 1em 0;
   font-size: 1rem;
   text-align: center;
