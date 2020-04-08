@@ -37,6 +37,11 @@ theme = "landing-page"
 	img = "20200321_NERDDISCO_Ausgangssperre_Peng"
 	url = "https://www.youtube.com/watch?v=ylagilIkzj0"
 [[params.shows]]
+  date = "2020/03/12"
+	title = "half/byte & NERDDISCO - Lesson 2"
+	img = "20200312_halfbyte_NERDDISCO_Lesson_2"
+	url = "https://youtu.be/Qh0GymCwKa8"  
+[[params.shows]]
   date = "2020/02/21"
 	title = "schickmalzwo @ Hybris - Peng, Mainz (Germany)"
 	img = "20200221_schickmalzwo_Hybris_Peng"
