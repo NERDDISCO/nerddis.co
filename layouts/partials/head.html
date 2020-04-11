@@ -21,8 +21,8 @@
     <link rel="mask-icon" href="{{ .Site.BaseURL }}favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#462c59">
     <meta name="theme-color" content="#462c59">
-
-    <title>{{ .Title }}</title>
+    
+    <title>{{ if $.Site.Params.isLive }}{{ $.Site.Params.liveTitle }}{{ else }}{{ .Title }}{{ end }}</title>
 
     {{ $options := dict "inlineImports" true }}
     {{ $styles := resources.Get "css/nerddisco.css" | resources.PostCSS $options | minify | fingerprint }}
