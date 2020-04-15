@@ -129,7 +129,8 @@ h2.huge {
 }
 
 .show {
-  padding: var(--space-around);
+  /* padding: var(--space-around); */
+  overflow: hidden;
 }
     
 .show a {
@@ -148,13 +149,13 @@ h2.huge {
 }
 
 .show__title {
-  font-size: 3.5rem;
-  margin: 0 0 1rem 0;
+  font-size: 3rem;
+  margin: 0 0 0 0;
 }
 
 .show__date {
   font-size: 1rem;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 
@@ -164,7 +165,7 @@ h2.huge {
   }
 
   html {
-    font-size: .85em;
+    font-size: 1em;
   }
 
   .intro {
@@ -193,13 +194,9 @@ h2.huge {
   }
 }
 
-@media(max-width:560px) {
+@media(max-width:720px) {
   :root {
     --space-around: 1.5rem; 
-  }
-
-  html {
-    font-size: .65em;
   }
 
   .rows--21 {
