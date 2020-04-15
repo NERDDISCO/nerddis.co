@@ -68,9 +68,19 @@ theme = "landing-page"
 	url = "https://youtu.be/rRf5tVPkqLY"
 [[params.shows]]
   date = "2019/06/15"
+	title = "half/byte & Olivia Jack & NERDDISCO @ JSConf Asia - LASALLE College of the Arts, Singapore"
+	img = "20190615_halfbyte_Olivia_Jack_NERDDISCO_JSConfAsia"
+	url = "https://youtu.be/IjuICGSpV0M"
+[[params.shows]]
+  date = "2019/06/15"
 	title = "DESTROY WITH SCIENCE & NERDDISCO @ JSConf Asia - LASALLE College of the Arts, Singapore"
 	img = "20190615_DESTROY_WITH_SCIENCE_NERDDISCO_JSConfAsia"
 	url = "https://youtu.be/yMbfu5QiS7c"
+[[params.shows]]
+  date = "2019/03/17"
+	title = "schickmalzwo @ Jasmin's birthday bash - DAS DORF, Mainz (Germany)"
+	img = "20190317_schickmalzwo_Jasmins_birthday_bash_DASDORF"
+	url = "https://youtu.be/RsqeSfyhzdw"
 [[params.shows]]
   date = "2016/06/02"
 	title = "Ruth John & Tim Pietrusky - Live audio and visual spectacular @ ScotlandJS - Dynamic Earth, Edinburgh (Scotland)"
