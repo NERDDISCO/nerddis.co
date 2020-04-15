@@ -13,8 +13,8 @@ do
 
   echo "convert $filename"
 
-  convert $SRC/$filename.jpg -resize 1280 -quality 1 $DEST/$filename.webp
-  convert $SRC/$filename.jpg -resize 1280 -quality 1 $DEST/$filename.jpg
+  convert $SRC/$filename.jpg -resize 720 -quality 1 $DEST/$filename.webp
+  convert $SRC/$filename.jpg -resize 720 -quality 1 $DEST/$filename.jpg
 done
 
 # convert 20200221_schickmalzwo_Hybris_Peng.jpg -resize 1280 -quality 1 ../20200221_schickmalzwo_Hybris_Peng.webp
