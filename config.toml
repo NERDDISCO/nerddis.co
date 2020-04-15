@@ -62,6 +62,11 @@ theme = "landing-page"
 	img = "20200221_schickmalzwo_Hybris_Peng"
 	url = "https://youtu.be/0-mclBorQwo"
 [[params.shows]]
+  date = "2020/01/09"
+	title = "half/byte & NERDDISCO - Lesson 1"
+	img = "20200109_halfbyte_NERDDISCO_Lesson_1"
+	url = "https://youtu.be/rRf5tVPkqLY"
+[[params.shows]]
   date = "2019/06/15"
 	title = "DESTROY WITH SCIENCE & NERDDISCO @ JSConf Asia - LASALLE College of the Arts, Singapore"
 	img = "20190615_DESTROY_WITH_SCIENCE_NERDDISCO_JSConfAsia"
