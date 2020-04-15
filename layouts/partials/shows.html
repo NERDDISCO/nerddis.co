@@ -5,24 +5,28 @@
     <h2 class="huge">Shows</h2>
   </div>
 
-  {{ range .Site.Params.shows }}
-  <div class="show" data-date="{{ .date }}">
+  <div class="columns columns--fit space-around">
 
-    <a href="{{ .url }}" target="_blank" aria-label="{{ .title }}">
-      <div class="show__head">
-        <h4 class="show__date">{{ .date }}</h4>
-        <h3 class="show__title">{{ .title }}</h3>
-      </div>
+    {{ range .Site.Params.shows }}
+    <div class="show" data-date="{{ .date }}">
 
-      <picture>
-        <source srcset="{{ printf "shows/%s.webp" .img }}" type="image/webp">
-        <source srcset="{{ printf "shows/%s.jpg" .img }}" type="image/jpeg"> 
-        <img class="show__image" src="{{ printf "shows/%s.jpg" .img }}" alt="{{ .title }}" loading="lazy">
-      </picture>
-    </a>
+      <a href="{{ .url }}" target="_blank" aria-label="{{ .title }}">
+        <div class="show__head">
+          <h4 class="show__date">{{ .date }}</h4>
+          <h3 class="show__title">{{ .title }}</h3>
+        </div>
+
+        <picture>
+          <source srcset="{{ printf "shows/%s.webp" .img }}" type="image/webp">
+          <source srcset="{{ printf "shows/%s.jpg" .img }}" type="image/jpeg"> 
+          <img class="show__image" src="{{ printf "shows/%s.jpg" .img }}" alt="{{ .title }}" loading="lazy">
+        </picture>
+      </a>
+
+    </div>
+    {{ end }}
 
   </div>
-  {{ end }}
 
   <script type="text/javascript">
   console.log('NERDDISCO')
