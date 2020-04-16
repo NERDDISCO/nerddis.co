@@ -87,6 +87,11 @@ theme = "landing-page"
 	img = "20190317_schickmalzwo_Jasmins_birthday_bash_DASDORF"
 	url = "https://youtu.be/RsqeSfyhzdw"
 [[params.shows]]
+  date = "2017/09/13"
+	title = "LiveJS & NESTED LOOPS - People Got Mad JavaScript @ JSConfEU - Arena Berlin, Berlin (Germany)"
+	img = "220170507_LiveJS_NESTED_LOOPS_JSConfEU"
+	url = "https://www.youtube.com/watch?v=a0Bt7bK6nSA"
+[[params.shows]]
   date = "2016/06/02"
 	title = "Ruth John & Tim Pietrusky - Live audio and visual spectacular @ ScotlandJS - Dynamic Earth, Edinburgh (Scotland)"
 	img = "20160602_ScotlandJS_Ruth_John_Tim_Pietrusky"
