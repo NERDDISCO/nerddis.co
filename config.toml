@@ -42,6 +42,11 @@ theme = "landing-page"
 	img = "20200411_Haniman_NERDDISCO_Ausgangssperre_2_Peng"
 	url = "https://youtu.be/Kq0RVN5xT1A"
 [[params.shows]]
+  date = "2020/04/11"
+	title = "half/byte & NERDDISCO @ Ausgangssperre 2, Peng"
+	img = "20200411_halfbyte_NERDDISCO_Ausgangssperre_2_Peng"
+	url = "https://youtu.be/8v99P5p4wX4"
+[[params.shows]]
   date = "2020/03/26"
 	title = "half/byte & NERDDISCO - Stay at home!!!"
 	img = "20200326_halfbyte_NERDDISCO_Stay_At_Home"
