@@ -78,7 +78,7 @@ h2 {
 
 h2.huge {
   font-size: 7.5rem;
-  margin: 1em 0 0 0;
+  margin: 1em 0 var(--space-around) 0;
 }
 
 
@@ -186,6 +186,10 @@ h2.huge {
 
   h2 {
     font-size: 1.075em;
+  }
+
+  h2.huge {
+    font-size: 4.75rem;
   }
 
   ul.intro-social-buttons>li {
