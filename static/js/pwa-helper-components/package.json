@@ -1,0 +1,95 @@
+{
+  "_from": "pwa-helper-components",
+  "_id": "pwa-helper-components@0.2.10",
+  "_inBundle": false,
+  "_integrity": "sha512-0qxa/mFM4ssqFHNB1ka+MPefBh/lAVp+fAkWTxfqPsLXaKMt1g0PHQ8OVAr4qOWPQqYW4wuUpf6ljD/YQGmlzQ==",
+  "_location": "/pwa-helper-components",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "pwa-helper-components",
+    "name": "pwa-helper-components",
+    "escapedName": "pwa-helper-components",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/pwa-helper-components/-/pwa-helper-components-0.2.10.tgz",
+  "_shasum": "c3e2c4f9dec7d204ddd61e1fc5ac99cc0ac97f89",
+  "_spec": "pwa-helper-components",
+  "_where": "/Volumes/finalspace/dev/hugo/nerddis.co",
+  "author": {
+    "name": "Pascal Schilp"
+  },
+  "bugs": {
+    "url": "https://github.com/thepassle/pwa-helpers/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Utilities for common patterns that help you build your Progressive Web App",
+  "devDependencies": {
+    "@open-wc/eslint-config": "^1.0.0",
+    "@open-wc/prettier-config": "^0.1.10",
+    "@open-wc/testing": "^2.5.8",
+    "@open-wc/testing-karma": "^3.0.0",
+    "@open-wc/testing-karma-bs": "^1.0.0",
+    "es-dev-server": "^1.5.0",
+    "eslint": "^6.1.0",
+    "husky": "^1.0.0",
+    "lint-staged": "^8.0.0",
+    "lit-html": "1.1.1",
+    "sinon": "^7.5.0",
+    "webpack-merge": "^4.1.5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@open-wc/eslint-config",
+      "eslint-config-prettier"
+    ]
+  },
+  "homepage": "https://github.com/thepassle/pwa-helpers",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "main": "index.js",
+  "module": "index.js",
+  "name": "pwa-helper-components",
+  "prettier": "@open-wc/prettier-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thepassle/pwa-helpers.git"
+  },
+  "scripts": {
+    "format": "npm run format:eslint && npm run format:prettier",
+    "format:eslint": "eslint --ext .js,.html . --fix --ignore-path .gitignore",
+    "format:prettier": "prettier \"**/*.js\" --write --ignore-path .gitignore",
+    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "lint:eslint": "eslint --ext .js,.html . --ignore-path .gitignore",
+    "lint:prettier": "prettier \"**/*.js\" --check --ignore-path .gitignore",
+    "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
+    "start:compatibility": "es-dev-server --app-index demo/index.html --compatibility all --node-resolve --open --watch",
+    "test": "karma start --coverage",
+    "test:bs": "karma start karma.bs.config.js --compatibility all --coverage",
+    "test:compatibility": "karma start --compatibility all --coverage",
+    "test:compatibility:watch": "karma start --compatibility all --auto-watch=true --single-run=false",
+    "test:prune-snapshots": "karma start --prune-snapshots",
+    "test:update-snapshots": "karma start --update-snapshots",
+    "test:watch": "karma start --auto-watch=true --single-run=false"
+  },
+  "version": "0.2.10"
+}
