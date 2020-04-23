@@ -14,6 +14,24 @@
     </div>
   </div>
 
+  <pwa-update-available class="update-available" hidden>
+    <button class="update-available__button">Update available</button>
+  </pwa-update-available>
+
 </footer>
 </body>
+
+
+<script type="module" async>
+  // Check that service workers are supported
+  if ('serviceWorker' in navigator) {
+    // Use the window load event to keep the page load performant
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js');
+    });
+  }
+
+  import './js/pwa-helper-components/pwa-update-available.js';
+</script>
+
 </html>

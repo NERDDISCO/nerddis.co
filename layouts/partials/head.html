@@ -17,20 +17,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}favicon/favicon-16x16.png">
-    <link rel="manifest" href="{{ .Site.BaseURL }}favicon/site.webmanifest">
+    <link rel="manifest" href="{{ .Site.BaseURL }}site.webmanifest">
     <link rel="mask-icon" href="{{ .Site.BaseURL }}favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="canonical" href="{{ .Site.BaseURL }}"/>
+
     <meta name="msapplication-TileColor" content="#462c59">
     <meta name="theme-color" content="#462c59">
     
     <title>{{ if $.Site.Params.isLive }}{{ $.Site.Params.liveTitle }}{{ else }}{{ .Title }}{{ end }}</title>
 
     {{ $options := dict "inlineImports" true }}
-    {{ $styles := resources.Get "css/nerddisco.css" | resources.PostCSS $options | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}">
-
-    <!-- Local CSS -->
-    {{ range .Site.Params.custom_css }}
-        <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+    {{ with resources.Get "css/nerddisco.css" | resources.PostCSS $options | minify }}
+    <style type="text/css">{{ .Content | safeCSS }}</style>
     {{ end }}
 </head>
 <body>

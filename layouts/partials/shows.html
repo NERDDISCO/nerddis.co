@@ -10,7 +10,7 @@
     {{ range .Site.Params.shows }}
     <div class="show" data-date="{{ .date }}">
 
-      <a href="{{ .url }}" target="_blank" aria-label="{{ .title }}">
+      <a href="{{ .url }}" target="_blank" aria-label="{{ .title }}" rel="noopener">
         <div class="show__head">
           <h4 class="show__date">{{ .date }}</h4>
           <h3 class="show__title">{{ .title }}</h3>
@@ -27,16 +27,5 @@
     {{ end }}
 
   </div>
-
-  <script type="text/javascript">
-  console.log('NERDDISCO')
-
-  // var shows = document.querySelectorAll('.shows')
-
-  // shows.map(show => {
-  //   console.log(show)
-  // })
-  
-  </script>
 
 </section>
