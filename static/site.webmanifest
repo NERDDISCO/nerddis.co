@@ -2,7 +2,7 @@
     "name": "NERDDISCO",
     "short_name": "NERDDISCO",
     "description": "All shows by NERDDISCO.",
-    "start_url": "/index.html",
+    "start_url": "/",
     "lang": "en-US",
     "icons": [
         {
