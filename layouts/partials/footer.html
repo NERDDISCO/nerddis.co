@@ -1,7 +1,6 @@
-<footer>
+<footer class="footer center">
 
-  <div class="rows">
-    <div class="column bottom">
+    <div class="column">
 
       <div class="column">
         {{ if isset .Site.Params "social" }}
@@ -12,16 +11,17 @@
       </div>
 
     </div>
-  </div>
-
-  <pwa-update-available class="update-available" hidden>
-    <button class="update-available__button">Update available</button>
-  </pwa-update-available>
 
 </footer>
+
+<pwa-update-available class="update-available" hidden>
+  <button class="update-available__button">Update available</button>
+</pwa-update-available>
+
+
+
+
 </body>
-
-
 <script type="module" async>
   // Check that service workers are supported
   if ('serviceWorker' in navigator) {

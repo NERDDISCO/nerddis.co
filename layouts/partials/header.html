@@ -1,69 +1,20 @@
-<section class="intro">
-	<!-- Header -->
-	<div class="intro-header center">
+<section class="intro center">
 
-      <div class="column">
+  <div class="column">
 
-        <div class="logo">
-          {{ printf "static/img/nerddisco.svg" | readFile | safeHTML }}
-        </div>
-      
-        <h1 class="slogan">
-          {{ if $.Site.Params.isLive }}
-            {{ $.Site.Params.liveText | safeHTML }}
-          {{ else }}
-            visual spectacular
-          {{ end }}
-        </h1>
-
-      </div>
-
-	</div>
-</section>
-
-
-
-<section>
-  <div class="column bottom">
-
-    <div class="columns columns--11 space-around">
-
-      <div class="column">
-        <h2 class="slogan">The Artist</h2>
-
-        <p>
-          During the time when <a href="http://timpietrusky.com/">Tim Pietrusky</a> studied information science he really got into electronic music.
-        </p>
-
-        <p>
-          After 5 years blinded by the light, he started to work on web apps that can be used to run "live visual spectacular"-shows and interact
-          with other awesome projects like <a href="https://github.com/beyondscreen/fivetwelve">fivetwelve</a> and <a href="https://modv.js.org">modV</a>.
-        </p>
-
-          <p>Tim collaborates with various artists as either 
-            <a href="https://nerddis.co">NERDDISCO</a> or as digital artist of <a href="https://livejs.network">LiveJS</a> 
-            or as the visual half of <a href="https://schickmalzwo.de">schickmalzwo</a>. 
-          </p>
-      </div>
-
-      <div class="column">
-        <h2 class="slogan">The Organisation</h2>
-
-        <p>
-          At <a href="https://github.com/NERDDISCO">NERDDISCO</a> we want to empower everyone to run their own
-          "live visual spectacular"-shows by using our open source projects like:
-        </p>
-        <ul class="stuff">
-          <li data-emoji="⚡️"><a href="https://github.com/NERDDISCO/luminave">luminave</a> & <a href="https://github.com/NERDDISCO/luminave-thorium">luminave-thorium</a></li>
-          <li data-emoji="💡"><a href="https://github.com/NERDDISCO/Webusb-dmx512-controller">WebUSB DMX512 Controller</a></li>
-          <li data-emoji="🥁"><a href="https://github.com/NERDDISCO/NerdDrum">NerdDrum</a></li>
-        </ul>
-
-        <p>We also have a <a href="https://visualandlightworkshop.com">"Visual and Light"-workshop</a> for any skill level, even remote!</p>
-      </div>
-
+    <div class="logo">
+      {{ printf "static/img/nerddisco.svg" | readFile | safeHTML }}
     </div>
 
+    <p class="about-nerddisco">
+      NERDDISCO is {{ if $.Site.Params.isLive }}{{ $.Site.Params.liveText | safeHTML }}, {{ else }}a{{ end }} digital artist, 
+      <a href="https://github.com/TimPietrusky">open source hacker</a>, <a href="https://visualandlightworkshop.com">mentor</a>, 
+      <a href="https://github.com/NERDDISCO">visual spectacular</a>, <a href="https://github.com/NERDDISCO/luminave">lightweaver</a>, 
+      loop-dropping, 1/2 of <a href="https://schickmalzwo.de">schickmalzwo</a> and co-founder of <a href="https://livejs.network">LiveJS</a>.
+    </p>
 
   </div>
+
 </section>
+
+

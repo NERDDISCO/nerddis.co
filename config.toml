@@ -5,7 +5,7 @@ theme = "landing-page"
 
 [params]
   isLive = false
-  liveText = 'is <span class="live">LIVE</span> on <a href="https://twitch.com/NERDDISCO">Twitch</a> at 21:00 CEST'
+  liveText = '<span class="live">LIVE</span> on <a href="https://twitch.com/NERDDISCO">Twitch</a> at 21:00 CEST'
   liveTitle = '🔴 LIVE on Twitch at 21:00 CEST'
 
 [[params.social]]

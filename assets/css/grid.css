@@ -9,9 +9,9 @@
   grid-template-columns: repeat(auto-fit, minmax(43.5vw, 1fr) );
 }
 
-.columns--111 {
+/* .columns--111 {
   grid-template-columns: 1fr 1fr 1fr;
-}
+} */
 
 .columns--11 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
@@ -22,7 +22,7 @@
   grid-template-rows: 1fr;
 }
 
-.rows--11 {
+/* .rows--11 {
   grid-template-rows: 1fr 1fr;
 }
 
@@ -32,11 +32,11 @@
 
 .rows--31 {
   grid-template-rows: 3fr 1fr;
-}
+} */
 
-.full--height {
+/* .full--height {
   height: 100vh;
-}
+} */
 
 .space-around {
   padding: 0 var(--space-around);
