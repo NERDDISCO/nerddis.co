@@ -28,3 +28,12 @@ When your commit / PR is merged into the master, it will trigger a build on netl
 
 * [Workbox](https://developers.google.com/web/tools/workbox/guides/generate-service-worker/cli) for Service Worker
 * [pwa-update-available](https://github.com/thepassle/pwa-helpers#pwa-update-available) to update the app when a new version is released
+
+
+
+## Optimizations
+
+* Inline CSS
+* Wepb with jpg fallback and quality 1
+* Lazyload images
+* Service Worker
