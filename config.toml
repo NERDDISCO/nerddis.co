@@ -87,6 +87,11 @@ theme = "landing-page"
 	img = "20190317_schickmalzwo_Jasmins_birthday_bash_DASDORF"
 	url = "https://youtu.be/RsqeSfyhzdw"
 [[params.shows]]
+  date = "2018/12/24"
+	title = "HOSTILE & NERDDISCO - HOSTILE PODCAST 003"
+	img = "20181224_HOSTILE_NERDDISCO_HOSTILE_PODCAST_003"
+	url = "https://www.youtube.com/watch?v=GzuHPz4wUEM"
+[[params.shows]]
   date = "2017/09/13"
 	title = "LiveJS & NESTED LOOPS - People Got Mad JavaScript @ JSConfEU - Arena Berlin, Berlin (Germany)"
 	img = "220170507_LiveJS_NESTED_LOOPS_JSConfEU"
@@ -96,6 +101,11 @@ theme = "landing-page"
 	title = "NERDDISCO fan art for 'Soulpride & E.Decay - For The Masses (Part 2)' @ Tim's Castle, Höchst im Odenwald (Germany)"
 	img = "20170625_Soulpride_Edecay_For_The_Masses_Part2_NERDDISCO_Visuals"
 	url = "https://www.youtube.com/watch?v=lhZNsHjug4Y"
+[[params.shows]]
+  date = "2016/12/05"
+	title = "Sam Wray & Tim Pietrusky - {Live:JS} @ dotJS - Dock Pullman, Paris (France)"
+	img = "20161205_Sam_Wray_Tim_Pietrusky_LiveJS_dotJS"
+	url = "https://www.youtube.com/watch?v=GA7-OfYSzvA"
 [[params.shows]]
   date = "2016/06/02"
 	title = "Ruth John & Tim Pietrusky - Live audio and visual spectacular @ ScotlandJS - Dynamic Earth, Edinburgh (Scotland)"
