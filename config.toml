@@ -82,10 +82,25 @@ theme = "landing-page"
 	img = "20190615_DESTROY_WITH_SCIENCE_NERDDISCO_JSConfAsia"
 	url = "https://youtu.be/yMbfu5QiS7c"
 [[params.shows]]
+  date = "2019/06/02"
+	title = "LiveJS - Making of this.stage @ JSConf EU Festival X - Arena Berlin, Berlin (Germany)"
+	img = "20190601_LiveJS_Making_of_this_stage_JSConfEU_Festival_X"
+	url = "https://www.youtube.com/watch?v=jae837XA82Q"
+[[params.shows]]
+  date = "2019/06/01"
+	title = "LiveJS @ JSConf EU Festival X Opening - Arena Berlin, Berlin (Germany)"
+	img = "20190601_LiveJS_JSConfEU_Festival_X_Opening"
+	url = "https://www.youtube.com/watch?v=o1rzsna263c&t=1224s"
+[[params.shows]]
   date = "2019/03/17"
 	title = "schickmalzwo @ Jasmin's birthday bash - DAS DORF, Mainz (Germany)"
 	img = "20190317_schickmalzwo_Jasmins_birthday_bash_DASDORF"
 	url = "https://youtu.be/RsqeSfyhzdw"
+[[params.shows]]
+  date = "2019/02/03"
+	title = "oltoko & NERDDISCO - All the Lights @ Tim's Castle, Höchst im Odenwald (Germany)"
+	img = "20190203_oltoko_NERDDISCO_All_the_Lights"
+	url = "https://www.youtube.com/watch?v=Qq9V5KHAf0s"
 [[params.shows]]
   date = "2018/12/24"
 	title = "HOSTILE & NERDDISCO - HOSTILE PODCAST 003"
@@ -131,6 +146,26 @@ theme = "landing-page"
 	title = "Ruth John & Tim Pietrusky - Live audio and visual spectacular @ ScotlandJS - Dynamic Earth, Edinburgh (Scotland)"
 	img = "20160602_ScotlandJS_Ruth_John_Tim_Pietrusky"
 	url = "https://www.youtube.com/watch?v=u0POJ1sSNAc"
+[[params.shows]]
+  date = "2016/05/26"
+	title = "Tim Pietrusky - I ❤ Music & the Web @ EmpireJS - National Museum of the American Indian, New York (USA)"
+	img = "20160526_Tim_Pietrusky_I_Love_Music_and_the_Web_EmpireJS"
+	url = "https://www.youtube.com/watch?v=UpOV5l14jM0"
+[[params.shows]]
+  date = "2016/05/12"
+	title = "Martin Schuhfuss & Tim Pietrusky - We ❤ Music & the Web @ JSConf Budapest - Akvárium Klub, Budapest (Hungary)"
+	img = "20160512_Martin_Schuhfuss_Tim_Pietrusky_We_Love_Music_and_the_Web_JSConf_Budapest"
+	url = "https://www.youtube.com/watch?v=KkV4alDBVhk"
+[[params.shows]]
+  date = "2015/10/17"
+	title = "Tim Pietrusky - NERDDISCO: Reloaded @ JSConf Colombia - Ruta N, Medellín (Colombia)"
+	img = "20151017_Tim_Pietrusky_NERDDISCO_Reloaded_JSConf_Colombia"
+	url = "https://www.youtube.com/watch?v=NhJPEAR4fbI"
+[[params.shows]]
+  date = "2015/05/06"
+	title = "Tim Pietrusky - NERDDISCO: The Next Generation @ Front Trends - Centrum Artystyczne Fabryka Trzciny, Warsaw (Poland)"
+	img = "20150506_Tim_Pietrusky_NERDDISCO_The_Next_Generation_Front_Trends"
+	url = "https://www.youtube.com/watch?v=PGHgZT2aI8o"
 [[params.shows]]
   date = "2014/09/13"
 	title = "Tim Pietrusky - NERDDISCO @ JSConfEU - Radialsystem, Berlin (Germany)"
