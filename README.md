@@ -37,3 +37,4 @@ When your commit / PR is merged into the master, it will trigger a build on netl
 * Wepb with jpg fallback and quality 1
 * Lazyload images
 * Service Worker
+* Async JavaScript
