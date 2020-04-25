@@ -170,7 +170,6 @@ h2 {
 @media(max-width:1024px) {
   :root {
     --space-around: 3.5rem; 
-    --height-intro: 60vh;
   }
 
   html {
