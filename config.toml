@@ -92,6 +92,11 @@ theme = "landing-page"
 	img = "220170507_LiveJS_NESTED_LOOPS_JSConfEU"
 	url = "https://www.youtube.com/watch?v=a0Bt7bK6nSA"
 [[params.shows]]
+  date = "2017/06/25"
+	title = "NERDDISCO fan art for 'Soulpride & E.Decay - For The Masses (Part 2)' @ Tim's Castle, Höchst im Odenwald (Germany)"
+	img = "20170625_Soulpride_Edecay_For_The_Masses_Part2_NERDDISCO_Visuals"
+	url = "https://www.youtube.com/watch?v=lhZNsHjug4Y"
+[[params.shows]]
   date = "2016/06/02"
 	title = "Ruth John & Tim Pietrusky - Live audio and visual spectacular @ ScotlandJS - Dynamic Earth, Edinburgh (Scotland)"
 	img = "20160602_ScotlandJS_Ruth_John_Tim_Pietrusky"
