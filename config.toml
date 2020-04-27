@@ -115,7 +115,27 @@ theme = "landing-page"
   date = "2018/11/09"
 	title = "Tim Pietrusky - WebUSB for Digital Artists @ dotJS - Dock Pullman, Paris (France)"
 	img = "20181109_Tim_Pietrusky_WebUSB_for_Digital_Artists_dotJS"
-	url = "https://www.dotconferences.com/2018/11/tim-pietrusky-webusb-for-digital-artists"  
+	url = "https://www.dotconferences.com/2018/11/tim-pietrusky-webusb-for-digital-artists"
+[[params.shows]]
+  date = "2018/10/13"
+	title = "LiveJS - 2xAA & half/byte & NERDDISCO & usefulthink @ RuhrJS Afterparty - Rotunde, Bochum (Germany)"
+	img = "20181013_2xAA_halfbyte_NERDDISCO_usefulthink_RuhrJS_Afterparty"
+	url = "https://youtu.be/U9NziTXy1S4"
+[[params.shows]]
+  date = "2018/10/13"
+	title = "Jan Krutisch & Martin Schuhfuss & Sam Wray & Tim Pietrusky - How does a LiveJS show work? @ RuhrJS - Rotunde, Bochum (Germany)"
+	img = "20181013_Jan_Krutisch_Martin_Schuhfuss_Sam_Wray_Tim_Pietrusky_RuhrJS"
+	url = "https://youtu.be/C7uSKKnT3WA"
+[[params.shows]]
+  date = "2018/10/13"
+	title = "LiveJS - 2xAA & half/byte & NERDDISCO @ RuhrJS Opening - Rotunde, Bochum (Germany)"
+	img = "20181013_2xAA_halfbyte_NERDDISCO_RuhrJS_Opening"
+	url = "https://youtu.be/CqPO6b6UYcg"
+[[params.shows]]
+  date = "2018/06/02"
+	title = "LiveJS @ JSConfEU Opening - Arena Berlin, Berlin (Germany)"
+	img = "20180602_LiveJS_JSConfEU_Opening"
+	url = "https://youtu.be/dPWRaN2PXZw?t=158"
 [[params.shows]]
   date = "2017/05/07"
 	title = "LiveJS - 2xAA & DESTROY WITH SCIENCE & half/byte & NERDDISCO & rumyra & usefulthink with NESTED LOOPS - People Got Mad JavaScript @ JSConfEU - Arena Berlin, Berlin (Germany)"
