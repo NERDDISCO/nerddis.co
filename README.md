@@ -16,10 +16,9 @@ When your commit / PR is merged into the master, it will trigger a build on netl
 
 ### Shows
 
-* The original image (must be a jpg) for a show goes into `static/shows/original`
+* The original image for a show goes into `static/shows/original`
 * Create the optimized webp & jpg versions of the image
   ```
-    cd static/shows/original
     ./image-convert.sh
   ```
 
@@ -38,3 +37,4 @@ When your commit / PR is merged into the master, it will trigger a build on netl
 * Lazyload images
 * Service Worker
 * Async JavaScript
+* Thanks to Pascal Schilp for https://dev.to/thepassle/lessons-learned-building-a-covid-19-pwa-57fi
