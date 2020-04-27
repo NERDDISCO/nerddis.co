@@ -17,7 +17,6 @@
         </div>
 
         <picture>
-          <source srcset="{{ printf "shows/%s.webp" .img }}" type="image/webp">
           <source srcset="{{ printf "shows/%s.jpg" .img }}" type="image/jpeg"> 
           <img class="show__image" src="{{ printf "shows/%s.jpg" .img }}" alt="{{ .title }}" loading="lazy">
         </picture>

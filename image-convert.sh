@@ -16,8 +16,8 @@ do
 
   echo "convert $filename.$fileextension to jpg & webp"
 
-  convert $SRC/$filename.$fileextension -resize 720 -quality 1 $DEST/$filename.webp
-  convert $SRC/$filename.$fileextension -resize 720 -quality 1 $DEST/$filename.jpg
+  # convert $SRC/$filename.$fileextension -resize 660 -quality 1 $DEST/$filename.webp
+  convert $SRC/$filename.$fileextension -resize 660 -quality 1 $DEST/$filename.jpg
 done
 
 # convert 20200221_schickmalzwo_Hybris_Peng.jpg -resize 1280 -quality 1 ../20200221_schickmalzwo_Hybris_Peng.webp

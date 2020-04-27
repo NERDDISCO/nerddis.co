@@ -1,7 +1,7 @@
 module.exports = {
   "globDirectory": "public/",
   "globPatterns": [
-    "**/*.{ico,svg,jpg,png,js,webp,webmanifest,html}"
+    "**/*.{ico,svg,jpg,png,js,webmanifest,html}"
   ],
   "globIgnores": [
     "**/original/*",
