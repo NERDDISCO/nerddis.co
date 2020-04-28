@@ -1,15 +1,15 @@
 <footer class="footer center">
 
     <div class="column">
+      <h2>Thanks for watching!</h2>
+    </div>
 
-      <div class="column">
-        {{ if isset .Site.Params "social" }}
-        <ul class="list-inline intro-social-buttons">
-          {{ partial "social.html" . }}
-        </ul>
-        {{ end }}
-      </div>
-
+    <div class="column">
+      {{ if isset .Site.Params "social" }}
+      <ul class="list-inline intro-social-buttons">
+        {{ partial "social.html" . }}
+      </ul>
+      {{ end }}
     </div>
 
 </footer>
@@ -17,9 +17,6 @@
 <pwa-update-available class="update-available" hidden>
   <button class="update-available__button">Update available</button>
 </pwa-update-available>
-
-
-
 
 </body>
 <script type="module" async>
