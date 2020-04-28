@@ -8,6 +8,7 @@ module.exports = {
     "sw.js",
     "sw.js.map",
     "workbox-*",
+    "img/nerddisco.jpg",
     "js/pwa-helper-components/test/*",
     "js/pwa-helper-components/demo/**/*",
     "js/pwa-helper-components/karma*",
