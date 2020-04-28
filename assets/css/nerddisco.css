@@ -143,10 +143,6 @@ h2 {
   margin: 0;
 }
 
-.footer {
-  height: var(--height-intro);
-}
-
 .update-available {
   position: fixed;
   bottom: 0;
