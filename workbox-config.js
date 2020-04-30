@@ -2,6 +2,7 @@ module.exports = {
   "globDirectory": "public/",
   "globPatterns": [
     "**/*.{ico,svg,jpg,png,js,webmanifest,html}",
+    "font/Badd-Mono-Regular.woff2"
   ],
   "globIgnores": [
     "**/original/*",

@@ -1,12 +1,12 @@
 @import 'grid.css';
-@import 'baddmono.css';
+/* @import 'baddmono.css'; */
 
-/* @font-face {
+@font-face {
   font-family: 'Badd Mono';
   src: url('font/Badd-Mono-Regular.woff2') format('woff2');
   font-display: swap;
   unicode-range: U+000-5FF;
-} */
+}
 
 :root {
   --color: #2d2f2c;
