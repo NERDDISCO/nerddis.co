@@ -1,5 +1,12 @@
 @import 'grid.css';
 
+@font-face {
+  font-family: 'Badd Mono';
+  src: url('font/Badd-Mono-Regular.woff2') format('woff2');
+  font-display: swap;
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
 :root {
   --color: #2d2f2c;
   --color-white: #f8f8f8;
@@ -28,9 +35,11 @@ body,
 h1,
 h2,
 h3,
-h4 {
-  font-family: sans-serif;
+h4,
+button {
+  font-family: 'Badd Mono', sans-serif;
   font-weight: 400;
+  /* word-spacing: -0.3em; */
 }
 
 
