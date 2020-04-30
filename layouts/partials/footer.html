@@ -1,18 +1,18 @@
-<section class="full--height center">
+<section class="full-height center">
   <div class="column space-around">
-    <h2>Thanks for watching!</h2>
+    <h2 class="subtitle">Thanks for watching!</h2>
   </div>
-</section>
 
-<footer class="footer center">
-  <div class="column">
-    {{ if isset .Site.Params "social" }}
-    <ul class="list-inline intro-social-buttons">
-      {{ partial "social.html" . }}
-    </ul>
-    {{ end }}
-  </div>
-</footer>
+  <footer class="footer center">
+    <div class="column">
+      {{ if isset .Site.Params "social" }}
+      <ul class="list-inline intro-social-buttons">
+        {{ partial "social.html" . }}
+      </ul>
+      {{ end }}
+    </div>
+  </footer>
+</section>
 
 <pwa-update-available class="update-available" hidden>
   <button class="update-available__button">Update available</button>
@@ -20,14 +20,11 @@
 
 </body>
 <script type="module" async>
-  // Check that service workers are supported
   if ('serviceWorker' in navigator) {
-    // Use the window load event to keep the page load performant
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('/sw.js');
     });
   }
-
   import './js/pwa-helper-components/pwa-update-available.js';
 </script>
 

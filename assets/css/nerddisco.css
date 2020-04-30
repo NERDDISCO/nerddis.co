@@ -16,7 +16,10 @@
   --width-logo: 70vw;
   --height-intro: 100vh;
 
-  --space-around: 2.5rem; 
+  --space-around: 2.5rem;
+
+  --subtitle-size: 7.5rem;
+  --show-title-size: 3rem;
 }
 
 html {
@@ -83,9 +86,9 @@ h1 {
   font-size: 2.75em;
 }
 
-h2 {
-  font-size: 7.5rem;
-  margin: 1em 0 var(--space-around) 0;
+.subtitle {
+  font-size: var(--subtitle-size);
+  text-align: center;
 }
 
 .live {
@@ -143,7 +146,7 @@ h2 {
 }
 
 .show__title {
-  font-size: 3rem;
+  font-size: var(--show-title-size);
   margin: 0 0 0 0;
 }
 
@@ -175,6 +178,7 @@ h2 {
 @media(max-width:1024px) {
   :root {
     --space-around: 3.5rem; 
+    --subtitle-size: 4.75rem;
   }
 
   html {
@@ -183,10 +187,6 @@ h2 {
 
   h1 {
     font-size: 2em;
-  }
-
-  h2 {
-    font-size: 4.75rem;
   }
 
   ul.intro-social-buttons>li {
@@ -201,7 +201,10 @@ h2 {
 
 @media(max-width:720px) {
   :root {
-    --space-around: 1.5rem; 
+    --space-around: 1.5rem;
+
+    --subtitle-size: 3.75rem;
+    --show-title-size: 2.5rem;
   }
 
   .columns {
