@@ -8,13 +8,15 @@
     "postcss-cli": "^7.1.0",
     "postcss-import": "^12.0.1",
     "pwa-helper-components": "^0.2.10",
+    "woff2base64": "^2.0.0",
     "workbox-cli": "^5.1.2"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "workbox generateSW workbox-config.js",
-    "watch": "workbox generateSW workbox-config.js --watch"
+    "watch": "workbox generateSW workbox-config.js --watch",
+    "build:font": "node woff2base64.mjs"
   },
   "repository": {
     "type": "git",
