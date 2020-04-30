@@ -22,10 +22,10 @@
 <script type="module" async>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
+      import('./js/pwa-helper-components/pwa-update-available.js');
       navigator.serviceWorker.register('/sw.js');
     });
   }
-  import './js/pwa-helper-components/pwa-update-available.js';
 </script>
 
 </html>
