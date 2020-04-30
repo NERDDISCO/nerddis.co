@@ -22,8 +22,12 @@
 <script type="module" async>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      import('./js/pwa-helper-components/pwa-update-available.js');
-      navigator.serviceWorker.register('/sw.js');
+      (async () => {
+        const { PwaUpdateAvailable } = await import('./js/pwa-helper-components/pwa-update-available/PwaUpdateAvailable.js');
+        customElements.define('pwa-update-available', PwaUpdateAvailable);
+
+        navigator.serviceWorker.register('/sw.js');
+      })();
     });
   }
 </script>

@@ -18,6 +18,7 @@ module.exports = {
     "js/pwa-helper-components/index.js",
     "js/pwa-helper-components/pwa-install-button*",
     "js/pwa-helper-components/pwa-install-button/*",
+    "js/pwa-helper-components/pwa-update-available*",
     "js/pwa-helper-components/update-available-helper/update-available.js"
   ],
   "swDest": "public/sw.js"
