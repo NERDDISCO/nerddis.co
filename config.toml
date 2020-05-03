@@ -41,6 +41,11 @@ theme = "landing-page"
 
 
 [[params.shows]]
+  date = "2020/05/03"
+	title = "_ok_bai & NERDDISCO - dreamscape"
+	img = "20200503_ok_bai_NERDDISCO_dreamscape"
+	url = "https://youtu.be/-ihAED403u4"
+[[params.shows]]
   date = "2020/04/11"
 	title = "HOSTILE & NERDDISCO @ Ausgangssperre 2, Peng"
 	img = "20200411_HOSTILE_NERDDISCO_Ausgangssperre_2_Peng"
