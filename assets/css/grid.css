@@ -6,7 +6,7 @@
 }
 
 .columns--fit {
-  grid-template-columns: repeat(auto-fit, minmax(43.5vw, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr) );
 }
 
 /* .columns--111 {

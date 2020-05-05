@@ -176,7 +176,7 @@ h1 {
 }
 
 
-@media(max-width:1024px) {
+@media(max-width:1280px) {
   :root {
     --space-around: 3.5rem; 
     --subtitle-size: 4.75rem;
@@ -200,12 +200,37 @@ h1 {
   }
 }
 
-@media(max-width:720px) {
+@media(max-width:1024px) {
+  :root {
+    --space-around: 3rem; 
+    --subtitle-size: 4rem;
+    --show-title-size: 2.5rem;
+  }
+
+  html {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  ul.intro-social-buttons>li {
+    margin: 0 .5em;
+    padding: 0;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+@media(max-width:768px) {
   :root {
     --space-around: 1.5rem;
 
     --subtitle-size: 3.75rem;
-    --show-title-size: 2.5rem;
+    --show-title-size: 2rem;
   }
 
   .columns {
