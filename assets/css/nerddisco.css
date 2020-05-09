@@ -17,10 +17,10 @@
   --width-logo: 70vw;
   --height-intro: 100vh;
 
-  --space-around: 2.5rem;
+  --space-around: 1.25rem;
 
   --subtitle-size: 7.5rem;
-  --show-title-size: 3rem;
+  --show-title-size: 2.25rem;
 }
 
 html {
@@ -132,13 +132,16 @@ h1 {
 }
     
 .show a {
+  display: flex;
+  flex-direction: column;
   padding: 0;
-  display: block;
+  height: 100%;
 }
 
 .show__head {
   padding: 1rem;
   color: #000;
+  flex-grow: 2;
 }
 
 .show__image {
@@ -229,7 +232,7 @@ h1 {
   :root {
     --space-around: 1.5rem;
 
-    --subtitle-size: 3.75rem;
+    --subtitle-size: 2.5rem;
     --show-title-size: 2rem;
   }
 
