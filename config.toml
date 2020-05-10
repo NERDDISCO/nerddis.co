@@ -41,6 +41,11 @@ theme = "landing-page"
 
 
 [[params.shows]]
+  date = "2020/05/09"
+	title = "2xAA & DESTROY WITH SCIENCE & Kellective & half/byte & NERDDISCO & NO_SIGNAL - 1. LiveJS / feedhack jam"
+	img = "20200509_LiveJS_using_feedhack"
+	url = "https://www.pscp.tv/w/1YqKDEeXpBQGV#"
+[[params.shows]]
   date = "2020/05/03"
 	title = "_ok_bai & NERDDISCO - dreamscape"
 	img = "20200503_ok_bai_NERDDISCO_dreamscape"
