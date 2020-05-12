@@ -14,13 +14,16 @@
   --color-black: #000;
   --color-dark: #1b1b1b;
 
-  --width-logo: 70vw;
+  --width-logo: 60vw;
   --height-intro: 100vh;
 
   --space-around: 1.25rem;
 
   --subtitle-size: 7.5rem;
   --show-title-size: 2.25rem;
+
+  --social-size: 1.25em;
+  --social-margin: 0 .35rem;
 }
 
 html {
@@ -98,18 +101,8 @@ h1 {
 }
 
 .icon {
-  width: var(--space-around);
-  height: var(--space-around);
-}
-
-.list-inline {
-  padding-left: 0;
-  list-style: none
-}
-
-.list-inline>li {
-  display: inline-block;
-  margin: 0 .5em;
+  width: var(--social-size);
+  height: var(--social-size);
 }
 
 /* .stuff {
@@ -178,11 +171,28 @@ h1 {
   cursor: pointer;
 }
 
+.social-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.social-list > li {
+  display: inline-block;
+  margin: var(--social-margin);
+  font-size: var(--social-size);
+}
+
+
+.btn {
+  display: flex;
+  padding: .25em;
+}
 
 @media(max-width:1280px) {
   :root {
     --space-around: 3.5rem; 
     --subtitle-size: 4.75rem;
+    --social-size: 1.75rem;
   }
 
   html {
@@ -191,11 +201,6 @@ h1 {
 
   h1 {
     font-size: 2em;
-  }
-
-  ul.intro-social-buttons>li {
-    margin: 0 .5em;
-    padding: 0;
   }
 
   p {
@@ -239,61 +244,4 @@ h1 {
   .columns {
     grid-template-columns: 1fr;
   }
-}
-
-
-
-/* 
-
-
-
-
-Please replace ALL of this .btn shit!!! 
-
-
-
-*/
-
-.btn {
-  display: flex;
-  padding: .25em;
-  margin-bottom: 0;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  background-image: none;
-  border: none;
-}
-
-.btn:focus,
-.btn:active:focus {
-  outline: thin dotted;
-  outline-offset: -2px
-}
-
-.btn:hover,
-.btn:focus {
-  color: #333;
-  text-decoration: none
-}
-
-.btn:active {
-  background-image: none;
-  outline: 0;
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
-}
-
-.btn-default {
-  background-color: #fff;
-}
-
-.btn-default:hover,
-.btn-default:focus,
-.btn-default:active,
-.btn-default.active,
-.open>.dropdown-toggle.btn-default {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad
 }

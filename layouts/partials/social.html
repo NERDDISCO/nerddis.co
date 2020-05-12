@@ -1,11 +1,19 @@
-{{ range .Site.Params.social }}
-<li>
-	<a href="{{ .url }}" class="btn btn-default {{ .icon }}" target="_blank" aria-label="{{ .icon }}" rel="noopener">
+{{ if isset .Site.Params "social" }}
+        
+  <ul class="social-list">
 
-    <span class="icon">
-      {{ printf "static/social/%s.svg" .icon | readFile | safeHTML }}
-    </span>
-    
-	</a>
-</li>
+    {{ range .Site.Params.social }}
+    <li>
+      <a href="{{ .url }}" class="btn btn-default {{ .icon }}" target="_blank" aria-label="{{ .icon }}" rel="noopener">
+
+        <span class="icon">
+          {{ printf "static/social/%s.svg" .icon | readFile | safeHTML }}
+        </span>
+        
+      </a>
+    </li>
+    {{ end }}
+
+  </ul>
+  
 {{ end }}

@@ -46,6 +46,10 @@
   padding: 0 var(--space-around);
 }
 
+.space-around--all {
+  padding: var(--space-around);
+}
+
 .center {
   display: flex;
   flex-direction: column;

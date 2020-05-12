@@ -22,6 +22,10 @@ theme = "landing-page"
 	icon = "youtube"
 	url = "https://www.youtube.com/channel/UCjEh7ggQuxsI3JjqRUJfeAQ"
 [[params.social]]
+	title = "twitch"
+	icon = "twitch"
+	url = "https://www.twitch.com/nerddisco"
+[[params.social]]
 	title = "twitter"
 	icon = "twitter"
 	url = "https://www.twitter.com/NERDDISCO"

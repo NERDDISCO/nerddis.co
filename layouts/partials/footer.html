@@ -2,16 +2,6 @@
   <div class="column space-around">
     <h2 class="subtitle">Thanks for watching!</h2>
   </div>
-
-  <footer class="footer center">
-    <div class="column">
-      {{ if isset .Site.Params "social" }}
-      <ul class="list-inline intro-social-buttons">
-        {{ partial "social.html" . }}
-      </ul>
-      {{ end }}
-    </div>
-  </footer>
 </section>
 
 <pwa-update-available class="update-available" hidden>
