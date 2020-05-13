@@ -16,7 +16,6 @@
 
   --width-logo: 60vw;
   --width-logo-small: 30vw;
-  --height-intro: 100vh;
 
   --space-around: 1.25rem;
 
@@ -72,10 +71,6 @@ a:hover,
 p {
   margin: 0;
   line-height: 1.75em;
-}
-
-.intro {
-  height: var(--height-intro);
 }
 
 .logo {
@@ -238,11 +233,6 @@ h1 {
 
   h1 {
     font-size: 2em;
-  }
-
-  ul.intro-social-buttons>li {
-    margin: 0 .5em;
-    padding: 0;
   }
 
   p {
