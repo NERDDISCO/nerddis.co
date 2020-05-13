@@ -1,0 +1,15 @@
+{{ partial "head.html" . }}
+
+<section class="half-height space-around center">
+  <div class="logo logo--small">
+    <a href="{{ .Site.BaseURL }}">
+      {{ printf "static/img/nerddisco.svg" | readFile | safeHTML }}
+    </a>
+  </div>
+</section>
+
+<section class="full-height space-around center">
+  <div>{{ .Content }}</div>
+</section>
+
+{{ partial "footer.html" . }}

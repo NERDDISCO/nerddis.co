@@ -15,6 +15,7 @@
   --color-dark: #1b1b1b;
 
   --width-logo: 60vw;
+  --width-logo-small: 30vw;
   --height-intro: 100vh;
 
   --space-around: 1.25rem;
@@ -59,6 +60,10 @@ a {
   filter: grayscale(100%) invert(100%);
 }
 
+li {
+  margin: 1em 0;
+}
+
 a:hover,
 .update-available__button:hover {
   filter: grayscale(0%) invert(0%);
@@ -79,6 +84,15 @@ p {
   font-size: 1rem;
   text-align: center;
   display: inline-block;
+}
+
+.logo--small {
+  width: var(--width-logo-small);
+}
+
+.logo > a {
+  filter: none;
+  background: none;
 }
 
 .about-nerddisco {
@@ -103,6 +117,8 @@ h1 {
 .icon {
   width: var(--social-size);
   height: var(--social-size);
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* .stuff {
@@ -213,6 +229,7 @@ h1 {
     --space-around: 3rem; 
     --subtitle-size: 4rem;
     --show-title-size: 2.5rem;
+    --width-logo-small: 50vw;
   }
 
   html {
