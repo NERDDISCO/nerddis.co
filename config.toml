@@ -43,6 +43,14 @@ theme = "landing-page"
 	url = "https://github.com/NERDDISCO/nerddis.co"
 
 
+[[params.next]]
+  date = "2020/05/??"
+	title = "half/byte & NERDDISCO & ??? - Feedhack Jam 05x2020"
+	url = "https://nerddis.co"
+
+
+
+
 
 [[params.shows]]
   date = "2020/05/09"

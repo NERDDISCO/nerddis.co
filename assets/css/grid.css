@@ -20,6 +20,7 @@
 .rows {
   display: grid;
   grid-template-rows: 1fr;
+  grid-gap: var(--space-around);
 }
 
 /* .rows--11 {

@@ -1,0 +1,29 @@
+<section class="shows full-height">
+  
+  <div class="columns columns--11 center space-around">
+    <h2 class="subtitle">Next</h2>
+  </div>
+
+  <div class="rows space-around">
+
+    {{ range .Site.Params.next }}
+    <div class="show" data-date="{{ .date }}">
+
+      <a href="{{ .url }}" target="_blank" aria-label="{{ .title }}" rel="noopener">
+        <div class="show__head">
+          <h4 class="show__date">{{ .date }}</h4>
+          <h3 class="show__title">{{ .title }}</h3>
+        </div>
+
+        <!-- <picture>
+          <source srcset="{{ printf "shows/%s.jpg" .img }}" type="image/jpeg"> 
+          <img class="show__image" src="{{ printf "shows/%s.jpg" .img }}" alt="{{ .title }}" loading="lazy">
+        </picture> -->
+      </a>
+
+    </div>
+    {{ end }}
+
+  </div>
+
+</section>
