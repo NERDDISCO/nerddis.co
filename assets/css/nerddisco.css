@@ -24,6 +24,8 @@
 
   --social-size: 1.25em;
   --social-margin: 0 .35rem;
+
+  --no-display: none;
 }
 
 html {
@@ -199,6 +201,19 @@ h1 {
   padding: .25em;
 }
 
+.no-display {
+  display: var(--no-display);
+}
+
+
+
+
+
+/* 
+
+  media queries
+  
+*/
 @media(max-width:1280px) {
   :root {
     --space-around: 3.5rem; 
@@ -246,6 +261,8 @@ h1 {
 
     --subtitle-size: 2.5rem;
     --show-title-size: 2rem;
+
+    --no-display: block;
   }
 
   .columns {

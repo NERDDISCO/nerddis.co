@@ -59,6 +59,10 @@
   justify-content: center;
 }
 
+.center--text {
+  text-align: center;
+} 
+
 .bottom {
   display: flex;
   flex-direction: column;
