@@ -35,3 +35,9 @@ No cookies are used.
 ## Private Data
 
 No data is collected.
+
+---
+
+## Font
+
+* [Badd Mono by Paul Conley](https://paulconley.works/badd-mono/), OFL 1.1
