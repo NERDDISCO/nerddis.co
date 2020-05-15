@@ -1,14 +1,14 @@
 {{ partial "head.html" . }}
 
 <section class="half-height space-around center">
-  <div class="logo logo--small">
+  <div class="logo">
     <a href="{{ .Site.BaseURL }}">
       {{ printf "static/img/nerddisco.svg" | readFile | safeHTML }}
     </a>
   </div>
 </section>
 
-<section class="full-height space-around center">
+<section class="full-height space-around center center--top">
   <div>{{ .Content }}</div>
 </section>
 

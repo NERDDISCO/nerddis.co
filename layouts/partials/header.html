@@ -1,15 +1,15 @@
 <section class="full-height center">
 
-  <div class="column">
-
+  <div>
     <div class="logo">
       {{ printf "static/img/nerddisco.svg" | readFile | safeHTML }}
     </div>
+  </div>
 
-    <p class="about-nerddisco">
+  <div class="space-around--all">
+    <p class="text">
       {{ if $.Site.Params.isLive }}{{ $.Site.Params.liveText | safeHTML }}, {{ else }}{{ end }} {{ $.Site.Params.description | safeHTML }}
     </p>
-
   </div>
 
   <div class="column space-around--all">

@@ -59,6 +59,10 @@
   justify-content: center;
 }
 
+.center--top {
+  justify-content: start;
+}
+
 .center--text {
   text-align: center;
 } 

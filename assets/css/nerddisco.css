@@ -17,6 +17,8 @@
   --width-logo: 60vw;
   --width-logo-small: 30vw;
 
+  --full-width: var(--width-logo);
+
   --space-around: 1.25rem;
 
   --subtitle-size: 7.5rem;
@@ -92,9 +94,8 @@ p {
   background: none;
 }
 
-.about-nerddisco {
+.text {
   max-width: var(--width-logo);
-  margin: calc(var(--space-around) / 1.5) 0 0 0;
 }
 
 h1 {
@@ -267,5 +268,9 @@ h1 {
 
   .columns {
     grid-template-columns: 1fr;
+  }
+
+  .text {
+    max-width: 100%;
   }
 }
