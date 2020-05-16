@@ -164,7 +164,8 @@ a:focus .show__head {
   background: var(--color-black);
 }
 
-.show--next a:hover .show__head {
+.show--next a:hover .show__head,
+.show--next a:focus .show__head {
   background: none;
 }
 
