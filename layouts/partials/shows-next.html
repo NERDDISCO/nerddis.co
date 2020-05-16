@@ -7,7 +7,7 @@
   <div class="rows space-around">
 
     {{ range .Site.Params.next }}
-    <div class="show" data-date="{{ .date }}">
+    <div class="show show--next" data-date="{{ .date }}">
 
       <a href="{{ .url }}" target="_blank" aria-label="{{ .title }}" rel="noopener">
         <div class="show__head">

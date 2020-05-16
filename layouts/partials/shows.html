@@ -11,15 +11,15 @@
     <div class="show" data-date="{{ .date }}">
 
       <a href="{{ .url }}" target="_blank" aria-label="{{ .title }}" rel="noopener">
-        <div class="show__head">
-          <h4 class="show__date">{{ .date }}</h4>
-          <h3 class="show__title">{{ .title }}</h3>
-        </div>
-
         <picture>
           <source srcset="{{ printf "shows/%s.jpg" .img }}" type="image/jpeg"> 
           <img class="show__image" src="{{ printf "shows/%s.jpg" .img }}" alt="{{ .title }}" loading="lazy">
         </picture>
+
+        <div class="show__head">
+          <h4 class="show__date">{{ .date }}</h4>
+          <h3 class="show__title">{{ .title }}</h3>
+        </div>
       </a>
 
     </div>

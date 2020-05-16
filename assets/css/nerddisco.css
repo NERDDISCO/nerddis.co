@@ -59,8 +59,7 @@ a {
   color: var(--color-black);
   background: var(--color-white);
   padding: .15em;
-  transition: filter .25s ease-in-out;
-  filter: grayscale(100%) invert(100%);
+  filter: grayscale(0) invert(0);
 }
 
 li {
@@ -68,8 +67,9 @@ li {
 }
 
 a:hover,
+a:focus,
 .update-available__button:hover {
-  filter: grayscale(0%) invert(0%);
+  filter: grayscale(100%) invert(100%);
 }
 
 p {
@@ -143,12 +143,29 @@ h1 {
   flex-direction: column;
   padding: 0;
   height: 100%;
+  background: none;
+  box-shadow: inset 0 0 5em rgba(0, 0, 0, 1.0);
+  color: var(--color-white);
+}
+
+.show.show--next a {
+  background: var(--color-white);
+  color: var(--color-black);
+  box-shadow: none;
 }
 
 .show__head {
   padding: 1rem;
-  color: #000;
   flex-grow: 2;
+}
+
+a:hover .show__head,
+a:focus .show__head {
+  background: var(--color-black);
+}
+
+.show--next a:hover .show__head {
+  background: none;
 }
 
 .show__image {
