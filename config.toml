@@ -44,7 +44,7 @@ theme = "landing-page"
 
 
 [[params.next]]
-  date = "2020/05/??"
+  date = "2020/05/?? - 21:00 CEST"
 	title = "half/byte & NERDDISCO & ??? - Feedhack Jam 05x2020"
 	url = "https://nerddis.co"
 
