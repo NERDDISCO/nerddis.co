@@ -22,7 +22,9 @@
   --space-around: 1.25rem;
 
   --subtitle-size: 7.5rem;
-  --show-title-size: 2.25rem;
+  --subtitle-margin: 0 0 var(--space-around) 0;
+
+  --show-title-size: 1.5rem;
 
   --social-size: 1.25em;
   --social-margin: 0 .35rem;
@@ -50,7 +52,6 @@ h4,
 button {
   font-family: 'Badd Mono', sans-serif;
   font-weight: 400;
-  /* word-spacing: -0.3em; */
 }
 
 
@@ -98,13 +99,10 @@ p {
   max-width: var(--width-logo);
 }
 
-h1 {
-  font-size: 2.75em;
-}
-
 .subtitle {
   font-size: var(--subtitle-size);
   text-align: center;
+  margin: var(--subtitle-margin);
 }
 
 .live {
@@ -235,17 +233,12 @@ a:focus .show__head {
 */
 @media(max-width:1280px) {
   :root {
-    --space-around: 3.5rem; 
     --subtitle-size: 4.75rem;
     --social-size: 1.75rem;
   }
 
   html {
     font-size: 1em;
-  }
-
-  h1 {
-    font-size: 2em;
   }
 
   p {
@@ -255,32 +248,31 @@ a:focus .show__head {
 
 @media(max-width:1024px) {
   :root {
-    --space-around: 3rem; 
     --subtitle-size: 4rem;
-    --show-title-size: 2.5rem;
     --width-logo-small: 50vw;
-  }
-
-  html {
-    font-size: 1em;
-  }
-
-  h1 {
-    font-size: 2em;
   }
 
   p {
     font-size: 1.2em;
+  }
+  
+  .columns--fit {
+    grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr) );
+  }
+
+  .sm\:half-height {
+    min-height: 50vh;
+  }
+
+  .sm\:center--top {
+    justify-content: start;
   }
 }
 
 @media(max-width:768px) {
   :root {
     --space-around: 1.5rem;
-
     --subtitle-size: 2.5rem;
-    --show-title-size: 2rem;
-
     --no-display: block;
   }
 

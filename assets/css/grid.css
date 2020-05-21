@@ -1,7 +1,7 @@
 .columns {
   display: grid;
   /* grid-template-columns: 1fr; */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(80vw, 1fr) );
   grid-gap: var(--space-around);
 }
 
@@ -51,12 +51,19 @@
   padding: var(--space-around);
 }
 
+.separate {
+  margin: calc(var(--space-around) * 2) 0;
+}
+
 .center {
   display: flex;
   flex-direction: column;
-  align-items: center;
   align-content: center;
   justify-content: center;
+}
+
+.center--items {
+  align-items: center;
 }
 
 .center--top {
