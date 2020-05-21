@@ -73,9 +73,23 @@ a:focus,
   filter: grayscale(100%) invert(100%);
 }
 
+a:hover .hover\:solid {
+  color: var(--color-black);
+  background: var(--color-white);
+}
+
+
 p {
   margin: 0;
   line-height: 1.75em;
+}
+
+.difference {
+  mix-blend-mode: difference;
+}
+
+a:hover .hover\:no-difference {
+  mix-blend-mode: normal;
 }
 
 .logo {
@@ -167,6 +181,15 @@ a:focus .show__head {
   background: none;
 }
 
+.show--next .show__date,
+.show--next .show__length {
+  position: initial;
+}
+
+.show__picture {
+  position: relative;
+}
+
 .show__image {
   width: 100%;
   vertical-align: top;
@@ -177,9 +200,20 @@ a:focus .show__head {
   margin: 0 0 0 0;
 }
 
-.show__date {
+.show__date,
+.show__length {
+  position: absolute;
   font-size: 1rem;
   margin: 0;
+  bottom: var(--space-around);
+}
+
+.show__date {
+  left: var(--space-around);
+}
+
+.show__length {
+  right: var(--space-around);
 }
 
 .update-available {
