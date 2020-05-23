@@ -78,6 +78,10 @@ a:hover .hover\:solid {
   background: var(--color-white);
 }
 
+/* .solid {
+  background: rgba(var(--color-black), .5);
+} */
+
 
 p {
   margin: 0;
@@ -167,7 +171,6 @@ a:hover .hover\:no-difference {
 }
 
 .show__head {
-  padding: 1rem;
   flex-grow: 2;
 }
 
@@ -205,15 +208,15 @@ a:focus .show__head {
   position: absolute;
   font-size: 1rem;
   margin: 0;
-  bottom: var(--space-around);
+  bottom: 0;
 }
 
 .show__date {
-  left: var(--space-around);
+  left: 0;
 }
 
 .show__length {
-  right: var(--space-around);
+  right: 0;
 }
 
 .update-available {
@@ -300,6 +303,10 @@ a:focus .show__head {
 
   .sm\:center--top {
     justify-content: start;
+  }
+
+  .sm\:no-difference {
+    mix-blend-mode: normal;
   }
 }
 

@@ -11,13 +11,13 @@
 
       <a href="{{ .url }}" target="_blank" aria-label="{{ .title }}" rel="noopener">
         <picture class="show__picture">
-          <h4 class="show__date difference hover:no-difference hover:solid">{{ .date }}</h4>
-          <h4 class="show__length difference hover:no-difference hover:solid">{{ .length }}</h4>
+          <h4 class="show__date space-around--all--half solid hover:solid">{{ .date }}</h4>
+          <h4 class="show__length space-around--all--half hover:solid">{{ .length }}</h4>
           <source srcset="{{ printf "shows/%s.jpg" .img }}" type="image/jpeg"> 
           <img class="show__image" src="{{ printf "shows/%s.jpg" .img }}" alt="{{ .title }}" loading="lazy">
         </picture>
 
-        <div class="show__head">
+        <div class="show__head space-around--all--half">
           <h3 class="show__title">{{ .title }}</h3>
         </div>
       </a>

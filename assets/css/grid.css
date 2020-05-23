@@ -51,6 +51,10 @@
   padding: var(--space-around);
 }
 
+.space-around--all--half {
+  padding: calc(var(--space-around) / 2);
+}
+
 .separate {
   margin: calc(var(--space-around) * 2) 0;
 }
