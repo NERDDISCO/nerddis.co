@@ -73,7 +73,8 @@ a:focus,
   filter: grayscale(100%) invert(100%);
 }
 
-a:hover .hover\:solid {
+a:hover .hover\:solid,
+a:focus .hover\:solid {
   color: var(--color-black);
   background: var(--color-white);
 }
