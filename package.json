@@ -14,6 +14,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:hugo": "hugo server -p 1313 -D --renderToDisk -d public",
     "build": "workbox generateSW workbox-config.js",
     "watch": "workbox generateSW workbox-config.js --watch",
     "build:font": "node woff2base64.mjs"
