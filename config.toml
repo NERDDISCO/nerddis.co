@@ -44,14 +44,19 @@ theme = "landing-page"
 
 
 [[params.next]]
-  date = "2020/05/?? - 21:00 CEST"
-	title = "half/byte & NERDDISCO & ??? - Feedhack Jam 05x2020"
-	url = "https://nerddis.co"
+  date = "2020/06/04 - 21:00 CEST"
+	title = "half/byte & NERDDISCO - Lesson 4"
+	url = "https://www.twitch.tv/nerddisco"
 
 
 
 
-
+[[params.shows]]
+  date = "2020/05/30"
+	title = "Stonecreek Crew & NERDDISCO - 'Urban Bass Bungle Donation Stream' in collaboration with Banana Bass Music"
+	img = "20200530_StonecreekCrew_NERDDISCO_Urban_Bass_Bungle_Donation_Stream"
+	url = "https://www.youtube.com/watch?v=ZFm9ht6cgBI"
+  length = "03:47:40"
 [[params.shows]]
   date = "2020/05/09"
 	title = "2xAA & DESTROY WITH SCIENCE & Kellective & half/byte & NERDDISCO & NO_SIGNAL - 1. LiveJS / feedhack jam"
