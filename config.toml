@@ -88,6 +88,12 @@ theme = "landing-page"
 	url = "https://youtu.be/8v99P5p4wX4"
   length = "48:20"
 [[params.shows]]
+  date = "2020/04/11"
+	title = "NERDDISCO feat. V/A @ Ausgangssperre 2 - Peng, Twitch"
+	img = "20200411_NERDDISCO_Ausgangssperre_2_Peng"
+	url = "https://www.youtube.com/watch?v=HTp15l7k_0A"
+  length = "06:34:18"
+[[params.shows]]
   date = "2020/03/26"
 	title = "half/byte & NERDDISCO - Stay at home!!!"
 	img = "20200326_halfbyte_NERDDISCO_Stay_At_Home"
