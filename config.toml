@@ -232,6 +232,12 @@ theme = "landing-page"
 	url = "https://www.youtube.com/watch?v=GA7-OfYSzvA"
   length = "18:20"
 [[params.shows]]
+  date = "2016/08/24"
+	title = "2xAA & NERDDISCO - scream4me"
+	img = "20160824_2xAA_NERDDISCO_scream4me"
+	url = "https://www.youtube.com/watch?v=BuO0SBZgnvI"
+  length = "02:56"
+[[params.shows]]
   date = "2016/06/02"
 	title = "Ruth John & Tim Pietrusky - Live audio and visual spectacular @ ScotlandJS - Dynamic Earth, Edinburgh, Scotland"
 	img = "20160602_ScotlandJS_Ruth_John_Tim_Pietrusky"
