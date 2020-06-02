@@ -204,7 +204,7 @@ theme = "landing-page"
 [[params.shows]]
   date = "2017/05/07"
 	title = "LiveJS - 2xAA & DESTROY WITH SCIENCE & half/byte & NERDDISCO & rumyra & usefulthink with NESTED LOOPS - People Got Mad JavaScript @ JSConfEU - Arena Berlin, Berlin, Germany"
-	img = "220170507_LiveJS_NESTED_LOOPS_JSConfEU"
+	img = "20170507_LiveJS_NESTED_LOOPS_JSConfEU"
 	url = "https://www.youtube.com/watch?v=a0Bt7bK6nSA"
   length = "14:52"
 [[params.shows]]
