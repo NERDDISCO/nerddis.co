@@ -22,7 +22,7 @@
   --space-around: 1.25rem;
 
   --subtitle-size: 7.5rem;
-  --subtitle-margin: 0 0 var(--space-around) 0;
+  --subtitle-margin: 0 0 0 0;
 
   --show-title-size: 1.5rem;
 
@@ -136,6 +136,20 @@ a:hover .hover\:no-difference {
   vertical-align: middle;
 }
 
+.last {
+  background: #000 url(../shows/doesnotexist.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/*.last:after {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), var(--color-dark));
+  height: 4rem;
+  width: 100%;
+  content: '';
+}*/
+
 /* .stuff {
   list-style-type: none;
   padding: 0;
@@ -188,6 +202,8 @@ a:focus .show__head {
 .show--next .show__date,
 .show--next .show__length {
   position: initial;
+  color: var(--color-black);
+  background: var(--color-white);
 }
 
 .show__picture {
@@ -210,6 +226,9 @@ a:focus .show__head {
   font-size: 1rem;
   margin: 0;
   bottom: 0;
+  color: var(--color-white);
+  background: var(--color-black);
+  opacity: .75;
 }
 
 .show__date {

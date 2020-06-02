@@ -25,9 +25,16 @@
     
     <title>{{ if $.Site.Params.isLive }}{{ $.Site.Params.liveTitle }}{{ else }}{{ .Title }}{{ end }}</title>
 
+    {{/* Get the latest show */}}
+    {{ $latestShow := index (.Site.Params.shows) 0 }}
+
+    {{/* Load CSS so that it can be used inline */}}
     {{ $options := dict "inlineImports" true }}
     {{ with resources.Get "css/nerddisco.css" | resources.PostCSS $options | minify }}
-    <style type="text/css">{{ .Content | safeCSS }}</style>
+
+    {{/* Integrate the image of the latest show into CSS */}}
+    {{ $content := replace .Content "doesnotexist" $latestShow.img }}
+    <style type="text/css">{{ $content | safeCSS }}</style>
     {{ end }}
 </head>
 <body>
