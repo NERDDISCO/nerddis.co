@@ -1,7 +1,17 @@
-<section class="center">
+<section class="full-height center">
+
+  <div class="column">
+    <h2 class="subtitle" id="thanks-for-watching">Thanks!</h2>
+  </div>
+
+  <div class="column space-around center--text">
+    <p>
+      <span class="icon" style="filter: invert(100%);">{{ "static/social/love.svg" | readFile | safeHTML }}</span> since 2014
+    </p>
+  </div>
+
   <div class="column space-around--all center--text">
     <p>
-      <span class="icon" style="filter: invert(100%);">{{ "static/social/love.svg" | readFile | safeHTML }}</span>&nbsp;since 2014<br class="no-display" />&nbsp;by <a href="{{ .Site.BaseURL }}">NERDDISCO</a> | 
       <a href="legal">Legal</a>
     </p>
   </div>
