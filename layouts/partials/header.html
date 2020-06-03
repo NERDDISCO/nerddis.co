@@ -4,7 +4,7 @@
     {{ printf "static/img/nerddisco.svg" | readFile | safeHTML }}
   </div>
 
-  <p class="text space-around">
+  <p class="text solid space-around--all">
     {{ if $.Site.Params.isLive }}{{ $.Site.Params.liveText | safeHTML }}, {{ else }}{{ end }} {{ $.Site.Params.description | safeHTML }}
   </p>
 

@@ -22,7 +22,7 @@
   --space-around: 1.25rem;
 
   --subtitle-size: 7.5rem;
-  --subtitle-margin: 0 0 0 0;
+  --subtitle-margin: calc(var(--space-around) * 4) 0 calc(var(--space-around) * 2) 0;
 
   --show-title-size: 1.5rem;
 
@@ -79,9 +79,9 @@ a:focus .hover\:solid {
   background: var(--color-white);
 }
 
-/* .solid {
-  background: rgba(var(--color-black), .5);
-} */
+.solid {
+  background: var(--color-black);
+}
 
 
 p {
@@ -332,6 +332,7 @@ a:focus .show__head {
 
 @media(max-width:768px) {
   :root {
+    --width-logo: 90%;
     --space-around: 1.5rem;
     --subtitle-size: 2.5rem;
     --no-display: block;
