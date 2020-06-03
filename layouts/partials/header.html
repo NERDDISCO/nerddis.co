@@ -1,8 +1,11 @@
 <section class="last full-height center center--items">
 
-  <div class="logo difference">
-    {{ printf "static/img/nerddisco.svg" | readFile | safeHTML }}
-  </div>
+  <a class="clean" href="https://secure.actblue.com/donate/bail_funds_george_floyd" target="_blank" aria-label="rbail funds for george floyd" rel="noopener">
+    <div class="logo">
+        {{ printf "static/img/nerddisco.svg" | readFile | safeHTML }}
+
+    </div>
+  </a>
 
   <p class="text solid space-around--all">
     {{ if $.Site.Params.isLive }}{{ $.Site.Params.liveText | safeHTML }}, {{ else }}{{ end }} {{ $.Site.Params.description | safeHTML }}

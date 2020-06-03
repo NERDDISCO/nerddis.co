@@ -30,6 +30,10 @@
   --social-margin: 0 .35rem;
 
   --no-display: none;
+
+  --blm-size: 15rem;
+  --blm-left: calc(var(--space-around) * -1);
+  --blm-top: var(--blm-left);
 }
 
 html {
@@ -54,6 +58,10 @@ button {
   font-weight: 400;
 }
 
+li {
+  margin: 1em 0;
+}
+
 
 a {
   text-decoration: none;
@@ -63,14 +71,21 @@ a {
   filter: grayscale(0) invert(0);
 }
 
-li {
-  margin: 1em 0;
+a.clean {
+  background: initial;
+  filter: initial;
 }
 
 a:hover,
 a:focus,
 .update-available__button:hover {
   filter: grayscale(100%) invert(100%);
+}
+
+a.clean:hover,
+a.clean:focus {
+  /* filter: drop-shadow(2px 4px 2em var(--color-black)); */
+  mix-blend-mode: difference;
 }
 
 a:hover .hover\:solid,
@@ -103,6 +118,22 @@ a:hover .hover\:no-difference {
   font-size: 1rem;
   text-align: center;
   display: inline-block;
+  position: relative;
+}
+
+.logo:after {
+  position: absolute;
+  content: '#BLM';
+  left: var(--blm-left);
+  top: var(--blm-top);
+  width: var(--blm-size);
+  height: var(--blm-size);
+  background: var(--color-black);
+  cursor: pointer;
+  color: var(--color-white);
+  font-size: 3em;
+  text-align: left;
+  padding: calc(var(--space-around) / 2);
 }
 
 .logo--small {
@@ -168,7 +199,7 @@ a:hover .hover\:no-difference {
   /* padding: var(--space-around); */
   overflow: hidden;
 }
-    
+
 .show a {
   display: flex;
   flex-direction: column;
@@ -283,10 +314,10 @@ a:focus .show__head {
 
 
 
-/* 
+/*
 
   media queries
-  
+
 */
 @media(max-width:1280px) {
   :root {
@@ -312,7 +343,7 @@ a:focus .show__head {
   p {
     font-size: 1.2em;
   }
-  
+
   .columns--fit {
     grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr) );
   }
@@ -332,10 +363,12 @@ a:focus .show__head {
 
 @media(max-width:768px) {
   :root {
-    --width-logo: 90%;
+    --width-logo: 90vw;
     --space-around: 1.5rem;
     --subtitle-size: 2.5rem;
     --no-display: block;
+    --blm-left: 0;
+    --blm-top: calc(var(--space-around) * -3);
   }
 
   .columns {
