@@ -13,7 +13,7 @@ theme = "landing-page"
     <a href="https://github.com/NERDDISCO/luminave">lightweaver</a> 
     and loop-drop-rookie"""
   
-  isLive = false
+  isLive = true
   liveText = '<span class="live">LIVE</span> on <a href="https://twitch.com/NERDDISCO">Twitch</a> at 21:00 CEST'
   liveTitle = '🔴 LIVE on Twitch at 21:00 CEST'
 
