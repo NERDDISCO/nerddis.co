@@ -133,7 +133,7 @@ a:hover .hover\:no-difference {
   color: var(--color-white);
   font-size: 3em;
   text-align: left;
-  padding: calc(var(--space-around) / 2);
+  padding: calc(var(--space-around) / 1);
 }
 
 .logo--small {
