@@ -44,13 +44,18 @@ theme = "landing-page"
 
 
 [[params.next]]
-  date = "2020/07/09 - 21:00 CEST"
+  date = "2020/08/13 - 21:00 CEST"
 	title = "half/byte & NERDDISCO - tba"
 	url = "https://www.twitch.tv/nerddisco"
 
 
 
-
+[[params.shows]]
+  date = "2020/07/09"
+	title = "half/byte & NERDDISCO - Kohleausstieg"
+	img = "20200709_halfbyte_NERDDISCO_Kohleausstieg"
+	url = "https://youtu.be/iExiOmnNb6o"
+  length = "01:00:31"
 [[params.shows]]
   date = "2020/06/04"
 	title = "half/byte & NERDDISCO - #BLM"
