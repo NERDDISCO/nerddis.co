@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "autoprefixer": "^9.7.6",
+    "concurrently": "^5.2.0",
     "postcss-cli": "^7.1.0",
     "postcss-import": "^12.0.1",
     "pwa-helper-components": "^0.2.10",
@@ -14,9 +15,10 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm:watch:hugo\" \"npm:watch:workbox\"",
     "watch:hugo": "hugo server -p 1313 -D --renderToDisk -d public",
+    "watch:workbox": "workbox generateSW workbox-config.js --watch",
     "build": "workbox generateSW workbox-config.js",
-    "watch": "workbox generateSW workbox-config.js --watch",
     "build:font": "node woff2base64.mjs"
   },
   "repository": {
