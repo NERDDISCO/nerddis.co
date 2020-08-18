@@ -55,6 +55,12 @@ theme = "landing-page"
 
 
 [[params.shows]]
+  date = "2020/08/17"
+	title = "NERDDISCO - Diamond Shader Test"
+	img = "20200817_NERDDISCO_Diamond_Shader_Test"
+	url = "https://youtu.be/HSelmP6ugCY"
+  length = "00:03:56"
+[[params.shows]]
   date = "2020/08/13"
 	title = "half/byte & NERDDISCO - Sommerloch"
 	img = "20200813_halfbyte_NERDDISCO_Sommerloch"
