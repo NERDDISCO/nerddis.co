@@ -43,10 +43,10 @@ theme = "landing-page"
 	url = "https://github.com/NERDDISCO/nerddis.co"
 
 
-# [[params.next]]
-#   date = "2020/08/13 - 21:00 CEST"
-# 	title = "half/byte & NERDDISCO - #Sommerloch"
-# 	url = "https://www.twitch.tv/nerddisco"
+[[params.next]]
+  date = "2020/08/21 - 17:45 CEST"
+	title = "half/byte & NERDDISCO - @ #NoRuKo"
+	url = "https://noruko.org"
 [[params.next]]
   date = "2020/09/10 - 21:00 CEST"
 	title = "half/byte & NERDDISCO - tba"
