@@ -49,6 +49,10 @@ theme = "landing-page"
   date = "2020/09/10 - 21:00 CEST"
   title = "half/byte & NERDDISCO - tba"
   url = "https://www.twitch.tv/nerddisco"
+[[params.next]]
+  date = "2020/09/12 - 16:30 CEST"
+  title = "Sam Wray & Tim Pietrusky - Creating An Audio/Visual Performance Using The Web @ Open Up Summit 2020"
+  url = "https://www.openup.global"
 
 
 
