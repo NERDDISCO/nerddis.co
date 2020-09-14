@@ -64,7 +64,7 @@ theme = "landing-page"
 [[params.shows]]
   date = "2020/08/21"
   title = "half/byte & NERDDISCO @ #NoRuKo 2020"
-  img = "2020021_halfbyte_NERDDISCO_NoRuKo"
+  img = "20200821_halfbyte_NERDDISCO_NoRuKo"
   url = "https://youtu.be/XntC412ETgM"
   length = "00:29:51"
 [[params.shows]]
