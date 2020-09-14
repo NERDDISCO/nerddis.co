@@ -45,14 +45,8 @@ theme = "landing-page"
 
 
 
-[[params.next]]
-  date = "2020/09/12 - 04:00 CEST"
-  title = "2xAA & NERDDISCO @ Open Up Summit 2020"
-  url = "https://www.openup.global"
-[[params.next]]
-  date = "2020/09/12 - 16:30 CEST"
-  title = "Sam Wray & Tim Pietrusky - Creating An Audio/Visual Performance Using The Web @ Open Up Summit 2020"
-  url = "https://www.openup.global"
+
+
 [[params.next]]
   date = "2020/09/17- 21:00 CEST"
   title = "half/byte & NERDDISCO - STXBP1"
@@ -61,6 +55,17 @@ theme = "landing-page"
 
 
 
+
+[[params.shows]]
+  date = "2020/09/12"
+  title = "2xAA & NERDDISCO @ Open UP Summit 2020"
+  img = "20200912_2xAA_NERDDISCO_OpenUpSummit_2020"
+  url = "https://youtu.be/RhM3arvVAPM"
+  length = "00:14:39"
+  # [[params.next]]
+#   date = "2020/09/12 - 16:30 CEST"
+#   title = "Sam Wray & Tim Pietrusky - Creating An Audio/Visual Performance Using The Web @ Open Up Summit 2020"
+#   url = "https://www.openup.global"
 [[params.shows]]
   date = "2020/08/21"
   title = "half/byte & NERDDISCO @ #NoRuKo 2020"
