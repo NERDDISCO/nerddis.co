@@ -56,6 +56,12 @@ theme = "landing-page"
 
 
 [[params.shows]]
+  date = "2020/10/02"
+  title = "half/byte & NERDDISCO @ DF20"
+  img = "20201002_halfbyte_NERDDISCO_df20"
+  url = "https://youtu.be/kzQIUoUNSqk"
+  length = "00:23:56"
+[[params.shows]]
   date = "2020/09/17"
   title = "half/byte & NERDDISCO - STXBP1"
   img = "20200917_halfbyte_NERDDISCO_STXBP1"
