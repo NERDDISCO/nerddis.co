@@ -54,7 +54,12 @@ theme = "landing-page"
 
 
 
-
+[[params.shows]]
+  date = "2020/10/15"
+  title = "HOSTILE & NERDDISCO - 005"
+  img = "20201015_HOSTILE_NERDDISCO_005"
+  url = "https://youtu.be/43pHwnrFRMQ"
+  length = "00:28:13"
 [[params.shows]]
   date = "2020/10/02"
   title = "half/byte & NERDDISCO @ DF20"
