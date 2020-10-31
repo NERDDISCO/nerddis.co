@@ -28,7 +28,7 @@ theme = "landing-page"
 [[params.social]]
   title = "twitter"
   icon = "twitter"
-  url = "https://www.twitter.com/NERDDISCO"
+  url = "https://www.twitter.com/TimPietrusky"
 [[params.social]]
   title = "instagram"
   icon = "instagram"
@@ -41,6 +41,14 @@ theme = "landing-page"
   title = "github"
   icon = "github"
   url = "https://github.com/NERDDISCO/nerddis.co"
+[[params.social]]
+  title = "codepen"
+  icon = "codepen"
+  url = "https://codepen.io/TimPietrusky"
+[[params.social]]
+  title = "soundcloud"
+  icon = "soundcloud"
+  url = "https://soundcloud.com/NERDDISCO"
 
 
 
@@ -54,6 +62,12 @@ theme = "landing-page"
 
 
 
+[[params.shows]]
+  date = "2020/10/15"
+  title = "half/byte & NERDDISCO - Climate Justice"
+  img = "20201015_halfbyte_NERDDISCO_Climate_Justice"
+  url = "https://youtu.be/qiD4qIFfGAU"
+  length = "00:54:38"
 [[params.shows]]
   date = "2020/10/15"
   title = "HOSTILE & NERDDISCO - 005"
