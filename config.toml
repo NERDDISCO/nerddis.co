@@ -54,11 +54,15 @@ theme = "landing-page"
 
 
 
-
 [[params.next]]
-  date = "2020/11/12 - 21:00 CEST"
-  title = "half/byte & NERDDISCO - tba"
-  url = "https://www.twitch.tv/nerddisco"
+  date = "2020/12/16 - 20:30 CET"
+  title = "Sam Wray & Tim Pietrusky @ CODAME JOYNT 2020 - Workshop: Modular Audio Visualization with modV"
+  url = "https://codame.com/events/modular-audio-visualisation-with-modv"
+
+# [[params.next]]
+#   date = "2020/11/12 - 21:00 CEST"
+#   title = "half/byte & NERDDISCO - tba"
+#   url = "https://www.twitch.tv/nerddisco"
 
 
 
