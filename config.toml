@@ -54,14 +54,10 @@ theme = "landing-page"
 
 
 
-[[params.next]]
-  date = "2020/12/13 - 20:30 CET"
-  title = "2xAA & NERDDISCO @ CODAME JOYNT 2020"
-  url = "https://www.twitch.tv/codame"
-[[params.next]]
-  date = "2020/12/13 - 22:00 CET"
-  title = "2xAA & NERDDISCO @ GamerDisco - Celebrating Ten Years"
-  url = "https://www.twitch.tv/gamerdisco"
+# [[params.next]]
+#   date = "2020/12/13 - 20:30 CET"
+#   title = "2xAA & NERDDISCO @ CODAME JOYNT 2020"
+#   url = "https://www.twitch.tv/codame"
 [[params.next]]
   date = "2020/12/16 - 20:30 CET"
   title = "Sam Wray & Tim Pietrusky @ CODAME JOYNT 2020 - Workshop: Modular Audio Visualization with modV"
@@ -74,6 +70,12 @@ theme = "landing-page"
 
 
 
+[[params.shows]]
+  date = "2020/12/13"
+  title = "2xAA & NERDDISCO @ GamerDisco - 10th Anniversary"
+  img = "20201213_2xAA_NERDDISCO_GamerDisco_10th_Anniversary"
+  url = "https://youtu.be/2oPTMdeySAA?t=320"
+  length = "00:45:11"
 [[params.shows]]
   date = "2020/10/15"
   title = "half/byte & NERDDISCO - Climate Justice"
