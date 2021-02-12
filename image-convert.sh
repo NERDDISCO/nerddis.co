@@ -14,7 +14,7 @@ do
   # Remove last 4 characters
   filename="${filename::${#filename}-4}"
 
-  echo "convert $filename.$fileextension to jpg & webp"
+  echo "convert $filename.$fileextension to jpg"
 
   # convert $SRC/$filename.$fileextension -resize 660 -quality 1 $DEST/$filename.webp
   convert $SRC/$filename.$fileextension -resize 660 -crop x371+0+0 -quality 1 $DEST/$filename.jpg
