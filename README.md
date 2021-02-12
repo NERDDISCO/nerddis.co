@@ -17,23 +17,36 @@ When your commit / PR is merged into the master, it will trigger a build on netl
 ### Shows
 
 * The original image for a show goes into `static/shows/original`
-* Create the optimized webp & jpg versions of the image
+* Create the optimized jpg versions of the image
   ```
     ./image-convert.sh
   ```
 
+### base64 of woff2 font
+
+```
+# Node => 13.0
+
+npm run build:font
+```
 
 ## Uses
 
 * [Workbox](https://developers.google.com/web/tools/workbox/guides/generate-service-worker/cli) for Service Worker
 * [pwa-update-available](https://github.com/thepassle/pwa-helpers#pwa-update-available) to update the app when a new version is released
+* [Badd Mono](https://paulconley.works/badd-mono/) font
+
+
+https://dev.to/thepassle/lessons-learned-building-a-covid-19-pwa-57fi
 
 
 
 ## Optimizations
 
 * Inline CSS
-* Wepb with jpg fallback and quality 1
+* Converted Badd Mono from otf (76 kb) into woff2 (7 kb)
+* Inline base64 encoded woff2
+* All images are jpg with quality 1
 * Lazyload images
 * Service Worker
 * Async JavaScript
