@@ -69,7 +69,12 @@ theme = "landing-page"
 #   url = "https://www.twitch.tv/nerddisco"
 
 
-
+[[params.shows]]
+  date = "2021/03/20"
+  title = "schickmalzwo - SMZ 001 with Mc Proper @ Home / Lockdown"
+  img = "20210320_schickmalzwo_Mc_Proper_At_Home"
+  url = "https://youtu.be/Goz6529mjcY"
+  length = "02:03:30"
 [[params.shows]]
   date = "2020/12/31"
   title = "2xAA & NERDDISCO - NYE 2020"
