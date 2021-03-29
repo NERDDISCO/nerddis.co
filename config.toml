@@ -59,6 +59,10 @@ theme = "landing-page"
 #   title = "2xAA & NERDDISCO @ CODAME JOYNT 2020"
 #   url = "https://www.twitch.tv/codame"
 [[params.next]]
+  date = "2021/04/02"
+  title = "Kelila & NERDDISCO - Overthinking"
+  url = "https://youtu.be/cM6dqIPThSU"
+[[params.next]]
   date = "2021/xx/xx"
   title = "Sam Wray & Tim Pietrusky - Workshop: Modular Audio Visualization with modV"
   url = "https://codame.com/events/modular-audio-visualisation-with-modv"
