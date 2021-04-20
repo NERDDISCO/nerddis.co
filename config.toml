@@ -70,6 +70,12 @@ theme = "landing-page"
 
 
 [[params.shows]]
+  date = "2021/04/18"
+  title = "NERDDISCO - Tweakpane + instatrip = Customisable facemask"
+  img = "20210418_NERDDISCO_instatrip_tweakpane"
+  url = "https://youtu.be/xxGNz1T9MHA"
+  length = "01:34:55"
+[[params.shows]]
   date = "2021/04/02"
   title = "Kelila & NERDDISCO - Overthinking"
   img = "20210402_Kelila_NERDDISCO_Overthinking"
