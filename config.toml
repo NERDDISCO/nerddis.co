@@ -70,6 +70,12 @@ theme = "landing-page"
 
 
 [[params.shows]]
+  date = "2021/04/25"
+  title = "NERDDISCO - Wiggly Wall (Audio Reactive Visuals)"
+  img = "20210425_NERDDISCO_AudioReactiveVisuals_Wiggly_Wall"
+  url = "https://youtu.be/dQhd1fKABOg"
+  length = "01:27:37"
+[[params.shows]]
   date = "2021/04/18"
   title = "NERDDISCO - Tweakpane + instatrip = Customisable facemask"
   img = "20210418_NERDDISCO_instatrip_tweakpane"
