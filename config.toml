@@ -74,8 +74,14 @@ theme = "landing-page"
 
 
 [[params.shows]]
+  date = "2021/05/02"
+  title = "NoisyClub Temperance / Audio Reactive Visuals / S01E02"
+  img = "20210503_NERDDISCO_AudioReactiveVisuals_S01E02_NoisyClub_Temperance"
+  url = "https://youtu.be/aXJ67_MdrDI"
+  length = "02:19:38"
+[[params.shows]]
   date = "2021/04/25"
-  title = "NERDDISCO - Wiggly Wall (Audio Reactive Visuals)"
+  title = "Wiggly Wall / Audio Reactive Visuals / S01E01"
   img = "20210425_NERDDISCO_AudioReactiveVisuals_Wiggly_Wall"
   url = "https://youtu.be/dQhd1fKABOg"
   length = "01:27:37"
