@@ -78,6 +78,12 @@ theme = "landing-page"
 
 
 [[params.shows]]
+  date = "2021/05/20"
+  title = "NERDDISCO - The Hanged HeatNoiseMan with music by FatBoy Slim"
+  img = "20210520_NERDDISCO_The_Hanged_HeatNoiseMan_with_music_from_FatBoy_Slim"
+  url = "https://youtu.be/qTIZSk6xgW4"
+  length = "00:04:22"
+[[params.shows]]
   date = "2021/05/16"
   title = "The Hanged HeatNoiseMan / Audio Reactive Visuals / S01E03"
   img = "20210516_NERDDISCO_AudioReactiveVisuals_S01E03_The_Hanged_HeatNoiseMan"
