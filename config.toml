@@ -59,11 +59,11 @@ theme = "landing-page"
 #   title = "2xAA & NERDDISCO @ CODAME JOYNT 2020"
 #   url = "https://www.twitch.tv/codame"
 [[params.next]]
-  date = "2021/05/22 - 13:00 CEST"
+  date = "2021/06/03 - 17:30 CEST"
   title = "2xAA & NERDDISCO @ DevFest Live 2021"
   url = "https://devfest.live"
 [[params.next]]
-  date = "Every Sunday - 21:00 CET"
+  date = "Every Sunday - 21:00 CEST"
   title = "NERDDISCO - Audio Reactive Visuals"
   url = "https://twitch.tv/nerddisco"
 [[params.next]]
