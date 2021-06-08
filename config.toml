@@ -58,10 +58,10 @@ theme = "landing-page"
 #   date = "2020/12/13 - 20:30 CET"
 #   title = "2xAA & NERDDISCO @ CODAME JOYNT 2020"
 #   url = "https://www.twitch.tv/codame"
-[[params.next]]
-  date = "2021/06/03 - 17:30 CEST"
-  title = "2xAA & NERDDISCO @ DevFest Live 2021"
-  url = "https://devfest.live"
+# [[params.next]]
+#   date = "2021/06/03 - 17:30 CEST"
+#   title = "2xAA & NERDDISCO @ DevFest Live 2021"
+#   url = "https://devfest.live"
 [[params.next]]
   date = "Every Sunday - 21:00 CEST"
   title = "NERDDISCO - Audio Reactive Visuals"
@@ -77,6 +77,30 @@ theme = "landing-page"
 #   url = "https://www.twitch.tv/nerddisco"
 
 
+[[params.shows]]
+  date = "2021/06/08"
+  title = "HighThere & MC Black Demon & NERDDISCO @ Cathee'n'Bass 2020"
+  img = "20210608_HighThere_MC_Black_Demon_NERDDISCO_Cathee_n_Bass.jpg"
+  url = "https://youtu.be/1L7vPRYwvcc"
+  length = "01:01:02"
+[[params.shows]]
+  date = "2021/06/05"
+  title = "NERDDISCO - The High Priestess Society (with music from Pitch Black)"
+  img = "20210604_NERDDISCO_AudioReactiveVisuals_S01E04_Demo_cover.jpg"
+  url = "https://youtu.be/CnLcKWEswRQ"
+  length = "00:04:02"
+[[params.shows]]
+  date = "2021/05/30"
+  title = "The High Priestessssss / Audio Reactive Visuals / S01E04 / Part 2"
+  img = "20210530_NERDDISCO_AudioReactiveVisuals_S01E04_Part_2_cover"
+  url = "https://youtu.be/_tGAd_Vl-4w"
+  length = "01:45:01"
+[[params.shows]]
+  date = "2021/05/23"
+  title = "The High Priestessssss / Audio Reactive Visuals / S01E04 / Part 1"
+  img = "20210523_NERDDISCO_AudioReactiveVisuals_S01E04_Part_1_cover"
+  url = "https://youtu.be/DxYv8NEP9fg"
+  length = "01:42:04"
 [[params.shows]]
   date = "2021/05/20"
   title = "NERDDISCO - The Hanged HeatNoiseMan with music by FatBoy Slim"
