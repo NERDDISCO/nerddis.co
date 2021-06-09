@@ -80,13 +80,13 @@ theme = "landing-page"
 [[params.shows]]
   date = "2021/06/08"
   title = "HighThere & MC Black Demon & NERDDISCO @ Cathee'n'Bass 2020"
-  img = "20210608_HighThere_MC_Black_Demon_NERDDISCO_Cathee_n_Bass.jpg"
+  img = "20210608_HighThere_MC_Black_Demon_NERDDISCO_Cathee_n_Bass"
   url = "https://youtu.be/1L7vPRYwvcc"
   length = "01:01:02"
 [[params.shows]]
   date = "2021/06/05"
   title = "NERDDISCO - The High Priestess Society (with music from Pitch Black)"
-  img = "20210604_NERDDISCO_AudioReactiveVisuals_S01E04_Demo_cover.jpg"
+  img = "20210604_NERDDISCO_AudioReactiveVisuals_S01E04_Demo_cover"
   url = "https://youtu.be/CnLcKWEswRQ"
   length = "00:04:02"
 [[params.shows]]
