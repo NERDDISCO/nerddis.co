@@ -62,10 +62,10 @@ theme = "landing-page"
 #   date = "2021/06/03 - 17:30 CEST"
 #   title = "2xAA & NERDDISCO @ DevFest Live 2021"
 #   url = "https://devfest.live"
-[[params.next]]
-  date = "Every Sunday - 21:00 CEST"
-  title = "NERDDISCO - Audio Reactive Visuals"
-  url = "https://twitch.tv/nerddisco"
+# [[params.next]]
+#   date = "Every Sunday - 21:00 CEST"
+#   title = "NERDDISCO - Audio Reactive Visuals"
+#   url = "https://twitch.tv/nerddisco"
 [[params.next]]
   date = "2021/xx/xx"
   title = "Sam Wray & Tim Pietrusky - Workshop: Modular Audio Visualization with modV"
@@ -83,6 +83,12 @@ theme = "landing-page"
   img = "20210608_HighThere_MC_Black_Demon_NERDDISCO_Cathee_n_Bass"
   url = "https://youtu.be/1L7vPRYwvcc"
   length = "01:01:02"
+[[params.shows]]
+  date = "2021/06/06"
+  title = "The Pride Progress Moon / Audio Reactive Visuals / S01E05"
+  img = "20210606_NERDDISCO_AudioReactiveVisuals_S01E05"
+  url = "https://youtu.be/YhzjTMboCkY"
+  length = "02:05:23"
 [[params.shows]]
   date = "2021/06/05"
   title = "NERDDISCO - The High Priestess Society (with music from Pitch Black)"
