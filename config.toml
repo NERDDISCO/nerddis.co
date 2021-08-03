@@ -76,7 +76,12 @@ theme = "landing-page"
 #   title = "half/byte & NERDDISCO - tba"
 #   url = "https://www.twitch.tv/nerddisco"
 
-
+[[params.shows]]
+  date = "2021/08/04"
+  title = "HighThere & Minako - Lessons"
+  img = "20210804_HighThere_Minako_Lessons"
+  url = "https://youtu.be/0TWiIAQkdRw"
+  length = "00:04:30"
 [[params.shows]]
   date = "2021/06/08"
   title = "HighThere & MC Black Demon & NERDDISCO @ Cathee'n'Bass 2020"
