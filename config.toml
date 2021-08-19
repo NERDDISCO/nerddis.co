@@ -77,6 +77,12 @@ theme = "landing-page"
 #   url = "https://www.twitch.tv/nerddisco"
 
 [[params.shows]]
+  date = "2021/08/19"
+  title = "schickmalzwo - SMZ 002 @ habt euch alle lieb 2021"
+  img = "20210819_schickmalzwo_habteuchallelieb_2021"
+  url = "https://youtu.be/__zicPn1ioo"
+  length = "00:13:04"
+[[params.shows]]
   date = "2021/08/04"
   title = "HighThere & Minako - Lessons"
   img = "20210804_HighThere_Minako_Lessons"
