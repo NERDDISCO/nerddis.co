@@ -6,8 +6,8 @@ theme = "landing-page"
 [params]
   description = """digital artist, 
     <a href="https://github.com/TimPietrusky">open source hacker</a>, 
-    co-founder of <a href="https://livejs.network">LiveJS</a>, 
-    1/2 of <a href="https://schickmalzwo.de">schickmalzwo</a>,
+    co-founder of <a href="https://livejs.network">LiveJS</a> & <a href="https://synoa.de>Synoa</a>, 
+    <a href="https://schickmalzwo.de">schickmalzwo</a>,
     <a href="https://github.com/vcync/modV-Workshop">mentor</a>,
     <a href="https://github.com/NERDDISCO">visual spectacular</a>,
     <a href="https://github.com/NERDDISCO/luminave">lightweaver</a> 
