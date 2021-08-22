@@ -18,6 +18,10 @@ theme = "landing-page"
   liveTitle = '🔴 LIVE on Twitch at 21:00 CEST'
 
 [[params.social]]
+  title = "foundation"
+  icon = "foundation"
+  url = "https://foundation.app/@NERDDISCO"
+[[params.social]]
   title = "youtube"
   icon = "youtube"
   url = "https://www.youtube.com/channel/UCjEh7ggQuxsI3JjqRUJfeAQ"
