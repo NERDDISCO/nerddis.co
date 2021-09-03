@@ -38,10 +38,6 @@ theme = "landing-page"
   icon = "instagram"
   url = "https://www.instagram.com/NERDDISCO"
 [[params.social]]
-  title = "facebook"
-  icon = "facebook"
-  url = "https://facebook.com/TimPietrusky"
-[[params.social]]
   title = "github"
   icon = "github"
   url = "https://github.com/NERDDISCO/nerddis.co"
