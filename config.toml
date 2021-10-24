@@ -5,13 +5,12 @@ theme = "landing-page"
 
 [params]
   description = """digital artist, 
-    <a href="https://github.com/TimPietrusky">open source hacker</a>, 
-    co-founder of <a href="https://livejs.network">LiveJS</a> & <a href="https://synoa.de">Synoa</a>, 
-    <a href="https://schickmalzwo.de">schickmalzwo</a>,
+    <a href="https://github.com/TimPietrusky">open source developer</a>, 
+    part of <a href="https://twitter.com/iieinander">iieinander</a> / <a href="https://schickmalzwo.de">schickmalzwo</a> /
+    <a href="https://livejs.network">LiveJS</a> / <a href="https://synoa.de">Synoa</a>, 
     <a href="https://github.com/vcync/modV-Workshop">mentor</a>,
     <a href="https://github.com/NERDDISCO">visual spectacular</a>,
-    <a href="https://github.com/NERDDISCO/luminave">lightweaver</a> 
-    and loop-drop-rookie"""
+    <a href="https://github.com/NERDDISCO/luminave">lightweaver</a>"""
   
   isLive = false
   liveText = '<span class="live">LIVE</span> on <a href="https://twitch.com/NERDDISCO">Twitch</a> at 21:00 CEST'
