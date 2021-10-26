@@ -122,8 +122,9 @@ a:hover .hover\:no-difference {
 }
 
 .logo:after {
+  display: none;
   position: absolute;
-  content: '#BLM';
+  content: '';
   left: var(--blm-left);
   top: var(--blm-top);
   width: var(--blm-size);
@@ -377,5 +378,9 @@ a:focus .show__head {
 
   .text {
     max-width: 100%;
+  }
+
+  .full-width {
+    width: auto;
   }
 }
