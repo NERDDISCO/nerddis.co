@@ -8,11 +8,11 @@ theme = "landing-page"
     <a href="https://github.com/TimPietrusky">open source dev</a>, 
         <a href="https://github.com/vcync/modV-Workshop">mentor</a>,
     <a href="https://github.com/NERDDISCO">visual spectacular</a>,
-    <a href="https://github.com/NERDDISCO/luminave">lightweaver</a>
+    <a href="https://github.com/NERDDISCO/luminave">lightweaver</a>,
     <br />
-    part of <a href="https://twitter.com/iieinander">iieinander</a> / <a href="https://schickmalzwo.de">schickmalzwo</a> /
-    <a href="https://bananabassmusic.com">Banana Bass Music</a> /
-    <a href="https://livejs.network">LiveJS</a> / <a href="https://synoa.de">Synoa</a>
+    part of <a href="https://twitter.com/iieinander">iieinander</a>, <a href="https://schickmalzwo.de">schickmalzwo</a>,
+    <a href="https://bananabassmusic.com">Banana Bass Music</a>,
+    <a href="https://livejs.network">LiveJS</a> & <a href="https://synoa.de">Synoa</a>
   """
   
   isLive = false

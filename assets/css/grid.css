@@ -43,6 +43,10 @@
   min-height: 50vh;
 }
 
+.full-width {
+  width: 100%;
+}
+
 .space-around {
   padding: 0 var(--space-around);
 }
