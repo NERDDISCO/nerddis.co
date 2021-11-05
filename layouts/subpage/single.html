@@ -1,0 +1,17 @@
+{{ partial "head.html" . }}
+
+<section class="last center center--items">
+
+  <a class="clean" href="/" aria-label="NERDDISCO Home" rel="noopener">
+    <div class="logo logo--small">
+        {{ printf "static/img/nerddisco.svg" | readFile | safeHTML }}
+    </div>
+  </a>
+
+</section>
+
+<section class="full-height space-around center center--top">
+  <div>{{ .Content }}</div>
+</section>
+
+{{ partial "footer.html" . }}

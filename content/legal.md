@@ -2,7 +2,7 @@
 title: "Legal / Imprint / Impressum"
 date: 2020-05-13T08:06:46+02:00
 draft: false
-type: "page"
+type: "subpage"
 ---
 
 ## Legal / Imprint / Impressum

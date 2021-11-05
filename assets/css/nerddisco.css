@@ -15,7 +15,7 @@
   --color-dark: #1b1b1b;
 
   --width-logo: 60vw;
-  --width-logo-small: 30vw;
+  --width-logo-small: 20vw;
 
   --full-width: var(--width-logo);
 
@@ -56,6 +56,11 @@ h4,
 button {
   font-family: 'Badd Mono', sans-serif;
   font-weight: 400;
+}
+
+h1 {
+  font-size: 5em;
+  margin: .5em 0 .25em 0;
 }
 
 li {
