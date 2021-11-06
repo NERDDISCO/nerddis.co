@@ -34,6 +34,8 @@
   --blm-size: 15rem;
   --blm-left: calc(var(--space-around) * -1);
   --blm-top: var(--blm-left);
+
+  --backround: transparent;
 }
 
 html {
@@ -59,11 +61,27 @@ button {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 7em;
   margin: .5em 0 .25em 0;
 }
 
+ul.list {
+  font-size: 2em;
+  line-height: 1.25em;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.list li:nth-child(n+2) {
+  border-top: .15em solid var(--color-white);
+  margin-top: var(--space-around);
+  padding: var(--space-around) 0 0 0;
+}
+
 li {
+  
   margin: 1em 0;
 }
 
@@ -155,7 +173,8 @@ a:hover .hover\:no-difference {
   max-width: var(--width-logo);
 }
 
-.subtitle {
+.subtitle,
+h2 {
   font-size: var(--subtitle-size);
   text-align: center;
   margin: var(--subtitle-margin);
@@ -174,7 +193,8 @@ a:hover .hover\:no-difference {
 }
 
 .last {
-  background: #000 url(../shows/doesnotexist.jpg) no-repeat center center;
+  background-color: #000;
+  background: var(--background, url(../shows/doesnotexist.jpg)) no-repeat center center;
   background-size: cover;
 }
 

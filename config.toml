@@ -13,7 +13,7 @@ theme = "landing-page"
     <a href="https://bananabassmusic.com">Banana Bass Music</a>,
     <a href="https://livejs.network">LiveJS</a> & <a href="https://synoa.de">Synoa</a>
   """
-  
+  target = "_blank"
   isLive = false
   liveText = '<span class="live">LIVE</span> on <a href="https://twitch.com/NERDDISCO">Twitch</a> at 21:00 CEST'
   liveTitle = '🔴 LIVE on Twitch at 21:00 CEST'
@@ -69,15 +69,26 @@ theme = "landing-page"
 #   title = "NERDDISCO - Audio Reactive Visuals"
 #   url = "https://twitch.tv/nerddisco"
 [[params.next]]
-  date = "2021/xx/xx"
-  title = "Sam Wray & Tim Pietrusky - Workshop: Modular Audio Visualization with modV"
-  url = "https://codame.com/events/modular-audio-visualisation-with-modv"
+  date = "2021/11/15"
+  title = "LiveJS @ JSConf India 2021 - Intro performance"
+  url = "https://www.jsconf.in"
+[[params.next]]
+  date = "2021/12/01"
+  title = "Tim Pietrusky @ JSConf México - Workshop: Modular Audio Visualisation with modV"
+  url = "https://jsconf.mx"
 
 # [[params.next]]
 #   date = "2020/11/12 - 21:00 CEST"
 #   title = "half/byte & NERDDISCO - tba"
 #   url = "https://www.twitch.tv/nerddisco"
 
+[[params.shows]]
+  date = "2021/11/06"
+  title = "HEN 500000"
+  img = "20211106_NERDDISCO_HEN_500000"
+  url = "/hen500000"
+  length = "00:00:13"
+  target = "_self"
 [[params.shows]]
   date = "2021/08/31"
   title = "Hasky & Mr. Kato - Take You Down"

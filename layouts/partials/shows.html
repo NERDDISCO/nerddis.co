@@ -9,7 +9,7 @@
     {{ range .Site.Params.shows }}
     <div class="show" data-date="{{ .date }}">
 
-      <a href="{{ .url }}" target="_blank" aria-label="{{ .title }}" rel="noopener">
+      <a href="{{ .url }}" target="{{ .target }}" aria-label="{{ .title }}" rel="noopener">
         <picture class="show__picture">
           <h4 class="show__date space-around--all--half solid hover:solid">{{ .date }}</h4>
           <h4 class="show__length space-around--all--half hover:solid">{{ .length }}</h4>
