@@ -87,7 +87,7 @@ theme = "landing-page"
   title = "HEN 500000"
   img = "20211106_NERDDISCO_HEN_500000"
   url = "/hen500000"
-  length = "00:00:13"
+  length = "00:00:12"
   target = "_self"
 [[params.shows]]
   date = "2021/08/31"
