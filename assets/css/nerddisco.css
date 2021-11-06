@@ -24,6 +24,8 @@
   --subtitle-size: 7.5rem;
   --subtitle-margin: calc(var(--space-around) * 4) 0 calc(var(--space-around) * 2) 0;
 
+  --attention-size: 2.5rem;
+
   --show-title-size: 1.5rem;
 
   --social-size: 1.25em;
@@ -63,6 +65,10 @@ button {
 h1 {
   font-size: 7em;
   margin: .5em 0 .25em 0;
+}
+
+h3 {
+  font-size: var(--attention-size);
 }
 
 ul.list {
@@ -348,6 +354,7 @@ a:focus .show__head {
 @media(max-width:1280px) {
   :root {
     --subtitle-size: 4.75rem;
+    --attention-size: 1.85rem;
     --social-size: 1.75rem;
   }
 
@@ -392,6 +399,7 @@ a:focus .show__head {
     --width-logo: 90vw;
     --space-around: 1.5rem;
     --subtitle-size: 2.5rem;
+    --attention-size: 1.35rem;
     --no-display: block;
     --blm-left: 0;
     --blm-top: calc(var(--space-around) * -3);
