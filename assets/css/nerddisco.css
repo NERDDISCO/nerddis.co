@@ -21,6 +21,8 @@
 
   --space-around: 1.25rem;
 
+  --title-size: 7rem;
+
   --subtitle-size: 7.5rem;
   --subtitle-margin: calc(var(--space-around) * 4) 0 calc(var(--space-around) * 2) 0;
 
@@ -63,12 +65,14 @@ button {
 }
 
 h1 {
-  font-size: 7em;
+  font-size: var(--title-size);
   margin: .5em 0 .25em 0;
 }
 
-h3 {
-  font-size: var(--attention-size);
+hr {
+  border: none;
+  background: var(--color-white);
+  height: 0.25rem;
 }
 
 ul.list {
@@ -202,6 +206,13 @@ h2 {
   background-color: #000;
   background: var(--background, url(../shows/doesnotexist.jpg)) no-repeat center center;
   background-size: cover;
+}
+
+.attention {
+  font-size: var(--attention-size);
+  text-align: center;
+  border-top: .25rem solid var(--color-white);
+  border-bottom: .25rem solid var(--color-white);
 }
 
 /*.last:after {
@@ -369,6 +380,7 @@ a:focus .show__head {
 
 @media(max-width:1024px) {
   :root {
+    --title-size: 5rem;
     --subtitle-size: 4rem;
     --width-logo-small: 50vw;
   }
