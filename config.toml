@@ -19,10 +19,10 @@ theme = "landing-page"
   liveTitle = '🔴 LIVE on Twitch at 21:00 CEST'
 
 
-# [[params.social]]
-#   title = "hicetnunc"
-#   icon = "hicetnunc"
-#   url = "https://hicetnunc.xyz/nerddisco"
+[[params.social]]
+  title = "hicetnunc"
+  icon = "hicetnunc"
+  url = "https://hicetnunc.art/nerddisco"
 [[params.social]]
   title = "youtube"
   icon = "youtube"
