@@ -72,10 +72,10 @@ theme = "landing-page"
 #   date = "2021/11/15"
 #   title = "LiveJS @ JSConf India 2021 - Intro performance"
 #   url = "https://www.jsconf.in"
-[[params.next]]
-  date = "2021/12/01"
-  title = "Tim Pietrusky @ JSConf México - Workshop: Modular Audio Visualisation with modV"
-  url = "https://jsconf.mx"
+# [[params.next]]
+#   date = "2021/12/01"
+#   title = "Tim Pietrusky @ JSConf México - Workshop: Modular Audio Visualisation with modV"
+#   url = "https://jsconf.mx"
 
 # [[params.next]]
 #   date = "2020/11/12 - 21:00 CEST"
