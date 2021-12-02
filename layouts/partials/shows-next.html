@@ -1,3 +1,12 @@
+
+{{ $show_next := true }}
+{{ range .Site.Params.next }}
+{{else}}
+  {{ $show_next = false }}
+{{ end }}
+
+
+{{ if $show_next }}
 <section class="half-height center separate sm:center--top">
   
   <div class="space-around">
@@ -27,3 +36,4 @@
   </div>
 
 </section>
+{{ end }}
