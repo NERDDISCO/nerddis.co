@@ -91,6 +91,12 @@ theme = "landing-page"
 #   url = "https://www.twitch.tv/nerddisco"
 
 [[params.shows]]
+  date = "2022/04/12"
+  title = "A.M.C & NERDDISCO - DO IT TO IT (A.M.C SQUID EDIT)"
+  img = "20220412_NERDDISCO_AMC_Do_it_to_it"
+  url = "https://youtu.be/IlZbAHLPLBA"
+  length = "00:03:15"
+[[params.shows]]
   date = "2021/11/29"
   title = "Gesceap & NERDDISCO - Impossible Box 006 played by Fools"
   img = "20211129_Gesceap_NERDDISCO_Impossible_Box_006_played_by_Fools"
