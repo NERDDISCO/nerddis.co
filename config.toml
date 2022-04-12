@@ -56,13 +56,13 @@ theme = "landing-page"
 
 
 
-[[params.next]]
-  date = "2022/03/26 - 22:00 CET - 07:00 CET"
-  title = "NERDDISCO + Stonecreek Crew @ Sublife 2, Club Paula, Dresden, Germany"
-  url = "http://club-paula.de"
-[[params.next]]
-  date = "2022/04/02 - 22:00 CET - 07:00 CET"
-  title = "NERDDISCO + V/A @ private dnb party, Fulda, Germany"
+# [[params.next]]
+#   date = "2022/03/26 - 22:00 CET - 07:00 CET"
+#   title = "NERDDISCO + Stonecreek Crew @ Sublife 2, Club Paula, Dresden, Germany"
+#   url = "http://club-paula.de"
+# [[params.next]]
+#   date = "2022/04/02 - 22:00 CET - 07:00 CET"
+#   title = "NERDDISCO + V/A @ private dnb party, Fulda, Germany"
 [[params.next]]
   date = "2022/05/13 - 18:00 CET (24h)"
   title = "NERDDISCO + BananaBassMusic @ Straight Outta Schacht, Secret Location, Halle (Saale), Germany"
