@@ -97,6 +97,12 @@ theme = "landing-page"
   url = "https://youtu.be/IlZbAHLPLBA"
   length = "00:03:15"
 [[params.shows]]
+  date = "2022/03/26"
+  title = "Chirac & NERDDISCO @ Sublife 2, Club Paula, Dresden, Germany"
+  img = "20220326_StonecreekCrew_Chirac_Sublife2_ClubPaula_Dresden_Germany"
+  url = "https://youtu.be/aTCv9sXijtg"
+  length = "01:02:27"
+[[params.shows]]
   date = "2021/11/29"
   title = "Gesceap & NERDDISCO - Impossible Box 006 played by Fools"
   img = "20211129_Gesceap_NERDDISCO_Impossible_Box_006_played_by_Fools"
