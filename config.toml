@@ -64,8 +64,14 @@ theme = "landing-page"
 #   date = "2022/04/02 - 22:00 CET - 07:00 CET"
 #   title = "NERDDISCO + V/A @ private dnb party, Fulda, Germany"
 [[params.next]]
-  date = "2022/05/13 - 18:00 CET (24h)"
+  date = "2022/05/13 - 20:00 - 08:00 CET"
   title = "NERDDISCO + BananaBassMusic @ Straight Outta Schacht, Secret Location, Halle (Saale), Germany"
+[[params.next]]
+  date = "2022/06/17 - tba"
+  title = "NERDDISCO + tba @ tba, tba, tba, tba"
+[[params.next]]
+  date = "2022/09/02 - tba"
+  title = "NERDDISCO + tba @ tba, tba, Leipzig, Germany"
   # url = "http://club-paula.de"
   # url = "http://club-paula.de"
 # [[params.next]]
