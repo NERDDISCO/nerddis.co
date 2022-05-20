@@ -11,7 +11,7 @@ theme = "landing-page"
     <a href="https://github.com/NERDDISCO/luminave">lightweaver</a>,
     part of <a href="https://twitter.com/iieinander">iieinander</a>, <a href="https://schickmalzwo.de">schickmalzwo</a>,
     <a href="https://bananabassmusic.com">Banana Bass Music</a>,
-    <a href="https://livejs.network">LiveJS</a> & <a href="https://synoa.de">Synoa</a>
+    <a href="https://livejs.network">LiveJS</a>, <a href="https://dekk.app">dekk</a> & <a href="https://synoa.de">Synoa</a>
   """
   target = "_blank"
   isLive = false
@@ -63,9 +63,9 @@ theme = "landing-page"
 # [[params.next]]
 #   date = "2022/04/02 - 22:00 CET - 07:00 CET"
 #   title = "NERDDISCO + V/A @ private dnb party, Fulda, Germany"
-[[params.next]]
-  date = "2022/05/13 - 20:00 - 08:00 CET"
-  title = "NERDDISCO + BananaBassMusic @ Straight Outta Schacht, Secret Location, Halle (Saale), Germany"
+# [[params.next]]
+#   date = "2022/05/13 - 20:00 - 08:00 CET"
+#   title = "NERDDISCO + BananaBassMusic @ Straight Outta Schacht, Secret Location, Halle (Saale), Germany"
 [[params.next]]
   date = "2022/06/18 - tba"
   title = "NERDDISCO + tba @ tba, Club Paula, Dresden, Germany"
@@ -108,6 +108,18 @@ theme = "landing-page"
   img = "20220326_StonecreekCrew_Chirac_Sublife2_ClubPaula_Dresden_Germany"
   url = "https://youtu.be/aTCv9sXijtg"
   length = "01:02:27"
+[[params.shows]]
+  date = "2022/03/26"
+  title = "PiJay & NERDDISCO @ Sublife 2, Club Paula, Dresden, Germany"
+  img = "20220326_StonecreekCrew_PiJay_Sublife2_ClubPaula_Dresden_Germany"
+  url = "https://youtu.be/jtEsGIJKWLA"
+  length = "00:58:36"
+[[params.shows]]
+  date = "2022/03/26"
+  title = "CoVo & NERDDISCO @ Sublife 2, Club Paula, Dresden, Germany"
+  img = "20220326_StonecreekCrew_CoVo_Sublife2_ClubPaula_Dresden_Germany"
+  url = "https://youtu.be/SPhR7T1Djq8"
+  length = "00:57:10"
 [[params.shows]]
   date = "2021/11/29"
   title = "Gesceap & NERDDISCO - Impossible Box 006 played by Fools"
