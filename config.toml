@@ -75,6 +75,9 @@ theme = "landing-page"
 [[params.next]]
   date = "2022/09/02 - tba"
   title = "NERDDISCO + tba @ tba, tba, Leipzig, Germany"
+[[params.next]]
+  date = "2022/10/14 - tba"
+  title = "NERDDISCO + BananaBassMusic @ Straight Outta Schacht, Secret Location, Halle (Saale), Germany"
   # url = "http://club-paula.de"
   # url = "http://club-paula.de"
 # [[params.next]]
