@@ -73,6 +73,9 @@ theme = "landing-page"
   date = "2022/06/18 - 23:00 - tba CET"
   title = "NERDDISCO + Stonecreek Crew @ SCC presents Screamarts, Club Paula, Dresden, Germany"
 [[params.next]]
+  date = "2022/08/20 - tba CET"
+  title = "schickmalzwo @ tba, tba, Mainz, Germany"
+[[params.next]]
   date = "2022/09/02 - tba"
   title = "NERDDISCO + tba @ tba, tba, Leipzig, Germany"
 [[params.next]]
