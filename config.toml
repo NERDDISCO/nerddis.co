@@ -110,6 +110,12 @@ theme = "landing-page"
   length = "01:02:27"
 [[params.shows]]
   date = "2022/03/26"
+  title = "Krambledore & NERDDISCO @ Sublife 2, Club Paula, Dresden, Germany"
+  img = "20220326_StonecreekCrew_Krambledore_Sublife2_ClubPaula_Dresden_Germany"
+  url = "https://youtu.be/7S3w9XBxrVE"
+  length = "00:59:20"
+[[params.shows]]
+  date = "2022/03/26"
   title = "PiJay & NERDDISCO @ Sublife 2, Club Paula, Dresden, Germany"
   img = "20220326_StonecreekCrew_PiJay_Sublife2_ClubPaula_Dresden_Germany"
   url = "https://youtu.be/jtEsGIJKWLA"
