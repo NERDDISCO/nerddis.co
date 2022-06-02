@@ -64,8 +64,11 @@ theme = "landing-page"
 #   date = "2022/04/02 - 22:00 CET - 07:00 CET"
 #   title = "NERDDISCO + V/A @ private dnb party, Fulda, Germany"
 # [[params.next]]
-#   date = "2022/05/13 - 20:00 - 08:00 CET"
+#   date = "2022/05/13 - 22:00 - 08:00 CET"
 #   title = "NERDDISCO + BananaBassMusic @ Straight Outta Schacht, Secret Location, Halle (Saale), Germany"
+[[params.next]]
+  date = "2022/06/04 - 22:00 - tba CET"
+  title = "NERDDISCO + V/A @ Going Out!, secrect location, Heidelberg, Germany"
 [[params.next]]
   date = "2022/06/18 - tba"
   title = "NERDDISCO + tba @ tba, Club Paula, Dresden, Germany"
