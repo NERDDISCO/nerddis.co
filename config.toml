@@ -66,12 +66,12 @@ theme = "landing-page"
 # [[params.next]]
 #   date = "2022/05/13 - 22:00 - 08:00 CET"
 #   title = "NERDDISCO + BananaBassMusic @ Straight Outta Schacht, Secret Location, Halle (Saale), Germany"
-[[params.next]]
-  date = "2022/06/04 - 22:00 - tba CET"
-  title = "NERDDISCO + V/A @ Going Out!, secrect location, Heidelberg, Germany"
-[[params.next]]
-  date = "2022/06/18 - 23:00 - tba CET"
-  title = "NERDDISCO + Stonecreek Crew @ SCC presents Screamarts, Club Paula, Dresden, Germany"
+# [[params.next]]
+#   date = "2022/06/04 - 22:00 - tba CET"
+#   title = "NERDDISCO + V/A @ Going Out!, secrect location, Heidelberg, Germany"
+# [[params.next]]
+#   date = "2022/06/18 - 23:00 - tba CET"
+#   title = "NERDDISCO + Stonecreek Crew @ SCC presents Screamarts, Club Paula, Dresden, Germany"
 [[params.next]]
   date = "2022/08/20 - tba CET"
   title = "schickmalzwo @ tba, tba, Mainz, Germany"
@@ -105,6 +105,12 @@ theme = "landing-page"
 #   title = "half/byte & NERDDISCO - tba"
 #   url = "https://www.twitch.tv/nerddisco"
 
+[[params.shows]]
+  date = "2022/06/22"
+  title = "PiJay & NERDDISCO - PiJay for Hive Festival"
+  img = "20220622_NERDDISCO_PiJay_for_Hive_Festival"
+  url = "https://youtu.be/F_jm7p4pztk"
+  length = "00:39:28"
 [[params.shows]]
   date = "2022/04/12"
   title = "A.M.C & NERDDISCO - DO IT TO IT (A.M.C SQUID EDIT)"
