@@ -104,7 +104,12 @@ theme = "landing-page"
 #   date = "2020/11/12 - 21:00 CEST"
 #   title = "half/byte & NERDDISCO - tba"
 #   url = "https://www.twitch.tv/nerddisco"
-
+[[params.shows]]
+  date = "2022/07/01"
+  title = "HighThere & NERDDISCO - The Knights of Ren"
+  img = "20220630_NERDDISCO_HighThere_The_Knights_of_Ren"
+  url = "https://youtu.be/cIg8H-yRV3U"
+  length = "00:05:34"
 [[params.shows]]
   date = "2022/06/22"
   title = "PiJay & NERDDISCO - PiJay for Hive Festival"
