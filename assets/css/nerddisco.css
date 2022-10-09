@@ -359,8 +359,13 @@ ul.filter li {
 }
 
 ul.filter li a {
-  padding: .5em;
+  padding: .4em;
   line-height: 3em;
+  border: 4px solid #ffffff;
+}
+
+ul.filter li a.active {
+  border: 4px groove #ffffff;
 }
 
 ul.list li:nth-child(n+2) {
