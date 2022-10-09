@@ -26,7 +26,7 @@
   --subtitle-size: 7.5rem;
   --subtitle-margin: calc(var(--space-around) * 4) 0 calc(var(--space-around) * 2) 0;
   --subtitle-with-submenu-margin: calc(var(--space-around) * 4) 0 0 0;
-  --subtitle-submenu-margin: calc(var(--space-around) * .5) 0 calc(var(--space-around) * 1) 0;
+  --subtitle-submenu-margin: calc(var(--space-around) * .5) 0 calc(var(--space-around) * 2) 0;
 
   --attention-size: 2.5rem;
 
