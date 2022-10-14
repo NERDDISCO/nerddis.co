@@ -23,7 +23,9 @@
       <a href="{{ .url }}" target="{{ .target }}" aria-label="{{ .title }}" rel="noopener">
         <picture class="show__picture">
           <h4 class="show__date space-around--all--half solid hover:solid">{{ .date }}</h4>
-          <h4 class="show__length space-around--all--half hover:solid">{{ .length }}</h4>
+          {{ if .length }}
+            <h4 class="show__length space-around--all--half hover:solid">{{ .length }}</h4>
+          {{ else }}{{ end }}
           <source srcset="{{ printf "shows/%s.jpg" .img }}" type="image/jpeg"> 
           <img class="show__image" src="{{ printf "shows/%s.jpg" .img }}" alt="{{ .title }}" loading="lazy">
         </picture>
