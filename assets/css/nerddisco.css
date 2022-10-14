@@ -119,7 +119,7 @@ a:focus .hover\:solid {
 
 
 p {
-  margin: 0;
+  margin: 0 0 var(--space-around) 0;
   line-height: 1.75em;
 }
 
