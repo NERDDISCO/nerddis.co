@@ -21,7 +21,7 @@
 
   --space-around: 1.25rem;
 
-  --title-size: 7rem;
+  --title-size: 5rem;
 
   --subtitle-size: 7.5rem;
   --subtitle-margin: calc(var(--space-around) * 4) 0 calc(var(--space-around) * 2) 0;
