@@ -1,3 +1,10 @@
+---
+title: "License"
+date: 2022-10-13T08:06:46+02:00
+draft: false
+type: "subpage"
+---
+
 MIT License
 
 Copyright (c) 2022 NERDDISCO / Tim Pietrusky
