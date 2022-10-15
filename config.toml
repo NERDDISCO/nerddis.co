@@ -106,7 +106,13 @@ theme = "landing-page"
 #   date = "2020/11/12 - 21:00 CEST"
 #   title = "half/byte & NERDDISCO - tba"
 #   url = "https://www.twitch.tv/nerddisco"
-
+[[params.shows]]
+  date = "2022/10/15"
+  title = "nd-landscape-001"
+  img = "20221015_NERDDISCO_nd-landscape-001_ooNWvzQMaUvLvY87mx5evJ4C8xUM4eNRxDmkTFfZQCcwpqG1KUn"
+  url = "/nd-landscape-001"
+  target = "_self"
+  type = "nft"
 [[params.shows]]
   date = "2022/08/20"
   title = "schickmalzwo @ Susi's Bday Bash, Rhoischnook, Mainz, Germany"
