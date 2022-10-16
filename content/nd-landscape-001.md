@@ -23,7 +23,7 @@ The piece has 8 different features and there is a very small chance to receive a
 
 <br /><br />
 
-This was the first time that I used a [pseudo random number generator](https://en.wikipedia.org/wiki/Pseudorandom_number_generator) combined with a seed from [fxhash](https://www.fxhash.xyz/doc/artist/guide-publish-generative-token#fxhash-code-snippet) to create a random artwork, that looks the same for a specific iteration. It was super much fun to enter this new realm of possibilities, especially because I love random AND parameterized visual experiences. 
+This was the first time that I used a [pseudo random number generator](https://en.wikipedia.org/wiki/Pseudorandom_number_generator) combined with a seed from [fxhash](https://www.fxhash.xyz/doc/artist/guide-publish-generative-token#fxhash-code-snippet) to create a random artwork, that looks the same for a specific iteration. It was super much fun to enter this new realm of possibilities, especially because I love random AND parameterised visual experiences. 
 
 What is generative art for NERDDISCO? Let's find out!
 
