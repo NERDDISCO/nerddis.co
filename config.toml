@@ -135,6 +135,13 @@ theme = "landing-page"
   length = "00:39:28"
   type = "show"
 [[params.shows]]
+  date = "2022/06/04"
+  title = "Dubbing Panda & NERDDISCO @ Going Nuts, Secret Location, Heidelberg, Germany"
+  img = "20220604_NERDDISCO_Dubbing_Panda_Secret_Location_Heidelberg"
+  url = "https://youtu.be/V4Sd8wSwBD0"
+  length = "01:15:50"
+  type = "show"
+[[params.shows]]
   date = "2022/04/12"
   title = "A.M.C & NERDDISCO - DO IT TO IT (A.M.C SQUID EDIT)"
   img = "20220412_NERDDISCO_AMC_Do_it_to_it"
