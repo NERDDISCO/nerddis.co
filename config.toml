@@ -4,14 +4,21 @@ title = "NERDDISCO"
 theme = "landing-page"
 
 [params]
-  description = """digital artist, 
-    <a href="https://github.com/TimPietrusky">open source dev</a>, 
-        <a href="https://github.com/vcync/modV-Workshop">mentor</a>,
-    <a href="https://github.com/NERDDISCO">visual spectacular</a>,
-    <a href="https://github.com/NERDDISCO/luminave">lightweaver</a>,
-    part of <a href="https://twitter.com/iieinander">iieinander</a>, <a href="https://schickmalzwo.de">schickmalzwo</a>,
+  description = """digital artist, mentor, VJ & lightweaver"""
+  # description = """digital artist, 
+  #   <a href="https://github.com/TimPietrusky">open source dev</a>, 
+  #       <a href="https://github.com/vcync/modV-Workshop">mentor</a>,
+  #   <a href="https://github.com/NERDDISCO">visual spectacular</a>,
+  #   <a href="https://github.com/NERDDISCO/luminave">lightweaver</a>,
+  #   part of <a href="https://twitter.com/iieinander">iieinander</a>, <a href="https://schickmalzwo.de">schickmalzwo</a>,
+  #   <a href="https://bananabassmusic.com">Banana Bass Music</a>,
+  #   <a href="https://livejs.network">LiveJS</a>, <a href="https://dekk.app">dekk</a> & <a href="https://synoa.de">Synoa</a>
+  # """
+  partOf = """part of <a href="https://twitter.com/iieinander">iieinander</a>,
     <a href="https://bananabassmusic.com">Banana Bass Music</a>,
-    <a href="https://livejs.network">LiveJS</a>, <a href="https://dekk.app">dekk</a> & <a href="https://synoa.de">Synoa</a>
+    <a href="https://schickmalzwo.de">schickmalzwo</a>,
+    <a href="https://dekk.app">dekk</a>,
+    <a href="https://livejs.network">LiveJS</a> & <a href="https://synoa.de">Synoa</a>
   """
   target = "_blank"
   isLive = false

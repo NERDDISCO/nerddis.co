@@ -1,6 +1,6 @@
-<section class="last full-height center center--items">
+<section class="last center center--items">
 
-  <a class="clean" href="https://youtu.be/0wzqwHvKTAk" target="_blank" aria-label="rbail funds for george floyd" rel="noopener">
+  <a class="clean" href="https://youtu.be/0wzqwHvKTAk" target="_blank" aria-label="half/byte & NERDDISCO - STXBP1" rel="noopener">
     <div class="logo">
         {{ printf "static/img/nerddisco.svg" | readFile | safeHTML }}
 
@@ -11,7 +11,11 @@
     {{ if $.Site.Params.isLive }}{{ $.Site.Params.liveText | safeHTML }}, {{ else }}{{ end }} {{ $.Site.Params.description | safeHTML }}
   </p>
 
-  <div class="column">
+  <p class="text solid space-around--all full-width">
+    {{ if $.Site.Params.isLive }}{{ $.Site.Params.liveText | safeHTML }}, {{ else }}{{ end }} {{ $.Site.Params.partOf | safeHTML }}
+  </p>
+
+  <div class="text solid space-around--all full-width center center--items">
     {{ partial "social.html" . }}
   </div>
 
