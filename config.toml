@@ -113,6 +113,7 @@ theme = "landing-page"
 #   date = "2020/11/12 - 21:00 CEST"
 #   title = "half/byte & NERDDISCO - tba"
 #   url = "https://www.twitch.tv/nerddisco"
+
 [[params.shows]]
   date = "2022/10/19"
   title = "nd-landscape-001"
@@ -183,6 +184,13 @@ theme = "landing-page"
   url = "https://youtu.be/SPhR7T1Djq8"
   length = "00:57:10"
   type = "show"
+[[params.shows]]
+  date = "2021/12/01"
+  title = "Tim Pietrusky - Modular Audio Visualisation with modV @ JSConf México"
+  img = "20211201_Modular_Audio_Visualisation_with_modV_JSConf_Mexico"
+  url = "https://youtu.be/GQHBWU-zYTA"
+  length = "01:30:14"
+  type = "talk"
 [[params.shows]]
   date = "2021/11/29"
   title = "Gesceap & NERDDISCO - Impossible Box 006 played by Fools"
