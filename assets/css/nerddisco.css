@@ -104,7 +104,7 @@ a:focus,
 a.clean:hover,
 a.clean:focus {
   /* filter: drop-shadow(2px 4px 2em var(--color-black)); */
-  mix-blend-mode: difference;
+  mix-blend-mode: overlay;
 }
 
 a:hover .hover\:solid,
@@ -124,7 +124,7 @@ p {
 }
 
 .difference {
-  mix-blend-mode: difference;
+  mix-blend-mode: overlay;
 }
 
 a:hover .hover\:no-difference {
