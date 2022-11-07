@@ -114,6 +114,8 @@ theme = "landing-page"
 #   title = "half/byte & NERDDISCO - tba"
 #   url = "https://www.twitch.tv/nerddisco"
 
+
+
 [[params.shows]]
   date = "2022/10/19"
   title = "nd-landscape-001"
@@ -121,6 +123,13 @@ theme = "landing-page"
   url = "/nd-landscape-001"
   target = "_self"
   type = "nft"
+[[params.shows]]
+  date = "2022/10/07"
+  title = "HighThere & NERDDISCO @ SOS 5.0, Station Endlos, Halle, Germany"
+  img = "20221007_HighThere_NERDDISCO_SOS_5_0_StationEndlos_Halle_Germany"
+  url = "https://youtu.be/p4tDsOrIpSw"
+  length = "01:00:24"
+  type = "show"
 [[params.shows]]
   date = "2022/08/20"
   title = "schickmalzwo @ Susi's Bday Bash, Rhoischnook, Mainz, Germany"
