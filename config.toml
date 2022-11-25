@@ -63,8 +63,10 @@ theme = "landing-page"
 
 
 [[params.next]]
-  date = "2022/11/19 - 22:00 CET - 06:00 CET"
-  title = "schickmalzwo @ base, Fulda, Germany"
+  date = "2022/12/31 - 22:00 CET"
+  title = "NERDDISCO @ BBM NYE 2022, Berlin, Germany"
+  # date = "2022/11/19 - 22:00 CET - 06:00 CET"
+  # title = "schickmalzwo @ base, Fulda, Germany"
 # [[params.next]]
 #   date = "2022/03/26 - 22:00 CET - 07:00 CET"
 #   title = "NERDDISCO + Stonecreek Crew @ Sublife 2, Club Paula, Dresden, Germany"
