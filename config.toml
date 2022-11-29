@@ -267,6 +267,13 @@ theme = "landing-page"
   length = "00:04:02"
   type = "show"
 [[params.shows]]
+  date = "2021/06/03"
+  title = "2xAA & NERDDISCO @ DevFest Live 2021 - Performance + Setup explained"
+  img = "20210603_2xAA_NERDDISCO_DevFestLive_2021_Performance_Setup_explained"
+  url = "https://youtu.be/Mq7aExYoBMY?t=7"
+  length = "00:04:02"
+  type = "show"
+[[params.shows]]
   date = "2021/05/30"
   title = "The High Priestessssss / Audio Reactive Visuals / S01E04 / Part 2"
   img = "20210530_NERDDISCO_AudioReactiveVisuals_S01E04_Part_2_cover"
