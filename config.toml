@@ -271,7 +271,7 @@ theme = "landing-page"
   title = "2xAA & NERDDISCO @ DevFest Live 2021 - Performance + Setup explained"
   img = "20210603_2xAA_NERDDISCO_DevFestLive_2021_Performance_Setup_explained"
   url = "https://youtu.be/Mq7aExYoBMY?t=7"
-  length = "00:04:02"
+  length = "00:26:19"
   type = "show"
 [[params.shows]]
   date = "2021/05/30"
