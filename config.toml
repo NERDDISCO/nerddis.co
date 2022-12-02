@@ -217,6 +217,13 @@ theme = "landing-page"
   length = "00:02:56"
   type = "musicvideo"
 [[params.shows]]
+  date = "2021/11/29"
+  title = "LiveJS - half/byte & 2xAA & NERDDISCO @ JSConf India 2021 - Online Conference Opening"
+  img = "20211115_LiveJS_JSConf_India_2021_Intro"
+  url = "https://youtu.be/m9hJgGty-qk"
+  length = "00:08:22"
+  type = "show"
+[[params.shows]]
   date = "2021/11/06"
   title = "HEN 500000"
   img = "20211106_NERDDISCO_HEN_500000"
