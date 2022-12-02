@@ -4,7 +4,7 @@ title = "NERDDISCO"
 theme = "landing-page"
 
 [params]
-  description = """digital artist, mentor, VJ & lightweaver"""
+  description = """digital artist, developer, mentor, VJ & lightweaver"""
   # description = """digital artist, 
   #   <a href="https://github.com/TimPietrusky">open source dev</a>, 
   #       <a href="https://github.com/vcync/modV-Workshop">mentor</a>,
@@ -221,7 +221,7 @@ theme = "landing-page"
   title = "LiveJS - half/byte & 2xAA & NERDDISCO @ JSConf India 2021 - Online Conference Opening"
   img = "20211115_LiveJS_JSConf_India_2021_Intro"
   url = "https://youtu.be/m9hJgGty-qk"
-  length = "00:08:22"
+  length = "00:08:21"
   type = "show"
 [[params.shows]]
   date = "2021/11/06"
