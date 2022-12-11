@@ -39,7 +39,19 @@ npm run build:font
 
 https://dev.to/thepassle/lessons-learned-building-a-covid-19-pwa-57fi
 
+## Subpage with own index.html
 
+For some demos we have to put the code into public/**/live, therefor we can use this:
+
+```
+npm run build && rm -fR ~/dev/hugo/nerddis.co/public/nd-xmas-001/live && cp -R dist ~/dev/hugo/nerddis.co/public/nd-xmas-001/live
+```
+
+## Optimize images to have smaller textures
+
+```
+convert -resize 50% bark_NORMAL.png bark_NORMAL_50%.jpg
+```
 
 ## Optimizations
 
