@@ -61,4 +61,11 @@ typings/
 .next
 .DS_Store
 resources/_gen
-/public
+public/*/*
+public/*.txt
+public/*.html
+public/*.xml
+public/*.webmanifest
+public/*.js
+public/*.map
+!public/*/live
