@@ -119,6 +119,13 @@ theme = "landing-page"
 
 
 [[params.shows]]
+  date = "2022/12/11"
+  title = "nd-xmas-001"
+  img = "20221211_NERDDISCO_nd-xmas-001"
+  url = "/nd-xmas-001"
+  target = "_self"
+  type = "show"
+[[params.shows]]
   date = "2022/11/18"
   title = "nd-fxhashturnsone-001"
   img = "20221118_NERDDISCO_nd-fxhashturnsone-001"
