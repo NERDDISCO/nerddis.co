@@ -15,20 +15,22 @@
   </div>
 
 
-  <div class="columns columns--fit space-around">
+  <div class="columns columns--fit full-width">
 
     {{ range .Site.Params.shows }}
     <div class="show" data-date="{{ .date }}" data-type="{{ .type }}">
 
       <a href="{{ .url }}" target="{{ .target }}" aria-label="{{ .title }}" rel="noopener">
-        <picture class="show__picture">
-          <h4 class="show__date space-around--all--half solid hover:solid">{{ .date }}</h4>
-          {{ if .length }}
-            <h4 class="show__length space-around--all--half hover:solid">{{ .length }}</h4>
-          {{ else }}{{ end }}
-          <source srcset="{{ printf "shows/%s.jpg" .img }}" type="image/jpeg"> 
-          <img class="show__image" src="{{ printf "shows/%s.jpg" .img }}" alt="{{ .title }}" loading="lazy">
-        </picture>
+        <div class="show__picture">
+          <picture>
+            <h4 class="show__date space-around--all--half solid hover:solid">{{ .date }}</h4>
+            {{ if .length }}
+              <h4 class="show__length space-around--all--half hover:solid">{{ .length }}</h4>
+            {{ else }}{{ end }}
+            <source srcset="{{ printf "shows/%s.jpg" .img }}" type="image/jpeg"> 
+            <img class="show__image" src="{{ printf "shows/%s.jpg" .img }}" alt="{{ .title }}" loading="lazy">
+          </picture>
+        </div>
 
         <div class="show__head space-around--all--half">
           <h3 class="show__title">{{ .title }}</h3>

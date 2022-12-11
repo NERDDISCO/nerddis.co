@@ -15,22 +15,29 @@
   --color-dark: #1b1b1b;
 
   --width-logo: 60vw;
-  --width-logo-small: 20vw;
+  --width-logo-small: 40vw;
 
   --full-width: var(--width-logo);
 
   --space-around: 1.25rem;
 
-  --title-size: 5rem;
+  --title-size-global: 5.75rem;
+  --title-size: var(--title-size-global);
 
-  --subtitle-size: 7.5rem;
+  --subtitle-size-global: 4.5rem;
+  --subtitle-size: var(--subtitle-size-global);
+
+  --attention-size-global: 2.5rem;
+  --attention-size: var(--attention-size-global);
+
   --subtitle-margin: calc(var(--space-around) * 4) 0 calc(var(--space-around) * 2) 0;
   --subtitle-with-submenu-margin: calc(var(--space-around) * 4) 0 0 0;
   --subtitle-submenu-margin: 0 0 calc(var(--space-around) * 1.5) 0;
 
-  --attention-size: 2.5rem;
 
-  --show-title-size: 1.5rem;
+
+  --show-title-size-global: 1.35rem;
+  --show-title-size: var(--show-title-size-global);
 
   --social-size: 1.25em;
   --social-margin: 0 .35rem;
@@ -169,11 +176,14 @@ a:hover .hover\:no-difference {
   max-width: var(--width-logo);
 }
 
-.subtitle,
-h2 {
+h2,
+.subtitle {
   font-size: var(--subtitle-size);
-  text-align: center;
   margin: var(--subtitle-margin);
+}
+
+.subtitle {
+  text-align: center;
 }
 
 .subtitle.subtitle--submenu {
@@ -256,7 +266,15 @@ h2 {
 }
 
 .show__head {
-  flex-grow: 2;
+  position: absolute;
+  background: var(--color-black);
+  opacity: .85;
+}
+
+.show.show--next .show__head {
+  position: relative;
+  background: transparent;
+  opacity: 1.0;
 }
 
 a:hover .show__head,
@@ -278,6 +296,7 @@ a:focus .show__head {
 
 .show__picture {
   position: relative;
+  flex-grow: 2;
 }
 
 .show__image {
@@ -338,6 +357,10 @@ a:focus .show__head {
   display: inline-block;
   margin: var(--social-margin);
   font-size: var(--social-size);
+}
+
+ul {
+  line-height: 1.25em;
 }
 
 ul.list {
@@ -409,11 +432,14 @@ ul.list li:nth-child(n+2) {
   media queries
 
 */
-@media(max-width:1280px) {
+@media(max-width:1480px) {
   :root {
-    --subtitle-size: 4.75rem;
-    --attention-size: 1.85rem;
+    --factor: .85;
+    --title-size: calc(var(--title-size-global) * var(--factor));
+    --subtitle-size: calc(var(--subtitle-size-global) * var(--factor));
+    --attention-size: calc(var(--attention-size-global) * var(--factor));
     --social-size: 1.75rem;
+    --show-title-size: calc(var(--show-title-size-global) * var(--factor));
   }
 
   html {
@@ -427,9 +453,12 @@ ul.list li:nth-child(n+2) {
 
 @media(max-width:1024px) {
   :root {
-    --title-size: 5rem;
-    --subtitle-size: 4rem;
-    --width-logo-small: 50vw;
+    --factor: .65;
+    --title-size: calc(var(--title-size-global) * var(--factor));
+    --subtitle-size: calc(var(--subtitle-size-global) * var(--factor));
+    --show-title-size: calc(var(--show-title-size-global) * (var(--factor) * 1.15));
+    
+    --attention-size: calc(var(--attention-size-global) * var(--factor));
   }
 
   p {
@@ -455,10 +484,16 @@ ul.list li:nth-child(n+2) {
 
 @media(max-width:768px) {
   :root {
+    --factor: .5;
+    --title-size: calc(var(--title-size-global) * var(--factor));
+    --subtitle-size: calc(var(--subtitle-size-global) * var(--factor));
+    --attention-size: calc(var(--attention-size-global) * var(--factor));
+    --show-title-size: calc(var(--show-title-size-global) * (var(--factor) * 2.25));
+
     --width-logo: 90vw;
     --space-around: 1.5rem;
-    --subtitle-size: 2.5rem;
-    --attention-size: 1.35rem;
+
+    
     --no-display: block;
     --blm-left: 0;
     --blm-top: calc(var(--space-around) * -3);
