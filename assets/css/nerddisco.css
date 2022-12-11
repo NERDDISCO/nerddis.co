@@ -34,10 +34,11 @@
   --subtitle-with-submenu-margin: calc(var(--space-around) * 4) 0 0 0;
   --subtitle-submenu-margin: 0 0 calc(var(--space-around) * 1.5) 0;
 
-
-
   --show-title-size-global: 1.35rem;
   --show-title-size: var(--show-title-size-global);
+
+  --next-title-size-global: 1.75rem;
+  --next-title-size: var(--next-title-size-global);
 
   --social-size: 1.25em;
   --social-margin: 0 .35rem;
@@ -309,6 +310,10 @@ a:focus .show__head {
   margin: 0 0 0 0;
 }
 
+.show--next .show__title {
+  font-size: var(--next-title-size);
+}
+
 .show__date,
 .show__length {
   position: absolute;
@@ -442,6 +447,10 @@ ul.list li:nth-child(n+2) {
     --show-title-size: calc(var(--show-title-size-global) * var(--factor));
   }
 
+  /* .show--next .show__title {
+    --show-title-size: calc(var(--show-title-size-global) * var(--factor) * 2.5);
+  } */
+
   html {
     font-size: 1em;
   }
@@ -457,9 +466,12 @@ ul.list li:nth-child(n+2) {
     --title-size: calc(var(--title-size-global) * var(--factor));
     --subtitle-size: calc(var(--subtitle-size-global) * var(--factor));
     --show-title-size: calc(var(--show-title-size-global) * (var(--factor) * 1.15));
-    
     --attention-size: calc(var(--attention-size-global) * var(--factor));
   }
+
+  /* .show--next .show__title {
+    --show-title-size: calc(var(--show-title-size-global) * var(--factor) * 1.15);
+  } */
 
   p {
     font-size: 1.2em;
