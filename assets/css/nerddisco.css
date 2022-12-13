@@ -30,9 +30,10 @@
   --attention-size-global: 2.5rem;
   --attention-size: var(--attention-size-global);
 
-  --subtitle-margin: calc(var(--space-around) * 4) 0 calc(var(--space-around) * 2) 0;
+  --subtitle-margin: calc(var(--space-around) * 4) 0 calc(var(--space-around) * 1.5) 0;
   --subtitle-with-submenu-margin: calc(var(--space-around) * 4) 0 0 0;
   --subtitle-submenu-margin: 0 0 calc(var(--space-around) * 1.5) 0;
+  --h2-margin: calc(var(--space-around) * 4) 0 calc(var(--space-around) * .5) 0;
 
   --show-title-size-global: 1.35rem;
   --show-title-size: var(--show-title-size-global);
@@ -80,6 +81,11 @@ button {
 h1 {
   font-size: var(--title-size);
   margin: .5em 0 .25em 0;
+}
+
+h2 {
+  font-size: var(--subtitle-size);
+  margin: var(--h2-margin);
 }
 
 hr {
@@ -179,7 +185,6 @@ a:hover .hover\:no-difference {
   max-width: var(--width-logo);
 }
 
-h2,
 .subtitle {
   font-size: var(--subtitle-size);
   margin: var(--subtitle-margin);
@@ -421,6 +426,7 @@ ul.list li:nth-child(n+2) {
     --attention-size: calc(var(--attention-size-global) * var(--factor));
     --social-size: 1.75rem;
     --show-title-size: calc(var(--show-title-size-global) * var(--factor));
+    --next-title-size: calc(var(--next-title-size-global) * (var(--factor)));
   }
 
   html {
