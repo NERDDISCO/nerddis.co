@@ -52,7 +52,10 @@ theme = "landing-page"
   url = "https://soundcloud.com/NERDDISCO"
 
 
-
+[[params.next]]
+  date = "2022/12/17 - 21:00 CET"
+  title = "NERDDISCO @ Melting Pot, Noteingang, Radebeul, Germany"
+  url = "https://www.noteingang-radebeul.de"
 [[params.next]]
   date = "2022/12/31 - 22:00 CET"
   title = "NERDDISCO @ BananaBassMusic NYE 2022, Berlin, Germany"
