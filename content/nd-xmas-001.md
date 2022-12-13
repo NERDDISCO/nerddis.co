@@ -11,7 +11,7 @@ tags: "christmas,nd-xmas-001,box,threejs,seed,nerddisco,gltf,webgl"
 
 # nd-xmas-001
 
-My friends Patrick and Jasmin run a co-working space in Mainz and every year they host an awesome christmas-party among friends. Jasmin asked me 2 days before the event (which happened on 2022-12-09) if I could bring some xmas-like decoration with me. As I already used up my decoration at home (I ❤️ xmas) I created a winter wonderland in ThreeJS, which was projected onto a wall in their office. 
+My friends Patrick and Jasmin run a co-working space in Mainz (Germany) and every year they host an awesome christmas-party among friends. Jasmin asked me 2 days before the event (which happened on 2022-12-09) if I could bring some xmas-like decoration with me. As I already used up my decoration at home (I ❤️ xmas) I created a winter wonderland in ThreeJS, which was projected onto a wall in their office. 
 
 You can check it out yourself:
 
