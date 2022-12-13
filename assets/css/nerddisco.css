@@ -1,10 +1,6 @@
 @import 'grid.css';
 /* @import 'baddmono.css'; */
 
-html, body, div, section {
-  overflow: visible !important;
-}
-
 @font-face {
   font-family: 'Badd Mono';
   src: url('font/Badd-Mono-Regular.woff2') format('woff2');
