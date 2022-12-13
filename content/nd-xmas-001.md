@@ -11,9 +11,9 @@ tags: "christmas,nd-xmas-001,box,threejs,seed,nerddisco,gltf,webgl"
 
 # nd-xmas-001
 
-My friends Patrick and Jasmin run a co-working space in Mainz and every year they host their christmas-party in there with all their friends. Jasmin asked me if I could provide some decoration for the 2022 party to make it look more xmas-like. As I had nothing analog to bring, I created a winter wonderland in ThreeJS, which was projected onto a wall in their office. 
+My friends Patrick and Jasmin run a co-working space in Mainz and every year they host an awesome christmas-party among friends. Jasmin asked me 2 days before the event (which happened on 2022-12-09) if I could bring some xmas-like decoration with me. As I already used up my decoration at home (I ❤️ xmas) I created a winter wonderland in ThreeJS, which was projected onto a wall in their office. 
 
-You can check it out yourself and maybe use it for your party if you like it: 
+You can check it out yourself:
 
 {{< attention url="nd-xmas-001/live" name="nd-xmas-001/live" >}} 
 
@@ -21,6 +21,8 @@ You can check it out yourself and maybe use it for your party if you like it:
 ## Code
 
 [github.com/NERDDISCO/nd-xmas-001](https://github.com/NERDDISCO/nd-xmas-001)
+
+The project is released under MIT, but please take a look at the [Resources](/nd-xmas-001/#resources) to find the corresponding licenses for the third-party things I used. 
 
 ## Resources
 
