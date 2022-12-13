@@ -1,6 +1,10 @@
 @import 'grid.css';
 /* @import 'baddmono.css'; */
 
+html, body, div, section {
+  overflow: visible !important;
+}
+
 @font-face {
   font-family: 'Badd Mono';
   src: url('font/Badd-Mono-Regular.woff2') format('woff2');
@@ -37,6 +41,7 @@
 
   --show-title-size-global: 1.35rem;
   --show-title-size: var(--show-title-size-global);
+  --show-meta-size: .65rem;
 
   --next-title-size-global: 1.75rem;
   --next-title-size: var(--next-title-size-global);
@@ -300,12 +305,12 @@ a:focus .show__head {
 .show__date,
 .show__length {
   position: absolute;
-  font-size: 1rem;
+  font-size: var(--show-meta-size);
   margin: 0;
   bottom: 0;
   color: var(--color-white);
   background: var(--color-black);
-  opacity: .75;
+  opacity: .5;
 }
 
 .show__date {
