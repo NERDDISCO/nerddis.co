@@ -469,13 +469,18 @@ ul.list li:nth-child(n+2) {
     --show-title-size: calc(var(--show-title-size-global) * (var(--factor) * 2.25));
     --next-title-size: calc(var(--next-title-size-global) * (var(--factor) * 1.5));
 
+    --social-margin: 0;
+
     --width-logo: 90vw;
     --space-around: 1.5rem;
-
     
     --no-display: block;
     --blm-left: 0;
     --blm-top: calc(var(--space-around) * -3);
+  }
+
+  html {
+    font-size: 1em;
   }
 
   .columns {
