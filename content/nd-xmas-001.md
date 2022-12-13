@@ -11,12 +11,20 @@ tags: "christmas,nd-xmas-001,box,threejs,seed,nerddisco,gltf,webgl"
 
 # nd-xmas-001
 
-My friends Patrick and Jasmin run a co-working space in Mainz (Germany) and every year they host an awesome christmas-party among friends. Jasmin asked me 2 days before the event (which happened on 2022-12-09) if I could bring some xmas-like decoration with me. As I already used up my decoration at home (I ❤️ xmas) I created a winter wonderland in ThreeJS, which was projected onto a wall in their office. 
+My friends Patrick and Jasmin run a co-working space in Mainz (Germany) and every year they host an awesome christmas-party among friends. Jasmin asked me 2 days before the event (which happened on 2022-12-09) if I could bring some xmas-like decoration with me. As I already used up my decoration at home (I ❤️ xmas), I created a winter wonderland in ThreeJS, which was projected onto a wall in their office. 
 
 You can check it out yourself:
 
 {{< attention url="nd-xmas-001/live" name="nd-xmas-001/live" >}} 
 
+Some aspects of this are pseudo-random, using the hash from fxhash as the seed. So every time you reload the page, these things are generated:
+
+* Initial y rotation of all elements
+* Snowflake shape
+* Movement of the snowflakes
+* Amount of gifts
+* Gift-wrappings
+* Rotation and position of the gifts
 
 ## Code
 
@@ -37,5 +45,5 @@ Franks laboratory was used as inspiration to generate a random  Snowflake-Textur
 * [How To Create A Loading Screen For Your Three.js App](https://www.youtube.com/watch?v=zMzuPIiznQ4) by Wael Yasmina was used to create a progress bar when the resources are loaded
 
 ## Interactive
-- Use mouse or touch to zoom in/out and rotate the landscape.
+- Use mouse or touch to zoom in/out and rotate the scene.
 - Press 's' on your keyboard to download a screenshot
