@@ -40,6 +40,9 @@
   --next-title-size-global: 1.75rem;
   --next-title-size: var(--next-title-size-global);
 
+  /* --text-size: 1.25; */
+  --text-line-height: 1.75em;
+
   --social-size: 1.25em;
   --social-margin: 0 .35rem;
 
@@ -111,7 +114,6 @@ a:focus,
 
 a.clean:hover,
 a.clean:focus {
-  /* filter: drop-shadow(2px 4px 2em var(--color-black)); */
   mix-blend-mode: overlay;
 }
 
@@ -128,7 +130,7 @@ a:focus .hover\:solid {
 
 p {
   margin: 0 0 var(--space-around) 0;
-  line-height: 1.75em;
+  line-height: var(--text-line-height);
 }
 
 .difference {
@@ -222,31 +224,7 @@ h2,
   display: none;
 }
 
-/*.last:after {
-  position: absolute;
-  bottom: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0), var(--color-dark));
-  height: 4rem;
-  width: 100%;
-  content: '';
-}*/
-
-/* .stuff {
-  list-style-type: none;
-  padding: 0;
-}
-
-.stuff > li {
-  margin: 1.25em 0;
-}
-
-.stuff > li:before {
-  content: attr(data-emoji);
-  margin: 0 .25em 0 0;
-} */
-
 .show {
-  /* padding: var(--space-around); */
   overflow: hidden;
 }
 
@@ -365,13 +343,11 @@ a:focus .show__head {
 }
 
 ul {
-  line-height: 1.25em;
+  line-height: var(--text-line-height);
 }
 
 ul.list {
   font-size: 2em;
-  line-height: 1.25em;
-
   list-style: none;
   padding: 0;
   margin: 0;
@@ -447,34 +423,18 @@ ul.list li:nth-child(n+2) {
     --show-title-size: calc(var(--show-title-size-global) * var(--factor));
   }
 
-  /* .show--next .show__title {
-    --show-title-size: calc(var(--show-title-size-global) * var(--factor) * 2.5);
-  } */
-
   html {
-    font-size: 1em;
-  }
-
-  p {
-    font-size: 1.2em;
+    font-size: 1.25em;
   }
 }
 
-@media(max-width:1024px) {
+@media(max-width:1280px) {
   :root {
     --factor: .65;
     --title-size: calc(var(--title-size-global) * var(--factor));
     --subtitle-size: calc(var(--subtitle-size-global) * var(--factor));
     --show-title-size: calc(var(--show-title-size-global) * (var(--factor) * 1.15));
     --attention-size: calc(var(--attention-size-global) * var(--factor));
-  }
-
-  /* .show--next .show__title {
-    --show-title-size: calc(var(--show-title-size-global) * var(--factor) * 1.15);
-  } */
-
-  p {
-    font-size: 1.2em;
   }
 
   .columns--fit {
@@ -501,6 +461,7 @@ ul.list li:nth-child(n+2) {
     --subtitle-size: calc(var(--subtitle-size-global) * var(--factor));
     --attention-size: calc(var(--attention-size-global) * var(--factor));
     --show-title-size: calc(var(--show-title-size-global) * (var(--factor) * 2.25));
+    --next-title-size: calc(var(--next-title-size-global) * (var(--factor) * 1.5));
 
     --width-logo: 90vw;
     --space-around: 1.5rem;
