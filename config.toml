@@ -64,7 +64,10 @@ theme = "landing-page"
 
 [[params.next]]
   date = "2022/12/31 - 22:00 CET"
-  title = "NERDDISCO @ BBM NYE 2022, Berlin, Germany"
+  title = "NERDDISCO @ BananaBassMusic NYE 2022, Berlin, Germany"
+[[params.next]]
+  date = "2023/04/02 - 23:00 - 06:00 CET"
+  title = "schickmalzwo @ Freaky Frequency, Base, Fulda, Germany"
   # date = "2022/11/19 - 22:00 CET - 06:00 CET"
   # title = "schickmalzwo @ base, Fulda, Germany"
 # [[params.next]]
