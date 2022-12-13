@@ -4,7 +4,7 @@
 
     {{ range .Site.Params.social }}
     <li>
-      <a href="{{ .url }}" class="btn btn-default {{ .icon }}" target="_blank" aria-label="{{ .icon }}" rel="noopener">
+      <a href="{{ .url }}" class="btn btn-default {{ .icon }}" target="_blank" aria-label="{{ .icon }}" rel="noopener me">
 
         <span class="icon">
           {{ printf "static/social/%s.svg" .icon | readFile | safeHTML }}

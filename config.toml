@@ -26,22 +26,10 @@ theme = "landing-page"
   liveTitle = '🔴 LIVE on Twitch at 21:00 CEST'
 
 
-# [[params.social]]
-#   title = "hicetnunc"
-#   icon = "hicetnunc"
-#   url = "https://hicetnunc.art/nerddisco"
 [[params.social]]
-  title = "youtube"
-  icon = "youtube"
-  url = "https://www.youtube.com/channel/UCjEh7ggQuxsI3JjqRUJfeAQ"
-# [[params.social]]
-#   title = "twitch"
-#   icon = "twitch"
-#   url = "https://www.twitch.com/nerddisco"
-[[params.social]]
-  title = "twitter"
-  icon = "twitter"
-  url = "https://www.twitter.com/NERDDISCO"
+  title = "mastodon"
+  icon = "mastodon"
+  url = "https://mastodon.social/@NERDDISCO"
 [[params.social]]
   title = "instagram"
   icon = "instagram"
@@ -55,10 +43,13 @@ theme = "landing-page"
   icon = "codepen"
   url = "https://codepen.io/TimPietrusky"
 [[params.social]]
+  title = "youtube"
+  icon = "youtube"
+  url = "https://www.youtube.com/channel/UCjEh7ggQuxsI3JjqRUJfeAQ"
+[[params.social]]
   title = "soundcloud"
   icon = "soundcloud"
   url = "https://soundcloud.com/NERDDISCO"
-
 
 
 
