@@ -52,13 +52,13 @@ theme = "landing-page"
   url = "https://soundcloud.com/NERDDISCO"
 
 
-[[params.next]]
-  date = "2022/12/17 - 21:00 CET"
-  title = "NERDDISCO @ Melting Pot, Noteingang, Radebeul, Germany"
-  url = "https://www.noteingang-radebeul.de"
-[[params.next]]
-  date = "2022/12/31 - 22:00 CET"
-  title = "NERDDISCO @ HighThere's Studio Session - NYE 2022, Berlin, Germany"
+# [[params.next]]
+#   date = "2022/12/17 - 21:00 CET"
+#   title = "NERDDISCO @ Melting Pot, Noteingang, Radebeul, Germany"
+#   url = "https://www.noteingang-radebeul.de"
+# [[params.next]]
+#   date = "2022/12/31 - 22:00 CET"
+#   title = "NERDDISCO @ HighThere's Studio Session - NYE 2022, Berlin, Germany"
 [[params.next]]
   date = "2023/02/04 - 23:00 - 06:00 CET"
   title = "schickmalzwo @ Freaky Frequency, Base, Fulda, Germany"
