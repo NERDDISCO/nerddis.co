@@ -43,6 +43,10 @@ theme = "landing-page"
   icon = "codepen"
   url = "https://codepen.io/TimPietrusky"
 [[params.social]]
+  title = "twitch"
+  icon = "twitch"
+  url = "https://www.twitch.tv/NERDDISCO"
+[[params.social]]
   title = "youtube"
   icon = "youtube"
   url = "https://www.youtube.com/channel/UCjEh7ggQuxsI3JjqRUJfeAQ"
