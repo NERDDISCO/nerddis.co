@@ -49,7 +49,7 @@ theme = "landing-page"
 [[params.social]]
   title = "youtube"
   icon = "youtube"
-  url = "https://www.youtube.com/channel/UCjEh7ggQuxsI3JjqRUJfeAQ"
+  url = "https://www.youtube.com/@NERDDISCO"
 [[params.social]]
   title = "soundcloud"
   icon = "soundcloud"
