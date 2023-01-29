@@ -26,11 +26,15 @@ All the things that NERDDISCO needs in order to perform at your event. If not me
 * floor plan with all fixtures (model + vendor) + their addresses + channels
   * This is delivered at least one week before the event so that the fixtures can be added into my lights software
 
+If the venue is using Art-Net, then I'm not sure if this is working with my setup, I only ever did this once and there it was not working. So in order to be sure that this is fine, we would need at least a check of 3 hours on a different day to confirm that my setup is working. If this is not possible, then I will just do visuals. 
+
 
 ## Recommended setup
 
 * Venue has projector / TV already in place and I can just connect to this via HDMI
-* If this is not possible, please contact me at least 4 weeks before the event so that we can plan alternatives
+* Venue has lights (controllable via DMX512) installed and I can just use them
+
+If this is not possible, please contact me at least 4 weeks before the event so that we can plan alternatives
 
 
 ## Tech check
