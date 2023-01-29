@@ -8,7 +8,9 @@ img: ""
 
 # Rider
 
-All the things that NERDDISCO needs in order to perform at your event. If not mentioned otherwise, everything from this page is required. 
+All the things that NERDDISCO needs in order to perform at your event. 
+
+Lights are totally optional, if you also want them (mapped to the visuals), please tell me in advance and take a look at the things marked as **optional**. 
 
 ## Basic
 
