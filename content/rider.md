@@ -22,6 +22,8 @@ All the things that NERDDISCO needs in order to perform at your event. If not me
 
 ## Lights
 
+This is totally optional.
+
 * 1 x DMX cable (3 pin XLR male) to connect my DMX512 controller
 * floor plan with all fixtures (model + vendor) + their addresses + channels
   * This is delivered at least one week before the event so that the fixtures can be added into my lights software
@@ -32,7 +34,7 @@ If the venue is using Art-Net, then I'm not sure if this is working with my setu
 ## Recommended setup
 
 * Venue has projector / TV already in place and I can just connect to this via HDMI
-* Venue has lights (controllable via DMX512) installed and I can just use them
+* (optional) Venue has lights (controllable via DMX512) installed and I can just use them
 
 If this is not possible, please contact me at least 4 weeks before the event so that we can plan alternatives
 
