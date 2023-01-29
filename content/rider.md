@@ -12,7 +12,7 @@ All the things that NERDDISCO needs in order to perform at your event. If not me
 
 ## Basic
 
-* 1 x table with at least 1m width and 1m depth
+* 1 x table with at least 1m width, 1m depth and 1m height
 * 1 x bar stool
 * n x bananas (1 banana for each hour performing)
 * 1 x multi-plug with at least plugs (Type F, EU)
