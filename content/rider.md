@@ -17,7 +17,7 @@ All the things that NERDDISCO needs in order to perform at your event. If not me
 * n x bananas (1 banana for each hour performing)
 * 1 x multi-plug with at least 3 plugs (Type F, EU)
 * 1 x HDMI cable to connect to the projector / TV
-* 2 x XLR male or 6.3 mm jack to receive the stereo audio signal from the audio mixer of the DJ
+* 2 x XLR male or 2 x 6.3 mm jack to receive the stereo audio signal from the audio mixer of the DJ, as this is needed for my audio reactive visuals
 
 
 ## Lights
