@@ -1,0 +1,6 @@
+/**
+ * @license
+ * nd-genuary32nd-plants-chatgpt3-001 by NERDDISCO
+ * MIT 2023 NERDDISCO
+ * https://nerddis.co/nd-genuary32nd-plants-chatgpt3-001
+ */
