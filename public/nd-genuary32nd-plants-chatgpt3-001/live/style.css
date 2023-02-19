@@ -6,11 +6,10 @@
 html,
 body {
   overflow: hidden;
-  background: #000;
+  background: #ffffff;
 }
 
 #nd-output {
-  background: #f00;
   position: absolute;
   top: 50%;
   left: 50%;
