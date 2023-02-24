@@ -3,6 +3,11 @@ languageCode = "en-us"
 title = "NERDDISCO"
 theme = "landing-page"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   description = """digital artist, developer, mentor, VJ & lightweaver"""
   # description = """digital artist, 
