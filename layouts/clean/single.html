@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Just a page to create slides</title>
+
+  {{/* Get the latest show */}}
+  {{ $latestShow := index (.Site.Params.shows) 0 }}
+
+  {{/* Load CSS so that it can be used inline */}}
+  {{ $options := dict "inlineImports" true }}
+  {{ with resources.Get "css/nerddisco.css" | resources.PostCSS $options | minify }}
+
+  {{/* Integrate the image of the latest show  into CSS */}}
+  {{ $content := replace .Content "doesnotexist" $latestShow.img }}
+  <style type="text/css">{{ $content | safeCSS }}</style>
+  {{ end }}
+</head>
+
+<body style="overflow: hidden;">
+
+  {{ .Content }}
+
+</body>
+
+</html>
