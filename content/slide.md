@@ -9,6 +9,6 @@ img: ""
 
 <section class="full-height center">
   <div class="space-around">
-    <h2 class="subtitle" style="font-size: 3.5em; padding: 0 4em; margin: 0;" contenteditable>Add your text here</h2>
+    <h2 class="subtitle" style="font-size: 3.5em; padding: 0 4em; margin: 0;" contenteditable spellcheck="false">Add your text here</h2>
   </div>
 </section>
