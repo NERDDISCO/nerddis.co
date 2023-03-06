@@ -64,7 +64,7 @@ theme = "landing-page"
 
 [[params.next]]
   date = "2023/04/15 - 22:00 CET"
-  title = "NERDDISCO @ private bday bash, Saarbrücken, Germany"
+  title = "NERDDISCO @ private bday bash, Saarbruecken, Germany"
 [[params.next]]
   date = "2023/05/20 - 22:00 - 07:00 CET"
   title = "NERDDISCO + BananaBassMusic & StoneCreekCrew @ TBA, elipamanoke, Leipzig, Germany"
@@ -717,3 +717,4 @@ theme = "landing-page"
   url = "https://www.youtube.com/watch?v=tia6iP85Zuk"
   length = "26:37"
   type = "talk"
+
