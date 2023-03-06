@@ -61,6 +61,17 @@ theme = "landing-page"
   url = "https://soundcloud.com/NERDDISCO"
 
 
+
+[[params.next]]
+  date = "2023/04/15 - 22:00 CET"
+  title = "NERDDISCO @ private bday bash, Saarbrücken, Germany"
+[[params.next]]
+  date = "2023/05/20 - 22:00 - 07:00 CET"
+  title = "NERDDISCO + BananaBassMusic & StoneCreekCrew @ TBA, elipamanoke, Leipzig, Germany"
+[[params.next]]
+  date = "2023/07/08 - 22:00 - 07:00 CET"
+  title = "NERDDISCO + BananaBassMusic @ TBA, elipamanoke, Leipzig, Germany"
+
 # [[params.next]]
 #   date = "2022/12/17 - 21:00 CET"
 #   title = "NERDDISCO @ Melting Pot, Noteingang, Radebeul, Germany"
@@ -68,12 +79,12 @@ theme = "landing-page"
 # [[params.next]]
 #   date = "2022/12/31 - 22:00 CET"
 #   title = "NERDDISCO @ HighThere's Studio Session - NYE 2022, Berlin, Germany"
-[[params.next]]
-  date = "2023/02/04 - 23:00 - 06:00 CET"
-  title = "schickmalzwo @ Freaky Frequency, Base, Fulda, Germany"
-[[params.next]]
-  date = "2023/03/04 - 22:00 CET"
-  title = "NERDDISCO @ tba, Schlosskeller, Darmstadt, Germany"
+# [[params.next]]
+#   date = "2023/02/04 - 23:00 - 06:00 CET"
+#   title = "schickmalzwo @ Freaky Frequency, Base, Fulda, Germany"
+# [[params.next]]
+#   date = "2023/03/04 - 22:00 CET"
+#   title = "NERDDISCO @ tba, Schlosskeller, Darmstadt, Germany"
   # date = "2022/11/19 - 22:00 CET - 06:00 CET"
   # title = "schickmalzwo @ base, Fulda, Germany"
 # [[params.next]]
