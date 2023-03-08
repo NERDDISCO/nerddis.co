@@ -1,9 +1,9 @@
-@import 'grid.css';
+@import "grid.css";
 /* @import 'baddmono.css'; */
 
 @font-face {
-  font-family: 'Badd Mono';
-  src: url('font/Badd-Mono-Regular.woff2') format('woff2');
+  font-family: "Badd Mono";
+  src: url("font/Badd-Mono-Regular.woff2") format("woff2");
   font-display: swap;
   unicode-range: U+000-5FF;
 }
@@ -30,14 +30,15 @@
   --attention-size-global: 2.5rem;
   --attention-size: var(--attention-size-global);
 
-  --subtitle-margin: calc(var(--space-around) * 4) 0 calc(var(--space-around) * 1.5) 0;
+  --subtitle-margin: calc(var(--space-around) * 4) 0
+    calc(var(--space-around) * 1.5) 0;
   --subtitle-with-submenu-margin: calc(var(--space-around) * 4) 0 0 0;
   --subtitle-submenu-margin: 0 0 calc(var(--space-around) * 1.5) 0;
-  --h2-margin: calc(var(--space-around) * 4) 0 calc(var(--space-around) * .5) 0;
+  --h2-margin: calc(var(--space-around) * 4) 0 calc(var(--space-around) * 0.5) 0;
 
   --show-title-size-global: 1.35rem;
   --show-title-size: var(--show-title-size-global);
-  --show-meta-size: .65rem;
+  --show-meta-size: 0.65rem;
 
   --next-title-size-global: 1.75rem;
   --next-title-size: var(--next-title-size-global);
@@ -46,7 +47,7 @@
   --text-line-height: 1.75em;
 
   --social-size: 1.25em;
-  --social-margin: 0 .35rem;
+  --social-margin: 0 0.35rem;
 
   --no-display: none;
 
@@ -65,6 +66,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  padding: 0;
   background: var(--color-dark);
   color: var(--color-white);
 }
@@ -75,13 +77,13 @@ h2,
 h3,
 h4,
 button {
-  font-family: 'Badd Mono', sans-serif;
+  font-family: "Badd Mono", sans-serif;
   font-weight: 400;
 }
 
 h1 {
   font-size: var(--title-size);
-  margin: .5em 0 .25em 0;
+  margin: 0.5em 0 0.25em 0;
 }
 
 h2 {
@@ -103,7 +105,7 @@ a {
   text-decoration: none;
   color: var(--color-black);
   background: var(--color-white);
-  padding: .15em;
+  padding: 0.15em;
   filter: grayscale(0) invert(0);
 }
 
@@ -134,7 +136,6 @@ a:focus .hover\:solid {
   background: var(--color-dark);
 }
 
-
 p {
   margin: 0 0 var(--space-around) 0;
   line-height: var(--text-line-height);
@@ -160,7 +161,7 @@ a:hover .hover\:no-difference {
 .logo:after {
   display: none;
   position: absolute;
-  content: '';
+  content: "";
   left: var(--blm-left);
   top: var(--blm-top);
   width: var(--blm-size);
@@ -201,7 +202,7 @@ a:hover .hover\:no-difference {
 
 .live {
   background: #f00;
-  padding: .15em;
+  padding: 0.15em;
 }
 
 .icon {
@@ -213,7 +214,8 @@ a:hover .hover\:no-difference {
 
 .last {
   background-color: #000;
-  background: var(--background, url(../shows/doesnotexist.jpg)) no-repeat center center;
+  background: var(--background, url(../shows/doesnotexist.jpg)) no-repeat center
+    center;
   background-size: cover;
   padding-bottom: var(--space-around);
 }
@@ -221,8 +223,8 @@ a:hover .hover\:no-difference {
 .attention {
   font-size: var(--attention-size);
   text-align: center;
-  border-top: .25rem solid var(--color-white);
-  border-bottom: .25rem solid var(--color-white);
+  border-top: 0.25rem solid var(--color-white);
+  border-bottom: 0.25rem solid var(--color-white);
 }
 
 .hidden {
@@ -240,7 +242,7 @@ a:hover .hover\:no-difference {
   padding: 0;
   height: 100%;
   background: none;
-  box-shadow: inset 0 0 5em rgba(0, 0, 0, 1.0);
+  box-shadow: inset 0 0 5em rgba(0, 0, 0, 1);
   color: var(--color-white);
 }
 
@@ -253,13 +255,13 @@ a:hover .hover\:no-difference {
 .show__head {
   position: absolute;
   background: var(--color-black);
-  opacity: .85;
+  opacity: 0.85;
 }
 
 .show.show--next .show__head {
   position: relative;
   background: transparent;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 a:hover .show__head,
@@ -306,7 +308,7 @@ a:focus .show__head {
   bottom: 0;
   color: var(--color-white);
   background: var(--color-black);
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .show__date {
@@ -330,32 +332,33 @@ a:focus .show__head {
   background: var(--color-white);
   color: var(--color-black);
   font-size: 1.5em;
-  padding: .5em;
-  box-shadow: 0 0 0 0.5em rgba(0,0,0,.5);
+  padding: 0.5em;
+  box-shadow: 0 0 0 0.5em rgba(0, 0, 0, 0.5);
   filter: invert(1);
   cursor: pointer;
-}
-
-.social-list {
-  padding-left: 0;
-  list-style: none;
-  margin: 0;
-}
-
-.social-list > li {
-  display: inline-block;
-  margin: var(--social-margin);
-  font-size: var(--social-size);
 }
 
 ul {
   line-height: var(--text-line-height);
 }
 
+/**
+ * List with big elements and without the list dot
+ */
 ul.list {
   font-size: 2em;
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+ul.list li:nth-child(n + 2) {
+  border-top: 0.15em solid var(--color-white);
+  margin-top: var(--space-around);
+  padding: var(--space-around) 0 0 0;
+}
+
+ul.reset > li {
   margin: 0;
 }
 
@@ -366,13 +369,12 @@ ul.filter {
 
 ul.filter li {
   display: inline-block;
-  margin: var(--social-margin);
   filter: grayscale(100%) invert(100%);
 }
 
 ul.filter li a {
-  padding: .4em;
-  line-height: 3em;
+  padding: 0.4em;
+  line-height: calc(var(--space-around) * 1.5);
   border: 4px solid #ffffff;
 }
 
@@ -380,15 +382,20 @@ ul.filter li a.active {
   border: 4px groove #ffffff;
 }
 
-ul.list li:nth-child(n+2) {
-  border-top: .15em solid var(--color-white);
-  margin-top: var(--space-around);
-  padding: var(--space-around) 0 0 0;
+.social-list {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.social-list > li {
+  display: inline-block;
+  font-size: var(--social-size);
 }
 
 .btn {
   display: flex;
-  padding: .25em;
+  padding: 0.25em;
 }
 
 .no-display {
@@ -405,23 +412,29 @@ ul.list li:nth-child(n+2) {
 }
 
 .rainbow {
-  background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, lime 14.28%, aqua 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+  background: repeating-linear-gradient(
+    -45deg,
+    red 0%,
+    yellow 7.14%,
+    lime 14.28%,
+    aqua 21.42%,
+    cyan 28.56%,
+    blue 35.7%,
+    magenta 42.84%,
+    red 50%
+  );
   background-size: 600vw 600vw;
   animation: "slide" 10s infinite linear forwards;
 }
-
-
-
-
 
 /*
 
   media queries
 
 */
-@media(max-width:1480px) {
+@media (max-width: 1480px) {
   :root {
-    --factor: .85;
+    --factor: 0.85;
     --title-size: calc(var(--title-size-global) * var(--factor));
     --subtitle-size: calc(var(--subtitle-size-global) * var(--factor));
     --attention-size: calc(var(--attention-size-global) * var(--factor));
@@ -435,17 +448,19 @@ ul.list li:nth-child(n+2) {
   }
 }
 
-@media(max-width:1280px) {
+@media (max-width: 1280px) {
   :root {
-    --factor: .65;
+    --factor: 0.65;
     --title-size: calc(var(--title-size-global) * var(--factor));
     --subtitle-size: calc(var(--subtitle-size-global) * var(--factor));
-    --show-title-size: calc(var(--show-title-size-global) * (var(--factor) * 1.15));
+    --show-title-size: calc(
+      var(--show-title-size-global) * (var(--factor) * 1.15)
+    );
     --attention-size: calc(var(--attention-size-global) * var(--factor));
   }
 
   .columns--fit {
-    grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr) );
+    grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr));
   }
 
   .sm\:half-height {
@@ -461,20 +476,24 @@ ul.list li:nth-child(n+2) {
   }
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   :root {
-    --factor: .5;
+    --factor: 0.5;
     --title-size: calc(var(--title-size-global) * var(--factor));
     --subtitle-size: calc(var(--subtitle-size-global) * var(--factor));
     --attention-size: calc(var(--attention-size-global) * var(--factor));
-    --show-title-size: calc(var(--show-title-size-global) * (var(--factor) * 2.25));
-    --next-title-size: calc(var(--next-title-size-global) * (var(--factor) * 1.5));
+    --show-title-size: calc(
+      var(--show-title-size-global) * (var(--factor) * 2.25)
+    );
+    --next-title-size: calc(
+      var(--next-title-size-global) * (var(--factor) * 1.5)
+    );
 
     --social-margin: 0;
 
     --width-logo: 90vw;
     --space-around: 1.5rem;
-    
+
     --no-display: block;
     --blm-left: 0;
     --blm-top: calc(var(--space-around) * -3);
@@ -494,5 +513,6 @@ ul.list li:nth-child(n+2) {
 
   .full-width {
     width: auto;
+    align-self: stretch;
   }
 }

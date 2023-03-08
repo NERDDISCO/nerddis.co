@@ -1,9 +1,9 @@
 {{ if isset .Site.Params "social" }}
         
-  <ul class="social-list">
+  <ul class="social-list reset">
 
     {{ range .Site.Params.social }}
-    <li>
+    <li class="space-around--all--quarter">
       <a href="{{ .url }}" class="btn btn-default {{ .icon }}" target="_blank" aria-label="{{ .icon }}" rel="noopener me">
 
         <span class="icon">
