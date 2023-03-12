@@ -1,7 +1,8 @@
 #!/bin/bash
 
-SRC=./static/shows/original
-DEST=./static/shows
+SRC="./static/shows/original"
+DEST="./static/shows"
+
 
 for f in $SRC/*.*
 do
@@ -17,7 +18,7 @@ do
   echo "convert $filename.$fileextension to jpg"
 
   # convert $SRC/$filename.$fileextension -resize 660 -quality 1 $DEST/$filename.webp
-  convert $SRC/$filename.$fileextension -resize 660 -crop x371+0+0 -quality 1 $DEST/$filename.jpg
+  magick "$SRC/$filename.$fileextension" -resize 660 -crop x371+0+0 -quality 1 "$DEST/$filename.jpg"
 done
 
 # convert 20200221_schickmalzwo_Hybris_Peng.jpg -resize 1280 -quality 1 ../20200221_schickmalzwo_Hybris_Peng.webp
