@@ -1,11 +1,16 @@
 @import "grid.css";
-/* @import 'baddmono.css'; */
 
 @font-face {
   font-family: "Badd Mono";
   src: url("font/Badd-Mono-Regular.woff2") format("woff2");
   font-display: swap;
   unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family: "Fragment Mono";
+  src: url("font/FragmentMono-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 :root {
@@ -63,6 +68,8 @@ html {
 }
 
 body {
+  font-family: "Fragment Mono", serif;
+  font-weight: 400;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -71,7 +78,6 @@ body {
   color: var(--color-white);
 }
 
-body,
 h1,
 h2,
 h3,
@@ -98,7 +104,7 @@ hr {
 }
 
 li {
-  margin: 1em 0;
+  margin: 0.5em 0;
 }
 
 a {
@@ -139,6 +145,11 @@ a:focus .hover\:solid {
 p {
   margin: 0 0 var(--space-around) 0;
   line-height: var(--text-line-height);
+}
+
+.picture {
+  line-height: 0;
+  vertical-align: bottom;
 }
 
 .difference {
@@ -222,6 +233,7 @@ a:hover .hover\:no-difference {
 
 .attention {
   font-size: var(--attention-size);
+  line-height: 3rem;
   text-align: center;
   border-top: 0.25rem solid var(--color-white);
   border-bottom: 0.25rem solid var(--color-white);
@@ -340,6 +352,7 @@ a:focus .show__head {
 
 ul {
   line-height: var(--text-line-height);
+  max-width: var(--width-logo);
 }
 
 /**
@@ -365,6 +378,7 @@ ul.reset > li {
 ul.filter {
   margin: var(--subtitle-submenu-margin);
   padding: 0;
+  max-width: 100%;
 }
 
 ul.filter li {
@@ -386,6 +400,7 @@ ul.filter li a.active {
   padding-left: 0;
   list-style: none;
   margin: 0;
+  max-width: 100%;
 }
 
 .social-list > li {
@@ -505,6 +520,10 @@ ul.filter li a.active {
 
   .columns {
     grid-template-columns: 1fr;
+  }
+
+  ul {
+    max-width: 100%;
   }
 
   .text {

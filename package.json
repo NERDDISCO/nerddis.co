@@ -18,8 +18,7 @@
     "start": "concurrently \"npm:watch:hugo\" \"npm:watch:workbox\"",
     "watch:hugo": "hugo server -p 1313 -D --renderToDisk -d public --minify",
     "watch:workbox": "workbox generateSW workbox-config.js --watch",
-    "build": "workbox generateSW workbox-config.js",
-    "build:font": "node woff2base64.mjs"
+    "build": "workbox generateSW workbox-config.js"
   },
   "repository": {
     "type": "git",
