@@ -7,6 +7,9 @@ theme = "landing-page"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
 
 [params]
   description = """digital artist, developer, mentor, VJ & lightweaver"""
@@ -22,7 +25,6 @@ theme = "landing-page"
   partOf = """part of <a href="https://twitter.com/iieinander">iieinander</a>,
     <a href="https://bananabassmusic.com">Banana Bass Music</a>,
     <a href="https://schickmalzwo.de">schickmalzwo</a>,
-    <a href="https://dekk.app">dekk</a>,
     <a href="https://livejs.network">LiveJS</a> & <a href="https://synoa.de">Synoa</a>
   """
   target = "_blank"
@@ -137,7 +139,13 @@ theme = "landing-page"
 #   url = "https://www.twitch.tv/nerddisco"
 
 
-
+#[[params.shows]]
+#  date = "2023/03/17"
+#  title = "nd-genuary32nd-plants-chatgpt3-001"
+#  img = "20230317_NERDDISCO_nd-genuary32nd-plants-chatgpt3-001_ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf"
+#  url = "/nd-genuary32nd-plants-chatgpt3-001"
+#  target = "_self"
+#  type = "nft"
 [[params.shows]]
   date = "2022/12/11"
   title = "nd-xmas-001"

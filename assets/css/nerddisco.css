@@ -14,6 +14,8 @@
 }
 
 :root {
+  --font-size: 1.5em;
+
   --color: #2d2f2c;
   --color-white: #f8f8f8;
   --color-black: #000;
@@ -64,7 +66,7 @@
 }
 
 html {
-  font-size: 1.5em;
+  font-size: var(--font-size);
 }
 
 body {
@@ -111,7 +113,7 @@ a {
   text-decoration: none;
   color: var(--color-black);
   background: var(--color-white);
-  padding: 0.15em;
+  padding: calc(var(--space-around) / 6);
   filter: grayscale(0) invert(0);
 }
 
@@ -145,6 +147,14 @@ a:focus .hover\:solid {
 p {
   margin: 0 0 var(--space-around) 0;
   line-height: var(--text-line-height);
+}
+
+code {
+  font-size: var(--font-size);
+  background: var(--color-dark);
+  padding: calc(var(--space-around) / 6);
+  border: 1px solid hsl(316 25% 20% / 1);
+  color: #bf7dad;
 }
 
 .picture {
@@ -449,6 +459,7 @@ ul.filter li a.active {
 */
 @media (max-width: 1480px) {
   :root {
+    --font-size: 1.25em;
     --factor: 0.85;
     --title-size: calc(var(--title-size-global) * var(--factor));
     --subtitle-size: calc(var(--subtitle-size-global) * var(--factor));
@@ -456,10 +467,6 @@ ul.filter li a.active {
     --social-size: 1.75rem;
     --show-title-size: calc(var(--show-title-size-global) * var(--factor));
     --next-title-size: calc(var(--next-title-size-global) * (var(--factor)));
-  }
-
-  html {
-    font-size: 1.25em;
   }
 }
 
@@ -493,6 +500,7 @@ ul.filter li a.active {
 
 @media (max-width: 768px) {
   :root {
+    --font-size: 1em;
     --factor: 0.5;
     --title-size: calc(var(--title-size-global) * var(--factor));
     --subtitle-size: calc(var(--subtitle-size-global) * var(--factor));
@@ -512,10 +520,6 @@ ul.filter li a.active {
     --no-display: block;
     --blm-left: 0;
     --blm-top: calc(var(--space-around) * -3);
-  }
-
-  html {
-    font-size: 1em;
   }
 
   .columns {
