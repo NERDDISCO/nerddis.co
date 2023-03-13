@@ -1,6 +1,6 @@
 ---
 title: "nd-genuary32nd-plants-chatgpt3-001"
-date: 2023-02-17T16:02:46+02:00
+date: 2023-03-11T16:02:46+02:00
 draft: false
 type: "subpage"
 img: "20230317_NERDDISCO_nd-genuary32nd-plants-chatgpt3-001_ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf.jpg"
@@ -10,16 +10,13 @@ hash: "ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf"
 
 # nd-genuary32nd-plants-chatgpt3-001
 
-{{< attention url="https://www.fxhash.xyz/generative/slug/nd-genuary32nd-plants-chatgpt3-001" name="fxhash.xyz/generative/slug/nd-genuary32nd-plants-chatgpt3-001" >}}
+{{< attention url="https://www.fxhash.xyz/generative/slug/nd-genuary32nd-plants-chatgpt3-001" name="nd-genuary32nd-plants-chatgpt3-001 on fxhash" >}}
 
-For [GENUARY](https://genuary.art) 2023 (= Generative art in January, a month where you have a different prompt every day and can use that to create art in any form you like) I wanted to create something, but had no idea what I could actually do. Instead I was playing around with [ChatGPT](https://chat.openai.com). When my friend [2xAA](https://2xaa.fm) released his new album [Alescere](https://2xaa.bandcamp.com/album/alescere-data113) on February 2, 2023, I finally got the inspiration I needed, because the [cover artwork](https://www.instagram.com/p/CoMZlxjtfvc) contains a minimalistic plant and "Alescere" is Latin for "to grow". My first thought was: How can I create a plant on [Canvas 2D](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) which is actually growing?
-{.text}
+For [GENUARY](https://genuary.art) 2023 (= generative art in January, a month where you have a different prompt every day and can use that to create art in any form you like) I wanted to create something myself, but had no idea what I could actually do. Instead I  played around with [ChatGPT](https://chat.openai.com). On February 2, my friend [2xAA](https://2xaa.fm) released his new album [Alescere](https://2xaa.bandcamp.com/album/alescere-data113). I finally got the inspiration I needed, because the [cover artwork](https://www.instagram.com/p/CoMZlxjtfvc) contains a minimalistic plant and "Alescere" is Latin for "to grow". My first thought was: How can I create a plant on [Canvas 2D](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) which is actually growing?
 
 Since it was already February, I was not sure if I even should start working on this project, but then I saw that [fx(hash) had already announced GENUARY 32nd on their Discord](https://discord.com/channels/900333075509149767/909081044932788295/1069726490779996182): An imaginary point in time specifically for celebrating generative art. The idea was to have a week long (February 1-7) minting party with submissions for GENUARY 2023. AND on the website of GENUARY it states, that you can do the prompt when ever it's convenient to do so.
-{.text}
 
 But how to get started? I created Canvas 2D stuff in the past, but never a growing plant. So I was wondering: Can I combine my plant-idea with a research on how to use ChatGPT to create generative art from scratch? Soon after I started to record the whole process and it was actually working out pretty nice. The thing I totally underestimated was the time it took to edit the video, that's why I missed the deadline for GENUARY 32nd by more than a month. But it's done now and you can sit back, get some snacks and watch the show: [Create Generative Art with ChatGPT without any coding experience?](https://youtube.com) TODO TITLE OF YOUTUBE AND LINK!!!
-{.text}
 
 <div class="center center--items text separate">
     <a href="TODO: LINK TO VIDEO" target="_blank">
@@ -30,7 +27,6 @@ But how to get started? I created Canvas 2D stuff in the past, but never a growi
 </div>
 
 If you have no time to watch the video, I can give you a short summary of what happened there:
-{.text}
 
 - Goal: Use ChatGPT to create the foundation of a generative artwork
 - Result: [A basic scene of plants that are growing, written in JavaScript on Canvas 2D](https://codesandbox.io/s/jovial-sea-68teiy?file=/src/index.js)
