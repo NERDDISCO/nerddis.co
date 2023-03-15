@@ -11,7 +11,7 @@
   {{ $options := dict "inlineImports" true }}
   {{ with resources.Get "css/nerddisco.css" | resources.PostCSS $options | minify }}
 
-  {{/* Integrate the image of the latest show  into CSS */}}
+  {{/* Integrate the image of the latest show into CSS */}}
   {{ $content := replace .Content "doesnotexist" $latestShow.img }}
   <style type="text/css">{{ $content | safeCSS }}</style>
   {{ end }}

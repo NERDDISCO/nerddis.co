@@ -22,7 +22,7 @@
   --color-dark: #1b1b1b;
 
   --width-logo: 60vw;
-  --width-logo-small: 40vw;
+  --width-logo-small: 15vw;
 
   --full-width: var(--width-logo);
 
@@ -40,8 +40,8 @@
   --subtitle-margin: calc(var(--space-around) * 4) 0
     calc(var(--space-around) * 1.5) 0;
   --subtitle-with-submenu-margin: calc(var(--space-around) * 4) 0 0 0;
-  --subtitle-submenu-margin: 0 0 calc(var(--space-around) * 1.5) 0;
-  --h2-margin: calc(var(--space-around) * 4) 0 calc(var(--space-around) * 0.5) 0;
+  --subtitle-submenu-margin: 0 0 calc(var(--space-around) * 1.75) 0;
+  --h2-margin: calc(var(--space-around) * 4) 0 calc(var(--space-around) * 1) 0;
 
   --show-title-size-global: 1.35rem;
   --show-title-size: var(--show-title-size-global);
@@ -91,7 +91,7 @@ button {
 
 h1 {
   font-size: var(--title-size);
-  margin: 0.5em 0 0.25em 0;
+  margin: calc(var(--space-around) / 2) 0 calc(var(--space-around) / 4) 0;
 }
 
 h2 {
@@ -151,9 +151,8 @@ p {
 
 code {
   font-size: var(--font-size);
-  background: var(--color-dark);
+  background: hsl(316 25% 10% / 1);
   padding: calc(var(--space-around) / 6);
-  border: 1px solid hsl(316 25% 20% / 1);
   color: #bf7dad;
 }
 
@@ -205,6 +204,7 @@ a:hover .hover\:no-difference {
 
 .logo--small {
   width: var(--width-logo-small);
+  margin: calc(var(--space-around) / 4) 0;
 }
 
 .logo > a {
@@ -241,17 +241,15 @@ a:hover .hover\:no-difference {
   vertical-align: middle;
 }
 
-.last {
+.background-cover {
   background-color: #000;
   background: var(--background, url(../shows/doesnotexist.jpg)) no-repeat center
     center;
   background-size: cover;
-  padding-bottom: var(--space-around);
 }
 
 .attention {
   font-size: var(--attention-size);
-  line-height: 3rem;
   text-align: center;
   border-top: 0.25rem solid var(--color-white);
   border-bottom: 0.25rem solid var(--color-white);
