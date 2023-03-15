@@ -10,26 +10,46 @@ hash: "ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf"
 
 # nd-genuary32nd-plants-chatgpt3-001
 
-{{< attention url="https://www.fxhash.xyz/generative/slug/nd-genuary32nd-plants-chatgpt3-001" name="nd-genuary32nd-plants-chatgpt3-001 on fxhash" >}}
+<div class="center center--items separate">
+    <a href="https://www.fxhash.xyz/generative/slug/nd-genuary32nd-plants-chatgpt3-001" target="_blank">
+        <picture class="picture">
+            <img src="img/20230317_NERDDISCO_nd-genuary32nd-plants-chatgpt3-001_ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf.jpg" alt="nd-genuary32nd-plants-chatgpt3-001 on fxhash" loading="lazy">
+        </picture>
+        <!-- <iframe width="512" height="512" src="nd-genuary32nd-plants-chatgpt3-001/live"></iframe> -->
+    </a>
 
-For [GENUARY](https://genuary.art) 2023 (= generative art in January, a month where you have a different prompt every day and can use that to create art in any form you like) I wanted to create something myself, but had no idea what I could actually do. Instead I  played around with [ChatGPT](https://chat.openai.com). On February 2, my friend [2xAA](https://2xaa.fm) released his new album [Alescere](https://2xaa.bandcamp.com/album/alescere-data113). I finally got the inspiration I needed, because the [cover artwork](https://www.instagram.com/p/CoMZlxjtfvc) contains a minimalistic plant and "Alescere" is Latin for "to grow". My first thought was: How can I create a plant on [Canvas 2D](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) which is actually growing?
+</div>
 
-Since it was already February, I was not sure if I even should start working on this project, but then I saw that [fx(hash) had already announced GENUARY 32nd on their Discord](https://discord.com/channels/900333075509149767/909081044932788295/1069726490779996182): An imaginary point in time specifically for celebrating generative art. The idea was to have a week long (February 1-7) minting party with submissions for GENUARY 2023. AND on the website of GENUARY it states, that you can do the prompt when ever it's convenient to do so.
+{{< attention url="https://www.fxhash.xyz/generative/slug/nd-genuary32nd-plants-chatgpt3-001" name="mint the NFT on fxhash" >}}
 
-But how to get started? I created Canvas 2D stuff in the past, but never a growing plant. So I was wondering: Can I combine my plant-idea with a research on how to use ChatGPT to create generative art from scratch? Soon after I started to record the whole process and it was actually working out pretty nice. The thing I totally underestimated was the time it took to edit the video, that's why I missed the deadline for GENUARY 32nd by more than a month. But it's done now and you can sit back, get some snacks and watch the show: [Create Generative Art with ChatGPT without any coding experience?](https://youtube.com) TODO TITLE OF YOUTUBE AND LINK!!!
+## Disclaimer
+
+Parts of this artwork are created by using AI. I wanted to be as open and transparent as possible so that everyone can see which part belongs to the machine and which part belongs to me, the human. That's why I wrote down the following background story and recorded a video of me using AI to generate parts of the code, called "foundation".
+
+## From idea to foundation
+
+For [GENUARY](https://genuary.art) 2023 (= generative art in January, a month when you have a different prompt every day and can use that to create art in any form you like) I wanted to create something myself, but had no idea what I could actually do. Instead, I played around with [ChatGPT](https://chat.openai.com) and explored how to generate GLSL (which worked in some simple cases but failed in many others) or learned the basics of writing smart contracts for Tezos.
+
+On February 2nd, my friend [2xAA](https://2xaa.fm) released his new album [Alescere](https://2xaa.bandcamp.com/album/alescere-data113) and I finally got the inspiration I needed because the cover artwork contained a minimalistic plant and "Alescere" is Latin for "grow". Which was a perfect match for the "plants" prompt of GENUARY.
+
+Since it was already February, I still wasn't sure to get started with the artwork, but then I saw that [fxhash had already announced GENUARY 32nd on their Discord](https://discord.com/channels/900333075509149767/909081044932788295/1069726490779996182): An imaginary point in time specifically for celebrating generative art. The idea was to have a week-long (February 1-7) minting party with submissions for GENUARY 2023. Soon after I also found another encouraging info on the website of GENUARY where it stated, that you could do the prompt whenever it was convenient to do so.
+
+I was super motivated, but uncertain about how to get started. I created Canvas 2D stuff in the past, but never a growing plant. So I was wondering: Can I combine my plant idea with research on how to use ChatGPT to create generative art from scratch? Almost immediately after, I started to record the whole process and it was actually working. The only thing that I totally underestimated was the time it took to edit the video, that's why I missed the deadline for GENUARY 32nd on [fxhash](https://www.fxhash.xyz) by more than a month.
+
+But it's done now. Please grab a glass of whatever, some snacks and watch the show: [Create Generative Art with ChatGPT without any coding experience?](TODO)
 
 <div class="center center--items text separate">
     <a href="TODO: LINK TO VIDEO" target="_blank">
         <picture class="picture">
-            <img class="" src="img/20230317_NERDDISCO_nd-genuary32nd-plants-chatgpt3-001-youtube-thumbnail.jpg" alt="TODO" loading="lazy">
+            <img src="img/20230317_NERDDISCO_nd-genuary32nd-plants-chatgpt3-001-youtube-thumbnail.jpg" alt="TODO" loading="lazy">
         </picture>
     </a>
 </div>
 
-If you have no time to watch the video, I can give you a short summary of what happened there:
+I have summarized the video for you if you don't have time to watch it:
 
-- Goal: Use ChatGPT to create the foundation of a generative artwork
-- Result: [A basic scene of plants that are growing, written in JavaScript on Canvas 2D](https://codesandbox.io/s/jovial-sea-68teiy?file=/src/index.js)
+- <b>Goal</b>: Use ChatGPT to create the foundation of a generative artwork that renders a scene of growing plants
+- <b>Result</b>: [A basic scene of plants that are growing, written in JavaScript on Canvas 2D](https://codesandbox.io/s/jovial-sea-68teiy?file=/src/index.js)
 
 <div class="center center--items text separate">
     <a href="https://codesandbox.io/s/jovial-sea-68teiy?file=/src/index.js" target="_blank">
@@ -39,24 +59,23 @@ If you have no time to watch the video, I can give you a short summary of what h
     </a>
 </div>
 
-## fx(hash)ify
+## fxhashify
 
-After holding the generated code from ChatGPT in my hands, I switched to my manual process (which involves using my human brain) to convert the foundation into something that can be actually minted on fx(hash). If you are interested in this process, then please leave a comment on the video. If you just want to know what I changed, then please continue reading:
-{.text}
+After holding the generated code from ChatGPT in my hands, I switched to my manual process (which involves using my human brain) to convert the foundation into something that can be actually minted on [fxhash](https://www.fxhash.xyz). I call this "fxhashify", as this process is tailored to the capabilities of fxhash. If you are interested in this process, then please leave a comment on the video. If you just want to know what I changed, then please continue reading:
 
 - Used the Pseudo Random Number Generator from the [fxhash-webpack-boilerplate](https://github.com/fxhash/fxhash-webpack-boilerplate) instead of `Math.random()`
 - Randomized ALL THE parameters (like `position`, `size`, `color`, `height`, `growthSpeed` and more) to control the plants, ground, sun and sky
-- Established the scene to have between 1 and 8 plants
-- Spread the plants evenly on the ground with consistent spacing, related to the amount of plants
+- Established the scene to have `plantsAmount` between 1 and 8
+- Spread the plants evenly on the ground with consistent spacing, related to the `plantsAmount`
 - Made sure that tall plants are in front of small plants
 - To prevent the plants from extending outside the scene, smaller-sized plants are placed along the edge whenever more than three plants were generated
-- The petal composition operation for special plants was distinct from that of regular plants
+- A different `globalCompositeOperation` was used for the petals of the "special plants", distinguishing them from regular plants
 - Two different environments were included: Sunny Day vs Rainbow Night
 - The proportions of the scene were kept, regardless of how it was scaled, using 2048 x 2048 px as the reference size
 - A lot of fine-tuning was done to make it look pretty and get the colors right in terms of lightness and saturation... <3 HSL
-- Added various helper-functions (like `inRange` or `pseudoRandomBetween`) and the possibility to save the scene as image by pressing "s" on the keyboard
+- Added various helper functions (like `inRange` or `pseudoRandomBetween`) and the possibility to save the scene as an image by pressing "s" on the keyboard
 - The characteristic was added to continuously redraw the scene after a random timeout between 0 and 60000 ms, so that you can see the plants growing over and over again. After each redraw, `stemGrowthSpeed` / `centerGrowthSpeed` / `petalGrowthSpeed` are randomized
-- Included only a few fx(hash) features, but went into a rabbit hole for `firstRedraw` and added quotes from my most favorite movies, shows and music. But only the ones that had a connection to time
+- Included only a few fxhash features, but went into a rabbit hole for `firstRedraw` and added quotes from my most favorite movies, shows and music. But only the ones that had a connection to time
 - Comments were added on all functions and everything in between
 
 ## Code
@@ -65,9 +84,9 @@ After holding the generated code from ChatGPT in my hands, I switched to my manu
 
 ## Interactive
 
-- Press 's' on your keyboard to download a screenshot
+- Press `s` on your keyboard to download a screenshot
 - The scene is redrawn every pseudo-random ms
 
 ## Credits
 
-- The music for the intro and the chapters is composed & produced by my friend [Syrenoize](https://soundcloud.com/syrenoize), please check out her awesome music!
+- The music for the intro and the chapters is composed & produced by my friend [Syrenoize](https://www.instagram.com/syrenoize), please check out her awesome music!
