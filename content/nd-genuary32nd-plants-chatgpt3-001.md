@@ -4,7 +4,7 @@ date: 2023-03-11T16:02:46+02:00
 draft: false
 type: "subpage"
 img: "20230317_NERDDISCO_nd-genuary32nd-plants-chatgpt3-001_ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf.jpg"
-tags: "nd-genuary32nd-plants-chatgpt3-001,chatgpt,nerddisco,agpl,opensource,aigenerated,humangenerated,aifoundation,canvas2d"
+tags: "nd,chatgpt,chatgpt3,nerddisco,agpl,opensource,aiinfluenced,canvas2d,params"
 hash: "ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf"
 ---
 
@@ -24,7 +24,7 @@ hash: "ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf"
 
 ## Disclaimer
 
-Parts of this artwork are created by using AI. I wanted to be as open and transparent as possible so that everyone can see which part belongs to the machine and which part belongs to me, the human. That's why I wrote down the following background story and recorded a video of me using AI to generate parts of the code, called "foundation".
+This artwork is partly created by using AI. I wanted to be as open and transparent as possible so that everyone can see which part belongs to the machine and which part belongs to me, the human. That's why I wrote down the following background story and also recorded a video of me using AI to generate the foundation of the generative token.
 
 ## From idea to foundation
 
@@ -32,9 +32,9 @@ For [GENUARY](https://genuary.art) 2023 (= generative art in January, a month wh
 
 On February 2nd, my friend [2xAA](https://2xaa.fm) released his new album [Alescere](https://2xaa.bandcamp.com/album/alescere-data113) and I finally got the inspiration I needed because the cover artwork contained a minimalistic plant and "Alescere" is Latin for "grow". Which was a perfect match for the "plants" prompt of GENUARY.
 
-Since it was already February, I still wasn't sure to get started with the artwork, but then I saw that [fxhash had already announced GENUARY 32nd on their Discord](https://discord.com/channels/900333075509149767/909081044932788295/1069726490779996182): An imaginary point in time specifically for celebrating generative art. The idea was to have a week-long (February 1-7) minting party with submissions for GENUARY 2023. Soon after I also found another encouraging info on the website of GENUARY where it stated, that you could do the prompt whenever it was convenient to do so.
+Since it was already February, I still wasn't sure to get started with the artwork for GENUARY, but then I saw that [fxhash had already announced GENUARY 32nd on their Discord](https://discord.com/channels/900333075509149767/909081044932788295/1069726490779996182): An imaginary point in time specifically for celebrating generative art. The idea was to have a week-long (February 1-7) minting party with submissions for GENUARY 2023. Soon after I also found another encouraging info on the website of GENUARY where it stated, that you could do the prompt whenever it was convenient to do so.
 
-I was super motivated, but uncertain about how to get started. I created Canvas 2D stuff in the past, but never a growing plant. So I was wondering: Can I combine my plant idea with research on how to use ChatGPT to create generative art from scratch? Almost immediately after, I started to record the whole process and it was actually working. The only thing that I totally underestimated was the time it took to edit the video, that's why I missed the deadline for GENUARY 32nd on [fxhash](https://www.fxhash.xyz) by more than a month.
+I was super motivated, but uncertain about how to get started. I created Canvas 2D stuff in the past, but never a growing plant. So I was wondering: Can I combine my plant idea with research on how to use ChatGPT to create generative art from scratch? The next day I started to record the whole process and it was actually working. The only thing that I totally underestimated was the time it took to edit the video, that's why I missed the deadline (February 7) for GENUARY 32nd on [fxhash](https://www.fxhash.xyz) by more than a month.
 
 But it's done now. Please grab a glass of whatever, some snacks and watch the show: [Create Generative Art with ChatGPT without any coding experience?](TODO)
 
@@ -74,7 +74,7 @@ After holding the generated code from ChatGPT in my hands, I switched to my manu
 - The proportions of the scene were kept, regardless of how it was scaled, using 2048 x 2048 px as the reference size
 - A lot of fine-tuning was done to make it look pretty and get the colors right in terms of lightness and saturation... <3 HSL
 - Added various helper functions (like `inRange` or `pseudoRandomBetween`) and the possibility to save the scene as an image by pressing "s" on the keyboard
-- The characteristic was added to continuously redraw the scene after a random timeout between 0 and 60000 ms, so that you can see the plants growing over and over again. After each redraw, `stemGrowthSpeed` / `centerGrowthSpeed` / `petalGrowthSpeed` are randomized
+- The characteristic was added to continuously redraw the scene after a random timeout between 0 and 60000 ms, so that you can see the plants growing over and over again. After each redraw, `stemGrowthSpeed`, `centerGrowthSpeed` and `petalGrowthSpeed` are randomized
 - Included only a few fxhash features, but went into a rabbit hole for `firstRedraw` and added quotes from my most favorite movies, shows and music. But only the ones that had a connection to time
 - Comments were added on all functions and everything in between
 
@@ -89,4 +89,4 @@ After holding the generated code from ChatGPT in my hands, I switched to my manu
 
 ## Credits
 
-- The music for the intro and the chapters is composed & produced by my friend [Syrenoize](https://www.instagram.com/syrenoize), please check out her awesome music!
+- The music for the intro and the chapters of the video was composed & produced by my friend [Syrenoize](https://www.instagram.com/syrenoize), please check out her awesome music!
