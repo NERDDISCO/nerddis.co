@@ -4,7 +4,7 @@ date: 2023-03-11T16:02:46+02:00
 draft: false
 type: "subpage"
 img: "20230317_NERDDISCO_nd-genuary32nd-plants-chatgpt3-001_ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf.jpg"
-tags: "nd,chatgpt,chatgpt3,nerddisco,agpl,opensource,aiinfluenced,canvas2d,params"
+tags: "nd,chatgpt,chatgpt3,plants,flower,sun,midnight,nerddisco,agpl,opensource,aiinfluenced,canvas2d,params"
 hash: "ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf"
 ---
 
