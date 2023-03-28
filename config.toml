@@ -68,8 +68,9 @@ theme = "landing-page"
   date = "2023/04/15 - 22:00 CET"
   title = "NERDDISCO @ private bday bash, Saarbruecken, Germany"
 [[params.next]]
-  date = "2023/05/20 - 22:00 - 07:00 CET"
-  title = "NERDDISCO + BananaBassMusic & StoneCreekCrew @ TBA, elipamanoke, Leipzig, Germany"
+  date = "2023/05/20 - 23:00 - 07:00 CET"
+  title = "NERDDISCO + BananaBassMusic & StoneCreekCrew @ Urban Bass Bungle Vol. 2 w/ Levela, elipamanoke, Leipzig, Germany"
+  url = "https://www.facebook.com/events/235919985530107"
 [[params.next]]
   date = "2023/07/08 - 22:00 - 07:00 CET"
   title = "NERDDISCO + BananaBassMusic @ TBA, elipamanoke, Leipzig, Germany"
