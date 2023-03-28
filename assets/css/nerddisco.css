@@ -70,7 +70,7 @@ html {
 }
 
 body {
-  font-family: "Fragment Mono", serif;
+  font-family: "Fragment Mono", monospace;
   font-weight: 400;
   width: 100%;
   height: 100%;
@@ -150,7 +150,7 @@ p {
 }
 
 code {
-  font-size: var(--font-size);
+  font-family: "Fragment Mono", monospace;
   background: hsl(316 25% 10% / 1);
   padding: calc(var(--space-around) / 6);
   color: #bf7dad;
