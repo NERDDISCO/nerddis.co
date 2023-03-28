@@ -139,13 +139,13 @@ theme = "landing-page"
 #   url = "https://www.twitch.tv/nerddisco"
 
 
-#[[params.shows]]
-#  date = "2023/03/17"
-#  title = "nd-genuary32nd-plants-chatgpt3-001"
-#  img = "20230317_NERDDISCO_nd-genuary32nd-plants-chatgpt3-001_ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf"
-#  url = "/nd-genuary32nd-plants-chatgpt3-001"
-#  target = "_self"
-#  type = "nft"
+[[params.shows]]
+  date = "2023/03/31"
+  title = "nd-genuary32nd-plants-chatgpt3-001"
+  img = "20230317_NERDDISCO_nd-genuary32nd-plants-chatgpt3-001_ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf"
+  url = "/nd-genuary32nd-plants-chatgpt3-001"
+  target = "_self"
+  type = "nft"
 [[params.shows]]
   date = "2022/12/11"
   title = "nd-xmas-001"
