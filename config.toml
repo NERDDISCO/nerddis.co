@@ -38,6 +38,10 @@ theme = "landing-page"
   icon = "mastodon"
   url = "https://mastodon.social/@NERDDISCO"
 [[params.social]]
+  title = "twitter"
+  icon = "twitter"
+  url = "https://twitter.com/NERDDISCO"
+[[params.social]]
   title = "instagram"
   icon = "instagram"
   url = "https://www.instagram.com/NERDDISCO"
