@@ -21,8 +21,8 @@ const changeActiveFilter = (params) => {
   if (type === 'all') {
     matchesToShow = document.querySelectorAll(`.show[data-type]:not([data-type="all"])`)
   } else {
-    matchesToHide = document.querySelectorAll(`.show[data-type]:not([data-type="${type}"])`)
-    matchesToShow = document.querySelectorAll(`.show[data-type="${type}"]`)
+    matchesToHide = document.querySelectorAll(`.show[data-type]:not([data-type*="${type}"])`)
+    matchesToShow = document.querySelectorAll(`.show[data-type*="${type}"]`)
 
     matchesToHide.forEach(match => {
       match.classList.add('hidden')
