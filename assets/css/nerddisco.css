@@ -147,6 +147,7 @@ a:focus .hover\:solid {
 p {
   margin: 0 0 var(--space-around) 0;
   line-height: var(--text-line-height);
+  max-width: var(--width-logo);
 }
 
 code {
@@ -156,8 +157,18 @@ code {
   color: #bf7dad;
 }
 
-p {
+.highlight code {
+  padding-left: 0;
+  padding: 0;
+  background: none;
+}
+
+pre {
   max-width: var(--width-logo);
+  white-space: pre-wrap;
+  line-height: var(--text-line-height);
+  padding: calc(var(--space-around) / 6);
+  background: hsl(316 25% 10% / 1) !important;
 }
 
 .picture {
@@ -366,7 +377,8 @@ a:focus .show__head {
   cursor: pointer;
 }
 
-ul {
+ul,
+ol {
   line-height: var(--text-line-height);
   max-width: var(--width-logo);
 }
