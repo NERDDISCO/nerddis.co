@@ -10,9 +10,12 @@ theme = "landing-page"
     [markup.goldmark.parser]
       [markup.goldmark.parser.attribute]
         block = true
+  [markup.highlight]
+    noHl = true
+
 
 [params]
-  description = """digital artist, developer, mentor, VJ & lightweaver"""
+  description = """Developer, Open Source Advocate, Mentor, Speaker, Artist, VJ"""
   # description = """digital artist, 
   #   <a href="https://github.com/TimPietrusky">open source dev</a>, 
   #       <a href="https://github.com/vcync/modV-Workshop">mentor</a>,
@@ -22,15 +25,17 @@ theme = "landing-page"
   #   <a href="https://bananabassmusic.com">Banana Bass Music</a>,
   #   <a href="https://livejs.network">LiveJS</a>, <a href="https://dekk.app">dekk</a> & <a href="https://synoa.de">Synoa</a>
   # """
-  partOf = """part of <a href="https://twitter.com/iieinander">iieinander</a>,
+  partOf = """part of <a href="https://github.com/failfa-st">failfa.st</a>,
+    <a href="https://twitter.com/iieinander">iieinander</a>,
     <a href="https://bananabassmusic.com">Banana Bass Music</a>,
     <a href="https://schickmalzwo.de">schickmalzwo</a>,
-    <a href="https://livejs.network">LiveJS</a> & <a href="https://synoa.de">Synoa</a>
+    <a href="https://https://github.com/vcync">vcync</a> &
+    <a href="https://livejs.network">LiveJS</a>
   """
   target = "_blank"
   isLive = false
-  liveText = '<span class="live">LIVE</span> on <a href="https://twitch.com/NERDDISCO">Twitch</a> at 21:00 CEST'
-  liveTitle = '🔴 LIVE on Twitch at 21:00 CEST'
+  liveText = '<span class="live">LIVE</span> on <a href="https://twitch.com/NERDDISCO">Twitch</a> from 21:00 CEST'
+  liveTitle = '🔴 LIVE on Twitch from 21:00 CEST'
 
 
 [[params.social]]
@@ -68,9 +73,9 @@ theme = "landing-page"
 
 
 
-[[params.next]]
-  date = "2023/04/15 - 22:00 CET"
-  title = "NERDDISCO @ private bday bash, Saarbruecken, Germany"
+# [[params.next]]
+#   date = "2023/04/15 - 22:00 CET"
+#   title = "NERDDISCO @ private bday bash, Saarbruecken, Germany"
 [[params.next]]
   date = "2023/05/20 - 23:00 - 07:00 CET"
   title = "NERDDISCO + BananaBassMusic & StoneCreekCrew @ Urban Bass Bungle Vol. 2 w/ Levela, elipamanoke, Leipzig, Germany"
@@ -748,8 +753,16 @@ theme = "landing-page"
   date = "2013/05/17"
   title = "Star Wars Opening Crawl from 1977 @ CodePen"
   img = "20130517_NERDDISCO_star_wars_opening_crawl_from_1977"
-  url = "https://codepen.io/TimPietrusky/pen/AGrxGb"
-  type = "demo"
+  target= "_self"
+  url = "star-wars-opening-crawl-from-1977"
+  type = "post|demo"
+[[params.shows]]
+  date = "2012/09/29"
+  title = "SVG - How to create & use vector graphics on the web"
+  img = ""
+  url = "svg-how-to-create-and-use-vector-graphics-on-the-web"
+  target= "_self"
+  type = "post"
 [[params.shows]]
   date = "2012/09/11"
   title = "asdf @ CodePen"
@@ -770,10 +783,11 @@ theme = "landing-page"
   type = "demo"
 [[params.shows]]
   date = "2012/07/17"
-  title = "Breaking Bad @ CodePen"
+  title = "Breaking Bad"
   img = "20120717_NERDDISCO_BreakingBad"
-  url = "https://codepen.io/TimPietrusky/pen/kdxVok"
-  type = "demo"
+  url = "/breaking-bad"
+  target= "_self"
+  type = "post|demo"
 [[params.shows]]
   date = "2012/06/22"
   title = "jasonx3000 @ CodePen"
