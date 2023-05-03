@@ -7,12 +7,18 @@
     </div>
   </a>
 
+  {{ if $.Site.Params.isLive }}
+    <p class="text solid space-around--all full-width">
+      {{ $.Site.Params.liveText | safeHTML }}
+    </p>
+  {{ else }}{{ end }}
+
   <p class="text solid space-around--all full-width">
-    {{ if $.Site.Params.isLive }}{{ $.Site.Params.liveText | safeHTML }}, {{ else }}{{ end }} {{ $.Site.Params.description | safeHTML }}
+    {{ $.Site.Params.description | safeHTML }}
   </p>
 
   <p class="text solid space-around--all full-width">
-    {{ if $.Site.Params.isLive }}{{ $.Site.Params.liveText | safeHTML }}, {{ else }}{{ end }} {{ $.Site.Params.partOf | safeHTML }}
+    {{ $.Site.Params.partOf | safeHTML }}
   </p>
 
   <p class="text solid space-around--all full-width rainbow">
