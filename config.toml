@@ -148,7 +148,13 @@ theme = "landing-page"
 #   title = "half/byte & NERDDISCO - tba"
 #   url = "https://www.twitch.tv/nerddisco"
 
-
+[[params.shows]]
+  date = "2023/04/15"
+  title = "NERDDISCO & MadTiXx @ Chris's Bday Bash, Saarbruecken, Germany"
+  img = "20230415_NERDDISCO_MadTiXx_Chris_Bday_Bash_FritzKatz_Saarbruecken_Germany"
+  url = "https://youtu.be/8eEuwJXj4_E"
+  length = "01:24:38"
+  type = "show"
 [[params.shows]]
   date = "2023/03/31"
   title = "nd-genuary32nd-plants-chatgpt3-001"
