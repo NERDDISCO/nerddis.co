@@ -9,7 +9,7 @@
 
 # SVG - How to create & use vector graphics on the web
 
-![](/img/svg_logo.svg)
+![](/img/20120929_NERDDISCO_svg_logo.svg)
 
 The web is full of images and most of them are raster graphics like jpeg, png or gif. Those formats are fixed in width / height and don't look good when heavily resized. Not even think about high resolution displays...  
 And that's why I'm going to show you **how to handle SVG without Photoshop** or Illustrator!
@@ -24,7 +24,7 @@ It is possible to embed vector graphics, raster graphics and text into SVG. You 
 ### Example
 
 This is a simple red rectangle with a black stroke:  
-![](/img/svg_how_to_create_and_use-example.svg)
+![](/img/20120929_NERDDISCO_svg_how_to_create_and_use-example.svg)
 
 And this is the belonging XML code:
 
@@ -81,15 +81,15 @@ The following screencast describes how to use **svg-edit** to convert a hand dra
 
 ### Scribble
 
-![Scribble: SVG](/img/scribble_to_svg_scribble.jpg)  
+![Scribble: SVG](/img/20120929_NERDDISCO_scribble_to_svg_scribble.jpg)  
 
 ### Result
 
-![](/img/scribble_to_svg_result.svg)
+![](/img/20120929_NERDDISCO_scribble_to_svg_result.svg)
 
 ### Variation
 
-![](/img/svg_logo.svg)
+![](/img/20120929_NERDDISCO_svg_logo.svg)
 
 ## Use the created SVG
 
