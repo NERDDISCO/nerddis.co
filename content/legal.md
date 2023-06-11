@@ -24,7 +24,7 @@ Mail: [givemesome@nerddis.co](mailto:givemesome@nerddis.co)
 ## Privacy information
 
 * This website does not use tracking or analytic tools
-* It is hosted on [netlify](https://www.netlify.com/) 
+* It is hosted on [CloudCannon](https://www.cloudcannon.com/) 
 * The source code is on [GitHub](https://github.com/NERDDISCO/nerddis.co)
 * It is generated with [Hugo](https://gohugo.io/)
 
