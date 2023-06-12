@@ -1,38 +1,20 @@
-# Collections are related sets of content files, typically grouped by folder.
-# Here you can define your collections, as well as any
-# CloudCannon configuration specific to those collections.
+# allows you to define your content collections
 collections_config:
+  # "pages" is the name of a collection and represents
+  # the default content under "content"
   pages:
+    # the pages in this collection will be rendered to your site's output
     output: true
-    filter: strict
-    parse_branch_index: true
-    path: content
 
-# Control which collections are displayed in the CloudCannon site navigation,
-# and how those collections are grouped.
-collection_groups:
-
-# Set this to true to disable auto-detection of collections.
-collections_config_override: false
-
-# Control which data sets are available to populate select and multiselect inputs.
-data_config:
-
-# Base path to your source files, relative to the root folder of your repository.
-source:
-
-# The locations of various types of files within your site.
-# Each path is relative to your site's source folder.
+# lets you define the locations of different types of files in your site
 paths:
   data: data
+  # "collections" are located in the "content" directory
   collections: content
   includes: layouts
   layouts: layouts
   static: static
   uploads: static/uploads
-
-# Lets you control the look and behaviour of the Source Editor.
-source_editor:
 
 # Timezone of your site in IANA format. This is used by date and datetime inputs
 # within the CloudCannon Data Editor.
