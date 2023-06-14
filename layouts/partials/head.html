@@ -12,9 +12,9 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Site.BaseURL }}" />
     {{ if .Params.introimg }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.introimg }}" />
+    <meta property="og:image" content="{{ .Params.introimg | absURL }}" />
     {{ else }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}img/blm_nerddisco.jpg" />
+    <meta property="og:image" content="{{"img/blm_nerddisco.jpg" | absURL }} " />
     {{ end }}
     
     <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}favicon/apple-touch-icon.png">
