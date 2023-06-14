@@ -7,8 +7,6 @@
   tags: ""
 ---
 
-# Star Wars opening crawl from 1977
-
 <div class="center center--items separate">
     <a href="https://codepen.io/TimPietrusky/pen/AGrxGb" target="_blank">
         <picture class="picture">

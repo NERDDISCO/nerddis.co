@@ -8,8 +8,6 @@ tags: "fxhashturnsone,nd-fxhashturnsone-001,365,box,threejs,seed,nerddisco,displ
 ---
 
 
-# nd-fxhashturnsone-001
-
 {{< attention url="https://www.fxhash.xyz/generative/slug/nd-fxhashturnsone-001" name="fxhash.xyz/generative/slug/nd-fxhashturnsone-001" >}} 
 
 November 2022, we celebrate 1 year of fxhash 🎉

@@ -8,8 +8,6 @@ tags: "nd,chatgpt,chatgpt3,plants,flower,sun,midnight,nerddisco,agpl,opensource,
 hash: "ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf"
 ---
 
-# nd-genuary32nd-plants-chatgpt3-001
-
 <div class="center center--items separate">
     <a href="https://www.fxhash.xyz/generative/slug/nd-genuary32nd-plants-chatgpt3-001" target="_blank">
         <picture class="picture">

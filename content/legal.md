@@ -5,8 +5,6 @@ draft: false
 type: "subpage"
 ---
 
-## Legal / Imprint / Impressum
-
 ### Contact information
 
 This website is managed by:

@@ -7,8 +7,6 @@
   tags: ""
 ---
 
-# SVG - How to create & use vector graphics on the web
-
 ![](/img/20120929_NERDDISCO_svg_logo.svg)
 
 The web is full of images and most of them are raster graphics like jpeg, png or gif. Those formats are fixed in width / height and don't look good when heavily resized. Not even think about high resolution displays...  

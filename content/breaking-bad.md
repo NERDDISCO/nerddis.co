@@ -9,8 +9,6 @@
   - breaking-bad-logo
 ---
 
-# Breaking Bad
-
 <div class="center center--items separate">
     <a href="https://codepen.io/TimPietrusky/pen/kdxVok" target="_blank">
         <picture class="picture">

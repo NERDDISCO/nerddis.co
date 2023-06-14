@@ -7,8 +7,6 @@
   tags: ""
 ---
 
-# First steps with Tessel
-
 I love the concept of [Tessel](https://tessel.io/) from [Technical Machine](https://tessel.io/about): A small microcontroller running [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/About_JavaScript) (+ [Node.js](https://nodejs.org/)) combined with a [collection of modules](https://tessel.io/modules) (e.g. GPS, camera, bluetooth) to extend it's functionality and their corresponding [Node.js](https://nodejs.org/) API to use them in your code. 
 
 Sounds impossible? It's not! So let's start from the beginning: My first steps with a brand new [Tessel](https://tessel.io/). 

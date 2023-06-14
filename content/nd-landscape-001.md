@@ -8,8 +8,6 @@ tags: "landscape,offscreencanvas,threejs,nd,mountain,retro,road,displacement,blo
 ---
 
 
-# nd-landscape-001
-
 {{< attention url="https://www.fxhash.xyz/generative/slug/nd-landscape-001" name="fxhash.xyz/generative/slug/nd-landscape-001" >}} 
 
 After reading [Building a Vaporwave scene with Three.js](https://blog.maximeheckel.com/posts/vaporwave-3d-scene-with-threejs/) by [Maxime Heckel](https://twitter.com/MaximeHeckel) I was super inspired to generate a pseudo random landscape based on a single plane in ThreeJS. 
