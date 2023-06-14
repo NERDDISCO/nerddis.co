@@ -22,17 +22,19 @@
   --color-dark: #1b1b1b;
 
   --width-logo: 60vw;
-  --width-logo-small: 15vw;
+  --width-logo-small: 10vw;
 
   --full-width: var(--width-logo);
 
   --space-around: 1.25rem;
 
-  --title-size-global: 5.75rem;
+  --title-size-global: 4.75rem;
   --title-size: var(--title-size-global);
 
   --subtitle-size-global: 4.5rem;
   --subtitle-size: var(--subtitle-size-global);
+  --h2-size-global: 2.75rem;
+  --h2-size: var(--h2-size-global);
 
   --attention-size-global: 2.5rem;
   --attention-size: var(--attention-size-global);
@@ -91,11 +93,11 @@ button {
 
 h1 {
   font-size: var(--title-size);
-  margin: calc(var(--space-around) / 2) 0 calc(var(--space-around) / 4) 0;
+  margin: calc(var(--space-around) * 3.5) 0 calc(var(--space-around) / 2.75) 0;
 }
 
 h2 {
-  font-size: var(--subtitle-size);
+  font-size: var(--h2-size);
   margin: var(--h2-margin);
 }
 
@@ -215,7 +217,7 @@ a:hover .hover\:no-difference {
 
 .logo--small {
   width: var(--width-logo-small);
-  margin: calc(var(--space-around) / 4) 0;
+  margin: calc(var(--space-around) / 8) 0;
 }
 
 .logo > a {
@@ -470,6 +472,19 @@ ul.filter li a.active {
   animation: "slide" 10s infinite linear forwards;
 }
 
+.post-intro {
+  width: 100%;
+  height: 60vh;
+  background: var(--backgroundintro, url(../shows/doesnotexist.jpg)) no-repeat
+    center center;
+  background-size: cover;
+  margin: 0 0 calc(var(--space-around) * 5) 0;
+}
+
+.post-meta {
+  font-size: calc(var(--font-size) * 0.65);
+}
+
 /*
   media queries
 */
@@ -479,6 +494,7 @@ ul.filter li a.active {
     --factor: 0.85;
     --title-size: calc(var(--title-size-global) * var(--factor));
     --subtitle-size: calc(var(--subtitle-size-global) * var(--factor));
+    --h2-size: calc(var(--h2-size-global) * var(--factor));
     --attention-size: calc(var(--attention-size-global) * var(--factor));
     --social-size: 1.75rem;
     --show-title-size: calc(var(--show-title-size-global) * var(--factor));
@@ -491,6 +507,7 @@ ul.filter li a.active {
     --factor: 0.65;
     --title-size: calc(var(--title-size-global) * var(--factor));
     --subtitle-size: calc(var(--subtitle-size-global) * var(--factor));
+    --h2-size: calc(var(--h2-size-global) * var(--factor));
     --show-title-size: calc(
       var(--show-title-size-global) * (var(--factor) * 1.15)
     );

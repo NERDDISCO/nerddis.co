@@ -38,6 +38,10 @@
   min-height: 50vh;
 }
 
+.quarter-height {
+  min-height: 25vh;
+}
+
 .full-width {
   width: 100%;
 }
