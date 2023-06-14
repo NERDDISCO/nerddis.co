@@ -55,7 +55,13 @@ timezone: Europe/Berlin
 
 Then I was able to configure some "Build Options" (`--minify` and `--gc`) and then the site was built. 
 
-## Running Workbox Build in CloudCannon
+## Reset the baseURL in the UI
+
+I have the `baseURL` configured in my `config.yaml`, but in the UI of [CloudCannon](https://cloudcannon.com) it was set to `/`, which lead to some problems with my absolute URLs. 
+
+Solution: I removed the `/` in the UI and then my config was corretly loaded. 
+
+## Running Workbox Build
 
 Next, I wanted to ensure that [Workbox](https://developer.chrome.com/docs/workbox/) would still build my PWA correctly after the transition. To accomplish this, I added a `postbuild` script in the `.cloudcannon` directory to run my [Workbox](https://developer.chrome.com/docs/workbox/) build, because this runs after the static files are built and `public` is populated. 
 
@@ -84,6 +90,7 @@ Some things that could be improved in the future to make it easier for devs to s
 * Why can't I use the external DNS in combination with an SSL certificate? I have not encountered this on any provider I have used in the past. Would be nice to get this solved also on [CloudCannon](https://cloudcannon.com). 
 * When interacting with the documention as I wanted to understand the `cloudcannon-config.yml`, I used the link that came with the default config. That points to an URL that has the URL parameter `ssg=Hugo`. For me, this had no effect, as I was expecting that this is actually changing the selected static site generator. Would be nice to either fix this or update the URL in the default config
 * Add an AI assistant when setting up a new project to detect specific configurations (like Workbox), that suggests how to solve those (like adding a custom postbuild hook) using [CloudCannon](https://cloudcannon.com) specific features
+  * The assistant could also detect, that the `baseURL` is already configured in the Hugo config. And only if there is no config, set a default value of `/` or suggest a better value based on the data that the user provided.
 
 ## Conclusion
 
