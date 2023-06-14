@@ -11,7 +11,11 @@
     <meta property="og:title" content="NERDDISCO" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Site.BaseURL }}" />
+    {{ if .Params.introimg }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.introimg }}" />
+    {{ else }}
     <meta property="og:image" content="{{ .Site.BaseURL }}img/blm_nerddisco.jpg" />
+    {{ end }}
     
     <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}favicon/favicon-32x32.png">
