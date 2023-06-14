@@ -76,10 +76,10 @@ theme = "landing-page"
 # [[params.next]]
 #   date = "2023/04/15 - 22:00 CET"
 #   title = "NERDDISCO @ private bday bash, Saarbruecken, Germany"
-[[params.next]]
-  date = "2023/05/20 - 23:00 - 07:00 CET"
-  title = "NERDDISCO + BananaBassMusic & StoneCreekCrew @ Urban Bass Bungle Vol. 2 w/ Levela, elipamanoke, Leipzig, Germany"
-  url = "https://www.facebook.com/events/235919985530107"
+# [[params.next]]
+#   date = "2023/05/20 - 23:00 - 07:00 CET"
+#   title = "NERDDISCO + BananaBassMusic & StoneCreekCrew @ Urban Bass Bungle Vol. 2 w/ Levela, elipamanoke, Leipzig, Germany"
+#   url = "https://www.facebook.com/events/235919985530107"
 [[params.next]]
   date = "2023/07/08 - 22:00 - 07:00 CET"
   title = "NERDDISCO + BananaBassMusic @ TBA, elipamanoke, Leipzig, Germany"
@@ -149,6 +149,27 @@ theme = "landing-page"
 #   url = "https://www.twitch.tv/nerddisco"
 
 [[params.shows]]
+  date = "2023/06/14"
+  title = "From Netlify to CloudCannon"
+  img = "20230614_from_netlify_to_cloudcannon"
+  url = "/from-netlify-to-cloudcannon"
+  target = "_self"
+  type = "post"
+  introimg = "shows/original/20230614_from_netlify_to_cloudcannon.jpg"
+[[params.shows]]
+  date = "2023/06/01"
+  title = "2D GameCreator"
+  img = "20230601_2D_GameCreator_Flappy_Bird"
+  url = "https://huggingface.co/spaces/failfast/2D-GameCreator"
+  type = "demo"
+[[params.shows]]
+  date = "2023/05/15"
+  title = "Dirty Plates & NERDDISCO - Double Trouble"
+  img = "20230515_DirtyPlates_NERDDISCO_DoubleTrouble"
+  url = "https://youtu.be/J7yPo3CtaQI"
+  length = "00:50:27"
+  type = "show"
+[[params.shows]]
   date = "2023/04/15"
   title = "NERDDISCO & MadTiXx @ Chris's Bday Bash, FritzKatz, Saarbruecken, Germany"
   img = "20230415_NERDDISCO_MadTiXx_Chris_Bday_Bash_FritzKatz_Saarbruecken_Germany"
@@ -173,7 +194,7 @@ theme = "landing-page"
   date = "2022/12/05"
   title = "Design System @ UX Crash-Course WS-2022, University of Applied Sciences, Mainz, Germany"
   img = "20221205_TimPietrusky_Design_System_UX_CrashCourse_University_of_Applied_Sciences_Mainz_Germany"
-  url = "https://miro.com/app/board/uXjVP9d7laU=/?share_link_id=283621544686"
+  url = "https://miro.com/app/board/uXjVP9d7laU="
   type = "post"
 [[params.shows]]
   date = "2022/11/18"
