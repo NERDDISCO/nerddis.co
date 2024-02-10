@@ -15,7 +15,7 @@ theme = "landing-page"
 
 
 [params]
-  description = """Developer, Open Source Advocate, Mentor, Speaker, Artist, VJ"""
+  description = """Developer, Artist, VJ, Mentor, Speaker"""
   # description = """digital artist, 
   #   <a href="https://github.com/TimPietrusky">open source dev</a>, 
   #       <a href="https://github.com/vcync/modV-Workshop">mentor</a>,
@@ -25,7 +25,7 @@ theme = "landing-page"
   #   <a href="https://bananabassmusic.com">Banana Bass Music</a>,
   #   <a href="https://livejs.network">LiveJS</a>, <a href="https://dekk.app">dekk</a> & <a href="https://synoa.de">Synoa</a>
   # """
-  partOf = """part of <a href="https://github.com/failfa-st">failfa.st</a>,
+  partOf = """part of <a href="https://blib.la">Blibla</a>,
     <a href="https://twitter.com/iieinander">iieinander</a>,
     <a href="https://bananabassmusic.com">Banana Bass Music</a>,
     <a href="https://schickmalzwo.de">schickmalzwo</a>,
@@ -73,6 +73,18 @@ theme = "landing-page"
 
 
 
+
+[[params.next]]
+  date = "2024/03/16 - 23:00 - 05:00 CET"
+  title = "NERDDISCO + Beat.Stay.Love @ 8 JAHRE BSL, Schlosskeller, Darmstadt, Germany"
+  url = "https://beatstaylove.blog/2024/02/05/16-03-2024-8-jahre-bsl-im-schlosskeller-lineup"
+
+[[params.next]]
+  date = "2024/03/23 - 22:00 - 05:00 CET"
+  title = "NERDDISCO + StonecreekCrew @ Stonecreek Presents - DIVIDID Label Night, Club Paula, Dresden, Germany"
+  url = "https://www.instagram.com/p/C2hWcb0oSHs/"
+
+
 # [[params.next]]
 #   date = "2023/04/15 - 22:00 CET"
 #   title = "NERDDISCO @ private bday bash, Saarbruecken, Germany"
@@ -80,9 +92,9 @@ theme = "landing-page"
 #   date = "2023/05/20 - 23:00 - 07:00 CET"
 #   title = "NERDDISCO + BananaBassMusic & StoneCreekCrew @ Urban Bass Bungle Vol. 2 w/ Levela, elipamanoke, Leipzig, Germany"
 #   url = "https://www.facebook.com/events/235919985530107"
-[[params.next]]
-  date = "2023/07/08 - 22:00 - 07:00 CET"
-  title = "NERDDISCO + BananaBassMusic @ TBA, elipamanoke, Leipzig, Germany"
+# [[params.next]]
+#   date = "2023/07/08 - 22:00 - 07:00 CET"
+#   title = "NERDDISCO + BananaBassMusic @ TBA, elipamanoke, Leipzig, Germany"
 
 # [[params.next]]
 #   date = "2022/12/17 - 21:00 CET"
