@@ -15,7 +15,7 @@ theme = "landing-page"
 
 
 [params]
-  description = """Developer, Artist, VJ, Mentor, Speaker"""
+  description = """AI Developer, Author, Creative Technologist, Mentor, Founder, Speaker, Artist, VJ, DevOps Person, Curator of the Community Lounge @ JSConf Budapest 2024"""
   # description = """digital artist, 
   #   <a href="https://github.com/TimPietrusky">open source dev</a>, 
   #       <a href="https://github.com/vcync/modV-Workshop">mentor</a>,
