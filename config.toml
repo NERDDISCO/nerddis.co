@@ -15,7 +15,7 @@ theme = "landing-page"
 
 
 [params]
-  description = """AI Developer, Author, Creative Technologist, Mentor, Founder, Speaker, Artist, VJ, DevOps Person, Curator of the Community Lounge @ JSConf Budapest 2024"""
+  description = """DevRel, Developer, Author, Creative Technologist, Mentor, Founder, Speaker, Artist, VJ, DevOps, Organizer"""
   # description = """digital artist, 
   #   <a href="https://github.com/TimPietrusky">open source dev</a>, 
   #       <a href="https://github.com/vcync/modV-Workshop">mentor</a>,
@@ -25,8 +25,8 @@ theme = "landing-page"
   #   <a href="https://bananabassmusic.com">Banana Bass Music</a>,
   #   <a href="https://livejs.network">LiveJS</a>, <a href="https://dekk.app">dekk</a> & <a href="https://synoa.de">Synoa</a>
   # """
-  partOf = """part of <a href="https://blib.la">Blibla</a>,
-    <a href="https://twitter.com/iieinander">iieinander</a>,
+  partOf = """part of <a href="https://runpod.io">RunPod</a>,
+    <a href="https://jsconfbp.com">JSConf Budapest</a>,
     <a href="https://bananabassmusic.com">Banana Bass Music</a>,
     <a href="https://schickmalzwo.de">schickmalzwo</a>,
     <a href="https://https://github.com/vcync">vcync</a> &
@@ -39,13 +39,17 @@ theme = "landing-page"
 
 
 [[params.social]]
-  title = "mastodon"
-  icon = "mastodon"
-  url = "https://mastodon.social/@NERDDISCO"
+  title = "bluesky"
+  icon = "bluesky"
+  url = "https://bsky.app/profile/nerddis.co"
+# [[params.social]]
+#   title = "mastodon"
+#   icon = "mastodon"
+#   url = "https://mastodon.social/@NERDDISCO"
 [[params.social]]
   title = "twitter"
   icon = "twitter"
-  url = "https://twitter.com/NERDDISCO"
+  url = "https://x.com/NERDDISCO"
 [[params.social]]
   title = "instagram"
   icon = "instagram"
@@ -74,10 +78,10 @@ theme = "landing-page"
 
 
 
-[[params.next]]
-  date = "2024/06/27 - 2024/06/28"
-  title = "Curator of the Community Lounge @ JSConfBP 2024, Budapest, Hungary"
-  url = "https://jsconfbp.com/"
+# [[params.next]]
+#   date = "2024/06/27 - 2024/06/28"
+#   title = "Curator of the Community Lounge @ JSConfBP 2024, Budapest, Hungary"
+#   url = "https://jsconfbp.com/"
 
 
 
