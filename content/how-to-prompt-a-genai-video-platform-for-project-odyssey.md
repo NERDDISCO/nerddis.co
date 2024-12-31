@@ -9,7 +9,7 @@ tags: ""
 
 ## tl;dr
 
-i created an ai video gen platform called [OpenV](https://openv.ai) in ~100 hours for [CivitAI](https://civitai.com)'s [Project Odyssey](https://projectodyssey.ai) (an ai film competition) by using ai:
+i created a genai video platform called [OpenV](https://openv.ai) in ~100 hours for [CivitAI](https://civitai.com)'s [Project Odyssey](https://projectodyssey.ai) (an ai film competition) by using ai:
 
 - planning in [ChatGPT o1](https://chatgpt.com/?model=o1)
 - frontend in [v0](https://v0.dev)
