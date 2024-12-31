@@ -15,7 +15,7 @@ theme = "landing-page"
 
 
 [params]
-  description = """Developer, Creative Technologist, Mentor, Founder, Speaker, Artist, Organizer"""
+  description = """Developer, Mentor, Speaker, Artist, Organizer & Founder"""
   # description = """digital artist, 
   #   <a href="https://github.com/TimPietrusky">open source dev</a>, 
   #       <a href="https://github.com/vcync/modV-Workshop">mentor</a>,
@@ -78,11 +78,9 @@ theme = "landing-page"
 
 
 
-# [[params.next]]
-#   date = "2024/06/27 - 2024/06/28"
-#   title = "Curator of the Community Lounge @ JSConfBP 2024, Budapest, Hungary"
-#   url = "https://jsconfbp.com/"
-
+[[params.next]]
+  date = "2025/02/11"
+  title = "Tim Pietrusky @ AI meetup with dstack, DataTalks.Club & RunPod, Berlin, Germany"
 
 
 # [[params.next]]
