@@ -162,9 +162,9 @@ theme = "landing-page"
 
 [[params.shows]]
   date = "2024/12/31"
-  title = "how to prompt an ai video platform for Project Odyssey"
+  title = "how to prompt a genai video platform for Project Odyssey"
   img = "20241231_openv_my_videos"
-  url = "/how-to-prompt-an-ai-video-platform-for-project-odyssey"
+  url = "/how-to-prompt-a-genai-video-platform-for-project-odyssey"
   target = "_self"
   type = "post"
 

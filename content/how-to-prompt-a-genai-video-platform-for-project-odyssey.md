@@ -1,5 +1,5 @@
 ---
-title: "how to prompt an ai video platform for Project Odyssey"
+title: "how to prompt a genai video platform for Project Odyssey"
 date: 2024-12-31T00:00:00+02:00
 draft: false
 type: "subpage"
