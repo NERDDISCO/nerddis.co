@@ -283,7 +283,9 @@ i spent a lot of time getting the tests working right, so if you want to be even
 
 - nsfw filter for the prompt
 - ui performance improvements
-- hunyuanfast model for video generation
+- cookie notice to be gdpr compliant
+- [FastHunyuan](https://huggingface.co/FastVideo/FastHunyuan) model for video generation
+- web analytics with [PostHog](https://posthog.com)
 
 ## how to use an agent?
 
