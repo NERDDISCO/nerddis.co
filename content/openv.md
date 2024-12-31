@@ -9,25 +9,35 @@
 
 ## tl;dr
 
-i created an ai video gen platform called [OpenV](https://openv.ai) in ~100 hours by using ai (planning in [ChatGPT o1](https://chatgpt.com/?model=o1), frontend in [v0](https://v0.dev), business logic in [Cursor](https://www.cursor.com) agent) for [CivitAI](https://civitai.com)'s [Project Odyssey](https://projectodyssey.ai) (an ai film competition). it's built on top of the [nextjs-starter-kit](https://starter.rasmic.xyz/) by [Ras Mic](https://www.rasmic.xyz) (which comes with [NextJS](https://nextjs.org), [Shadcn](https://ui.shadcn.com), [Clerk](https://clerk.com), [Supabase](https://supabase.com)), deployed on [Vercel](https://vercel.com) & [RunPod](https://runpod.io), while using [UploadThing](https://uploadthing.com) as storage and [Mochi 1](https://genmo.ai) as the model to generate videos.
+i created an ai video gen platform called [OpenV](https://openv.ai) in ~100 hours for [CivitAI](https://civitai.com)'s [Project Odyssey](https://projectodyssey.ai) (an ai film competition) by using ai:
+
+- planning in [ChatGPT o1](https://chatgpt.com/?model=o1)
+- frontend in [v0](https://v0.dev)
+- everything else in [Cursor](https://www.cursor.com) agent
+
+it's built on top of the [nextjs-starter-kit](https://starter.rasmic.xyz/) by [Ras Mic](https://www.rasmic.xyz) (which comes with [NextJS](https://nextjs.org), [Shadcn](https://ui.shadcn.com), [Clerk](https://clerk.com), [Supabase](https://supabase.com)), deployed on [Vercel](https://vercel.com) & [RunPod](https://runpod.io), using [UploadThing](https://uploadthing.com) as storage and [Mochi](https://github.com/genmoai/mochi) as the model to generate videos.
+
+[OpenV](https://openv.ai) consists of a [web app](https://github.com/runpod/openv) and a [model api](https://github.com/runpod-workers/worker-mochi), both open source under MIT.
 
 ## the idea
 
-{{< meta date="oct 26, 2024" >}}
+{{< meta date="oct 26 - 27, 2024" >}}
 
 when i saw [rain1011/pyramid-flow-sd3](https://huggingface.co/rain1011/pyramid-flow-sd3) (= an open source video generation model), the idea for a new side project was born: a platform called [OpenV](https://openv.ai) (= Open Video) that can generate videos with open source ai models.
 
 so i drafted a quick prototype using [v0](https://v0.dev):
 
-```markdown
+<div class="special">
+
 I want to build a website based on nextjs, shadcn, typescript. Its name is "OpenV" and it's an generative video web app using AI. We are building the homepage, which consists of:
 
 - a large prompt area and a "generate" button and an element to change the length (5 or 10 seconds) and an checkbox to "enhance prompt"
 - a tab area with "inspiration" and "my videos"
 - inspiration showing in a grid videos from other users and how to guidelines
 - my videos showing all videos that the user already has generated
-- when the user clicks on generate, the video is added in some kind of queue and the queue is always visible
-```
+- when the user clicks on generate, the video is added in some kind of queue and the queue is always visible</div>
+
+this prompt one-shot generated this:
 
 {{< img-link url="https://v0.dev/chat/lNqzYhBbwMA" src="img/20241220_openv_v0_prototype_v1_initial.jpeg" alt="OpenV v0 prototype initial version" >}}
 
@@ -276,6 +286,12 @@ let's break down the time spent on [OpenV](https://openv.ai):
 which results in around ~100h total.
 
 i spent a lot of time on getting the tests working right, so if you want to be even more quick, you could remove them for the mvp and add them after you have launched. but for me personally, i feel much more comfortable with running tests than testing everything manually.
+
+## what's shipping next?
+
+- nsfw filter for the prompt
+- ui performance improvements
+- hunyuanfast model for video generation
 
 ## how to use an agent?
 
