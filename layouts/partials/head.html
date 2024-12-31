@@ -11,13 +11,18 @@
     <meta name="author" content="NERDDISCO" />
     <base href="{{ .Site.BaseURL }}" />
 
-    <meta property="og:title" content="NERDDISCO" />
+    <meta
+      property="og:title"
+      content="{{ if .Title }}{{ .Title }}{{ else }}NERDDISCO{{ end }}"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ .Site.BaseURL }}" />
-    {{ if .Params.introimg }}
+    <meta property="og:url" content="{{ .Permalink }}" />
+    {{ if .Params.img }} <meta property="og:image" content="{{ printf
+    "shows/original/%s" .Params.img | absURL }}" /> {{ else if .Params.introimg
+    }}
     <meta property="og:image" content="{{ .Params.introimg | absURL }}" />
-    {{ else }} <meta property="og:image" content="{{"img/blm_nerddisco.jpg" |
-    absURL }} " /> {{ end }}
+    {{ else }} <meta property="og:image" content="{{ "img/blm_nerddisco.jpg" |
+    absURL }}" /> {{ end }}
 
     <link
       rel="apple-touch-icon"
