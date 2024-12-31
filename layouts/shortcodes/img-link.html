@@ -1,0 +1,15 @@
+<div class="center center--items text separate">
+    {{ if .Get "url" }}
+    <a href="{{ .Get "url" }}" target="_blank">
+        <picture class="picture">
+            <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" loading="lazy">
+        </picture>
+    </a>
+    {{ else }}
+    <a href="{{ .Get "src" }}" target="_blank">
+        <picture class="picture">
+            <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" loading="lazy">
+        </picture>
+    </a>
+    {{ end }}
+</div> 

@@ -1,0 +1,8 @@
+<div class="meta">
+    {{ if .Get "date" }}
+    <small class="meta__item">{{ .Get "date" }}</small>
+    {{ end }}
+    {{ if .Get "src" }}
+    <small class="meta__item">src: <a href="{{ .Get "src" }}" target="_blank">{{ .Get "src-name" }}</a> ({{ .Get "license" }})</small>
+    {{ end }}
+</div>

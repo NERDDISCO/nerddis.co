@@ -36,6 +36,9 @@
   --h2-size-global: 2.75rem;
   --h2-size: var(--h2-size-global);
 
+  --h3-size-global: 1.5rem;
+  --h3-size: var(--h3-size-global);
+
   --attention-size-global: 2.5rem;
   --attention-size: var(--attention-size-global);
 
@@ -44,6 +47,7 @@
   --subtitle-with-submenu-margin: calc(var(--space-around) * 4) 0 0 0;
   --subtitle-submenu-margin: 0 0 calc(var(--space-around) * 1.75) 0;
   --h2-margin: calc(var(--space-around) * 4) 0 calc(var(--space-around) * 1) 0;
+  --h3-margin: calc(var(--space-around) * 2) 0 calc(var(--space-around) * 1) 0;
 
   --show-title-size-global: 1.35rem;
   --show-title-size: var(--show-title-size-global);
@@ -99,6 +103,11 @@ h1 {
 h2 {
   font-size: var(--h2-size);
   margin: var(--h2-margin);
+}
+
+h3 {
+  font-size: var(--h3-size);
+  margin: var(--h3-margin);
 }
 
 hr {
@@ -160,17 +169,16 @@ code {
 }
 
 .highlight code {
-  padding-left: 0;
   padding: 0;
   background: none;
 }
 
 pre {
-  max-width: var(--width-logo);
   white-space: pre-wrap;
   line-height: var(--text-line-height);
-  padding: calc(var(--space-around) / 6);
+  padding: calc(var(--space-around) / 2);
   background: hsl(316 25% 10% / 1) !important;
+  max-width: var(--width-logo);
 }
 
 .picture {
@@ -485,6 +493,27 @@ ul.filter li a.active {
   font-size: calc(var(--font-size) * 0.65);
 }
 
+.special {
+  border-left: 0.25rem solid var(--color-white);
+  padding: calc(var(--space-around));
+  margin: calc(var(--space-around) * 2) 0;
+  background: hsl(316 25% 10% / 0.5);
+  max-width: var(--width-logo);
+  font-size: 0.9em;
+}
+
+.meta {
+  font-size: 0.95em;
+  margin-top: -1em;
+  display: block;
+  margin-bottom: calc(var(--space-around) * var(--factor) * 1.75);
+  line-height: var(--text-line-height);
+}
+
+.meta__item {
+  display: block;
+}
+
 /*
   media queries
 */
@@ -504,17 +533,20 @@ ul.filter li a.active {
 
 @media (max-width: 1280px) {
   :root {
-    --factor: 0.65;
+    --factor: 0.75;
     --title-size: calc(var(--title-size-global) * var(--factor));
     --subtitle-size: calc(var(--subtitle-size-global) * var(--factor));
     --h2-size: calc(var(--h2-size-global) * var(--factor));
+
     --show-title-size: calc(
       var(--show-title-size-global) * (var(--factor) * 1.15)
     );
     --attention-size: calc(var(--attention-size-global) * var(--factor));
   }
 
-  p {
+  p,
+  pre,
+  .special {
     max-width: 100%;
   }
 
@@ -538,10 +570,11 @@ ul.filter li a.active {
 @media (max-width: 768px) {
   :root {
     --font-size: 1em;
-    --factor: 0.5;
+    --factor: 0.65;
     --title-size: calc(var(--title-size-global) * var(--factor));
     --subtitle-size: calc(var(--subtitle-size-global) * var(--factor));
     --attention-size: calc(var(--attention-size-global) * var(--factor));
+    --h3-size: calc(var(--h3-size-global) * var(--factor) * 1.5);
     --show-title-size: calc(
       var(--show-title-size-global) * (var(--factor) * 2.25)
     );

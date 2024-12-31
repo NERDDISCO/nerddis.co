@@ -161,6 +161,14 @@ theme = "landing-page"
 #   url = "https://www.twitch.tv/nerddisco"
 
 [[params.shows]]
+  date = "2024/12/31"
+  title = "how to prompt an ai video platform for Project Odyssey"
+  img = "20241231_openv_my_videos"
+  url = "/openv"
+  target = "_self"
+  type = "post"
+
+[[params.shows]]
   date = "2023/06/14"
   title = "From Netlify to CloudCannon"
   img = "20230614_from_netlify_to_cloudcannon"

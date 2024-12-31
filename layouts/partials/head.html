@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ $.Site.Params.description | plainify}}">
-    <meta name="author" content="NERDDISCO">
-    <base href="{{ .Site.BaseURL }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="{{ $.Site.Params.description | plainify}}"
+    />
+    <meta name="author" content="NERDDISCO" />
+    <base href="{{ .Site.BaseURL }}" />
 
     <meta property="og:title" content="NERDDISCO" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Site.BaseURL }}" />
     {{ if .Params.introimg }}
     <meta property="og:image" content="{{ .Params.introimg | absURL }}" />
-    {{ else }}
-    <meta property="og:image" content="{{"img/blm_nerddisco.jpg" | absURL }} " />
+    {{ else }} <meta property="og:image" content="{{"img/blm_nerddisco.jpg" |
+    absURL }} " /> {{ end }}
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{ .Site.BaseURL }}favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ .Site.BaseURL }}favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{ .Site.BaseURL }}favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="{{ .Site.BaseURL }}site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="{{ .Site.BaseURL }}favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="canonical" href="{{ .Site.BaseURL }}" />
+
+    <meta name="msapplication-TileColor" content="#462c59" />
+    <meta name="theme-color" content="#462c59" />
+
+    <title>
+      {{ if $.Site.Params.isLive }}{{ $.Site.Params.liveTitle }}{{ else }}{{
+      .Title }}{{ end }}
+    </title>
+
+    {{/* Get the latest show */}} {{ $latestShow := index (.Site.Params.shows) 0
+    }} {{/* Load CSS so that it can be used inline */}} {{ $options := dict
+    "inlineImports" true }} {{ with resources.Get "css/nerddisco.css" |
+    resources.PostCSS $options | minify }} {{/* Integrate the image of the
+    latest show into CSS */}} {{ $content := replace .Content "doesnotexist"
+    $latestShow.img }}
+    <style type="text/css">
+      {{ $content | safeCSS }}
+    </style>
     {{ end }}
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}favicon/favicon-16x16.png">
-    <link rel="manifest" href="{{ .Site.BaseURL }}site.webmanifest">
-    <link rel="mask-icon" href="{{ .Site.BaseURL }}favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="canonical" href="{{ .Site.BaseURL }}"/>
-
-    <meta name="msapplication-TileColor" content="#462c59">
-    <meta name="theme-color" content="#462c59">
-    
-    <title>{{ if $.Site.Params.isLive }}{{ $.Site.Params.liveTitle }}{{ else }}{{ .Title }}{{ end }}</title>
-
-    {{/* Get the latest show */}}
-    {{ $latestShow := index (.Site.Params.shows) 0 }}
-
-    {{/* Load CSS so that it can be used inline */}}
-    {{ $options := dict "inlineImports" true }}
-    {{ with resources.Get "css/nerddisco.css" | resources.PostCSS $options | minify }}
-
-    {{/* Integrate the image of the latest show into CSS */}}
-    {{ $content := replace .Content "doesnotexist" $latestShow.img }}
-    <style type="text/css">{{ $content | safeCSS }}</style>
-    {{ end }}
-</head>
-<body>
+  </head>
+  <body>
+    {{ if ne hugo.Environment "development" }} {{ partial "sw.html" . }} {{ end
+    }}
+  </body>
+</html>
