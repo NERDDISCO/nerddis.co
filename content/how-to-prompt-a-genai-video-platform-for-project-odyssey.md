@@ -5,6 +5,7 @@ draft: false
 type: "subpage"
 img: "20241231_openv_my_videos.jpg"
 tags: ""
+description: "i created a genai video platform in ~100 hours using ai tools like ChatGPT o1, v0 and Cursor."
 ---
 
 ## tl;dr

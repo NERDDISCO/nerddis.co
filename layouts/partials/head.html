@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="{{ $.Site.Params.description | plainify}}"
+      content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ $.Site.Params.description | plainify}}{{ end }}"
     />
     <meta name="author" content="NERDDISCO" />
     <base href="{{ .Site.BaseURL }}" />
@@ -17,6 +17,10 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Permalink }}" />
+    <meta
+      property="og:description"
+      content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ $.Site.Params.description | plainify}}{{ end }}"
+    />
     {{ if .Params.img }} <meta property="og:image" content="{{ printf
     "shows/original/%s" .Params.img | absURL }}" /> {{ else if .Params.introimg
     }}
