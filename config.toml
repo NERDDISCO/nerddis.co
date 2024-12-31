@@ -15,7 +15,7 @@ theme = "landing-page"
 
 
 [params]
-  description = """DevRel, Developer, Author, Creative Technologist, Mentor, Founder, Speaker, Artist, VJ, DevOps, Organizer"""
+  description = """Developer, Creative Technologist, Mentor, Founder, Speaker, Artist, Organizer"""
   # description = """digital artist, 
   #   <a href="https://github.com/TimPietrusky">open source dev</a>, 
   #       <a href="https://github.com/vcync/modV-Workshop">mentor</a>,
