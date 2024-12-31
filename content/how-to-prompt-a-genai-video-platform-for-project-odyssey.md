@@ -268,11 +268,11 @@ participants receive access to all the tools for [Project Odyssey](https://proje
 
 let's break down the time spent on [OpenV](https://openv.ai):
 
-- **initial prototype (oct 26)**: ~2h
-- **model as api (nov 28 - dec 6)**: 2 pt (8h / person)
-- **the web app (dec 9-18)**:
-  - one full weekend (~18h)
-  - ~8 working days with roughly 8h/day focused on [OpenV](https://openv.ai) = ~64h
+- **initial prototype (oct 26 - 27)**: ~2h
+- **model as api (nov 28 - dec 6)**: ~16h
+- **the web app (dec 9 - 18)**:
+  - one full weekend = ~18h
+  - ~8 working days with roughly 8h/day = ~64h
   - total for this phase: ~84h
 
 which results in around ~100h total.
