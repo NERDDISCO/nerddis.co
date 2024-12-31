@@ -90,7 +90,8 @@ this is how a request to the api looks like:
     "steps": 60,
     "cfg": 6,
     "num_frames": 31
-  }
+  },
+  "webhook": "https://openv.ai/api/runpod/webhook"
 }
 ```
 
@@ -104,7 +105,7 @@ then i switched over to [UploadThing](https://uploadthing.com), which was workin
 
 ### response
 
-when the user wants to generate a video, [OpenV](https://openv.ai) will send a request to the api, which will add the request to a queue and return a job id. [OpenV](https://openv.ai) also provides a webhook endpoint that the api calls when the video is generated (or to inform about an error).
+when the user wants to generate a video, [OpenV](https://openv.ai) will send a request to the api, which will add the request to a queue and return a job id. [OpenV](https://openv.ai) also provides a webhook endpoint that the api calls when the video is generated (or to inform about an error). once the video is generated, RunPod will provide this response to the webhook endpoint:
 
 ```json
 {
