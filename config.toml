@@ -42,6 +42,10 @@ theme = "landing-page"
   title = "bluesky"
   icon = "bluesky"
   url = "https://bsky.app/profile/nerddis.co"
+[[params.social]]
+  title = "linkedin"
+  icon = "linkedin"
+  url = "https://www.linkedin.com/in/timpietrusky"
 # [[params.social]]
 #   title = "mastodon"
 #   icon = "mastodon"
