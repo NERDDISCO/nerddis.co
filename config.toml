@@ -83,8 +83,8 @@ theme = "landing-page"
 
 
 [[params.next]]
-  date = "2025/02/11"
-  title = "Tim Pietrusky @ AI meetup with dstack, DataTalks.Club & RunPod, Berlin, Germany"
+  date = "2025/02/11 - 18:00 CET - 21:30 CET"
+  title = "Tim Pietrusky @ AI infra & open-source models meetup with dstack & RunPod, Aleph Alpha, Berlin, Germany"
 
 
 # [[params.next]]
