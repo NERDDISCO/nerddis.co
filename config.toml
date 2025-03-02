@@ -15,7 +15,7 @@ theme = "landing-page"
 
 
 [params]
-  description = """Developer, Mentor, Speaker, Artist, Organizer & Founder"""
+  description = """engineer, mentor, speaker, artist, organizer & founder"""
   # description = """digital artist, 
   #   <a href="https://github.com/TimPietrusky">open source dev</a>, 
   #       <a href="https://github.com/vcync/modV-Workshop">mentor</a>,
@@ -25,7 +25,8 @@ theme = "landing-page"
   #   <a href="https://bananabassmusic.com">Banana Bass Music</a>,
   #   <a href="https://livejs.network">LiveJS</a>, <a href="https://dekk.app">dekk</a> & <a href="https://synoa.de">Synoa</a>
   # """
-  partOf = """part of <a href="https://runpod.io">RunPod</a>,
+  partOf = """part of <a href="https://runpod.io">RunPod</a>, 
+    <a href="https://wandler.ai">wandler</a>,
     <a href="https://jsconfbp.com">JSConf Budapest</a>,
     <a href="https://bananabassmusic.com">Banana Bass Music</a>,
     <a href="https://schickmalzwo.de">schickmalzwo</a>,
