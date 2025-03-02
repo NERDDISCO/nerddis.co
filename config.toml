@@ -173,6 +173,14 @@ theme = "landing-page"
 #   url = "https://www.twitch.tv/nerddisco"
 
 [[params.shows]]
+  date = "2025/02/27"
+  title = "Democratize AI with the Browser @ DataStax Berlin AI Meetup, Saddleback, Berlin, Germany"
+  img = "20250227_DataStax_Berlin_AI_Meetup_Saddleback_Berlin_Germany"
+  url = "https://youtu.be/y8AfQf1Sxns"
+  length = "00:32:01"
+  type = "talk"
+
+[[params.shows]]
   date = "2024/12/31"
   title = "how to prompt a genai video platform for Project Odyssey"
   img = "20241231_openv_my_videos"
