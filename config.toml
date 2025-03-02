@@ -83,11 +83,20 @@ theme = "landing-page"
 
 
 
+
 [[params.next]]
-  date = "2025/02/11 - 18:00 CET - 21:30 CET"
-  title = "Tim Pietrusky @ AI infra & open-source models meetup with dstack & RunPod, Aleph Alpha, Berlin, Germany"
+  date = "2025/03/15 - 09:30 CET - 2025/03/16 19:00 CET"
+  title = "Tim mentoring @ {Tech: Munich} AI Hackathon, Tacto, Munich, Germany"
+  url = "https://lu.ma/8a0p94em"
 
 
+# [[params.next]]
+#   date = "2025/02/27 - 18:30 CET - 22:30 CET"
+#   title = "Tim Pietrusky @ DataStax Berlin AI Meetup, Saddleback, Berlin, Germany"
+#   url = "https://lu.ma/a8dwo3y9"
+# [[params.next]]
+#   date = "2025/02/11 - 18:00 CET - 21:30 CET"
+#   title = "Tim Pietrusky @ AI infra & open-source models meetup with dstack & RunPod, Aleph Alpha, Berlin, Germany"
 # [[params.next]]
 #   date = "2023/04/15 - 22:00 CET"
 #   title = "NERDDISCO @ private bday bash, Saarbruecken, Germany"
@@ -170,6 +179,14 @@ theme = "landing-page"
   url = "/how-to-prompt-a-genai-video-platform-for-project-odyssey"
   target = "_self"
   type = "post"
+
+[[params.shows]]
+  date = "2024/09/10"
+  title = "Serverless in Real Life: Use Cases & Insights @ The AI Conference, Pier 27, San Francisco, USA"
+  img = "20240910_Serverless_in_Real_Life_Use_Cases_Insights_The_AI_Conference_Pier_27_San_Francisco_USA"
+  url = "https://youtu.be/jzHIVyOhDlE"
+  length = "00:11:08"
+  type = "talk"
 
 [[params.shows]]
   date = "2023/06/14"
