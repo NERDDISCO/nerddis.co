@@ -173,6 +173,13 @@ theme = "landing-page"
 #   url = "https://www.twitch.tv/nerddisco"
 
 [[params.shows]]
+  date = "2025/07/15"
+  title = "introducing LeRobot.js - interact with your robot in the browser"
+  img = "20250715_introducing_LeRobot_js_interact_with_your_robot_in_the_browser"
+  url = "https://youtu.be/H1iUKC1JxB0"
+  type = "talk"
+
+[[params.shows]]
   date = "2025/04/08"
   title = "Replacing my job at RunPod with agents: Can Mastra really do it?"
   img = "20250408_Replacing_my_job_at_RunPod_with_agents_Can_Mastra_really_do_it"
