@@ -8,7 +8,7 @@ This is the personal website of NERDDISCO (Tim Pietrusky), built with Hugo stati
 - Hugo static site generator with custom "landing-page" theme
 - Progressive Web App (PWA) with Workbox service worker
 - Performance-optimized with image compression and inline CSS
-- Netlify deployment with automatic builds
+- CloudCannon deployment with automatic builds
 - CloudCannon CMS integration for content management
 - Mobile-first responsive design
 
@@ -63,7 +63,6 @@ nerddis.co/
 ├── public/              # Generated site (git ignored)
 ├── config.toml          # Hugo configuration
 ├── package.json         # Node.js dependencies
-├── netlify.toml         # Netlify build configuration
 ├── cloudcannon.config.yml # CloudCannon CMS configuration
 └── workbox-config.js    # Service worker configuration
 ```
@@ -178,15 +177,15 @@ magick "input.jpg" -resize 660 -crop x371+0+0 -quality 1 "output.jpg"
 
 ## Build and Deployment
 
-### Netlify Configuration
-- **Hugo Version**: 0.83.1 (specified in `netlify.toml`)
+### CloudCannon Configuration
 - **Build Command**: `hugo --gc --minify && npm run build`
 - **Publish Directory**: `public/`
 - **Auto-deploy**: Triggered on push to master branch
+- **Hugo Version**: Configure in CloudCannon site settings
 
 ### Environment Variables
 - `HUGO_ENV`: Set to "production" for production builds
-- `HUGO_ENABLEGITINFO`: Enables git info in Hugo
+- `HUGO_ENABLEGITINFO`: Enables git info in Hugo (configure in CloudCannon)
 
 ### Service Worker
 - Workbox generates service worker automatically
@@ -228,7 +227,7 @@ magick "input.jpg" -resize 660 -crop x371+0+0 -quality 1 "output.jpg"
 ## Git Workflow
 
 ### Branch Strategy
-- `master`: Production branch (auto-deploys to Netlify)
+- `master`: Production branch (auto-deploys to CloudCannon)
 - Feature branches: Use descriptive names
 - Pull requests: Required for contributions
 
@@ -254,7 +253,7 @@ magick "input.jpg" -resize 660 -crop x371+0+0 -quality 1 "output.jpg"
 3. **Build failures**
    - Check Hugo version compatibility
    - Verify all dependencies are installed
-   - Review netlify build logs for specific errors
+   - Review CloudCannon build logs for specific errors
 
 4. **Local development issues**
    - Ensure Hugo server is running with `-D` flag for drafts
@@ -265,7 +264,6 @@ magick "input.jpg" -resize 660 -crop x371+0+0 -quality 1 "output.jpg"
 
 - [Hugo Documentation](https://gohugo.io/documentation/)
 - [Workbox Documentation](https://developers.google.com/web/tools/workbox/)
-- [Netlify Documentation](https://docs.netlify.com/)
 - [CloudCannon Documentation](https://cloudcannon.com/documentation/)
 - [Performance Best Practices](https://web.dev/fast/)
 
