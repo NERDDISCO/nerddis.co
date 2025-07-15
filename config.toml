@@ -84,10 +84,10 @@ theme = "landing-page"
 
 
 
-[[params.next]]
-  date = "2025/03/15 - 09:30 CET - 2025/03/16 19:00 CET"
-  title = "Tim mentoring @ {Tech: Munich} AI Hackathon, Tacto, Munich, Germany"
-  url = "https://lu.ma/8a0p94em"
+# [[params.next]]
+#   date = "2025/03/15 - 09:30 CET - 2025/03/16 19:00 CET"
+#   title = "Tim mentoring @ {Tech: Munich} AI Hackathon, Tacto, Munich, Germany"
+#   url = "https://lu.ma/8a0p94em"
 
 
 # [[params.next]]
@@ -171,6 +171,13 @@ theme = "landing-page"
 #   date = "2020/11/12 - 21:00 CEST"
 #   title = "half/byte & NERDDISCO - tba"
 #   url = "https://www.twitch.tv/nerddisco"
+
+[[params.shows]]
+  date = "2025/04/08"
+  title = "Replacing my job at RunPod with agents: Can Mastra really do it?"
+  img = "20250408_Replacing_my_job_at_RunPod_with_agents_Can_Mastra_really_do_it"
+  url = "https://youtu.be/hwFWSMWlFuM"
+  type = "talk"
 
 [[params.shows]]
   date = "2025/02/27"
