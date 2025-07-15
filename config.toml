@@ -174,7 +174,7 @@ theme = "landing-page"
 
 [[params.shows]]
   date = "2025/07/14"
-  title = "LeRobot.js - interact with your robot in the browser"
+  title = "LeRobot.js"
   img = "20250714_LeRobot_js_interact_with_your_robot_in_the_browser"
   url = "https://huggingface.co/blog/NERDDISCO/lerobotjs"
   type = "post"
