@@ -232,9 +232,16 @@ magick "input.jpg" -resize 660 -crop x371+0+0 -quality 1 "output.jpg"
 - Pull requests: Required for contributions
 
 ### Commit Guidelines
-- Use conventional commit messages
-- Include scope when relevant: `feat(content): add new blog post`
-- Reference issues when applicable
+- Use Angular style commit messages
+- Format: `<type>(<scope>): <subject>`
+- Common types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+- Examples:
+  - `feat(content): add new blog post about AI agents`
+  - `fix(images): correct thumbnail compression settings`
+  - `docs(conventions): update commit message guidelines`
+  - `style(css): improve mobile responsiveness`
+  - `chore(deps): update Hugo to latest version`
+- Reference issues when applicable: `fixes #123`
 
 ## Troubleshooting
 
