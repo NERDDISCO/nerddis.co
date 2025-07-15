@@ -173,9 +173,9 @@ theme = "landing-page"
 #   url = "https://www.twitch.tv/nerddisco"
 
 [[params.shows]]
-  date = "2025/07/15"
+  date = "2025/07/05"
   title = "introducing LeRobot.js - interact with your robot in the browser"
-  img = "20250715_introducing_LeRobot_js_interact_with_your_robot_in_the_browser"
+  img = "20250705_introducing_LeRobot_js_interact_with_your_robot_in_the_browser"
   url = "https://youtu.be/H1iUKC1JxB0"
   type = "talk"
 

@@ -82,6 +82,56 @@ nerddis.co/
    - Terms of service
    - Licensing information
 
+3. **Video Content** (`config.toml` shows section)
+   - Talks, demos, performances, music videos
+   - Automatically displayed on homepage
+
+### Adding New Video Content
+
+To add a new video to the shows section:
+
+1. **Gather Video Information**
+   ```bash
+   # Get video title via YouTube oEmbed API
+   curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDEO_ID&format=json" | grep -o '"title":"[^"]*' | sed 's/"title":"//'
+   
+   # Use the video's actual release date (not current date)
+   # Format: YYYYMMDD
+   ```
+
+2. **Download and Optimize Thumbnail**
+   ```bash
+   # Download thumbnail from YouTube
+   curl -s "https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg" -o "static/shows/original/YYYYMMDD_video_title.jpg"
+   
+   # Optimize using ImageMagick (or run ./image-convert.sh)
+   magick "static/shows/original/YYYYMMDD_video_title.jpg" -resize 660 -crop x371+0+0 -quality 1 "static/shows/YYYYMMDD_video_title.jpg"
+   ```
+
+3. **Add Entry to config.toml**
+   Add to the top of the `[[params.shows]]` section:
+   ```toml
+   [[params.shows]]
+     date = "YYYY/MM/DD"
+     title = "Video Title"
+     img = "YYYYMMDD_video_title"
+     url = "https://youtu.be/VIDEO_ID"
+     type = "talk"  # or "demo", "show", "musicvideo", "post", etc.
+   ```
+
+**File Naming Convention:**
+- Use the video's release date, not current date
+- Format: `YYYYMMDD_title_with_underscores`
+- Remove special characters and spaces
+- Keep titles descriptive but concise
+
+**Video Types:**
+- `talk`: Conference presentations, tutorials
+- `demo`: Technical demonstrations, coding
+- `show`: Live performances, DJ sets
+- `musicvideo`: Music videos, artistic content
+- `post`: Blog posts with associated content
+
 ### Content Guidelines
 
 #### Frontmatter Structure
