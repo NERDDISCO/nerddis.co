@@ -282,16 +282,19 @@ magick "input.jpg" -resize 660 -crop x371+0+0 -quality 1 "output.jpg"
 - Pull requests: Required for contributions
 
 ### Commit Guidelines
-- Use Angular style commit messages
-- Format: `<type>(<scope>): <subject>`
-- Common types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
-- Examples:
+- **Preferred**: Use Angular style commit messages for consistency
+- **Format**: `<type>(<scope>): <subject>`
+- **Common types**: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+- **Examples**:
   - `feat(content): add new blog post about AI agents`
+  - `feat(talk): add "LeRobot.js" video to shows section`
   - `fix(images): correct thumbnail compression settings`
   - `docs(conventions): update commit message guidelines`
   - `style(css): improve mobile responsiveness`
   - `chore(deps): update Hugo to latest version`
-- Reference issues when applicable: `fixes #123`
+- **Reference issues** when applicable: `fixes #123`
+
+**Note**: While Angular style is preferred for consistency, PR merges and some commits may use descriptive titles. The key is to make the intent clear and maintain consistency within feature branches.
 
 ## Troubleshooting
 
