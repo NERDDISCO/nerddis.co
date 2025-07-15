@@ -173,6 +173,13 @@ theme = "landing-page"
 #   url = "https://www.twitch.tv/nerddisco"
 
 [[params.shows]]
+  date = "2025/01/17"
+  title = "Replacing my job at RunPod with agents: Can Mastra really do it?"
+  img = "20250117_Replacing_my_job_at_RunPod_with_agents_Can_Mastra_really_do_it"
+  url = "https://youtu.be/hwFWSMWlFuM"
+  type = "talk"
+
+[[params.shows]]
   date = "2025/02/27"
   title = "Democratize AI with the Browser @ DataStax Berlin AI Meetup, Saddleback, Berlin, Germany"
   img = "20250227_DataStax_Berlin_AI_Meetup_Saddleback_Berlin_Germany"
