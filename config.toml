@@ -84,10 +84,10 @@ theme = "landing-page"
 
 
 
-[[params.next]]
-  date = "2025/03/15 - 09:30 CET - 2025/03/16 19:00 CET"
-  title = "Tim mentoring @ {Tech: Munich} AI Hackathon, Tacto, Munich, Germany"
-  url = "https://lu.ma/8a0p94em"
+# [[params.next]]
+#   date = "2025/03/15 - 09:30 CET - 2025/03/16 19:00 CET"
+#   title = "Tim mentoring @ {Tech: Munich} AI Hackathon, Tacto, Munich, Germany"
+#   url = "https://lu.ma/8a0p94em"
 
 
 # [[params.next]]
