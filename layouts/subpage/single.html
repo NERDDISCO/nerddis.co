@@ -10,7 +10,12 @@
 
 
 <section class="space-around center center--top">
-  <div><h1>{{ .Title }}</h1></div>
+  <div>
+    {{ if in .File.Dir "advent-2025" }}
+    <a href="/advent-2025/" class="back-link">&larr; Advent of Blogging 2025</a>
+    {{ end }}
+    <h1>{{ .Title }}</h1>
+  </div>
   <p class="post-meta">{{ .ReadingTime}} min read / {{ .PublishDate.Format "January 2, 2006" }}</p>
 </section>
 

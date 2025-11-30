@@ -1,0 +1,79 @@
+{{ partial "head.html" . }}
+
+<section class="space-around--all--quarter center center--items">
+  <a class="clean" href="/" aria-label="NERDDISCO Home" rel="noopener">
+    <div class="logo logo--small">
+        {{ printf "static/img/nerddisco.svg" | readFile | safeHTML }}
+    </div>
+  </a>
+</section>
+
+<section class="space-around center center--top">
+  <div><h1>{{ .Title }}</h1></div>
+  <p class="post-meta">{{ .PublishDate.Format "January 2, 2006" }}</p>
+</section>
+
+{{ if .Params.introimg }}
+<div class="post-intro" style="--backgroundintro: url('{{ .Params.introimg }}')"></div>
+{{ end }}
+
+<section class="space-around center center--top">
+  <div>{{ .Content }}</div>
+</section>
+
+<!-- Advent Grid Section -->
+<section class="center center--items space-around">
+  <div class="columns columns--fit full-width">
+    {{ $now := now }}
+    {{ $section := . }}
+    {{ range .Site.Params.advent }}
+      {{ $day := .day }}
+      {{ $dayStr := printf "%02d" $day }}
+      {{ $releaseDate := time .released }}
+      {{ $isReleased := ge $now $releaseDate }}
+      {{/* Find the page by looking through all pages */}}
+      {{ $page := false }}
+      {{ range $section.Pages }}
+        {{ if in .File.LogicalName $dayStr }}
+          {{ $page = . }}
+        {{ end }}
+      {{ end }}
+      
+      {{ if and $isReleased $page }}
+      {{/* Released and has content - clickable */}}
+      <div class="show advent-day advent-day--released" data-day="{{ $day }}">
+        <a href="{{ $page.RelPermalink }}" aria-label="{{ $page.Title }}" rel="noopener">
+          <div class="show__picture">
+            <picture>
+              <h4 class="show__date space-around--all--half solid hover:solid">Day {{ $day }}</h4>
+              {{ if $page.Params.img }}
+              <source srcset="/shows/{{ $page.Params.img }}.jpg" type="image/jpeg"> 
+              <img class="show__image" src="/shows/{{ $page.Params.img }}.jpg" alt="{{ $page.Title }}" loading="lazy">
+              {{ else }}
+              <div class="advent-placeholder"></div>
+              {{ end }}
+            </picture>
+          </div>
+          <div class="show__head space-around--all--half">
+            <h3 class="show__title">{{ $page.Title }}</h3>
+          </div>
+        </a>
+      </div>
+      {{ else }}
+      {{/* Not released yet - show coming soon */}}
+      <div class="show advent-day advent-day--locked" data-day="{{ $day }}">
+        <div class="show__picture">
+          <picture>
+            <h4 class="show__date space-around--all--half solid">Day {{ $day }}</h4>
+            <div class="advent-placeholder">
+              <span class="advent-coming-soon">Coming Soon</span>
+            </div>
+          </picture>
+        </div>
+      </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
+
+{{ partial "footer.html" . }}

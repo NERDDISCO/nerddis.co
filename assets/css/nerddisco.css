@@ -609,3 +609,31 @@ ul.filter li a.active {
     align-self: stretch;
   }
 }
+
+/* Advent Calendar Styles */
+.advent-day--locked {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.advent-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advent-coming-soon {
+  font-family: "Badd Mono", sans-serif;
+  font-size: var(--show-title-size);
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.back-link {
+  font-size: 0.85em;
+  position: relative;
+  top: calc(var(--space-around) * 3);
+}

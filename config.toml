@@ -2,6 +2,7 @@ baseURL = "https://nerddis.co/"
 languageCode = "en-us"
 title = "NERDDISCO"
 theme = "landing-page"
+buildFuture = true
 
 [markup]
   [markup.goldmark]
@@ -90,6 +91,107 @@ theme = "landing-page"
 #   url = "https://lu.ma/8a0p94em"
 
 
+# Advent of Blogging 2025
+# released: date when the post goes live (compared against build time)
+# To force-release early for testing, set released to a past date
+[[params.advent]]
+  day = 1
+  title = "Day 1"
+  released = "2025-11-30"
+[[params.advent]]
+  day = 2
+  title = "Day 2"
+  released = "2025-12-02"
+[[params.advent]]
+  day = 3
+  title = "Day 3"
+  released = "2025-12-03"
+[[params.advent]]
+  day = 4
+  title = "Day 4"
+  released = "2025-12-04"
+[[params.advent]]
+  day = 5
+  title = "Day 5"
+  released = "2025-12-05"
+[[params.advent]]
+  day = 6
+  title = "Day 6"
+  released = "2025-12-06"
+[[params.advent]]
+  day = 7
+  title = "Day 7"
+  released = "2025-12-07"
+[[params.advent]]
+  day = 8
+  title = "Day 8"
+  released = "2025-12-08"
+[[params.advent]]
+  day = 9
+  title = "Day 9"
+  released = "2025-12-09"
+[[params.advent]]
+  day = 10
+  title = "Day 10"
+  released = "2025-12-10"
+[[params.advent]]
+  day = 11
+  title = "Day 11"
+  released = "2025-12-11"
+[[params.advent]]
+  day = 12
+  title = "Day 12"
+  released = "2025-12-12"
+[[params.advent]]
+  day = 13
+  title = "Day 13"
+  released = "2025-12-13"
+[[params.advent]]
+  day = 14
+  title = "Day 14"
+  released = "2025-12-14"
+[[params.advent]]
+  day = 15
+  title = "Day 15"
+  released = "2025-12-15"
+[[params.advent]]
+  day = 16
+  title = "Day 16"
+  released = "2025-12-16"
+[[params.advent]]
+  day = 17
+  title = "Day 17"
+  released = "2025-12-17"
+[[params.advent]]
+  day = 18
+  title = "Day 18"
+  released = "2025-12-18"
+[[params.advent]]
+  day = 19
+  title = "Day 19"
+  released = "2025-12-19"
+[[params.advent]]
+  day = 20
+  title = "Day 20"
+  released = "2025-12-20"
+[[params.advent]]
+  day = 21
+  title = "Day 21"
+  released = "2025-12-21"
+[[params.advent]]
+  day = 22
+  title = "Day 22"
+  released = "2025-12-22"
+[[params.advent]]
+  day = 23
+  title = "Day 23"
+  released = "2025-12-23"
+[[params.advent]]
+  day = 24
+  title = "Day 24"
+  released = "2025-12-24"
+
+
 # [[params.next]]
 #   date = "2025/02/27 - 18:30 CET - 22:30 CET"
 #   title = "Tim Pietrusky @ DataStax Berlin AI Meetup, Saddleback, Berlin, Germany"
@@ -173,6 +275,14 @@ theme = "landing-page"
 #   url = "https://www.twitch.tv/nerddisco"
 
 [[params.shows]]
+  date = "2025/12/01"
+  title = "Advent of Blogging 2025"
+  img = "20251201_Advent_of_Blogging_2025"
+  url = "/advent-2025"
+  target = "_self"
+  type = "post"
+
+[[params.shows]]
   date = "2025/07/14"
   title = "LeRobot.js"
   img = "20250714_LeRobot_js_interact_with_your_robot_in_the_browser"
@@ -192,6 +302,8 @@ theme = "landing-page"
   img = "20250408_Replacing_my_job_at_RunPod_with_agents_Can_Mastra_really_do_it"
   url = "https://youtu.be/hwFWSMWlFuM"
   type = "talk"
+
+
 
 [[params.shows]]
   date = "2025/02/27"
