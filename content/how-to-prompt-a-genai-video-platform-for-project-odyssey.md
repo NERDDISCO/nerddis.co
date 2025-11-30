@@ -16,7 +16,7 @@ i created a genai video platform called [OpenV](https://openv.ai) in ~100 hours 
 - frontend in [v0](https://v0.dev)
 - everything else in [Cursor](https://www.cursor.com) agent
 
-it's built on top of the [nextjs-starter-kit](https://starter.rasmic.xyz/) by [Ras Mic](https://www.rasmic.xyz) (which comes with [NextJS](https://nextjs.org), [Shadcn](https://ui.shadcn.com), [Clerk](https://clerk.com), [Supabase](https://supabase.com)), deployed on [Vercel](https://vercel.com) & [RunPod](https://runpod.io), using [UploadThing](https://uploadthing.com) as storage and [Mochi](https://github.com/genmoai/mochi) as the model to generate videos.
+it's built on top of the [nextjs-starter-kit](https://starter.rasmic.xyz/) by [Ras Mic](https://www.rasmic.xyz) (which comes with [NextJS](https://nextjs.org), [Shadcn](https://ui.shadcn.com), [Clerk](https://clerk.com), [Supabase](https://supabase.com)), deployed on [Vercel](https://vercel.com) & [Runpod](https://runpod.io), using [UploadThing](https://uploadthing.com) as storage and [Mochi](https://github.com/genmoai/mochi) as the model to generate videos.
 
 [OpenV](https://openv.ai) consists of a [web app](https://github.com/runpod/openv) and a [model api](https://github.com/runpod-workers/worker-mochi), both open source under MIT.
 
@@ -47,23 +47,23 @@ this prompt one-shotted this:
 
 {{< img-link url="https://v0.dev/chat/lNqzYhBbwMA" src="img/20241220_openv_v0_prototype_v1_final.jpeg" alt="OpenV v0 prototype final version" >}}
 
-i then used [pyramid-flow-sd3](https://huggingface.co/rain1011/pyramid-flow-sd3) via an api on [RunPod](https://runpod.io), but did not connect the frontend with this api, and then the weekend was over.
+i then used [pyramid-flow-sd3](https://huggingface.co/rain1011/pyramid-flow-sd3) via an api on [Runpod](https://runpod.io), but did not connect the frontend with this api, and then the weekend was over.
 
 ## project odyssey
 
 {{< meta date="oct 29, 2024" >}}
 
-[CivitAI](https://civitai.com) reached out to [RunPod](https://runpod.io) about becoming a gold sponsor for their ai film competition, [Project Odyssey](https://projectodyssey.ai) (dec 16, 2024 to jan 16, 2025), and we directly said yes.
+[CivitAI](https://civitai.com) reached out to [Runpod](https://runpod.io) about becoming a gold sponsor for their ai film competition, [Project Odyssey](https://projectodyssey.ai) (dec 16, 2024 to jan 16, 2025), and we directly said yes.
 
 {{< img-link url="https://www.youtube.com/watch?v=quSWxWpfMB0" src="img/20241216_civitai_project_odyssey_s2.jpeg" alt="CivitAI Project Odyssey Season 2" >}}
 
 one part of the sponsorship deal says that we have to provide our own video gen tool that can be used by contestants of [Project Odyssey](https://projectodyssey.ai) for free for the duration of the competition to generate up to 10 minutes of video.
 
-as [RunPod](https://runpod.io) is a provider of infrastructure for ai companies, we had no such tool in our portfolio. this is why we decided to convert my side project [OpenV](https://openv.ai) into a full-blown product. the goal is to showcase the power of RunPod and provide educational resources for developers. but instead of using [pyramid-flow-sd3](https://huggingface.co/rain1011/pyramid-flow-sd3), we decided to use [Mochi](https://github.com/genmoai/mochi) as the video generation model, as it generates better high quality videos.
+as [Runpod](https://runpod.io) is a provider of infrastructure for ai companies, we had no such tool in our portfolio. this is why we decided to convert my side project [OpenV](https://openv.ai) into a full-blown product. the goal is to showcase the power of Runpod and provide educational resources for developers. but instead of using [pyramid-flow-sd3](https://huggingface.co/rain1011/pyramid-flow-sd3), we decided to use [Mochi](https://github.com/genmoai/mochi) as the video generation model, as it generates better high quality videos.
 
 ### category: sponsored tools
 
-[Project Odyssey](https://projectodyssey.ai) has its own category for sponsored tools, which means that videos generated with [OpenV](https://openv.ai) can be submitted to the competition, and [RunPod](https://runpod.io) (probably me plus community votes) will be judging them. the winners will receive prizes, so make sure to check this out if you want to win.
+[Project Odyssey](https://projectodyssey.ai) has its own category for sponsored tools, which means that videos generated with [OpenV](https://openv.ai) can be submitted to the competition, and [Runpod](https://runpod.io) (probably me plus community votes) will be judging them. the winners will receive prizes, so make sure to check this out if you want to win.
 
 ## model as api
 
@@ -75,7 +75,7 @@ license="MIT">}}
 
 almost every ai product i start working on requires a specific open source model running as an api. when it's working, i continue with the rest of the project.
 
-converting mochi-1 into an api was straightforward, as i could get a lot of inspiration from [camenduru/mochi-1-preview-tost](https://github.com/camenduru/mochi-1-preview-tost) (a RunPod-compatible worker serving Mochi with [ComfyUI](https://github.com/comfyanonymous/ComfyUI) in python).
+converting mochi-1 into an api was straightforward, as i could get a lot of inspiration from [camenduru/mochi-1-preview-tost](https://github.com/camenduru/mochi-1-preview-tost) (a Runpod-compatible worker serving Mochi with [ComfyUI](https://github.com/comfyanonymous/ComfyUI) in python).
 
 this is how a request to the api looks like:
 
@@ -105,7 +105,7 @@ then i switched over to [UploadThing](https://uploadthing.com), which was workin
 
 ### response
 
-when the user wants to generate a video, [OpenV](https://openv.ai) will send a request to the api, which will add the request to a queue and return a job id. [OpenV](https://openv.ai) also provides a webhook endpoint that the api calls when the video is generated (or to inform about an error). once the video is generated, RunPod will provide this response to the webhook endpoint:
+when the user wants to generate a video, [OpenV](https://openv.ai) will send a request to the api, which will add the request to a queue and return a job id. [OpenV](https://openv.ai) also provides a webhook endpoint that the api calls when the video is generated (or to inform about an error). once the video is generated, Runpod will provide this response to the webhook endpoint:
 
 ```json
 {
@@ -199,7 +199,7 @@ the next step was to get the generated frontend from [v0](https://v0.dev) into t
 
 then i added all the business logic based on the user stories:
 
-- generate videos using the api deployed on RunPod
+- generate videos using the api deployed on Runpod
 - basic job status checking (initial naive approach)
 - webhook-based status updates with efficient polling
 - “my videos” to show all generated videos
@@ -215,7 +215,7 @@ then i added all the business logic based on the user stories:
 
 ### improve with feedback
 
-i spent 1h with [frank myles](https://www.frankmyles.com/) (product designer at [RunPod](https://runpod.io), thank you!) to refine the ux. we ended up with this ui mock:
+i spent 1h with [frank myles](https://www.frankmyles.com/) (product designer at [Runpod](https://runpod.io), thank you!) to refine the ux. we ended up with this ui mock:
 
 {{< img-link src="img/20241210_openv_ux_feedback_frank_myles.jpeg" alt="OpenV UX feedback from Frank Myles" >}}
 
@@ -312,6 +312,6 @@ what will this number be at the end of 2025?
 
 ## thanks
 
-i'm so grateful to be working at [RunPod](https://runpod.io) (thanks to everyone there), because i can create cool ai stuff with awesome people.
+i'm so grateful to be working at [Runpod](https://runpod.io) (thanks to everyone there), because i can create cool ai stuff with awesome people.
 
 can someone pinch me, please?

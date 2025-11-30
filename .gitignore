@@ -69,3 +69,5 @@ public/*.webmanifest
 public/*.js
 public/*.map
 !public/*/live
+
+.hugo_build.lock

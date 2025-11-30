@@ -25,7 +25,7 @@ theme = "landing-page"
   #   <a href="https://bananabassmusic.com">Banana Bass Music</a>,
   #   <a href="https://livejs.network">LiveJS</a>, <a href="https://dekk.app">dekk</a> & <a href="https://synoa.de">Synoa</a>
   # """
-  partOf = """part of <a href="https://runpod.io">RunPod</a>, 
+  partOf = """part of <a href="https://runpod.io">Runpod</a>, 
     <a href="https://wandler.ai">wandler</a>,
     <a href="https://jsconfbp.com">JSConf Budapest</a>,
     <a href="https://bananabassmusic.com">Banana Bass Music</a>,
@@ -96,7 +96,7 @@ theme = "landing-page"
 #   url = "https://lu.ma/a8dwo3y9"
 # [[params.next]]
 #   date = "2025/02/11 - 18:00 CET - 21:30 CET"
-#   title = "Tim Pietrusky @ AI infra & open-source models meetup with dstack & RunPod, Aleph Alpha, Berlin, Germany"
+#   title = "Tim Pietrusky @ AI infra & open-source models meetup with dstack & Runpod, Aleph Alpha, Berlin, Germany"
 # [[params.next]]
 #   date = "2023/04/15 - 22:00 CET"
 #   title = "NERDDISCO @ private bday bash, Saarbruecken, Germany"
