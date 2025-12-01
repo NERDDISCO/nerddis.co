@@ -16,8 +16,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"npm:watch:hugo\" \"npm:watch:workbox\"",
-    "dev": "HUGO_ENV=development hugo server -p 1313 -D --disableFastRender",
-    "watch:hugo": "hugo server -p 1313 -D --renderStaticToDisk -d public --minify --disableFastRender",
+    "dev": "HUGO_ENV=development hugo server -p 1313 -D --disableFastRender --baseURL http://localhost:1313/",
+    "watch:hugo": "hugo server -p 1313 -D --renderStaticToDisk -d public --minify --disableFastRender --baseURL http://localhost:1313/",
     "watch:workbox": "workbox generateSW workbox-config.js --watch",
     "build": "workbox generateSW workbox-config.js"
   },
