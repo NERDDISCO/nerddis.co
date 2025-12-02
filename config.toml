@@ -95,7 +95,7 @@ buildFuture = true
 #   url = "https://lu.ma/8a0p94em"
 
 
-# Advent of Blogging 2025
+# Advent of Writing 2025
 # released: date when the post goes live (compared against build time)
 # To force-release early for testing, set released to a past date
 [[params.advent]]
@@ -280,9 +280,9 @@ buildFuture = true
 
 [[params.shows]]
   date = "2025/12/01"
-  title = "Advent of Blogging 2025"
+  title = "Advent of Writing 2025"
   img = "20251200_advent_of_writing_2025"
-  url = "/advent-2025"
+  url = "/advent-of-writing-2025"
   target = "_self"
   type = "post"
 
