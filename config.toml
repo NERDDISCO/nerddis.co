@@ -280,7 +280,7 @@ buildFuture = true
 [[params.shows]]
   date = "2025/12/01"
   title = "Advent of Blogging 2025"
-  img = "20251201_Advent_of_Blogging_2025"
+  img = "20251200_advent_of_writing_2025"
   url = "/advent-2025"
   target = "_self"
   type = "post"
