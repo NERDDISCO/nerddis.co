@@ -309,6 +309,19 @@ hugo --gc --minify && npm run build
 
 ---
 
+## Writing Style
+
+- **Voice**: First-person, direct, concise. Cut intros; get to the point. No emojis.
+- **Structure**: Use clear `##` headings. For longer posts, start with **`## tl;dr`**. End with **`## conclusion`**; add **`## what's next?`** or **`## thanks`** when useful.
+- **Formatting**: Use fenced code blocks with language tags (e.g., `bash`, `json`, `yaml`, `javascript`). Keep snippets minimal and actionable.
+- **Shortcodes & Blocks**: Use `{{< meta ... >}}` to timestamp phases/sources and `{{< img-link ... >}}` for linked images. Wrap AI prompts or special callouts in `<div class="special"> ... </div>`.
+- **Links**: Prefer descriptive anchors over bare URLs. Use internal links where possible.
+- **Capitalization**: Casual/narrative posts can use all‑lowercase; technical/how‑to posts use standard capitalization.
+- **Brand Names**: Always write "Runpod" (capital R, lowercase everything else). Not "RunPod" or "RUNPOD".
+- **Frontmatter**: Follow patterns in "Adding a Blog Post". Typical posts use `type: "subpage"` and may include `img`, `tags`, and `description`.
+
+---
+
 ## Adding New Content
 
 ### Adding a New Show
@@ -493,4 +506,4 @@ Add to the `[[params.next]]` array in `config.toml`. Comment out old events but 
 
 ---
 
-_Last updated: November 2025_
+_Last updated: December 2025_

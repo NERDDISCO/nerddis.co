@@ -12,7 +12,10 @@ buildFuture = true
       [markup.goldmark.parser.attribute]
         block = true
   [markup.highlight]
-    noHl = true
+    style = "dracula"
+    lineNos = false
+    noClasses = true
+    guessSyntax = true
 
 
 [params]

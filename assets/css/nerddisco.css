@@ -163,9 +163,9 @@ p {
 
 code {
   font-family: "Fragment Mono", monospace;
-  background: hsl(316 25% 10% / 1);
+  background: hsl(231 15% 18% / 1);
   padding: calc(var(--space-around) / 6);
-  color: #bf7dad;
+  color: #f8f8f2;
 }
 
 .highlight code {
@@ -177,8 +177,67 @@ pre {
   white-space: pre-wrap;
   line-height: var(--text-line-height);
   padding: calc(var(--space-around) / 2);
-  background: hsl(316 25% 10% / 1) !important;
   max-width: var(--width-logo);
+  overflow-x: auto;
+}
+
+/* Let Chroma/Dracula theme handle colors inside highlight blocks */
+.highlight pre {
+  background: #282a36 !important;
+}
+
+/* Code block wrapper for copy button */
+.code-block-wrapper {
+  position: relative;
+  max-width: var(--width-logo);
+}
+
+.code-block-wrapper pre {
+  margin: 0;
+}
+
+.copy-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  cursor: pointer;
+  color: #f8f8f2;
+  opacity: 0.8;
+  transition: opacity 0.2s, background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-button:hover,
+.copy-button:focus {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.copy-button .copy-icon {
+  display: block;
+}
+
+.copy-button .check-icon {
+  display: none;
+  color: #50fa7b;
+}
+
+.copy-button.copied {
+  opacity: 1;
+}
+
+.copy-button.copied .copy-icon {
+  display: none;
+}
+
+.copy-button.copied .check-icon {
+  display: block;
 }
 
 .picture {

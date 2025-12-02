@@ -35,4 +35,7 @@
 {{ $filterJs := resources.Get "js/filter.js" | minify }}
 <script type="module" async>{{ $filterJs.Content | safeJS }}</script>
 
+{{ $copyCodeJs := resources.Get "js/copy-code.js" | minify }}
+<script>{{ $copyCodeJs.Content | safeJS }}</script>
+
 </html>
