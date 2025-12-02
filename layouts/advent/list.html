@@ -14,7 +14,7 @@
 </section>
 
 {{ if .Params.introimg }}
-<div class="post-intro" style="--backgroundintro: url('{{ .Params.introimg }}')"></div>
+<div class="post-intro post-intro--compact" style="--backgroundintro: url('{{ .Params.introimg }}')"></div>
 {{ end }}
 
 <section class="space-around center center--top">
@@ -22,7 +22,7 @@
 </section>
 
 <!-- Advent Grid Section -->
-<section class="center center--items space-around">
+<section class="center center--items space-around space-around--top-extra">
   <div class="columns columns--fit full-width">
     {{ $now := now }}
     {{ $section := . }}

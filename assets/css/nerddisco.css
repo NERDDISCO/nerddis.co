@@ -557,6 +557,14 @@ ul.filter li a.active {
   margin: 0 0 calc(var(--space-around) * 5) 0;
 }
 
+.post-intro--compact {
+  margin: 0 0 calc(var(--space-around) * 2) 0;
+}
+
+.space-around--top-extra {
+  margin-top: calc(var(--space-around) * 3);
+}
+
 .post-meta {
   font-size: calc(var(--font-size) * 0.65);
 }

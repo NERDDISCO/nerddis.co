@@ -1,6 +1,6 @@
 ---
 title: "Advent of Blogging 2025"
-date: 2024-11-30T00:00:00+01:00
+date: 2025-12-01T00:00:00+01:00
 draft: false
 type: "advent"
 img: "20251200_advent_of_writing_2025"

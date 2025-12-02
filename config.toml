@@ -19,7 +19,7 @@ buildFuture = true
 
 
 [params]
-  description = """engineer, mentor, speaker, artist, organizer & founder"""
+  description = """dad, engineer, artist, mentor, speaker, organizer, founder"""
   # description = """digital artist, 
   #   <a href="https://github.com/TimPietrusky">open source dev</a>, 
   #       <a href="https://github.com/vcync/modV-Workshop">mentor</a>,
@@ -30,6 +30,7 @@ buildFuture = true
   #   <a href="https://livejs.network">LiveJS</a>, <a href="https://dekk.app">dekk</a> & <a href="https://synoa.de">Synoa</a>
   # """
   partOf = """part of <a href="https://runpod.io">Runpod</a>, 
+    <a href="https://conference.techeurope.io">Applied AI Conf</a>,
     <a href="https://wandler.ai">wandler</a>,
     <a href="https://jsconfbp.com">JSConf Budapest</a>,
     <a href="https://bananabassmusic.com">Banana Bass Music</a>,
