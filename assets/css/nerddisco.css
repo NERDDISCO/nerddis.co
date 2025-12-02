@@ -177,7 +177,7 @@ pre {
   white-space: pre-wrap;
   line-height: var(--text-line-height);
   padding: calc(var(--space-around) / 2);
-  max-width: var(--width-logo);
+  max-width: 100%;
   overflow-x: auto;
 }
 
@@ -189,8 +189,17 @@ pre {
 /* Code block wrapper for copy button */
 .code-block-wrapper {
   position: relative;
-  max-width: var(--width-logo);
+  max-width: 100%;
+  margin-bottom: var(--space-around);
 }
+
+@media (min-width: 1280px) {
+  pre,
+  .code-block-wrapper {
+    max-width: min(80vw, 1280px);
+  }
+}
+
 
 .code-block-wrapper pre {
   margin: 0;
