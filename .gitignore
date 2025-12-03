@@ -71,3 +71,6 @@ public/*.map
 !public/*/live
 
 .hugo_build.lock
+
+# Example projects
+hello-world/
