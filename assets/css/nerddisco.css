@@ -200,7 +200,6 @@ pre {
   }
 }
 
-
 .code-block-wrapper pre {
   margin: 0;
 }
@@ -576,6 +575,79 @@ ul.filter li a.active {
   background: hsl(316 25% 10% / 0.5);
   max-width: var(--width-logo);
   font-size: 0.9em;
+}
+
+/* GitHub-style note/warning/tip boxes */
+.note {
+  border-left: 0.25rem solid;
+  padding: calc(var(--space-around) * 0.75) calc(var(--space-around));
+  margin: calc(var(--space-around) * 1.5) 0;
+  border-radius: 0.375rem;
+  max-width: var(--width-logo);
+}
+
+.note--info {
+  border-color: #58a6ff;
+  background: hsl(212 100% 40% / 0.1);
+}
+
+.note--warning {
+  border-color: #d29922;
+  background: hsl(40 80% 50% / 0.1);
+}
+
+.note--tip {
+  border-color: #3fb950;
+  background: hsl(140 60% 40% / 0.1);
+}
+
+.note__header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.note__icon {
+  flex-shrink: 0;
+}
+
+.note--info .note__icon {
+  fill: #58a6ff;
+}
+
+.note--warning .note__icon {
+  fill: #d29922;
+}
+
+.note--tip .note__icon {
+  fill: #3fb950;
+}
+
+.note__label {
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.note--info .note__label {
+  color: #58a6ff;
+}
+
+.note--warning .note__label {
+  color: #d29922;
+}
+
+.note--tip .note__label {
+  color: #3fb950;
+}
+
+.note__content {
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.note__content p {
+  margin: 0;
 }
 
 .meta {
