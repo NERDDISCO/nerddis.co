@@ -38,4 +38,23 @@
 {{ $copyCodeJs := resources.Get "js/copy-code.js" | minify }}
 <script>{{ $copyCodeJs.Content | safeJS }}</script>
 
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+    startOnLoad: true,
+    theme: 'dark',
+    fontFamily: '"Fragment Mono", monospace',
+    themeVariables: {
+      darkMode: true,
+      background: '#1b1b1b',
+      primaryColor: '#1b1b1b',
+      primaryTextColor: '#f8f8f8',
+      primaryBorderColor: '#f8f8f8',
+      lineColor: '#f8f8f8',
+      secondaryColor: '#1b1b1b',
+      tertiaryColor: '#1b1b1b'
+    }
+  });
+</script>
+
 </html>

@@ -662,6 +662,15 @@ ul.filter li a.active {
   display: block;
 }
 
+/* Mermaid Diagram */
+.mermaid {
+  background-color: var(--color-dark);
+  padding: 1rem;
+  margin: 2rem 0;
+  border: 2px solid var(--color-white);
+  overflow-x: auto;
+}
+
 /*
   media queries
 */
