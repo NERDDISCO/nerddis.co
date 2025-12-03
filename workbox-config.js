@@ -7,6 +7,7 @@ module.exports = {
   ],
   globIgnores: [
     "**/original/*",
+    "**/intro/*",
     "sw.js",
     "sw.js.map",
     "workbox-*",
