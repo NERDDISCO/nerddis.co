@@ -19,7 +19,7 @@ buildFuture = true
 
 
 [params]
-  description = """dad, engineer, artist, mentor, speaker, organizer, founder"""
+  description = """dad, cto, artist, mentor, speaker, organizer, founder"""
   # description = """digital artist, 
   #   <a href="https://github.com/TimPietrusky">open source dev</a>, 
   #       <a href="https://github.com/vcync/modV-Workshop">mentor</a>,
@@ -29,11 +29,11 @@ buildFuture = true
   #   <a href="https://bananabassmusic.com">Banana Bass Music</a>,
   #   <a href="https://livejs.network">LiveJS</a>, <a href="https://dekk.app">dekk</a> & <a href="https://synoa.de">Synoa</a>
   # """
-  partOf = """part of <a href="https://runpod.io">Runpod</a>, 
+  partOf = """part of <a href="https://getdaso.com">daso</a>,
     <a href="https://conference.techeurope.io">Applied AI Conf</a>,
     <a href="https://wandler.ai">wandler</a>,
     <a href="https://jsconfbp.com">JSConf Budapest</a>,
-    <a href="https://bananabassmusic.com">Banana Bass Music</a>,
+    <a href="https://bananabassmusic.com">International Audiographic</a>,
     <a href="https://schickmalzwo.de">schickmalzwo</a>,
     <a href="https://https://github.com/vcync">vcync</a> &
     <a href="https://livejs.network">LiveJS</a>
@@ -44,10 +44,6 @@ buildFuture = true
   liveTitle = '🔴 LIVE on Twitch from 21:00 CEST'
 
 
-[[params.social]]
-  title = "bluesky"
-  icon = "bluesky"
-  url = "https://bsky.app/profile/nerddis.co"
 [[params.social]]
   title = "linkedin"
   icon = "linkedin"
@@ -279,6 +275,13 @@ buildFuture = true
 #   url = "https://www.twitch.tv/nerddisco"
 
 [[params.shows]]
+  date = "2026/07/25"
+  title = "Locked In: Neo Sunriver 2026"
+  img = "20260725_NERDDISCO_Locked_In_Neo_Sunriver_2026"
+  url = "https://soundcloud.com/nerddisco/sets/locked-in-neo-sunriver-2026"
+  type = "music"
+
+[[params.shows]]
   date = "2025/12/01"
   title = "Advent of Writing 2025"
   img = "20251200_advent_of_writing_2025"
@@ -409,13 +412,14 @@ buildFuture = true
   url = "https://youtu.be/8t-SOWriTRc"
   length = "01:29:22"
   type = "show"
-[[params.shows]]
-  date = "2022/07/01"
-  title = "HighThere & NERDDISCO - The Knights of Ren"
-  img = "20220630_NERDDISCO_HighThere_The_Knights_of_Ren"
-  url = "https://youtu.be/cIg8H-yRV3U"
-  length = "00:05:34"
-  type = "musicvideo"
+# video currently unavailable
+# [[params.shows]]
+#   date = "2022/07/01"
+#   title = "HighThere & NERDDISCO - The Knights of Ren"
+#   img = "20220630_NERDDISCO_HighThere_The_Knights_of_Ren"
+#   url = "https://youtu.be/cIg8H-yRV3U"
+#   length = "00:05:34"
+#   type = "music"
 [[params.shows]]
   date = "2022/06/22"
   title = "PiJay & NERDDISCO - PiJay for Hive Festival"
@@ -436,7 +440,7 @@ buildFuture = true
   img = "20220412_NERDDISCO_AMC_Do_it_to_it"
   url = "https://youtu.be/IlZbAHLPLBA"
   length = "00:03:15"
-  type = "musicvideo"
+  type = "music"
 [[params.shows]]
   date = "2022/03/26"
   title = "Chirac & NERDDISCO @ Sublife 2, Club Paula, Dresden, Germany"
@@ -478,7 +482,7 @@ buildFuture = true
   img = "20211129_Gesceap_NERDDISCO_Impossible_Box_006_played_by_Fools"
   url = "https://youtu.be/WAdhcOY8jxw"
   length = "00:02:56"
-  type = "musicvideo"
+  type = "music"
 [[params.shows]]
   date = "2021/11/29"
   title = "LiveJS - half/byte & 2xAA & NERDDISCO @ JSConf India 2021 - Online Conference Opening"
@@ -494,13 +498,14 @@ buildFuture = true
   length = "00:00:12"
   target = "_self"
   type = "nft|post"
-[[params.shows]]
-  date = "2021/08/31"
-  title = "Hasky & Mr. Kato - Take You Down"
-  img = "20210831_Hasky_MrKato_Take_You_Down"
-  url = "https://youtu.be/wL28MYvqCP4"
-  length = "00:05:59"
-  type = "musicvideo"
+# video currently unavailable
+# [[params.shows]]
+#   date = "2021/08/31"
+#   title = "Hasky & Mr. Kato - Take You Down"
+#   img = "20210831_Hasky_MrKato_Take_You_Down"
+#   url = "https://youtu.be/wL28MYvqCP4"
+#   length = "00:05:59"
+#   type = "music"
 [[params.shows]]
   date = "2021/08/19"
   title = "schickmalzwo - SMZ 002 @ habt euch alle lieb 2021"
@@ -508,13 +513,14 @@ buildFuture = true
   url = "https://youtu.be/__zicPn1ioo"
   length = "00:13:04"
   type = "show"
-[[params.shows]]
-  date = "2021/08/04"
-  title = "HighThere & Minako - Lessons"
-  img = "20210804_HighThere_Minako_Lessons"
-  url = "https://youtu.be/0TWiIAQkdRw"
-  length = "00:04:30"
-  type = "musicvideo"
+# video currently unavailable
+# [[params.shows]]
+#   date = "2021/08/04"
+#   title = "HighThere & Minako - Lessons"
+#   img = "20210804_HighThere_Minako_Lessons"
+#   url = "https://youtu.be/0TWiIAQkdRw"
+#   length = "00:04:30"
+#   type = "music"
 [[params.shows]]
   date = "2021/06/08"
   title = "HighThere & MC Black Demon & NERDDISCO @ Cathee'n'Bass 2020"
@@ -709,7 +715,7 @@ buildFuture = true
   img = "20200503_ok_bai_NERDDISCO_dreamscape"
   url = "https://youtu.be/-ihAED403u4"
   length = "00:52"
-  type = "musicvideo"
+  type = "music"
 [[params.shows]]
   date = "2020/04/11"
   title = "HOSTILE & NERDDISCO @ Ausgangssperre 2, Peng"
@@ -890,7 +896,7 @@ buildFuture = true
   img = "20170625_Soulpride_Edecay_For_The_Masses_Part2_NERDDISCO_Visuals"
   url = "https://www.youtube.com/watch?v=lhZNsHjug4Y"
   length = "05:31"
-  type = "musicvideo"
+  type = "music"
 [[params.shows]]
   date = "2016/12/05"
   title = "LiveJS - 2xAA & NERDDISCO @ dotJS Afterparty - Dock Pullman, Paris, France"
@@ -911,7 +917,7 @@ buildFuture = true
   img = "20160824_2xAA_NERDDISCO_scream4me"
   url = "https://www.youtube.com/watch?v=BuO0SBZgnvI"
   length = "02:56"
-  type = "musicvideo"
+  type = "music"
 [[params.shows]]
   date = "2016/06/02"
   title = "Ruth John & Tim Pietrusky - Live audio and visual spectacular @ ScotlandJS - Dynamic Earth, Edinburgh, Scotland"
