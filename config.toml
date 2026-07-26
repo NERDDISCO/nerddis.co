@@ -522,13 +522,14 @@ buildFuture = true
 #   url = "https://youtu.be/0TWiIAQkdRw"
 #   length = "00:04:30"
 #   type = "music"
-[[params.shows]]
-  date = "2021/06/08"
-  title = "HighThere & MC Black Demon & NERDDISCO @ Cathee'n'Bass 2020"
-  img = "20210608_HighThere_MC_Black_Demon_NERDDISCO_Cathee_n_Bass"
-  url = "https://youtu.be/1L7vPRYwvcc"
-  length = "01:01:02"
-  type = "show"
+# video currently unavailable
+# [[params.shows]]
+#   date = "2021/06/08"
+#   title = "HighThere & MC Black Demon & NERDDISCO @ Cathee'n'Bass 2020"
+#   img = "20210608_HighThere_MC_Black_Demon_NERDDISCO_Cathee_n_Bass"
+#   url = "https://youtu.be/1L7vPRYwvcc"
+#   length = "01:01:02"
+#   type = "show"
 [[params.shows]]
   date = "2021/06/06"
   title = "The Pride Progress Moon / Audio Reactive Visuals / S01E05"
