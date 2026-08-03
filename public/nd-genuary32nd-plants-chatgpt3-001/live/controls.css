@@ -1,0 +1,351 @@
+@font-face {
+  font-family: "Badd Mono";
+  src: url("/font/Badd-Mono-Regular.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family: "Fragment Mono";
+  src: url("/font/FragmentMono-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --color-white: #f8f8f8;
+  --color-black: #000;
+  --color-dark: #1b1b1b;
+
+  --space-around: 1.25rem;
+  --width-controls: 22rem;
+  --border: 0.25rem;
+
+  /* The artwork is a square, so it gets as much room as the smaller axis allows */
+  --size-frame: min(
+    calc(100vh - var(--space-around) * 2),
+    calc(100vw - var(--width-controls) - var(--space-around) * 2)
+  );
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--color-dark);
+  color: var(--color-white);
+  font-family: "Fragment Mono", monospace;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+h1,
+button {
+  font-family: "Badd Mono", sans-serif;
+  font-weight: 400;
+}
+
+hr {
+  border: none;
+  background: var(--color-white);
+  height: var(--border);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+  background: var(--color-white);
+  padding: calc(var(--space-around) / 6);
+  filter: grayscale(0) invert(0);
+}
+
+a:hover,
+a:focus {
+  filter: grayscale(100%) invert(100%);
+}
+
+/**
+ * Layout: controls on the left, output on the right.
+ * On small screens they stack, with the artwork on top.
+ */
+.live {
+  display: flex;
+  height: 100%;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-around);
+  flex: 0 0 var(--width-controls);
+  padding: var(--space-around);
+  overflow-y: auto;
+  background: var(--color-black);
+  border-right: var(--border) solid var(--color-white);
+}
+
+/**
+ * The artwork is framed on its own stage, so that it reads as the output
+ * instead of blending into the page
+ */
+.output {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-around);
+  background: var(--color-dark);
+}
+
+.output__frame {
+  width: var(--size-frame);
+  height: var(--size-frame);
+  border: var(--border) solid var(--color-white);
+  background: var(--color-black);
+  display: block;
+}
+
+/**
+ * Head
+ */
+.controls__head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: calc(var(--space-around) / 2);
+}
+
+.controls__back {
+  font-size: 0.8rem;
+}
+
+.controls__title {
+  font-size: 1.35rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/**
+ * Parameters
+ */
+.controls__params {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-around);
+  margin: 0;
+}
+
+.param {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-around) / 3);
+}
+
+.param__label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: calc(var(--space-around) / 2);
+  font-size: 0.85rem;
+}
+
+.param__value {
+  color: var(--color-black);
+  background: var(--color-white);
+  padding: 0 calc(var(--space-around) / 4);
+}
+
+.param input[type="range"] {
+  width: 100%;
+  height: 1rem;
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.param input[type="range"]::-webkit-slider-runnable-track {
+  height: var(--border);
+  background: var(--color-white);
+}
+
+.param input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  margin-top: calc((var(--border) - 1rem) / 2);
+  background: var(--color-white);
+  box-shadow: 0 0 0 var(--border) var(--color-black);
+  cursor: pointer;
+}
+
+.param input[type="range"]::-moz-range-track {
+  height: var(--border);
+  background: var(--color-white);
+}
+
+.param input[type="range"]::-moz-range-thumb {
+  width: 1rem;
+  height: 1rem;
+  border: 0;
+  border-radius: 0;
+  background: var(--color-white);
+  box-shadow: 0 0 0 var(--border) var(--color-black);
+  cursor: pointer;
+}
+
+.param input[type="range"]:focus-visible {
+  outline: var(--border) solid var(--color-white);
+  outline-offset: 0.35rem;
+}
+
+.param select,
+.param input[type="text"] {
+  width: 100%;
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--color-black);
+  background: var(--color-white);
+  border: var(--border) solid var(--color-white);
+  border-radius: 0;
+  padding: calc(var(--space-around) / 4);
+  cursor: pointer;
+}
+
+/**
+ * The countdown to the next redraw is not a parameter, it comes from the hash.
+ * It gets the callout border of .special on nerddis.co instead of the slider
+ * treatment, so that it does not read as something you can drag
+ */
+.param--readonly {
+  cursor: default;
+  user-select: none;
+  gap: calc(var(--space-around) / 4);
+  border-left: var(--border) solid var(--color-white);
+  padding: calc(var(--space-around) / 4) 0
+    calc(var(--space-around) / 4) calc(var(--space-around) / 2);
+  background: rgba(248, 248, 248, 0.05);
+}
+
+.param--readonly .param__value {
+  color: var(--color-white);
+  background: none;
+  padding: 0;
+}
+
+.progress {
+  height: 0.35rem;
+  background: rgba(248, 248, 248, 0.2);
+}
+
+.progress__bar {
+  width: 0;
+  height: 100%;
+  background: var(--color-white);
+  opacity: 0.55;
+}
+
+.param--readonly .controls__hint {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+/**
+ * Buttons, styled like the filter on nerddis.co
+ */
+.controls__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(var(--space-around) / 2);
+}
+
+.controls__actions button {
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: var(--color-white);
+  background: var(--color-black);
+  border: var(--border) solid var(--color-white);
+  padding: calc(var(--space-around) / 3);
+}
+
+.controls__actions button:hover,
+.controls__actions button:focus {
+  color: var(--color-black);
+  background: var(--color-white);
+}
+
+.button--wide {
+  grid-column: 1 / -1;
+}
+
+/**
+ * Foot
+ */
+.controls__foot {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-around) / 2);
+  font-size: 0.8rem;
+}
+
+.controls__foot p {
+  margin: 0;
+}
+
+.controls__label {
+  color: var(--color-black);
+  background: var(--color-white);
+  padding: 0 calc(var(--space-around) / 4);
+  margin-right: calc(var(--space-around) / 3);
+}
+
+.controls__hash {
+  word-break: break-all;
+  opacity: 0.6;
+}
+
+.controls__hint {
+  opacity: 0.6;
+}
+
+.controls__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--space-around) / 2);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --size-frame: calc(100vw - var(--space-around) * 2);
+  }
+
+  html,
+  body {
+    height: auto;
+  }
+
+  .live {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .output {
+    order: -1;
+    width: 100%;
+  }
+
+  .controls {
+    flex: 1 1 auto;
+    overflow-y: visible;
+    border-right: 0;
+    border-top: var(--border) solid var(--color-white);
+  }
+}

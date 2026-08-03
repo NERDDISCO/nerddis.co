@@ -13,10 +13,13 @@ hash: "ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf"
         <picture class="picture">
             <img src="img/20230317_NERDDISCO_nd-genuary32nd-plants-chatgpt3-001_ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf.jpg" alt="nd-genuary32nd-plants-chatgpt3-001 on fxhash" loading="lazy">
         </picture>
-        <!-- <iframe width="512" height="512" src="nd-genuary32nd-plants-chatgpt3-001/live"></iframe> -->
     </a>
 
 </div>
+
+You can play with all four parameters yourself:
+
+{{< attention url="nd-genuary32nd-plants-chatgpt3-001/live" name="nd-genuary32nd-plants-chatgpt3-001/live" >}}
 
 {{< attention url="https://www.fxhash.xyz/generative/slug/nd-genuary32nd-plants-chatgpt3-001" name="mint the NFT on fxhash" >}}
 
@@ -85,6 +88,9 @@ After holding the generated code from ChatGPT in my hands, I switched to my manu
 
 ## Interactive
 
+- [Run it live](/nd-genuary32nd-plants-chatgpt3-001/live) and change `Time of Day`, `Plants Amount`, `Flower Lightness` and `Background Saturation`
+- Press `Random` to roll all parameters at once, or `New hash` to generate a completely new scene
+- Every scene can be shared as a link, hash and parameters are part of the URL
 - Press `s` on your keyboard to download a screenshot
 - The scene is redrawn every pseudo-random ms
 
