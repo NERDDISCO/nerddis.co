@@ -9,9 +9,9 @@ hash: "ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf"
 ---
 
 <div class="center center--items separate">
-    <a href="https://www.fxhash.xyz/generative/slug/nd-genuary32nd-plants-chatgpt3-001" target="_blank">
+    <a href="/nd-genuary32nd-plants-chatgpt3-001/live">
         <picture class="picture">
-            <img src="img/20230317_NERDDISCO_nd-genuary32nd-plants-chatgpt3-001_ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf.jpg" alt="nd-genuary32nd-plants-chatgpt3-001 on fxhash" loading="lazy">
+            <img src="img/20230317_NERDDISCO_nd-genuary32nd-plants-chatgpt3-001_ooWxjDocz6oTKvFgnwW6SJtJ34UqGpFZqBFsKcdTGNRdebbvwSf.jpg" alt="nd-genuary32nd-plants-chatgpt3-001, running live" loading="lazy">
         </picture>
     </a>
 
