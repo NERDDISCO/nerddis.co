@@ -1,0 +1,46 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+}
+
+#nd-output
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+#canvas_displacement_debug,
+#canvas_texture_debug {
+    display: none;
+}
+
+#canvas_displacement_debug {
+    position: absolute;
+    top: 125px;
+    left: 125px;
+    z-index: 1337;
+    background: #000;
+    transform: scale(5) translateX(2.5vw) translateY(3vh);
+    border: 1px solid #fff;
+    opacity: .85;
+}
+
+#canvas_texture_debug {
+    position: absolute;
+    top: -425px;
+    right: -425px;
+    z-index: 1337;
+    background: #000;
+    transform: scale(1) translateX(-90vw) translateY(100vh);
+    border: 25px solid #fff;
+    opacity: .85;
+}

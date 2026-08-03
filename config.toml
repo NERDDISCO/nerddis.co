@@ -390,14 +390,14 @@ buildFuture = true
   img = "20221118_NERDDISCO_nd-fxhashturnsone-001"
   url = "/nd-fxhashturnsone-001"
   target = "_self"
-  type = "nft"
+  type = "demo|nft"
 [[params.shows]]
   date = "2022/10/19"
   title = "nd-landscape-001"
   img = "20221015_NERDDISCO_nd-landscape-001_ooNWvzQMaUvLvY87mx5evJ4C8xUM4eNRxDmkTFfZQCcwpqG1KUn"
   url = "/nd-landscape-001"
   target = "_self"
-  type = "nft|post"
+  type = "demo|nft|post"
 # video currently unavailable
 # [[params.shows]]
 #   date = "2022/10/07"

@@ -8,6 +8,10 @@ tags: "fxhashturnsone,nd-fxhashturnsone-001,365,box,threejs,seed,nerddisco,displ
 ---
 
 
+You can run it right here:
+
+{{< attention url="nd-fxhashturnsone-001/live" name="nd-fxhashturnsone-001/live" >}}
+
 {{< attention url="https://www.fxhash.xyz/generative/slug/nd-fxhashturnsone-001" name="fxhash.xyz/generative/slug/nd-fxhashturnsone-001" >}} 
 
 November 2022, we celebrate 1 year of fxhash 🎉
@@ -40,5 +44,7 @@ Everything is generated with ThreeJS, the fxhash logo is encoded in base64.
 There is a hack for Safari on iOS (iPhone & iPad) to not crash the generative token on page reload. I hope this will not explode in the future once this problem is resolved in WebKit, but let's keep our fingers crossed, shall we? 
 
 ## Interactive
+- [Run it live](/nd-fxhashturnsone-001/live) and press `New hash` to generate a new piece, every one of them can be shared as a link
+- The features of the current piece are listed next to it
 - Use mouse or touch to zoom in/out and rotate the landscape.
 - Press 's' on your keyboard to download a screenshot

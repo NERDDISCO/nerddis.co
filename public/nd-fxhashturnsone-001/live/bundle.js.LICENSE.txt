@@ -1,0 +1,12 @@
+/**
+ * @license
+ * Copyright 2010-2022 Three.js Authors
+ * SPDX-License-Identifier: MIT
+ */
+
+/**
+ * @license
+ * nd-fxhashturnsone-001 by NERDDISCO
+ * MIT 2022 NERDDISCO
+ * https://nerddis.co/nd-fxhashturnsone-001
+ */

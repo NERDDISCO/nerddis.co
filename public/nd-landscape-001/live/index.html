@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>nd-landscape-001</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <base href="/nd-landscape-001/live/" />
+    <link rel="stylesheet" href="/live/controls.css" />
+  </head>
+
+  <body>
+    <main class="live">
+      <aside class="controls">
+        <header class="controls__head">
+          <a class="controls__back" href="/nd-landscape-001">&larr; back</a>
+          <h1 class="controls__title">nd-landscape-001</h1>
+        </header>
+
+        <hr />
+
+        <div class="features" id="nd-features">
+          <p class="controls__hint" id="nd-loading">Loading features&hellip;</p>
+        </div>
+
+        <div class="controls__actions">
+          <button type="button" class="button--wide" id="nd-newhash">New hash</button>
+          <button type="button" class="button--wide" id="nd-download">Save image</button>
+        </div>
+
+        <footer class="controls__foot">
+          <hr />
+          <p class="controls__meta">
+            <span class="controls__label">hash</span>
+            <span class="controls__hash" id="nd-hash"></span>
+          </p>
+          <p class="controls__hint">Drag to rotate, scroll or pinch to zoom.</p>
+          <p class="controls__links">
+            <a href="https://www.fxhash.xyz/generative/slug/nd-landscape-001" target="_blank" rel="noopener">fxhash</a>
+          </p>
+        </footer>
+      </aside>
+
+      <div class="output">
+        <!-- src is set by features.js, so that the hash is in the URL -->
+        <iframe
+          class="output__frame"
+          id="nd-artwork"
+          title="nd-landscape-001"
+        ></iframe>
+      </div>
+    </main>
+
+    <script defer src="/live/features.js"></script>
+  </body>
+</html>

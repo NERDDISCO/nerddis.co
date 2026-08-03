@@ -104,11 +104,17 @@ a:focus {
 }
 
 .output__frame {
-  width: var(--size-frame);
-  height: var(--size-frame);
+  width: 100%;
+  height: 100%;
   border: var(--border) solid var(--color-white);
   background: var(--color-black);
   display: block;
+}
+
+/* Pieces that render a square canvas get a square frame instead of a full one */
+.output--square .output__frame {
+  width: var(--size-frame);
+  height: var(--size-frame);
 }
 
 /**
@@ -255,6 +261,33 @@ a:focus {
 .param--readonly .controls__hint {
   margin: 0;
   font-size: 0.7rem;
+}
+
+/**
+ * Features: what the current hash rolled. Read-only by nature, so they are a
+ * plain list of rows instead of anything that looks operable
+ */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-around) / 4);
+  font-size: 0.85rem;
+}
+
+.feature {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: calc(var(--space-around) / 2);
+}
+
+.feature__name {
+  opacity: 0.6;
+}
+
+.feature__value {
+  text-align: right;
+  word-break: break-word;
 }
 
 /**
