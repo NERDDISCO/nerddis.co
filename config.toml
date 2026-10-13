@@ -29,7 +29,7 @@ buildFuture = true
   #   <a href="https://bananabassmusic.com">Banana Bass Music</a>,
   #   <a href="https://livejs.network">LiveJS</a>, <a href="https://dekk.app">dekk</a> & <a href="https://synoa.de">Synoa</a>
   # """
-  partOf = """part of <a href="https://getdaso.com">daso</a>,
+  partOf = """part of <a href="https://kale.computer">Kale</a>,
     <a href="https://conference.techeurope.io">Applied AI Conf</a>,
     <a href="https://wandler.ai">wandler</a>,
     <a href="https://jsconfbp.com">JSConf Budapest</a>,
